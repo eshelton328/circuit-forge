@@ -42,7 +42,7 @@ _Auto-generated on merge to main._
 
 ![Schematic](docs/schematic.svg)
 
-### PCB Layout
+### PCB 3D Views
 
 | Top | Bottom |
 | :---: | :---: |
