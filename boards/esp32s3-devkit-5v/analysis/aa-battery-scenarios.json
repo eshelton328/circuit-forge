@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "scope": "Three series AA cells. Lithium rows conditionally mean primary 1.5 V Li/FeS2. Static source-resistance sensitivity only, not a discharge/runtime or electrochemical model.",
+  "holder_and_wire_ohm": 0.10,
+  "sources": {
+    "alkaline": "https://data.energizer.com/pdfs/e91.pdf",
+    "primary_lithium": "https://data.energizer.com/pdfs/l91.pdf"
+  },
+  "notes": [
+    "E91 lists fresh nominal IR 0.15-0.30 ohm per cell; L91 typical IR 0.12-0.24 ohm per cell depends on method. These are not guaranteed dynamic Thevenin resistances or lifetime bounds.",
+    "Holder/wire 0.10 ohm, all pack voltages, and aged/cold resistance values are proposed test points. Measure the fitted pack at load duration and temperature of interest.",
+    "Lithium 5.5 V and alkaline 4.8 V are fresh-pack screening points, not guaranteed chemistry maxima. Confirm the actual selected cells and holder.",
+    "Q1 resistance and conversion efficiencies are inherited from operating-envelope.json and remain assumptions.",
+    "E91 operating temperature is -18 to 55 C; L91 -40 to 60 C. Battery self-heating and nearby electronics matter in an enclosure; these are not PCB limits.",
+    "Static no-solution results identify a source-model limitation; do not present them as measured battery failure or a measured runtime."
+  ],
+  "cases": [
+    {"name": "alkaline_fresh_lower_ir", "source_v": 4.8, "cell_ohm": 0.15},
+    {"name": "alkaline_fresh_higher_ir", "source_v": 4.8, "cell_ohm": 0.30},
+    {"name": "alkaline_nominal_lower_ir", "source_v": 4.5, "cell_ohm": 0.15},
+    {"name": "alkaline_depleted_sensitivity", "source_v": 3.6, "cell_ohm": 0.30},
+    {"name": "alkaline_aged_cold_sensitivity", "source_v": 3.6, "cell_ohm": 0.50},
+    {"name": "lithium_fresh_lower_ir", "source_v": 5.5, "cell_ohm": 0.12},
+    {"name": "lithium_fresh_higher_ir", "source_v": 5.5, "cell_ohm": 0.24},
+    {"name": "lithium_nominal_lower_ir", "source_v": 4.5, "cell_ohm": 0.12},
+    {"name": "lithium_nominal_higher_ir", "source_v": 4.5, "cell_ohm": 0.24},
+    {"name": "lithium_depleted_sensitivity", "source_v": 3.3, "cell_ohm": 0.24}
+  ]
+}

@@ -1,6 +1,8 @@
 # Compact PCB test report
 PR #122 / ESP32-S3 dual TPS63070 prototype / 4 September 2026
 
+**6 September follow-up:** read the [operating-envelope update](operating-envelope-update.md) and [bench plan](bench-plan.md). The thermal scenarios below omitted Q1 loss; the follow-up quantifies that omission and evaluates the user's three-AA requirement. This report remains the archived layout comparison, not a complete system heat budget.
+
 **Screening completed. Physical release is not approved.** The compact layout retains its geometric safeguards, but these simulations do not establish a measured EMI, switching-stress or junction-temperature margin. The copper extraction also fails the proposed mesh-convergence criterion.
 
 | Assessment | Result | Meaning |

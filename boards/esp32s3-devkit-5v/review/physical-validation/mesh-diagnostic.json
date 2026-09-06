@@ -1,0 +1,137 @@
+{
+  "pcb_sha256": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+  "source_hashes": {
+    "scripts/physics/extract_loops.py": "ef0e16ac30a7b6215bb6ac294e188f65c33b8108cfef6290919fd8adb0e5cb6c",
+    "scripts/physics/copper.py": "2a7e75274a8d80863764ac91e6d40e1e0b66ddb99c43d97587dad25d51943510",
+    "scripts/physics/fasthenry-stats.patch": "b7aa3266cfcc456d60174750f99a617b09372405084a47502c912ef902982e75"
+  },
+  "comparison_0p125_to_0p100": [
+    {
+      "frequency_hz": 1.0,
+      "resistance_ohm": 0.020864779324611584,
+      "inductance_h": 0.03773894897041518
+    },
+    {
+      "frequency_hz": 10.0,
+      "resistance_ohm": 0.020864779324611584,
+      "inductance_h": 0.03773894897041537
+    },
+    {
+      "frequency_hz": 100.0,
+      "resistance_ohm": 0.020864779324611584,
+      "inductance_h": 0.03773894897041537
+    },
+    {
+      "frequency_hz": 1000.0,
+      "resistance_ohm": 0.02086471302280944,
+      "inductance_h": 0.037737670943650804
+    },
+    {
+      "frequency_hz": 10000.0,
+      "resistance_ohm": 0.020805072765336975,
+      "inductance_h": 0.03758906258787298
+    },
+    {
+      "frequency_hz": 100000.0,
+      "resistance_ohm": 0.016753282275711146,
+      "inductance_h": 0.027107961162705165
+    },
+    {
+      "frequency_hz": 1000000.0,
+      "resistance_ohm": 0.009748203175216203,
+      "inductance_h": 0.007778441386427482
+    },
+    {
+      "frequency_hz": 10000000.0,
+      "resistance_ohm": 0.016526209389863437,
+      "inductance_h": 0.002736261209473577
+    },
+    {
+      "frequency_hz": 100000000.0,
+      "resistance_ohm": 0.026445333708701085,
+      "inductance_h": 0.0011166661260953383
+    }
+  ],
+  "max_relative_change": 0.03773894897041537,
+  "single_step_below_5pct": true,
+  "result_0p100": {
+    "ic": "U1",
+    "capacitor": "C3",
+    "power_net": "/PFET",
+    "pitch_mm": 0.1,
+    "window_mm": [
+      108.0,
+      96.5,
+      118.0,
+      103.0
+    ],
+    "fcu_in1_centers_mm": 0.2,
+    "nhinc": 1,
+    "solver_options": [],
+    "nodes": 9597,
+    "segments": 18191,
+    "ground_vias": 7,
+    "pcb_sha256": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+    "deck_sha256": "9dcfa57ad8e488863a6d16afdfa32c74ff723d604b4f65cbc180b34ff7bf23f8",
+    "results": [
+      {
+        "frequency_hz": 1.0,
+        "resistance_ohm": 0.00314693,
+        "inductance_h": 1.104331586730596e-09
+      },
+      {
+        "frequency_hz": 10.0,
+        "resistance_ohm": 0.00314693,
+        "inductance_h": 1.104331586730596e-09
+      },
+      {
+        "frequency_hz": 100.0,
+        "resistance_ohm": 0.00314693,
+        "inductance_h": 1.104331586730596e-09
+      },
+      {
+        "frequency_hz": 1000.0,
+        "resistance_ohm": 0.00314694,
+        "inductance_h": 1.1043268120823034e-09
+      },
+      {
+        "frequency_hz": 10000.0,
+        "resistance_ohm": 0.00314779,
+        "inductance_h": 1.1036965585076595e-09
+      },
+      {
+        "frequency_hz": 100000.0,
+        "resistance_ohm": 0.00321728,
+        "inductance_h": 1.0549871881743849e-09
+      },
+      {
+        "frequency_hz": 1000000.0,
+        "resistance_ohm": 0.00393611,
+        "inductance_h": 7.834529397653023e-10
+      },
+      {
+        "frequency_hz": 10000000.0,
+        "resistance_ohm": 0.00483777,
+        "inductance_h": 6.921648475066529e-10
+      },
+      {
+        "frequency_hz": 100000000.0,
+        "resistance_ohm": 0.0049729,
+        "inductance_h": 6.86979579460719e-10
+      }
+    ],
+    "scope": "PCB-only F.Cu power/GND and In1.GND local window; equipotential solder-land ports; eight-strip plated vias; remote copper and component/package internals omitted"
+  },
+  "attempt_0p080": {
+    "pitch_mm": 0.08,
+    "capacitor": "C3",
+    "status": "INCOMPLETE: subprocess.TimeoutExpired after 1200 seconds",
+    "exit_code": 1,
+    "timeout_seconds": 1200,
+    "completed_frequency_points": 0,
+    "deck_sha256": "c69e45c33f64dcc3bf39dc8a05d64571fc0675439621360b50ca069c781c7dbf",
+    "note": "FastHenry stdout was captured by subprocess but the existing CLI does not persist it on TimeoutExpired. The deck and empty Zc.mat are retained; no numerical output is inferred."
+  },
+  "all_loop_convergence_demonstrated": false,
+  "physical_release_approved": false
+}

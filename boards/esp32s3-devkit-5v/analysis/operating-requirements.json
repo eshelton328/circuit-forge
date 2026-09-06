@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "user_confirmed": {
+    "date": "2026-09-06",
+    "battery_statement": "this board will be powered by either 3 AA lithium or alkaline batteries",
+    "cell_count": 3,
+    "cell_size": "AA",
+    "chemistry_options": ["alkaline", "lithium type awaiting clarification"]
+  },
+  "working_interpretation": {
+    "connection": "three cells in series, inferred from the board and three-AA request",
+    "lithium_model": "1.5 V primary Li/FeS2 AA (L91), conditional on user confirmation",
+    "nominal_pack_v_for_1p5v_cells": 4.5,
+    "excluded_from_current_model": "3.6/3.7 V AA-sized lithium-ion or lithium-thionyl-chloride cells"
+  },
+  "pending": {
+    "lithium_type": null,
+    "battery_brand_and_holder": null,
+    "minimum_operating_temperature_c": null,
+    "maximum_external_ambient_c": null,
+    "maximum_local_air_c": null,
+    "speaker_impedance_and_power": null,
+    "sustained_and_peak_loads_with_duration": null,
+    "enclosure_and_ventilation": null,
+    "fabricator_stackup": null,
+    "capacitor_mpns_and_bias_curves": null,
+    "assembled_board_and_available_instruments": null
+  },
+  "physical_release_approved": false
+}

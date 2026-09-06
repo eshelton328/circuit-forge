@@ -5,7 +5,9 @@ on:
     paths:
       - 'boards/esp32s3-devkit-5v/**'
       - 'scripts/physics/**'
+      - 'scripts/qualification/**'
       - 'tests/test_physical_screening.py'
+      - 'tests/test_operating_envelope.py'
       - '.github/workflows/physical-screening.yml'
 
 permissions:
@@ -41,7 +43,7 @@ jobs:
             kicad/kicad:10.0@sha256:feb600e931ca7ad8ae684566131edbea32218cb90ab54bb2ea0944cee257eea6 \
             bash -c 'python3 scripts/physics/export_geometry.py boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb output/physical-screening/current.json && python3 scripts/physics/export_geometry.py output/physical-screening/original.kicad_pcb output/physical-screening/original.json'
       - name: Verify independent mathematical controls
-        run: python3 -m pytest tests/test_physical_screening.py -v
+        run: python3 -m pytest tests/test_physical_screening.py tests/test_operating_envelope.py -v
       - name: Run layout-specific screening
         run: |
           python3 scripts/physics/run_screening.py \
@@ -55,6 +57,7 @@ jobs:
         run: |
           python3 scripts/physics/check_report_freshness.py \
             boards/esp32s3-devkit-5v
+          python3 scripts/qualification/check_evidence.py
       - name: Upload computed results (not physical sign-off)
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
