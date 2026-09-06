@@ -11,9 +11,11 @@ Record the answers in [operating-requirements.json](../../analysis/operating-req
 The user has specified **three AA cells, alkaline or lithium**. The series
 connection is the working interpretation; the precise lithium chemistry is
 awaiting clarification. L91 analysis below is conditional on primary 1.5 V cells.
-The user also intends an alarm with probably continuous playback; use 100%
-duty during the alarm for screening. See the [speaker and continuous-load
-proposal](continuous-alarm.md). Listening distance and maximum duration are pending.
+The user also intends a **bedroom alarm to wake someone from sleep**, with probably
+continuous playback; use 100% duty during the alarm for screening. See the
+[speaker and continuous-load proposal](continuous-alarm.md) and its pillow-position
+acoustic and wake-up trials. Listening distance and maximum duration are pending.
+Bedroom use does not confirm enclosure cooling or maximum internal air temperature.
 Null means unknown, never zero or accepted. The earlier
 [operating-envelope.json](../../analysis/operating-envelope.json) is a frozen
 proposal snapshot from before this clarification, not the product specification.
@@ -22,6 +24,7 @@ proposal snapshot from before this clarification, not the product specification.
 | --- | --- | --- |
 | Battery | Chemistry, cells, maximum fresh voltage, minimum loaded voltage, capacity, protection and pack/cable resistance | Cold start, current, Q1 loss and battery sag |
 | Audio | Speaker MPN/impedance, continuous audio watts, maximum burst watts and duration, longest cable | 5 V demand, enclosure heat and speaker-cable EMI |
+| Wake-up use | Actual pillow distance, mounted speaker direction, nighttime background sound, selected waveform/volume/ramp and intended sleeper trials | Connects electrical output to bedroom performance |
 | Digital | Firmware/workload, average current and burst current/duration on 3.3 V, OLED/LED use | A 500 mA-capable supply does not imply 500 mA continuous heat |
 | Mechanics | Enclosure material/dimensions, vents, board orientation/clearance, battery and speaker positions | Determines heat rejection and RF/cable geometry |
 | Environment | Maximum external air temperature and local air temperature beside the powered PCB | These temperatures can differ substantially inside a box |
@@ -115,6 +118,8 @@ waveform claims remain open until suitable measurements exist.
    both rails, PG signals, reset/brownout events and audio clipping. Record
    short-window peak/RMS current and long-window average current separately.
    Test fresh, nominal and minimum battery states, including startup and restart.
+   For the bedroom alarm, also test scheduled playback after overnight idle;
+   record missed starts, interruptions and response to stop/snooze if implemented.
 4. Measure Q1 voltage drop directly across its power terminals under a stable
    load; P_Q1 = mean(Vdrop*I). For converter efficiency, measure simultaneous
    per-stage input/output power only if calibrated current access is available.
@@ -217,6 +222,7 @@ engineering checks.
 | Question | Required evidence | Current status |
 | --- | --- | --- |
 | Loads confirmed | Selected battery/speaker/workload plus measured average, RMS and burst current | Waiting for product inputs and hardware |
+| Bedroom wake-up behavior | Mounted-speaker measurements at the pillow, repeated intended-user trials and reliable scheduled startup across battery states | Use and room confirmed; no acoustic or wake-up trials yet |
 | Cooling confirmed | Final enclosure, stable temperatures, internal/external air and power readings at maximum intended use | Waiting for mechanics and hardware |
 | Thermal margin resolved | Correlated model and valid component temperature estimates with uncertainty inside agreed margins | Open; scenario results alone cannot close it |
 | Parasitic model resolved | Final stackup/parts and consistent mesh/contact/window/thickness convergence | Open; a finer diagnostic is recorded separately |

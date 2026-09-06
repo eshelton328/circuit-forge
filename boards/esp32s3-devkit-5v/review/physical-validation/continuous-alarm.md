@@ -1,7 +1,8 @@
 # Continuous alarm: speaker and load proposal
 
-6 September 2026, PR #122. The user intends an alarm, probably continuous,
-and wants loud output with good sound quality. **Speaker, listening distance,
+6 September 2026, PR #122. The user intends a **bedroom alarm to wake someone
+from sleep**, probably with continuous playback, and wants loud output with good
+sound quality. **Speaker, listening distance,
 alarm duration, enclosure and maximum environment are still unselected.**
 For thermal screening we assume 100% audio duty during the alarm, without taking
 credit for silence between alarms. See [recorded requirements](../../analysis/operating-requirements.json).
@@ -37,6 +38,13 @@ power demand. Do not use speaker wattage as a proxy for loudness.
 
 ## Loudness and enclosure
 
+Start with bedside placement, provisionally 0.5-2 m from the sleeper's pillow.
+This distance is a test proposal, not a confirmed requirement. Measure at the
+pillow, with the speaker facing its intended direction; an across-room placement
+must be tested at its actual distance. Bedroom use supports trying the existing
+0.5-1 W proposal before increasing power. It does not establish a minimum sound
+level that will wake every sleeper.
+
 Using the candidate's mean sensitivity, ideal far-field arithmetic gives about
 86 dB at 1 m, 76.5 dB at 3 m and 72 dB at 5 m for 1 W. These are **rough
 unweighted SPL estimates**, not measured dBA, alarm audibility, or predictions
@@ -60,6 +68,15 @@ mounted driver response. For a loud, clear tonal alarm, energy in the driver's
 efficient midrange is a better starting point than trying to reproduce deep bass.
 No final tone, loudness requirement or firmware limiter has been selected here.
 
+For this wake-up use, propose adjustable volume and a gradual rise to the selected
+maximum. Begin listening trials below the 0.5 W reference; 0.5 W and 1 W are
+electrical characterization points, not mandatory playback levels. Select the
+sound and volume in the mounted prototype, then assess repeated wake-up use by
+the intended sleeper. An awake listener hearing the alarm clearly is useful
+screening, but does not demonstrate waking from sleep. Ramp duration, maximum
+playback duration and stop/snooze behavior remain product decisions; this PR does
+not implement them in firmware.
+
 ## Electrical and thermal screening
 
 [audio-load-proposals.json](../../analysis/audio-load-proposals.json) defines
@@ -82,6 +99,10 @@ including Q1, and a nominal 4.5 V pack with 0.55 ohm external resistance
 are uncalibrated cooling sensitivities. They do not represent confirmed enclosure
 performance. The same reduced PCB thermal model and limitations in the earlier
 [operating-envelope report](operating-envelope-update.md) apply.
+The bedroom clarification does not turn 50 C into a confirmed requirement or
+establish h. It remains a stress scenario. Start enclosure measurements at the
+actual room temperature and record the internal air rise before choosing a
+normal-use temperature case.
 
 | Continuous-load scenario | Battery A | PCB heat W | Peak PCB C, h=5 | Peak PCB C, h=10 |
 | --- | --- | --- | --- | --- |
@@ -116,15 +137,31 @@ for every waveform. [MAX98357A gain equation](https://www.analog.com/media/en/te
    effects. A calibrated microphone or sound-level reference is needed for an
    absolute SPL claim; an uncalibrated phone/mic is only a relative screening tool.
    The board has not been configured as a USB audio interface in this PR.
-3. Measure SPL at 1 m and at the required listening location, including orientation
-   and background noise. Listen for buzz, rattling and harsh clipping. Record
-   weighting, averaging and the actual tone spectrum; do not label the candidate's
-   published sensitivity as measured alarm SPL.
+3. Measure SPL at 1 m for comparison and **at the sleeper's pillow** for the
+   bedroom requirement. Record speaker orientation, distance and background noise
+   with the usual fan/HVAC or other nighttime sound. Listen for buzz, rattling and
+   harsh clipping. Record weighting, averaging and the actual tone spectrum; do
+   not label the candidate's published sensitivity as measured alarm SPL. The free
+   [NIOSH Sound Level Meter app for iOS](https://www.cdc.gov/niosh/noise/about/app.html)
+   offers an initial measurement route with an existing compatible phone. Record
+   device and calibration; NIOSH's Type 2 claim requires a calibrated external
+   microphone. A phone reading does not establish wake-up effectiveness.
 4. Run the continuous alarm to thermal stability using the [bench plan](bench-plan.md).
    Record battery, local air, Q1, both converters, amplifier and module temperatures,
    pack sag and resets. Repeat with fresh and depleted examples of each intended
    AA chemistry. Measure audio voltage differentially: neither speaker wire is
    ground. No grounded scope clip or direct sound-card input belongs on a BTL output.
+5. Test the transition from overnight idle into the scheduled alarm, as well as
+   continuous playback and restart with partially depleted cells. Log missed
+   starts, resets, interruptions, volume changes and acknowledgment response.
+   Repeat with each intended chemistry and the final holder. Reducing radio or
+   display activity during playback is an option to evaluate against the actual
+   firmware workload, not a measured power saving yet.
+6. Record awake listening comparisons and subsequent wake-up trials separately in
+   [the blank bedroom trial sheet](bedroom-alarm-trials.csv). Record failures as
+   well as successes and keep a trusted existing alarm available during prototype
+   trials. Select the final sound, pillow-level target and ramp from those trials;
+   no universal waking threshold or reliability claim is established here.
 
 Free Python source and the new result hashes are in the qualification runbook.
 The [full numerical results](audio-results.json), [source-case CSV](audio-battery-results.csv)
@@ -135,3 +172,8 @@ assert a speaker's acoustic performance.
 No physical audio or temperature measurement has been performed. Acoustic
 reach, thermal margin and speaker choice remain open until the requirement and
 measurements support them.
+
+The bedroom clarification is recorded in the current requirements snapshot.
+The 160 source cases, six thermal cases and three-AA supplement were rerun against
+that snapshot; their numerical inputs and results are unchanged. The PCB layout
+and simulation models are unchanged by this requirements update.

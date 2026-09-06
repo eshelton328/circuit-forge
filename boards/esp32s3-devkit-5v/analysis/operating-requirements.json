@@ -7,6 +7,8 @@
     "cell_size": "AA",
     "chemistry_options": ["alkaline", "lithium type awaiting clarification"],
     "audio_use": "alarm",
+    "alarm_purpose": "wake someone from sleep",
+    "alarm_location": "bedroom",
     "audio_duty_statement": "probably continuous playback",
     "speaker_selection": "not selected; user wants loud output with good sound quality"
   },
@@ -15,7 +17,10 @@
     "lithium_model": "1.5 V primary Li/FeS2 AA (L91), conditional on user confirmation",
     "nominal_pack_v_for_1p5v_cells": 4.5,
     "excluded_from_current_model": "3.6/3.7 V AA-sized lithium-ion or lithium-thionyl-chloride cells",
-    "alarm_thermal_duty": "100 percent during the alarm; maximum duration and repetition remain unknown"
+    "alarm_thermal_duty": "100 percent during the alarm; maximum duration and repetition remain unknown",
+    "acoustic_test_position": "at the sleeper's pillow in the intended bedroom",
+    "initial_placement_proposal": "bedside, approximately 0.5 to 2 m from the pillow; distance is not user-confirmed",
+    "cooling": "bedroom use does not establish enclosure ventilation or maximum local internal air temperature"
   },
   "pending": {
     "lithium_type": null,

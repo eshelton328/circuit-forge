@@ -2,7 +2,7 @@
   "input_hashes": {
     "boards/esp32s3-devkit-5v/analysis/operating-envelope.json": "dc9809eb7b8e6ef2f3b2ce902e010abc4cea15c14c0b9f02a649aa39ace837ef",
     "boards/esp32s3-devkit-5v/analysis/aa-battery-scenarios.json": "b3b29a6e4a8bf8af55b240e3e29233c9db8bb313e8ea1666e2d2b0dc2da8c826",
-    "boards/esp32s3-devkit-5v/analysis/operating-requirements.json": "90d71781c7b4277e8a53e0e2a97a38f32ca5a45a588c3acc2665da7d5e637109",
+    "boards/esp32s3-devkit-5v/analysis/operating-requirements.json": "b126d4fd723058c4498ed2c53680293f62953299af27f69866d383c8837dc64b",
     "scripts/qualification/battery_sweep.py": "d3cdd346ac759b260b41e40650de981c5881a11ce0fdcc640037eb9f720ad975",
     "scripts/qualification/power_budget.py": "87ea14b99bd19c09307e06ca58d4ec9c64bc0855170171209194609f71377805"
   },
