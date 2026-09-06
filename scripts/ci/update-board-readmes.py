@@ -5,6 +5,7 @@ Handles fenced regions (delimited by HTML comment markers):
 
   <!-- board-images-start --> … <!-- board-images-end -->
     Rebuilt from whichever image files exist in boards/<name>/docs/.
+    Added automatically when the README does not yet have image markers.
 
   <!-- drc-summary-start --> … <!-- drc-summary-end -->
     Rebuilt from ERC, default DRC, and fab DRC JSON in boards/<name>/docs/
@@ -50,8 +51,10 @@ def _replace_section(text: str, start: str, end: str, replacement: str) -> str:
     """Replace the region between *start* and *end* markers (inclusive)."""
     s = text.find(start)
     e = text.find(end)
-    if s == -1 or e == -1:
+    if s == -1 and e == -1:
         return text
+    if text.count(start) != 1 or text.count(end) != 1 or e < s:
+        raise ValueError(f"Invalid README section markers: {start} / {end}")
     return text[:s] + replacement + text[e + len(end) :]
 
 
@@ -77,7 +80,7 @@ def _build_images_section(board_name: str, docs_dir: Path) -> str:
     pcb_top = docs_dir / "pcb-top.png"
     pcb_bot = docs_dir / "pcb-bottom.png"
     if pcb_top.exists() or pcb_bot.exists():
-        lines += ["### PCB Layout", ""]
+        lines += ["### PCB 3D Views", ""]
         header = "| "
         divider = "| "
         images = "| "
@@ -444,9 +447,12 @@ def update_readme(board_dir: Path) -> bool:
     original = text
 
     docs_dir = board_dir / "docs"
-    if docs_dir.is_dir() and text.find(IMG_START) != -1:
+    if docs_dir.is_dir():
         section = _build_images_section(board_dir.name, docs_dir)
-        text = _replace_section(text, IMG_START, IMG_END, section)
+        if IMG_START not in text and IMG_END not in text:
+            text = text.rstrip() + "\n\n" + section + "\n"
+        else:
+            text = _replace_section(text, IMG_START, IMG_END, section)
 
     if docs_dir.is_dir() and text.find(DRC_START) != -1:
         section = _build_drc_section(board_dir.name, docs_dir)

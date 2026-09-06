@@ -11,9 +11,28 @@ New monitoring hardware provides positive USB-presence detection on GPIO7, switc
 - [Design review, sources, firmware sequencing and remaining release work](review/design-review.md)
 - [Battery measurement details](review/battery-sensing.md) and [GPIO map](review/gpio-map.csv)
 - [Two-page schematic PDF](review/schematic.pdf)
-- [Top render](review/pcb-preview.png), [perspective render](review/pcb-3d-perspective.png), [bottom render](docs/pcb-bottom.png), [assembly STEP](review/esp32s3-devkit-5v-assembly.step)
+- [Top render](docs/pcb-top.png), [perspective render](review/pcb-3d-perspective.png), [bottom render](docs/pcb-bottom.png), [assembly STEP](review/esp32s3-devkit-5v-assembly.step)
 - [Component inventory](review/component-inventory.csv) and [3D model provenance](3dmodels/README.md)
 - [Verification summary](review/verification-summary.json), [layout checks](review/layout-validation.json), [monitoring checks](review/monitoring-validation.json), [SPICE report](docs/spice-report.md)
+
+<!-- board-images-start -->
+## Board Images
+
+_Auto-generated on merge to main._
+
+### Schematic
+
+![Schematic](docs/schematic.svg)
+
+![schematic-page1](docs/schematic-page1.svg)
+
+### PCB 3D Views
+
+| Top | Bottom |
+| :---: | :---: |
+| ![Top](docs/pcb-top.png) | ![Bottom](docs/pcb-bottom.png) |
+
+<!-- board-images-end -->
 
 Verified: **0 ERC violations; 0 DRC violations including warnings; 0 unconnected items; 0 schematic parity issues.** All **342 checked pad nodes across 70 nets** have saved copper. Board intent checks, the JLCPCB four-layer advanced rule profile, all 25 simulation measures, six monitoring scenarios and 80 Python tests pass (one integration test skipped). All 112 electrical footprints have local models; J1/J3/U5/U6 use documented approximations. These checks do not establish thermal, RF, USB compliance or battery endurance performance.
 
