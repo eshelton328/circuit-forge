@@ -11,7 +11,9 @@ python3.12 -m venv .cache/physics-venv
 .cache/physics-venv/bin/pip install -r scripts/physics/requirements.txt
 bash scripts/physics/install_fasthenry.sh .cache/fasthenry
 mkdir -p output/physical-screening
-git show f11e64e:boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb > output/physical-screening/original.kicad_pcb
+python3 scripts/ci/extract-physical-reference.py \
+  --board boards/esp32s3-devkit-5v \
+  --output output/physical-screening/original.kicad_pcb
 ```
 
 On macOS, `KICAD_PY` below can be `/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3`; on Linux use the Python with `pcbnew` installed. Set that task-specific variable before these commands.
@@ -31,7 +33,7 @@ On macOS, `KICAD_PY` below can be `/Applications/KiCad/KiCad.app/Contents/Framew
 
 `--profile ci` runs the coarse original/current extraction, all circuit sensitivity cases, and 1/0.5 mm nominal thermal cases. The full profile adds fine copper meshes, an expanded return-plane window, thickness filamentation, 0.25 mm thermal resolution, single-converter thermal cases and cooling/loss extremes. Full extraction takes tens of minutes on a workstation. Identical FastHenry input decks with complete successful transcripts can be reused; matrices are parsed and checked again. Thermal caches include geometry, source budgets, parameters and solver source hashes.
 
-The dedicated GitHub workflow exports fresh KiCad geometry, checks the report's PCB/config/source hashes, runs the CI profile, and uploads raw results. The full checked-in report retains unresolved physical gates; a green CI run does not waive them. No release files are produced.
+The dedicated GitHub workflow restores the [frozen comparison PCB](../../boards/esp32s3-devkit-5v/analysis/reference/README.md), verifies its decompressed hash against the published report, exports fresh KiCad geometry, checks the report's PCB/config/source hashes, runs the CI profile, and uploads raw results. The comparison therefore works in a fresh or shallow checkout after a squash merge. The full checked-in report retains unresolved physical gates; a green CI run does not waive them. No release files are produced.
 
 ## Model contract and boundaries
 
