@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "status": "Engineering proposals; continuous alarm use is known, speaker and loudness target are not selected",
+  "recommended_starting_point": {
+    "impedance_ohm": 8,
+    "audio_continuous_w": 1.0,
+    "reduced_audio_w": 0.5,
+    "candidate_mpn": "Visaton FRS 5 X - 8 Ohm, article 2235",
+    "candidate_sensitivity_db_1w_1m": 86,
+    "candidate_rated_power_w": 5,
+    "selected_for_bom": false,
+    "source": "https://www.visaton.de/en/products/drivers/fullrange-systems/frs-5-x-8-ohm"
+  },
+  "amplifier": {
+    "part": "MAX98357A",
+    "rail_v": 5,
+    "nominal_gain_db": 12,
+    "dac_full_scale_dbv": 2.1,
+    "reference_power_1pct_thdn_8ohm_w": 1.4,
+    "reference_power_1pct_thdn_4ohm_w": 2.5,
+    "notes": "Datasheet test loads include 68 uH with 8 ohm and 33 uH with 4 ohm. Values do not guarantee speaker distortion or clipping margin at every voltage/temperature.",
+    "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf"
+  },
+  "battery_sweep": {
+    "rail_3v3_a": [0.25, 0.5],
+    "audio_w": [0.5, 1.0, 1.4, 2.5],
+    "incremental_amp_efficiency": [0.8, 0.9],
+    "notes": "0.25 A is a reference average, 0.5 A a sustained digital stress assumption; neither is a measured firmware load. 2.5 W is the 4-ohm comparison and is not a proposal to drive the 8-ohm candidate at that power."
+  },
+  "thermal_cases": [
+    {"name": "one_watt_reference", "source_v": 4.5, "rail_3v3_a": 0.25, "audio_w": 1.0, "offboard_3v3_w": 0},
+    {"name": "one_watt_digital_stress", "source_v": 4.5, "rail_3v3_a": 0.5, "audio_w": 1.0, "offboard_3v3_w": 0},
+    {"name": "half_watt_reference", "source_v": 4.5, "rail_3v3_a": 0.25, "audio_w": 0.5, "offboard_3v3_w": 0}
+  ],
+  "thermal": {
+    "external_series_ohm": 0.55,
+    "incremental_amp_efficiency": 0.8,
+    "h_each_face_w_m2k": [5, 10],
+    "local_air_c": 50,
+    "pitch_mm": 0.5,
+    "notes": "Three-AA nominal/lower-IR alkaline sensitivity: 3*0.15 ohm plus 0.10 ohm holder/wires, plus separate inherited Q1 resistance. 80 percent incremental audio efficiency is an assumed loss sensitivity, not a guaranteed minimum. h and internal air temperature remain unconfirmed."
+  }
+}

@@ -8,6 +8,7 @@ on:
       - 'scripts/qualification/**'
       - 'tests/test_physical_screening.py'
       - 'tests/test_operating_envelope.py'
+      - 'tests/test_audio_screening.py'
       - '.github/workflows/physical-screening.yml'
 
 permissions:
@@ -43,7 +44,7 @@ jobs:
             kicad/kicad:10.0@sha256:feb600e931ca7ad8ae684566131edbea32218cb90ab54bb2ea0944cee257eea6 \
             bash -c 'python3 scripts/physics/export_geometry.py boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb output/physical-screening/current.json && python3 scripts/physics/export_geometry.py output/physical-screening/original.kicad_pcb output/physical-screening/original.json'
       - name: Verify independent mathematical controls
-        run: python3 -m pytest tests/test_physical_screening.py tests/test_operating_envelope.py -v
+        run: python3 -m pytest tests/test_physical_screening.py tests/test_operating_envelope.py tests/test_audio_screening.py -v
       - name: Run layout-specific screening
         run: |
           python3 scripts/physics/run_screening.py \

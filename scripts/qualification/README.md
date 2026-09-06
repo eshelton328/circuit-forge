@@ -6,6 +6,22 @@ The user's three-AA requirement and pending inputs live in
 `boards/esp32s3-devkit-5v/analysis/operating-requirements.json`.
 The lithium sweep conditionally assumes 1.5 V primary Li/FeS2 cells.
 
+The continuous-alarm follow-up is in the board's
+`review/physical-validation/continuous-alarm.md`. It compares a proposed 1 W
+8-ohm operating point, 0.5 W reduced output, and higher-power reference cases.
+Reproduce its 160 source cases and six thermal scenarios with:
+
+```sh
+python3 scripts/qualification/audio_screening.py \
+  --geometry output/physical-screening/current.json \
+  --output output/continuous-alarm
+python3 -m pytest tests/test_audio_screening.py -v
+```
+
+`audio-results.json` records exact inputs and source hashes; the companion CSV
+has all source cases. Calculated sensitivity/distance scaling is not a measured
+SPL rating, and the calculated sine input level is not a validated limiter.
+
 Use the same Python virtual environment as the physical-screening suite.
 `power_budget.py`, `battery_sweep.py` and `check_evidence.py` use the standard
 library; the PCB thermal run also uses the free SciPy/Shapely stack.

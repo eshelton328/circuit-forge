@@ -10,6 +10,12 @@ pending in [operating-requirements.json](../../analysis/operating-requirements.j
 checks and a concrete [bench procedure](bench-plan.md). It does not contain
 hardware measurements or an approved maximum continuous audio rating.
 
+**Subsequent requirement:** the user intends a continuous alarm with loud, clear
+sound and has not selected the speaker. The [continuous-alarm follow-up](continuous-alarm.md)
+adds a proposed 8-ohm/1 W starting point and calculations with sustained audio.
+The original raw archive preserves the earlier requirement snapshot; the audio
+archive includes the refreshed three-AA result provenance.
+
 ## What has been resolved in the analysis
 
 - The input source now has a constant-power sag calculation, including all three

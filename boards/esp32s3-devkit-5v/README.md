@@ -23,6 +23,8 @@ Verified: **0 ERC violations; 0 DRC violations including warnings; 0 unconnected
 
 Speaker/load limits and final mechanics remain provisional. The measurement circuit is designed for a protected battery node up to 6 V; it is not a fuel gauge, charger or battery protection circuit. Before ordering, confirm the battery/load envelope, capacitor MPNs and effective capacitance, fabricator stackup/USB impedance, thermal-via assembly process and enclosure fit. The existing capacitance budget is retained.
 
+**Continuous alarm requirement:** the user intends sustained alarm playback and wants loud, clear sound; the speaker is not yet selected. The [speaker/load proposal](review/physical-validation/continuous-alarm.md) recommends evaluating an efficient 8-ohm driver at 1 W, compares 160 source cases and six thermal cases, and documents an acoustic test procedure using free software. This is a candidate operating point, not an approved loudness or temperature rating. The latest local suite passes all 100 Python tests.
+
 The native KiCad files are authoritative. Placement generation replaces the PCB and requires routing, cleanup, saved zone fill, checks and visual review again. `generate_pcb.py`, `route_pcb.py`, `finalize_pcb.py` and `attach_3d_models.py` record that workflow. Use KiCad Python for PCB tools; compile `tools/grid_search.cpp` to `/tmp/esp32_grid_search.dylib` on macOS for routing. Run cleanup/fill and DRC until no newly exposed unused stubs remain.
 
 From this directory, after schematic edits:

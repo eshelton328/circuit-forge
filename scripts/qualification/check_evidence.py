@@ -33,6 +33,12 @@ def check():
             raise ValueError(f'Stale three-AA source evidence: {name}')
     if battery['physical_release_approved'] is not False:
         raise ValueError('A static battery model cannot grant physical approval')
+    audio = json.loads((BOARD/'review/physical-validation/audio-results.json').read_text())
+    for name, value in audio['manifest']['input_hashes'].items():
+        if hashlib.sha256((ROOT/name).read_bytes()).hexdigest() != value:
+            raise ValueError(f'Stale continuous-alarm evidence: {name}')
+    if audio['manifest']['physical_release_approved'] is not False:
+        raise ValueError('Audio scenarios cannot grant physical approval')
     print('Operating proposal evidence matches PCB, configuration and numerical sources.')
     print('Requirements and physical measurements remain pending; no release approval.')
 

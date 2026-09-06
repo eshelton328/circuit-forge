@@ -11,6 +11,9 @@ Record the answers in [operating-requirements.json](../../analysis/operating-req
 The user has specified **three AA cells, alkaline or lithium**. The series
 connection is the working interpretation; the precise lithium chemistry is
 awaiting clarification. L91 analysis below is conditional on primary 1.5 V cells.
+The user also intends an alarm with probably continuous playback; use 100%
+duty during the alarm for screening. See the [speaker and continuous-load
+proposal](continuous-alarm.md). Listening distance and maximum duration are pending.
 Null means unknown, never zero or accepted. The earlier
 [operating-envelope.json](../../analysis/operating-envelope.json) is a frozen
 proposal snapshot from before this clarification, not the product specification.
