@@ -6,10 +6,10 @@ Each **scenario** matches a block in `sim.yml`. **Bounds** repeat those limits; 
 
 | Field | Value |
 | --- | --- |
-| Config | `/Users/erik/Workspaces/the-forge/boards/esp32s3-devkit-5v/sim.yml` |
-| Netlist | `/Users/erik/Workspaces/the-forge/boards/esp32s3-devkit-5v/sim/assembled.cir` |
+| Config | `/workspace/boards/esp32s3-devkit-5v/sim.yml` |
+| Netlist | `/workspace/boards/esp32s3-devkit-5v/sim/assembled.cir` |
 | KiCad CLI | `10.0.1` |
-| KiCad Docker image (CI) | `—` |
+| KiCad Docker image (CI) | `the-forge-sim:ci` |
 | ngspice | `******` |
 | Simulator exit | 0 |
 | Baseline file | `sim/spice_metrics_baseline.json` |
