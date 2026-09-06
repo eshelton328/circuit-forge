@@ -27,19 +27,27 @@ mkdir -p "$DOCS_DIR"
 if [ -f "$SCH_FILE" ]; then
   echo "Exporting schematic SVG..."
   SCH_TMP=$(mktemp -d)
+  trap 'rm -rf "$SCH_TMP"' EXIT
   kicad-cli sch export svg \
     --output "$SCH_TMP" \
     --exclude-drawing-sheet \
     "$SCH_FILE"
 
-  page=0
+  # A child such as board-Power.svg sorts before board.svg. Select the root
+  # explicitly so schematic.svg always shows the main sheet.
+  ROOT_SVG="$SCH_TMP/$BOARD_NAME.svg"
+  if [ ! -s "$ROOT_SVG" ]; then
+    echo "Expected root schematic export missing: $ROOT_SVG" >&2
+    exit 1
+  fi
+  cp "$ROOT_SVG" "$DOCS_DIR/schematic.svg"
+  # Retired sheets must not remain embedded after the hierarchy shrinks.
+  rm -f "$DOCS_DIR"/schematic-page*.svg
+  page=1
   for svg in "$SCH_TMP"/*.svg; do
     [ -f "$svg" ] || continue
-    if [ "$page" -eq 0 ]; then
-      cp "$svg" "$DOCS_DIR/schematic.svg"
-    else
-      cp "$svg" "$DOCS_DIR/schematic-page${page}.svg"
-    fi
+    [ "$svg" = "$ROOT_SVG" ] && continue
+    cp "$svg" "$DOCS_DIR/schematic-page${page}.svg"
     page=$((page + 1))
   done
   rm -rf "$SCH_TMP"
@@ -49,6 +57,7 @@ else
 fi
 
 # ── PCB top/bottom renders ───────────────────────────────────────────
+# Leave room for components that overhang the board outline (e.g. an antenna).
 if [ -f "$PCB_FILE" ]; then
   echo "Rendering PCB top..."
   kicad-cli pcb render \
@@ -56,6 +65,7 @@ if [ -f "$PCB_FILE" ]; then
     --side top \
     --background transparent \
     --width 1600 --height 1200 \
+    --zoom 0.85 \
     --quality high \
     "$PCB_FILE"
   echo "  → pcb-top.png"
@@ -66,6 +76,7 @@ if [ -f "$PCB_FILE" ]; then
     --side bottom \
     --background transparent \
     --width 1600 --height 1200 \
+    --zoom 0.85 \
     --quality high \
     "$PCB_FILE"
   echo "  → pcb-bottom.png"
