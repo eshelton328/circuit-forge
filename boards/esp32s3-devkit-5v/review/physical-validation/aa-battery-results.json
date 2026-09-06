@@ -1,0 +1,1763 @@
+{
+  "input_hashes": {
+    "boards/esp32s3-devkit-5v/analysis/operating-envelope.json": "dc9809eb7b8e6ef2f3b2ce902e010abc4cea15c14c0b9f02a649aa39ace837ef",
+    "boards/esp32s3-devkit-5v/analysis/aa-battery-scenarios.json": "b3b29a6e4a8bf8af55b240e3e29233c9db8bb313e8ea1666e2d2b0dc2da8c826",
+    "boards/esp32s3-devkit-5v/analysis/operating-requirements.json": "b126d4fd723058c4498ed2c53680293f62953299af27f69866d383c8837dc64b",
+    "scripts/qualification/battery_sweep.py": "d3cdd346ac759b260b41e40650de981c5881a11ce0fdcc640037eb9f720ad975",
+    "scripts/qualification/power_budget.py": "87ea14b99bd19c09307e06ca58d4ec9c64bc0855170171209194609f71377805"
+  },
+  "physical_release_approved": false,
+  "scope": "Three series AA cells. Lithium rows conditionally mean primary 1.5 V Li/FeS2. Static source-resistance sensitivity only, not a discharge/runtime or electrochemical model.",
+  "cases": [
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.5499999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.19912913535024046,
+        "protected_v": 4.664592187961836
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.0051548136308934706
+        }
+      },
+      "board_heat_w": 0.6840110227812202,
+      "external_series_heat_w": 0.02180882689993391,
+      "source_power_w": 0.9558198496811542,
+      "energy_balance_error_w": 1.1102230246251565e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.2105407407407407,
+      "battery_case": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "cell_ohm": 0.15
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.5499999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.516424050911552,
+        "protected_v": 4.448831645380144
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.03467019404678664
+        }
+      },
+      "board_heat_w": 1.3321538541775058,
+      "external_series_heat_w": 0.14668159019794344,
+      "source_power_w": 2.4788354443754494,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.520762962962963,
+      "battery_case": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "cell_ohm": 0.15
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.5499999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 1.3460077756046391,
+        "protected_v": 3.8847147125888455
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.23552580115845934
+        }
+      },
+      "board_heat_w": 2.9643820103087863,
+      "external_series_heat_w": 0.9964553125934816,
+      "source_power_w": 6.460837322902267,
+      "energy_balance_error_w": -8.881784197001252e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 4.1852074074074075,
+      "battery_case": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "cell_ohm": 0.15
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.9999999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.20323551946935928,
+        "protected_v": 4.570343862999624
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.005369607928617441
+        }
+      },
+      "board_heat_w": 0.6842258170789441,
+      "external_series_heat_w": 0.041304676373980304,
+      "source_power_w": 0.9755304934529245,
+      "energy_balance_error_w": 1.1102230246251565e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.34986917211329,
+      "battery_case": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "cell_ohm": 0.3
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.9999999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.5498056516199832,
+        "protected_v": 4.1787196136694185
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.03929721309192566
+        }
+      },
+      "board_heat_w": 1.3367808732226447,
+      "external_series_heat_w": 0.30228625455327424,
+      "source_power_w": 2.639067127775919,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.865385511982571,
+      "battery_case": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "cell_ohm": 0.3
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.9999999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": null,
+      "physical_release_approved": false,
+      "status": "no steady-state supply solution",
+      "battery_case": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "cell_ohm": 0.3
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.5499999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.21328672049920314,
+        "protected_v": 4.354965030060542
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.005913859268369676
+        }
+      },
+      "board_heat_w": 0.6847700684186965,
+      "external_series_heat_w": 0.025020173827717856,
+      "source_power_w": 0.9597902422464141,
+      "energy_balance_error_w": -2.220446049250313e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.2105407407407407,
+      "battery_case": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.15
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.5499999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.5575218906559879,
+        "protected_v": 4.1208851143539285
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.04040798561288155
+        }
+      },
+      "board_heat_w": 1.3378916457436008,
+      "external_series_heat_w": 0.170956862208345,
+      "source_power_w": 2.5088485079519454,
+      "energy_balance_error_w": -4.440892098500626e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.520762962962963,
+      "battery_case": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.15
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.5499999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 1.5036036747769177,
+        "protected_v": 3.477549501151696
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.2939071214043446
+        }
+      },
+      "board_heat_w": 3.0227633305546715,
+      "external_series_heat_w": 1.2434532059414578,
+      "source_power_w": 6.766216536496129,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 4.1852074074074075,
+      "battery_case": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.15
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.9999999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.28318808788158256,
+        "protected_v": 3.279997460693812
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.0104254141053435
+        }
+      },
+      "board_heat_w": 0.6892816232556702,
+      "external_series_heat_w": 0.08019549311802691,
+      "source_power_w": 1.0194771163736973,
+      "energy_balance_error_w": 2.220446049250313e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.34986917211329,
+      "battery_case": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "cell_ohm": 0.3
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.9999999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.8828331244925397,
+        "protected_v": 2.60239856932343
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.10132126234116381
+        }
+      },
+      "board_heat_w": 1.398804922471883,
+      "external_series_heat_w": 0.77939432570126,
+      "source_power_w": 3.178199248173143,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": false,
+      "minimum_source_v_for_3v_loaded": 3.865385511982571,
+      "battery_case": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "cell_ohm": 0.3
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.9999999999999999,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": null,
+      "physical_release_approved": false,
+      "status": "no steady-state supply solution",
+      "battery_case": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "cell_ohm": 0.3
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 1.6,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.30178052056551696,
+        "protected_v": 3.0779196994216558
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.011839292737063273
+        }
+      },
+      "board_heat_w": 0.69069550188739,
+      "external_series_heat_w": 0.14571437214847105,
+      "source_power_w": 1.0864098740358612,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.535640413943355,
+      "battery_case": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "cell_ohm": 0.5
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 1.6,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": null,
+      "physical_release_approved": false,
+      "status": "no steady-state supply solution",
+      "battery_case": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "cell_ohm": 0.5
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 1.6,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": null,
+      "physical_release_approved": false,
+      "status": "no steady-state supply solution",
+      "battery_case": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "cell_ohm": 0.5
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.45999999999999996,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.17205866883790305,
+        "protected_v": 5.398485385385637
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.003848544117895255
+        }
+      },
+      "board_heat_w": 0.682704753268222,
+      "external_series_heat_w": 0.013617925340244747,
+      "source_power_w": 0.9463226786084667,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.182675054466231,
+      "battery_case": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "cell_ohm": 0.12
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.45999999999999996,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.4383354671590448,
+        "protected_v": 5.241382074376164
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.02497793763003995
+        }
+      },
+      "board_heat_w": 1.322461597760759,
+      "external_series_heat_w": 0.0883834716139875,
+      "source_power_w": 2.4108450693747465,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.4518384531590414,
+      "battery_case": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "cell_ohm": 0.12
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.45999999999999996,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 1.0745687271388709,
+        "protected_v": 4.866004450988067
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.1501107334148309
+        }
+      },
+      "board_heat_w": 2.8789669425651576,
+      "external_series_heat_w": 0.5311610566986323,
+      "source_power_w": 5.91012799926379,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 4.028341721132898,
+      "battery_case": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "cell_ohm": 0.12
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.17411963143622533,
+        "protected_v": 5.334586350135586
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.003941293986693303
+        }
+      },
+      "board_heat_w": 0.68279750313702,
+      "external_series_heat_w": 0.024860469762219294,
+      "source_power_w": 0.9576579728992394,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.29413779956427,
+      "battery_case": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.4532009459381859,
+        "protected_v": 5.069459101358723
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.02670084266190464
+        }
+      },
+      "board_heat_w": 1.3241845027926238,
+      "external_series_heat_w": 0.1684206998673985,
+      "source_power_w": 2.4926052026600223,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.727536492374728,
+      "battery_case": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 1.1990239485071483,
+        "protected_v": 4.360927248918209
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.18689559578217746
+        }
+      },
+      "board_heat_w": 2.9157518049325044,
+      "external_series_heat_w": 1.1788799118568116,
+      "source_power_w": 6.594631716789316,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 4.655804466230936,
+      "battery_case": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.45999999999999996,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.21232312528288036,
+        "protected_v": 4.3747293560831
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.005860544238885663
+        }
+      },
+      "board_heat_w": 0.6847167533892125,
+      "external_series_heat_w": 0.020737310383749263,
+      "source_power_w": 0.9554540637729616,
+      "energy_balance_error_w": -1.1102230246251565e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.182675054466231,
+      "battery_case": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.12
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.45999999999999996,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.550248947467119,
+        "protected_v": 4.1753531209944
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.03936060754452741
+        }
+      },
+      "board_heat_w": 1.3368442676752466,
+      "external_series_heat_w": 0.13927599592678927,
+      "source_power_w": 2.4761202636020356,
+      "energy_balance_error_w": -4.440892098500626e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.4518384531590414,
+      "battery_case": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.12
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.45999999999999996,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 1.4301234509500134,
+        "protected_v": 3.656227163939492
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.2658829010444328
+        }
+      },
+      "board_heat_w": 2.9947391101947596,
+      "external_series_heat_w": 0.9408164190803006,
+      "source_power_w": 6.43555552927506,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 4.028341721132898,
+      "battery_case": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.12
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.21628841162278165,
+        "protected_v": 4.294526008958357
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.006081488010299758
+        }
+      },
+      "board_heat_w": 0.6849376971606265,
+      "external_series_heat_w": 0.03836015514189078,
+      "source_power_w": 0.9732978523025174,
+      "energy_balance_error_w": 2.220446049250313e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.29413779956427,
+      "battery_case": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.582079979437745,
+        "protected_v": 3.947024019534142
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.04404622332009194
+        }
+      },
+      "board_heat_w": 1.3415298834508111,
+      "external_series_heat_w": 0.27783002401904144,
+      "source_power_w": 2.619359907469853,
+      "energy_balance_error_w": 4.440892098500626e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.727536492374728,
+      "battery_case": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 2.0438303641917885,
+        "protected_v": 2.558361154017801
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.5430415324870042
+        }
+      },
+      "board_heat_w": 3.271897741637331,
+      "external_series_heat_w": 3.4253388972257177,
+      "source_power_w": 9.197236638863048,
+      "energy_balance_error_w": -1.7763568394002505e-15,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": false,
+      "connector_below_proposed_1p6a": false,
+      "protected_at_least_3v": false,
+      "minimum_source_v_for_3v_loaded": 4.655804466230936,
+      "battery_case": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.3089495600896834,
+        "protected_v": 3.0064979179148006
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.012408477988349155
+        }
+      },
+      "board_heat_w": 0.691264687138676,
+      "external_series_heat_w": 0.07826886115727928,
+      "source_power_w": 1.019533548295955,
+      "energy_balance_error_w": -2.220446049250313e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.29413779956427,
+      "battery_case": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.9633974428303628,
+        "protected_v": 2.3847724293111554
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.12065750227077067
+        }
+      },
+      "board_heat_w": 1.4181411624014897,
+      "external_series_heat_w": 0.7610703989387073,
+      "source_power_w": 3.179211561340197,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": false,
+      "minimum_source_v_for_3v_loaded": 3.727536492374728,
+      "battery_case": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "cell_ohm": 0.24
+      }
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.82,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": null,
+      "physical_release_approved": false,
+      "status": "no steady-state supply solution",
+      "battery_case": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "cell_ohm": 0.24
+      }
+    }
+  ]
+}

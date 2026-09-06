@@ -1,0 +1,3238 @@
+{
+  "manifest": {
+    "input_hashes": {
+      "boards/esp32s3-devkit-5v/analysis/audio-load-proposals.json": "28d0c50788532c6bf20c78aa59877a4925ac682557262cba50740de8d2152aca",
+      "boards/esp32s3-devkit-5v/analysis/operating-envelope.json": "dc9809eb7b8e6ef2f3b2ce902e010abc4cea15c14c0b9f02a649aa39ace837ef",
+      "boards/esp32s3-devkit-5v/analysis/aa-battery-scenarios.json": "b3b29a6e4a8bf8af55b240e3e29233c9db8bb313e8ea1666e2d2b0dc2da8c826",
+      "boards/esp32s3-devkit-5v/analysis/operating-requirements.json": "b126d4fd723058c4498ed2c53680293f62953299af27f69866d383c8837dc64b",
+      "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+      "scripts/qualification/audio_screening.py": "445baefb7d4bfcad5e3623b5bf19c12b6287f73770cedb629256e04ea58ba225",
+      "scripts/qualification/power_budget.py": "87ea14b99bd19c09307e06ca58d4ec9c64bc0855170171209194609f71377805",
+      "scripts/physics/thermal.py": "b51cf1a5cf5c638d111b62b0fa318939674baf2cc8ea9fc626b6a6fdd8a2bb78",
+      "scripts/physics/copper.py": "2a7e75274a8d80863764ac91e6d40e1e0b66ddb99c43d97587dad25d51943510"
+    },
+    "geometry_sha256": "699b1442ab20ae8cf5b5966b26a089b058f147ec0665050eeb1ea5f96fca0142",
+    "physical_release_approved": false
+  },
+  "battery_cases": [
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.3799486918855606,
+        "protected_v": 4.541634889517819
+      },
+      "pcb_heat_w": 1.244355166394639,
+      "q1_w": 0.018766931100521324,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.3609320433389345,
+        "protected_v": 4.554566210529524
+      },
+      "pcb_heat_w": 1.1608242410770353,
+      "q1_w": 0.01693535218814641,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.5565675427248366,
+        "protected_v": 4.421534070947111
+      },
+      "pcb_heat_w": 1.5011521187910957,
+      "q1_w": 0.04026976584991916,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.516424050911552,
+        "protected_v": 4.448831645380144
+      },
+      "pcb_heat_w": 1.3321538541775058,
+      "q1_w": 0.03467019404678664,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7058057608427543,
+        "protected_v": 4.320052082626927
+      },
+      "pcb_heat_w": 1.71387867742387,
+      "q1_w": 0.0647610303650465,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6468504143639338,
+        "protected_v": 4.360141718232525
+      },
+      "pcb_heat_w": 1.474753486737346,
+      "q1_w": 0.05439400961316306,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.1642779140564337,
+        "protected_v": 4.008291018441625
+      },
+      "pcb_heat_w": 2.342985303833101,
+      "q1_w": 0.17622059795074804,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.0405187136163765,
+        "protected_v": 4.092447274740864
+      },
+      "pcb_heat_w": 1.8990162689963734,
+      "q1_w": 0.14074829514016424,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6153455322876117,
+        "protected_v": 4.381565038044424
+      },
+      "pcb_heat_w": 2.2454009867220575,
+      "q1_w": 0.049224516133822144,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5948030847324923,
+        "protected_v": 4.395533902381905
+      },
+      "pcb_heat_w": 2.1604699164319543,
+      "q1_w": 0.0459927922489475,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.8071944464104305,
+        "protected_v": 4.251107776440907
+      },
+      "pcb_heat_w": 2.5161737618963538,
+      "q1_w": 0.08470317366105938,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.7634111639580846,
+        "protected_v": 4.280880408508502
+      },
+      "pcb_heat_w": 2.3438354541080955,
+      "q1_w": 0.07576355868325889,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.9710108530203243,
+        "protected_v": 4.139712619946179
+      },
+      "pcb_heat_w": 2.7422779523217646,
+      "q1_w": 0.12257206996882353,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.9060886244224002,
+        "protected_v": 4.183859735392768
+      },
+      "pcb_heat_w": 2.4976772698082987,
+      "q1_w": 0.10672955738999806,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.488205628288132,
+        "protected_v": 3.78802017276407
+      },
+      "pcb_heat_w": 3.425271220145372,
+      "q1_w": 0.28791827896890154,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_lower_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.3460077756046391,
+        "protected_v": 3.8847147125888455
+      },
+      "pcb_heat_w": 2.9643820103087863,
+      "q1_w": 0.23552580115845934,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.39650975378572295,
+        "protected_v": 4.351943978222133
+      },
+      "pcb_heat_w": 1.2460268333242557,
+      "q1_w": 0.020438598030137905,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.37570732555055025,
+        "protected_v": 4.375450722127878
+      },
+      "pcb_heat_w": 1.1622391681702942,
+      "q1_w": 0.01835027928140513,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.5964276346598537,
+        "protected_v": 4.126036772834365
+      },
+      "pcb_heat_w": 1.5071267229813499,
+      "q1_w": 0.04624437004017323,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5498056516199832,
+        "protected_v": 4.1787196136694185
+      },
+      "pcb_heat_w": 1.3367808732226447,
+      "q1_w": 0.03929721309192566,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7775689205601237,
+        "protected_v": 3.92134711976706
+      },
+      "pcb_heat_w": 1.7277173924675582,
+      "q1_w": 0.07859974540873468,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.7043757343978873,
+        "protected_v": 4.0040554201303875
+      },
+      "pcb_heat_w": 1.4848583499012962,
+      "q1_w": 0.06449887277711319,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.5066056833272063,
+        "protected_v": 3.097535577840257
+      },
+      "pcb_heat_w": 2.4618465949367523,
+      "q1_w": 0.295081889054399,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.2621826249788677,
+        "protected_v": 3.3737336337738792
+      },
+      "pcb_heat_w": 1.96537162110002,
+      "q1_w": 0.20710364724381086,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6661805208788395,
+        "protected_v": 4.047216011406912
+      },
+      "pcb_heat_w": 2.2538700138200274,
+      "q1_w": 0.05769354323179225,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6415887334167698,
+        "protected_v": 4.07500473123905
+      },
+      "pcb_heat_w": 2.1679898175531602,
+      "q1_w": 0.05351269337015354,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.9097170222066275,
+        "protected_v": 3.772019764906511
+      },
+      "pcb_heat_w": 2.5390566460993185,
+      "q1_w": 0.10758605786402418,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.8515629231359152,
+        "protected_v": 3.837733896856416
+      },
+      "pcb_heat_w": 2.3623426189926087,
+      "q1_w": 0.09427072356777201,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.147337071964021,
+        "protected_v": 3.5035091086806562
+      },
+      "pcb_heat_w": 2.7908355887243275,
+      "q1_w": 0.1711297063713865,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.0486710787120819,
+        "protected_v": 3.6150016810553476
+      },
+      "pcb_heat_w": 2.5339101464908316,
+      "q1_w": 0.14296243407253098,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_fresh_higher_ir",
+        "source_v": 4.8,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.40870570577020443,
+        "protected_v": 4.222080120076261
+      },
+      "pcb_heat_w": 1.2473034813049033,
+      "q1_w": 0.02171524601078572,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.38806515380822837,
+        "protected_v": 4.236115695410405
+      },
+      "pcb_heat_w": 1.1634661821569154,
+      "q1_w": 0.01957729326802651,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6015428804743985,
+        "protected_v": 4.090950841277409
+      },
+      "pcb_heat_w": 1.5079233517576034,
+      "q1_w": 0.047040998816426746,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5575218906559879,
+        "protected_v": 4.1208851143539285
+      },
+      "pcb_heat_w": 1.3378916457436008,
+      "q1_w": 0.04040798561288155,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7663214922451197,
+        "protected_v": 3.9789013852733186
+      },
+      "pcb_heat_w": 1.7254599688908059,
+      "q1_w": 0.07634232183198232,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.7010034277886034,
+        "protected_v": 4.02331766910375
+      },
+      "pcb_heat_w": 1.4842422318744612,
+      "q1_w": 0.06388275475027831,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.2875803784196518,
+        "protected_v": 3.624445342674637
+      },
+      "pcb_heat_w": 2.3822869258982213,
+      "q1_w": 0.21552222001586818,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.1440708036469334,
+        "protected_v": 3.722031853520085
+      },
+      "pcb_heat_w": 1.9284247143446633,
+      "q1_w": 0.1701567404884542,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.666221071442528,
+        "protected_v": 4.046969671419081
+      },
+      "pcb_heat_w": 2.2538770376726593,
+      "q1_w": 0.05770056708442389,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6435854821597373,
+        "protected_v": 4.062361872131379
+      },
+      "pcb_heat_w": 2.1683234196530883,
+      "q1_w": 0.05384629547008161,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.8794135450797009,
+        "protected_v": 3.9019987893458037
+      },
+      "pcb_heat_w": 2.5320084520603485,
+      "q1_w": 0.10053786382505414,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.8304520747500922,
+        "protected_v": 3.9352925891699373
+      },
+      "pcb_heat_w": 2.357726479724212,
+      "q1_w": 0.08965458429937526,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.0645015897475525,
+        "protected_v": 3.7761389189716645
+      },
+      "pcb_heat_w": 2.7670171548476996,
+      "q1_w": 0.14731127249475867,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.9907661439505189,
+        "protected_v": 3.8262790221136473
+      },
+      "pcb_heat_w": 2.518557994178116,
+      "q1_w": 0.12761028175981542,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.6784590808009279,
+        "protected_v": 3.3586478250553693
+      },
+      "pcb_heat_w": 3.5035921763464732,
+      "q1_w": 0.36623923517000245,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.5036036747769177,
+        "protected_v": 3.477549501151696
+      },
+      "pcb_heat_w": 3.0227633305546715,
+      "q1_w": 0.2939071214043446,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.5877706042646067,
+        "protected_v": 2.9358192171809945
+      },
+      "pcb_heat_w": 1.2704998921150032,
+      "q1_w": 0.04491165682088552,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5524270450605937,
+        "protected_v": 2.975757439081529
+      },
+      "pcb_heat_w": 1.1835617221037582,
+      "q1_w": 0.0396728332148693,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.9932343858474401,
+        "protected_v": 2.477645143992393
+      },
+      "pcb_heat_w": 1.589129243821043,
+      "q1_w": 0.1282468908798664,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.8828331244925397,
+        "protected_v": 2.60239856932343
+      },
+      "pcb_heat_w": 1.398804922471883,
+      "q1_w": 0.10132126234116381,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.3892001744631213,
+        "protected_v": 2.030203802856673
+      },
+      "pcb_heat_w": 1.6712435033388706,
+      "q1_w": 0.25088402621468764,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.2038209097468433,
+        "protected_v": 2.239682371986067
+      },
+      "pcb_heat_w": 2.3845704923449187,
+      "q1_w": 0.18839402175668327,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.1199524015186673,
+        "protected_v": 2.3344537862839063
+      },
+      "pcb_heat_w": 2.2775352637997726,
+      "q1_w": 0.1630581396167659,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_depleted_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7487224466673366,
+        "protected_v": 2.304710167265508
+      },
+      "pcb_heat_w": 1.2984643245727756,
+      "q1_w": 0.07287608927865795,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6766805256598835,
+        "protected_v": 2.4293426906084017
+      },
+      "pcb_heat_w": 1.2034154382838427,
+      "q1_w": 0.05952654939495371,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "alkaline_aged_cold_sensitivity",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.3250795444204502,
+        "protected_v": 5.308203068791935
+      },
+      "pcb_heat_w": 1.2393262076201967,
+      "q1_w": 0.013737972326078967,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.3091407277695962,
+        "protected_v": 5.317606970615938
+      },
+      "pcb_heat_w": 1.156312727532458,
+      "q1_w": 0.012423838643569027,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.47125657874901256,
+        "protected_v": 5.221958618538083
+      },
+      "pcb_heat_w": 1.4897531121330256,
+      "q1_w": 0.028870759191849157,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.4383354671590448,
+        "protected_v": 5.241382074376164
+      },
+      "pcb_heat_w": 1.322461597760759,
+      "q1_w": 0.02497793763003995,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.5919773833184662,
+        "protected_v": 5.150733343842105
+      },
+      "pcb_heat_w": 1.6946744859656986,
+      "q1_w": 0.045556838906875174,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5446096928091184,
+        "protected_v": 5.17868028124262
+      },
+      "pcb_heat_w": 1.4589174403993965,
+      "q1_w": 0.038557963275213505,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.9441219664618714,
+        "protected_v": 4.9429680397874955
+      },
+      "pcb_heat_w": 2.282642323264611,
+      "q1_w": 0.11587761738225803,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.852122666717248,
+        "protected_v": 4.997247626636824
+      },
+      "pcb_heat_w": 1.85266266894354,
+      "q1_w": 0.09439469508733084,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.5191226515911451,
+        "protected_v": 5.1937176355612245
+      },
+      "pcb_heat_w": 2.231209953149588,
+      "q1_w": 0.03503348256135279,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5024400482578313,
+        "protected_v": 5.20356037152788
+      },
+      "pcb_heat_w": 2.14729510445514,
+      "q1_w": 0.03281798027213314,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6724047649685907,
+        "protected_v": 5.103281188668531
+      },
+      "pcb_heat_w": 2.490247250069115,
+      "q1_w": 0.05877666183382054,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6378373492853489,
+        "protected_v": 5.123675963921644
+      },
+      "pcb_heat_w": 2.3209606383634735,
+      "q1_w": 0.05288874293863682,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7994087112884376,
+        "protected_v": 5.028348860339822
+      },
+      "pcb_heat_w": 2.7027829397518404,
+      "q1_w": 0.08307705739889927,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.7495282434941016,
+        "protected_v": 5.05777833633848
+      },
+      "pcb_heat_w": 2.4639807488316965,
+      "q1_w": 0.07303303641339594,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.1724293399949577,
+        "protected_v": 4.808266689402975
+      },
+      "pcb_heat_w": 3.3160497136230025,
+      "q1_w": 0.17869677244653157,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_lower_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.0745687271388709,
+        "protected_v": 4.866004450988067
+      },
+      "pcb_heat_w": 2.8789669425651576,
+      "q1_w": 0.1501107334148309,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.3328834668491965,
+        "protected_v": 5.183760706493263
+      },
+      "pcb_heat_w": 1.2399937176193179,
+      "q1_w": 0.014405482325200215,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.31615350462780145,
+        "protected_v": 5.199654170603589
+      },
+      "pcb_heat_w": 1.1568827838923863,
+      "q1_w": 0.012993895003497366,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.48868220676105184,
+        "protected_v": 5.035751903577001
+      },
+      "pcb_heat_w": 1.4919276918378073,
+      "q1_w": 0.031045338896630685,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.4532009459381859,
+        "protected_v": 5.069459101358723
+      },
+      "pcb_heat_w": 1.3241845027926238,
+      "q1_w": 0.02670084266190464,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6209945827843574,
+        "protected_v": 4.9100551463548605
+      },
+      "pcb_heat_w": 1.6992501023990008,
+      "q1_w": 0.05013245534017735,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5686452842689969,
+        "protected_v": 4.959786979944453
+      },
+      "pcb_heat_w": 1.4623959468359609,
+      "q1_w": 0.04203646971177787,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.0327171096338914,
+        "protected_v": 4.518918745847803
+      },
+      "pcb_heat_w": 2.3054103075913286,
+      "q1_w": 0.13864560170897525,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.9206258917936353,
+        "protected_v": 4.625405402796046
+      },
+      "pcb_heat_w": 1.8684497380995166,
+      "q1_w": 0.11018176424330742,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.5407145631780832,
+        "protected_v": 4.986321164980821
+      },
+      "pcb_heat_w": 2.234184861636508,
+      "q1_w": 0.03800839104827249,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.5225184285330605,
+        "protected_v": 5.003607492893592
+      },
+      "pcb_heat_w": 2.149970440243372,
+      "q1_w": 0.035493316060365675,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7112929839683111,
+        "protected_v": 4.824271665230104
+      },
+      "pcb_heat_w": 2.497242490410825,
+      "q1_w": 0.06577190217553074,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6722549623935328,
+        "protected_v": 4.861357785726144
+      },
+      "pcb_heat_w": 2.3268223709049916,
+      "q1_w": 0.058750475480154926,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.8580159394786047,
+        "protected_v": 4.684884857495326
+      },
+      "pcb_heat_w": 2.715410758164857,
+      "q1_w": 0.09570487581191585,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.7997356228188015,
+        "protected_v": 4.740251158322138
+      },
+      "pcb_heat_w": 2.4740927310509995,
+      "q1_w": 0.08314501863269894,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.3309447659367684,
+        "protected_v": 4.23560247236007
+      },
+      "pcb_heat_w": 3.367636757273153,
+      "q1_w": 0.23028381609668228,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_fresh_higher_ir",
+        "source_v": 5.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.1990239485071483,
+        "protected_v": 4.360927248918209
+      },
+      "pcb_heat_w": 2.9157518049325044,
+      "q1_w": 0.18689559578217746,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.4049659347054473,
+        "protected_v": 4.261070098523786
+      },
+      "pcb_heat_w": 1.246907898369459,
+      "q1_w": 0.02131966307534136,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.3847136928719959,
+        "protected_v": 4.273018921205522
+      },
+      "pcb_heat_w": 1.163129490201706,
+      "q1_w": 0.01924060131281709,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.5929619141313992,
+        "protected_v": 4.150152470662475
+      },
+      "pcb_heat_w": 1.506590851050525,
+      "q1_w": 0.04570849810934847,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.550248947467119,
+        "protected_v": 4.1753531209944
+      },
+      "pcb_heat_w": 1.3368442676752466,
+      "q1_w": 0.03936060754452741,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7516581657737001,
+        "protected_v": 4.056521682193517
+      },
+      "pcb_heat_w": 1.7225663468214802,
+      "q1_w": 0.07344869976265683,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6889850466387418,
+        "protected_v": 4.093498822483142
+      },
+      "pcb_heat_w": 1.4820705284081155,
+      "q1_w": 0.0617110512839326,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.2380081160324616,
+        "protected_v": 3.7695752115408476
+      },
+      "pcb_heat_w": 2.366011038279445,
+      "q1_w": 0.19924633239709186,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.1069320190694418,
+        "protected_v": 3.8469101087490296
+      },
+      "pcb_heat_w": 1.917556778185559,
+      "q1_w": 0.15928880432934966,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6554833136775459,
+        "protected_v": 4.113264844930248
+      },
+      "pcb_heat_w": 2.252032059274496,
+      "q1_w": 0.05585558868626048,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6336351809513737,
+        "protected_v": 4.126155243238689
+      },
+      "pcb_heat_w": 2.166671284713113,
+      "q1_w": 0.052194160530106413,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.8593787489806793,
+        "protected_v": 3.992966538101399
+      },
+      "pcb_heat_w": 2.527479726681242,
+      "q1_w": 0.09600913844594768,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.8128711017797642,
+        "protected_v": 4.020406049949939
+      },
+      "pcb_heat_w": 2.353970621078961,
+      "q1_w": 0.08589872565412421,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.0332402962520928,
+        "protected_v": 3.8903882252112654
+      },
+      "pcb_heat_w": 2.758491998626826,
+      "q1_w": 0.13878611627388462,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.9643665246125099,
+        "protected_v": 3.9310237504786194
+      },
+      "pcb_heat_w": 2.511848075611418,
+      "q1_w": 0.1209003631931174,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.5800868666066539,
+        "protected_v": 3.5677487487020745
+      },
+      "pcb_heat_w": 3.461920626959439,
+      "q1_w": 0.32456768578296835,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_lower_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.4301234509500134,
+        "protected_v": 3.656227163939492
+      },
+      "pcb_heat_w": 2.9947391101947596,
+      "q1_w": 0.2658829010444328,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.420856005240908,
+        "protected_v": 4.100186795021138
+      },
+      "pcb_heat_w": 1.2486138063232712,
+      "q1_w": 0.023025571029153574,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.39890107918034984,
+        "protected_v": 4.121043974778668
+      },
+      "pcb_heat_w": 1.164574758115151,
+      "q1_w": 0.020685869226262206,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6308895260778044,
+        "protected_v": 3.9006549502260857
+      },
+      "pcb_heat_w": 1.5126251601760845,
+      "q1_w": 0.051742807234907956,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.582079979437745,
+        "protected_v": 3.947024019534142
+      },
+      "pcb_heat_w": 1.3415298834508111,
+      "q1_w": 0.04404622332009194,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.8192855649066794,
+        "protected_v": 3.7216787133386546
+      },
+      "pcb_heat_w": 1.7363773958512028,
+      "q1_w": 0.08725974879237938,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.7434229501883565,
+        "protected_v": 3.7937481973210616
+      },
+      "pcb_heat_w": 1.4922075758968618,
+      "q1_w": 0.07184809877267874,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.5335352031768863,
+        "protected_v": 3.0431415569819578
+      },
+      "pcb_heat_w": 2.472489634402114,
+      "q1_w": 0.30572492851976063,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.306803917480114,
+        "protected_v": 3.258536278393892
+      },
+      "pcb_heat_w": 1.9802737160925876,
+      "q1_w": 0.22200574223637845,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.7036875042243754,
+        "protected_v": 3.831496870986843
+      },
+      "pcb_heat_w": 2.2605493640564345,
+      "q1_w": 0.06437289346819895,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6780550865763157,
+        "protected_v": 3.8558476677525
+      },
+      "pcb_heat_w": 2.1742457552391685,
+      "q1_w": 0.05976863105616196,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.9551468474106305,
+        "protected_v": 3.592610494959901
+      },
+      "pcb_heat_w": 2.5500703032506946,
+      "q1_w": 0.11859971501540062,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.8955522182970643,
+        "protected_v": 3.649225392617789
+      },
+      "pcb_heat_w": 2.37233368626542,
+      "q1_w": 0.10426179084058307,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.1944751711262707,
+        "protected_v": 3.3652485874300426
+      },
+      "pcb_heat_w": 2.8051861038297683,
+      "q1_w": 0.18548022147682736,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.0960425687209594,
+        "protected_v": 3.4587595597150886
+      },
+      "pcb_heat_w": 2.547117923036598,
+      "q1_w": 0.15617021061829708,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_nominal_higher_ir",
+        "source_v": 4.5,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 2.0438303641917885,
+        "protected_v": 2.558361154017801
+      },
+      "pcb_heat_w": 3.271897741637331,
+      "q1_w": 0.5430415324870042,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 0.6413003078476927,
+        "protected_v": 2.690764707544692
+      },
+      "pcb_heat_w": 1.2790528263240386,
+      "q1_w": 0.053464591029920905,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.6027296144185273,
+        "protected_v": 2.727406866302399
+      },
+      "pcb_heat_w": 1.1911156773415128,
+      "q1_w": 0.04722678845262386,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.083988353007132,
+        "protected_v": 2.2702110646432248
+      },
+      "pcb_heat_w": 1.6136363503703415,
+      "q1_w": 0.15275399742916487,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 0.9633974428303628,
+        "protected_v": 2.3847724293111554
+      },
+      "pcb_heat_w": 1.4181411624014897,
+      "q1_w": 0.12065750227077067,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.5181618615040213,
+        "protected_v": 1.8577462315711797
+      },
+      "pcb_heat_w": 1.7199854840284792,
+      "q1_w": 0.2996260069042962,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.25,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": {
+        "current_a": 1.3143021624661237,
+        "protected_v": 2.0514129456571824
+      },
+      "pcb_heat_w": 2.420737193242442,
+      "q1_w": 0.22456072265420682,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 0.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": {
+        "current_a": 1.2225082494220076,
+        "protected_v": 2.1386171630490924
+      },
+      "pcb_heat_w": 2.308765558770639,
+      "q1_w": 0.194288434587632,
+      "status": "hypothetical steady-state solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 1.4,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.8,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    },
+    {
+      "inputs": {
+        "name": "lithium_depleted_sensitivity",
+        "source_v": 3.3,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "amp_eta": 0.9,
+      "supply": null,
+      "pcb_heat_w": null,
+      "q1_w": null,
+      "status": "no steady-state supply solution"
+    }
+  ],
+  "thermal_cases": [
+    {
+      "case": {
+        "inputs": {
+          "name": "one_watt_reference",
+          "source_v": 4.5,
+          "rail_3v3_a": 0.25,
+          "audio_w": 1.0,
+          "offboard_3v3_w": 0
+        },
+        "assumptions": {
+          "eta_3v3": 0.85,
+          "eta_5v": 0.85,
+          "eta_audio": 0.8,
+          "amp_idle_w": 0.01675,
+          "q1_ohm": 0.13,
+          "external_series_ohm": 0.55,
+          "converter_ic_loss_fraction": 0.7
+        },
+        "rail_3v3_w": 0.825,
+        "rail_5v_w": 1.26675,
+        "rail_5v_a": 0.25335,
+        "converter_input_w": 2.4608823529411765,
+        "supply": {
+          "current_a": 0.6015428804743985,
+          "protected_v": 4.090950841277409
+        },
+        "physical_release_approved": false,
+        "sources": {
+          "U1": {
+            "watts": 0.10191176470588237
+          },
+          "L1": {
+            "watts": 0.04367647058823531
+          },
+          "U2": {
+            "watts": 0.15648088235294122
+          },
+          "L2": {
+            "watts": 0.06706323529411767
+          },
+          "U3": {
+            "watts": 0.825
+          },
+          "U6": {
+            "watts": 0.26675000000000004
+          },
+          "Q1": {
+            "watts": 0.047040998816426746
+          }
+        },
+        "board_heat_w": 1.5079233517576034,
+        "external_series_heat_w": 0.1990196103771901,
+        "source_power_w": 2.7069429621347934,
+        "energy_balance_error_w": -4.440892098500626e-16,
+        "status": "hypothetical steady-state solution",
+        "connector_below_2a": true,
+        "connector_below_proposed_1p6a": true,
+        "protected_at_least_3v": true,
+        "minimum_source_v_for_3v_loaded": 3.5578000000000003
+      },
+      "thermal": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 5,
+        "input_w": 1.5079233517576032,
+        "heat_out_w": 1.507923351759456,
+        "energy_relative_error": 1.2286699992641847e-12,
+        "peak_pcb_rise_c": 46.83354254856118,
+        "min_pcb_rise_c": 38.39790674071679,
+        "source_pcb_rise_c": {
+          "U1": 42.75906304195693,
+          "L1": 42.402555809611734,
+          "U2": 45.57731278554769,
+          "L2": 45.22090081292002,
+          "U3": 46.82265259645591,
+          "U6": 45.5814116190447,
+          "Q1": 40.95901833112208
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ],
+        "local_air_c": 50,
+        "peak_pcb_c": 96.83354254856118
+      }
+    },
+    {
+      "case": {
+        "inputs": {
+          "name": "one_watt_reference",
+          "source_v": 4.5,
+          "rail_3v3_a": 0.25,
+          "audio_w": 1.0,
+          "offboard_3v3_w": 0
+        },
+        "assumptions": {
+          "eta_3v3": 0.85,
+          "eta_5v": 0.85,
+          "eta_audio": 0.8,
+          "amp_idle_w": 0.01675,
+          "q1_ohm": 0.13,
+          "external_series_ohm": 0.55,
+          "converter_ic_loss_fraction": 0.7
+        },
+        "rail_3v3_w": 0.825,
+        "rail_5v_w": 1.26675,
+        "rail_5v_a": 0.25335,
+        "converter_input_w": 2.4608823529411765,
+        "supply": {
+          "current_a": 0.6015428804743985,
+          "protected_v": 4.090950841277409
+        },
+        "physical_release_approved": false,
+        "sources": {
+          "U1": {
+            "watts": 0.10191176470588237
+          },
+          "L1": {
+            "watts": 0.04367647058823531
+          },
+          "U2": {
+            "watts": 0.15648088235294122
+          },
+          "L2": {
+            "watts": 0.06706323529411767
+          },
+          "U3": {
+            "watts": 0.825
+          },
+          "U6": {
+            "watts": 0.26675000000000004
+          },
+          "Q1": {
+            "watts": 0.047040998816426746
+          }
+        },
+        "board_heat_w": 1.5079233517576034,
+        "external_series_heat_w": 0.1990196103771901,
+        "source_power_w": 2.7069429621347934,
+        "energy_balance_error_w": -4.440892098500626e-16,
+        "status": "hypothetical steady-state solution",
+        "connector_below_2a": true,
+        "connector_below_proposed_1p6a": true,
+        "protected_at_least_3v": true,
+        "minimum_source_v_for_3v_loaded": 3.5578000000000003
+      },
+      "thermal": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 10,
+        "input_w": 1.5079233517576032,
+        "heat_out_w": 1.5079233517570878,
+        "energy_relative_error": 3.41771700418525e-13,
+        "peak_pcb_rise_c": 25.642577239008936,
+        "min_pcb_rise_c": 17.630171019981283,
+        "source_pcb_rise_c": {
+          "U1": 21.79398241260255,
+          "L1": 21.41522678873863,
+          "U2": 24.498331100475202,
+          "L2": 24.114425644715453,
+          "U3": 25.63171608380482,
+          "U6": 24.53207522620128,
+          "Q1": 20.066799825959833
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ],
+        "local_air_c": 50,
+        "peak_pcb_c": 75.64257723900894
+      }
+    },
+    {
+      "case": {
+        "inputs": {
+          "name": "one_watt_digital_stress",
+          "source_v": 4.5,
+          "rail_3v3_a": 0.5,
+          "audio_w": 1.0,
+          "offboard_3v3_w": 0
+        },
+        "assumptions": {
+          "eta_3v3": 0.85,
+          "eta_5v": 0.85,
+          "eta_audio": 0.8,
+          "amp_idle_w": 0.01675,
+          "q1_ohm": 0.13,
+          "external_series_ohm": 0.55,
+          "converter_ic_loss_fraction": 0.7
+        },
+        "rail_3v3_w": 1.65,
+        "rail_5v_w": 1.26675,
+        "rail_5v_a": 0.25335,
+        "converter_input_w": 3.4314705882352943,
+        "supply": {
+          "current_a": 0.879413545079701,
+          "protected_v": 3.9019987893458032
+        },
+        "physical_release_approved": false,
+        "sources": {
+          "U1": {
+            "watts": 0.20382352941176474
+          },
+          "L1": {
+            "watts": 0.08735294117647062
+          },
+          "U2": {
+            "watts": 0.15648088235294122
+          },
+          "L2": {
+            "watts": 0.06706323529411767
+          },
+          "U3": {
+            "watts": 1.65
+          },
+          "U6": {
+            "watts": 0.26675000000000004
+          },
+          "Q1": {
+            "watts": 0.10053786382505417
+          }
+        },
+        "board_heat_w": 2.5320084520603485,
+        "external_series_heat_w": 0.4253525007983061,
+        "source_power_w": 3.9573609528586546,
+        "energy_balance_error_w": 0.0,
+        "status": "hypothetical steady-state solution",
+        "connector_below_2a": true,
+        "connector_below_proposed_1p6a": true,
+        "protected_at_least_3v": true,
+        "minimum_source_v_for_3v_loaded": 3.7778
+      },
+      "thermal": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 5,
+        "input_w": 2.5320084520603485,
+        "heat_out_w": 2.5320084520634163,
+        "energy_relative_error": 1.2115947950915903e-12,
+        "peak_pcb_rise_c": 80.51143040242751,
+        "min_pcb_rise_c": 64.87189603838823,
+        "source_pcb_rise_c": {
+          "U1": 73.19461150309732,
+          "L1": 72.49123623239835,
+          "U2": 74.1649737016078,
+          "L2": 74.55406635056593,
+          "U3": 80.48950712730284,
+          "U6": 71.98724946930793,
+          "Q1": 69.74441009002717
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ],
+        "local_air_c": 50,
+        "peak_pcb_c": 130.5114304024275
+      }
+    },
+    {
+      "case": {
+        "inputs": {
+          "name": "one_watt_digital_stress",
+          "source_v": 4.5,
+          "rail_3v3_a": 0.5,
+          "audio_w": 1.0,
+          "offboard_3v3_w": 0
+        },
+        "assumptions": {
+          "eta_3v3": 0.85,
+          "eta_5v": 0.85,
+          "eta_audio": 0.8,
+          "amp_idle_w": 0.01675,
+          "q1_ohm": 0.13,
+          "external_series_ohm": 0.55,
+          "converter_ic_loss_fraction": 0.7
+        },
+        "rail_3v3_w": 1.65,
+        "rail_5v_w": 1.26675,
+        "rail_5v_a": 0.25335,
+        "converter_input_w": 3.4314705882352943,
+        "supply": {
+          "current_a": 0.879413545079701,
+          "protected_v": 3.9019987893458032
+        },
+        "physical_release_approved": false,
+        "sources": {
+          "U1": {
+            "watts": 0.20382352941176474
+          },
+          "L1": {
+            "watts": 0.08735294117647062
+          },
+          "U2": {
+            "watts": 0.15648088235294122
+          },
+          "L2": {
+            "watts": 0.06706323529411767
+          },
+          "U3": {
+            "watts": 1.65
+          },
+          "U6": {
+            "watts": 0.26675000000000004
+          },
+          "Q1": {
+            "watts": 0.10053786382505417
+          }
+        },
+        "board_heat_w": 2.5320084520603485,
+        "external_series_heat_w": 0.4253525007983061,
+        "source_power_w": 3.9573609528586546,
+        "energy_balance_error_w": 0.0,
+        "status": "hypothetical steady-state solution",
+        "connector_below_2a": true,
+        "connector_below_proposed_1p6a": true,
+        "protected_at_least_3v": true,
+        "minimum_source_v_for_3v_loaded": 3.7778
+      },
+      "thermal": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 10,
+        "input_w": 2.5320084520603485,
+        "heat_out_w": 2.53200845205938,
+        "energy_relative_error": 3.825258031405267e-13,
+        "peak_pcb_rise_c": 44.85682019099047,
+        "min_pcb_rise_c": 29.956083003746347,
+        "source_pcb_rise_c": {
+          "U1": 37.91647449674144,
+          "L1": 37.16635916924172,
+          "U2": 38.803755122944345,
+          "L2": 39.1259811815305,
+          "U3": 44.834959545568616,
+          "U6": 36.80187751027447,
+          "Q1": 34.61073891562637
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ],
+        "local_air_c": 50,
+        "peak_pcb_c": 94.85682019099048
+      }
+    },
+    {
+      "case": {
+        "inputs": {
+          "name": "half_watt_reference",
+          "source_v": 4.5,
+          "rail_3v3_a": 0.25,
+          "audio_w": 0.5,
+          "offboard_3v3_w": 0
+        },
+        "assumptions": {
+          "eta_3v3": 0.85,
+          "eta_5v": 0.85,
+          "eta_audio": 0.8,
+          "amp_idle_w": 0.01675,
+          "q1_ohm": 0.13,
+          "external_series_ohm": 0.55,
+          "converter_ic_loss_fraction": 0.7
+        },
+        "rail_3v3_w": 0.825,
+        "rail_5v_w": 0.64175,
+        "rail_5v_a": 0.12835000000000002,
+        "converter_input_w": 1.7255882352941176,
+        "supply": {
+          "current_a": 0.40870570577020443,
+          "protected_v": 4.222080120076261
+        },
+        "physical_release_approved": false,
+        "sources": {
+          "U1": {
+            "watts": 0.10191176470588237
+          },
+          "L1": {
+            "watts": 0.04367647058823531
+          },
+          "U2": {
+            "watts": 0.07927500000000001
+          },
+          "L2": {
+            "watts": 0.03397500000000001
+          },
+          "U3": {
+            "watts": 0.825
+          },
+          "U6": {
+            "watts": 0.14175000000000004
+          },
+          "Q1": {
+            "watts": 0.02171524601078572
+          }
+        },
+        "board_heat_w": 1.2473034813049033,
+        "external_series_heat_w": 0.09187219466101651,
+        "source_power_w": 1.83917567596592,
+        "energy_balance_error_w": 0.0,
+        "status": "hypothetical steady-state solution",
+        "connector_below_2a": true,
+        "connector_below_proposed_1p6a": true,
+        "protected_at_least_3v": true,
+        "minimum_source_v_for_3v_loaded": 3.3911333333333333
+      },
+      "thermal": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 5,
+        "input_w": 1.2473034813049033,
+        "heat_out_w": 1.247303481306412,
+        "energy_relative_error": 1.2096439343591982e-12,
+        "peak_pcb_rise_c": 39.78072159837542,
+        "min_pcb_rise_c": 31.686019627883656,
+        "source_pcb_rise_c": {
+          "U1": 35.874539155451956,
+          "L1": 35.571705712757975,
+          "U2": 36.623513672098,
+          "L2": 36.81333610164986,
+          "U3": 39.76975711922677,
+          "U6": 35.74208313178215,
+          "Q1": 33.69018967197836
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ],
+        "local_air_c": 50,
+        "peak_pcb_c": 89.78072159837542
+      }
+    },
+    {
+      "case": {
+        "inputs": {
+          "name": "half_watt_reference",
+          "source_v": 4.5,
+          "rail_3v3_a": 0.25,
+          "audio_w": 0.5,
+          "offboard_3v3_w": 0
+        },
+        "assumptions": {
+          "eta_3v3": 0.85,
+          "eta_5v": 0.85,
+          "eta_audio": 0.8,
+          "amp_idle_w": 0.01675,
+          "q1_ohm": 0.13,
+          "external_series_ohm": 0.55,
+          "converter_ic_loss_fraction": 0.7
+        },
+        "rail_3v3_w": 0.825,
+        "rail_5v_w": 0.64175,
+        "rail_5v_a": 0.12835000000000002,
+        "converter_input_w": 1.7255882352941176,
+        "supply": {
+          "current_a": 0.40870570577020443,
+          "protected_v": 4.222080120076261
+        },
+        "physical_release_approved": false,
+        "sources": {
+          "U1": {
+            "watts": 0.10191176470588237
+          },
+          "L1": {
+            "watts": 0.04367647058823531
+          },
+          "U2": {
+            "watts": 0.07927500000000001
+          },
+          "L2": {
+            "watts": 0.03397500000000001
+          },
+          "U3": {
+            "watts": 0.825
+          },
+          "U6": {
+            "watts": 0.14175000000000004
+          },
+          "Q1": {
+            "watts": 0.02171524601078572
+          }
+        },
+        "board_heat_w": 1.2473034813049033,
+        "external_series_heat_w": 0.09187219466101651,
+        "source_power_w": 1.83917567596592,
+        "energy_balance_error_w": 0.0,
+        "status": "hypothetical steady-state solution",
+        "connector_below_2a": true,
+        "connector_below_proposed_1p6a": true,
+        "protected_at_least_3v": true,
+        "minimum_source_v_for_3v_loaded": 3.3911333333333333
+      },
+      "thermal": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 10,
+        "input_w": 1.2473034813049033,
+        "heat_out_w": 1.2473034813044221,
+        "energy_relative_error": 3.857687131355971e-13,
+        "peak_pcb_rise_c": 22.210950243402866,
+        "min_pcb_rise_c": 14.512021209673156,
+        "source_pcb_rise_c": {
+          "U1": 18.50919197771902,
+          "L1": 18.181640691205885,
+          "U2": 19.200880052076677,
+          "L2": 19.357073899155374,
+          "U3": 22.20001728987852,
+          "U6": 18.397210198631686,
+          "Q1": 16.401382524915356
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ],
+        "local_air_c": 50,
+        "peak_pcb_c": 72.21095024340286
+      }
+    }
+  ],
+  "sine_settings": [
+    {
+      "audio_w": 0.5,
+      "ohms": 8,
+      "vrms": 2.0,
+      "vpeak_sine": 2.8284271247461903,
+      "requested_sine_dbfs": -8.079400086720376,
+      "digital_peak_fraction_of_full_scale": 0.3944845472229707
+    },
+    {
+      "audio_w": 1.0,
+      "ohms": 8,
+      "vrms": 2.8284271247461903,
+      "vpeak_sine": 4.000000000000001,
+      "requested_sine_dbfs": -5.069100130080564,
+      "digital_peak_fraction_of_full_scale": 0.5578853968293349
+    },
+    {
+      "audio_w": 1.4,
+      "ohms": 8,
+      "vrms": 3.3466401061363023,
+      "vpeak_sine": 4.732863826479694,
+      "requested_sine_dbfs": -3.6078197732981825,
+      "digital_peak_fraction_of_full_scale": 0.660098903493707
+    }
+  ],
+  "ideal_acoustic_scaling": [
+    {
+      "watts": 0.5,
+      "metres": 1,
+      "db_spl_estimate": 82.98970004336019
+    },
+    {
+      "watts": 0.5,
+      "metres": 3,
+      "db_spl_estimate": 73.44727494896694
+    },
+    {
+      "watts": 0.5,
+      "metres": 5,
+      "db_spl_estimate": 69.01029995663981
+    },
+    {
+      "watts": 1.0,
+      "metres": 1,
+      "db_spl_estimate": 86.0
+    },
+    {
+      "watts": 1.0,
+      "metres": 3,
+      "db_spl_estimate": 76.45757490560675
+    },
+    {
+      "watts": 1.0,
+      "metres": 5,
+      "db_spl_estimate": 72.02059991327963
+    },
+    {
+      "watts": 1.4,
+      "metres": 1,
+      "db_spl_estimate": 87.46128035678238
+    },
+    {
+      "watts": 1.4,
+      "metres": 3,
+      "db_spl_estimate": 77.91885526238913
+    },
+    {
+      "watts": 1.4,
+      "metres": 5,
+      "db_spl_estimate": 73.481880270062
+    }
+  ],
+  "scope": "Continuous-load scenarios, not measured acoustic output, safe operating limits, runtime or junction temperature. Lithium assumes primary 1.5 V AA pending confirmation."
+}

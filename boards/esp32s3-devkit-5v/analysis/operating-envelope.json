@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "status": "PROPOSALS ONLY: product requirements and measurements are pending",
+  "confirmed_requirements": {
+    "battery_chemistry_and_cells": null,
+    "battery_voltage_range_and_resistance": null,
+    "speaker_impedance_and_power": null,
+    "sustained_and_peak_loads_with_duration": null,
+    "enclosure_and_ventilation": null,
+    "maximum_external_ambient_c": null,
+    "maximum_local_air_c": null,
+    "fabricator_stackup": null,
+    "capacitor_mpns_and_bias_curves": null
+  },
+  "assumptions": {
+    "eta_3v3": 0.85,
+    "eta_5v": 0.85,
+    "eta_audio": 0.90,
+    "amp_idle_w": 0.01675,
+    "q1_ohm": 0.13,
+    "external_series_ohm": 0.20,
+    "converter_ic_loss_fraction": 0.70
+  },
+  "thermal": {
+    "local_air_c": 50,
+    "h_each_face_w_m2k": [5, 10, 20],
+    "pitch_mm": 0.5,
+    "proposed_pcb_investigation_threshold_c": 85,
+    "notes": "50 C is air immediately around the board, not outside an enclosure. h is an uncalibrated boundary assumption, not a label for sealed or vented boxes. All retained 3.3 V heat is placed at U3 as a sensitivity proxy. No package or enclosure heat paths, transient duty cycle, or guaranteed junction bound."
+  },
+  "cases": [
+    {"name": "light", "source_v": 3.6, "rail_3v3_a": 0.15, "audio_w": 0.25, "offboard_3v3_w": 0},
+    {"name": "moderate", "source_v": 3.6, "rail_3v3_a": 0.25, "audio_w": 1.0, "offboard_3v3_w": 0},
+    {"name": "high", "source_v": 3.6, "rail_3v3_a": 0.5, "audio_w": 2.5, "offboard_3v3_w": 0},
+    {"name": "high_low_battery", "source_v": 3.0, "rail_3v3_a": 0.5, "audio_w": 2.5, "offboard_3v3_w": 0}
+  ],
+  "assumption_notes": [
+    "These source voltages do not select a battery chemistry or approve a cutoff.",
+    "0.13 ohm for Q1 is a hot-resistance sensitivity value, not a guaranteed datasheet maximum. AO3401A specifies 85 milliohm maximum at VGS=-2.5 V and 25 C; temperature raises resistance.",
+    "0.20 ohm external resistance includes an assumed battery/cable/contact path; its heat is outside the PCB model but may remain inside the enclosure.",
+    "Amplifier 16.75 mW idle overhead is 5 V times 3.35 mA, a 25 C datasheet maximum under specified test conditions, not a full-temperature bound. The 90 percent incremental audio efficiency is assumed.",
+    "85 percent converter efficiency is a scenario value, not a guaranteed operating minimum. Selected inductors, voltage and temperature affect it.",
+    "3.3 V is rounded from the board's nominal 3.307 V. All 3.3 V load power is retained as board heat here. In the earlier report some was assigned off-board.",
+    "Speaker electrical power is outside the PCB thermal model, but heats the enclosure if the speaker is inside it. An external-ambient enclosure model must include that heat and battery/contact loss.",
+    "1.6 A continuous input is a proposed 20 percent design margin below JST PH's 2 A AWG24 specification, not a manufacturer derating rule."
+  ]
+}

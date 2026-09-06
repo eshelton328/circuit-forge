@@ -1,0 +1,699 @@
+{
+  "manifest": {
+    "pcb_sha256": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+    "geometry_sha256": "699b1442ab20ae8cf5b5966b26a089b058f147ec0665050eeb1ea5f96fca0142",
+    "config_sha256": "dc9809eb7b8e6ef2f3b2ce902e010abc4cea15c14c0b9f02a649aa39ace837ef",
+    "source_hashes": {
+      "scripts/qualification/run_envelope.py": "ac4ebba960c533332c91759364728e1028f523d1e3da0a57f2465b0a1d986bb0",
+      "scripts/qualification/power_budget.py": "87ea14b99bd19c09307e06ca58d4ec9c64bc0855170171209194609f71377805",
+      "scripts/physics/thermal.py": "b51cf1a5cf5c638d111b62b0fa318939674baf2cc8ea9fc626b6a6fdd8a2bb78",
+      "scripts/physics/copper.py": "2a7e75274a8d80863764ac91e6d40e1e0b66ddb99c43d97587dad25d51943510"
+    },
+    "physical_release_approved": false,
+    "legacy_config_sha256": "90fd4ffaba1d130937e3d32e2546c5ca9171a340593c1bfd0df23cff60e43b77"
+  },
+  "cases": [
+    {
+      "inputs": {
+        "name": "light",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.15,
+        "audio_w": 0.25,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.2,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.49499999999999994,
+      "rail_5v_w": 0.2945277777777778,
+      "rail_5v_a": 0.05890555555555556,
+      "converter_input_w": 0.9288562091503267,
+      "supply": {
+        "current_a": 0.2644250002208674,
+        "protected_v": 3.512739749927114
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.06114705882352941
+        },
+        "L1": {
+          "watts": 0.026205882352941183
+        },
+        "U2": {
+          "watts": 0.03638284313725491
+        },
+        "L2": {
+          "watts": 0.015592647058823536
+        },
+        "U3": {
+          "watts": 0.49499999999999994
+        },
+        "U6": {
+          "watts": 0.04452777777777778
+        },
+        "Q1": {
+          "watts": 0.009089675496434744
+        }
+      },
+      "board_heat_w": 0.6879458846467615,
+      "external_series_heat_w": 0.013984116148361146,
+      "source_power_w": 0.9519300007951227,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.102174183006536,
+      "thermal": [
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 5,
+          "input_w": 0.6879458846467614,
+          "heat_out_w": 0.6879458846475864,
+          "energy_relative_error": 1.1992320152079531e-12,
+          "peak_pcb_rise_c": 22.25506105545496,
+          "min_pcb_rise_c": 17.434825625249026,
+          "source_pcb_rise_c": {
+            "U1": 19.96874346128111,
+            "L1": 19.79687237082895,
+            "U2": 20.032298485518545,
+            "L2": 20.236041151492707,
+            "U3": 22.248465266316366,
+            "U6": 18.920408005683896,
+            "Q1": 18.596821896495545
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 72.25506105545496,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": true
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 10,
+          "input_w": 0.6879458846467614,
+          "heat_out_w": 0.6879458846464781,
+          "energy_relative_error": 4.1184767902175974e-13,
+          "peak_pcb_rise_c": 12.551707660742943,
+          "min_pcb_rise_c": 7.968248040619153,
+          "source_pcb_rise_c": {
+            "U1": 10.380735872376642,
+            "L1": 10.193451011252,
+            "U2": 10.426559662267625,
+            "L2": 10.60838887412228,
+            "U3": 12.54513188846237,
+            "U6": 9.378782422691707,
+            "Q1": 9.055531127412973
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 62.55170766074294,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": true
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 20,
+          "input_w": 0.6879458846467614,
+          "heat_out_w": 0.6879458846472692,
+          "energy_relative_error": 7.38162728779596e-13,
+          "peak_pcb_rise_c": 7.5748431479833656,
+          "min_pcb_rise_c": 3.3813548209366924,
+          "source_pcb_rise_c": {
+            "U1": 5.596933554754031,
+            "L1": 5.385055835545855,
+            "U2": 5.6108143601760485,
+            "L2": 5.7564659836541,
+            "U3": 7.5683024248170145,
+            "U6": 4.670686593585678,
+            "Q1": 4.34776361213964
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 57.574843147983366,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": true
+        }
+      ]
+    },
+    {
+      "inputs": {
+        "name": "moderate",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.25,
+        "audio_w": 1.0,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.2,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 0.825,
+      "rail_5v_w": 1.1278611111111112,
+      "rail_5v_a": 0.22557222222222223,
+      "converter_input_w": 2.297483660130719,
+      "supply": {
+        "current_a": 0.6806587342370783,
+        "protected_v": 3.375382617701764
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.10191176470588237
+        },
+        "L1": {
+          "watts": 0.04367647058823531
+        },
+        "U2": {
+          "watts": 0.13932401960784319
+        },
+        "L2": {
+          "watts": 0.05971029411764709
+        },
+        "U3": {
+          "watts": 0.825
+        },
+        "U6": {
+          "watts": 0.1278611111111112
+        },
+        "Q1": {
+          "watts": 0.06022852062411882
+        }
+      },
+      "board_heat_w": 1.357712180754838,
+      "external_series_heat_w": 0.09265926249864434,
+      "source_power_w": 2.450371443253482,
+      "energy_balance_error_w": -4.440892098500626e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": true,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.252723202614379,
+      "thermal": [
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 5,
+          "input_w": 1.357712180754838,
+          "heat_out_w": 1.3577121807564887,
+          "energy_relative_error": 1.215780204678554e-12,
+          "peak_pcb_rise_c": 42.85205160319178,
+          "min_pcb_rise_c": 34.88726269603102,
+          "source_pcb_rise_c": {
+            "U1": 39.14258383451924,
+            "L1": 38.773268707891454,
+            "U2": 40.92777866218736,
+            "L2": 40.74192058954488,
+            "U3": 42.84111909025678,
+            "U6": 38.43954573259158,
+            "Q1": 37.553440437022964
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 92.85205160319178,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": false
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 10,
+          "input_w": 1.357712180754838,
+          "heat_out_w": 1.3577121807543295,
+          "energy_relative_error": 3.7451394521306005e-13,
+          "peak_pcb_rise_c": 23.743994544588,
+          "min_pcb_rise_c": 16.15289266114667,
+          "source_pcb_rise_c": {
+            "U1": 20.224632167019543,
+            "L1": 19.83241044145805,
+            "U2": 21.959015766474717,
+            "L2": 21.740468587087413,
+            "U3": 23.73309333724061,
+            "U6": 19.567544643880396,
+            "Q1": 18.707372073226345
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 73.74399454458799,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": true
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 20,
+          "input_w": 1.357712180754838,
+          "heat_out_w": 1.357712180755878,
+          "energy_relative_error": 7.660363840078486e-13,
+          "peak_pcb_rise_c": 13.99186529713662,
+          "min_pcb_rise_c": 7.019057984487445,
+          "source_pcb_rise_c": {
+            "U1": 10.790209200649393,
+            "L1": 10.361641793323674,
+            "U2": 12.435119530733381,
+            "L2": 12.16266761267481,
+            "U3": 13.9810198250881,
+            "U6": 10.209120102501057,
+            "Q1": 9.389795024041323
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 63.99186529713662,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": true
+        }
+      ]
+    },
+    {
+      "inputs": {
+        "name": "high",
+        "source_v": 3.6,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.2,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 1.7253300812939407,
+        "protected_v": 3.0306410731729994
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.38697930562430827
+        }
+      },
+      "board_heat_w": 3.115835514774635,
+      "external_series_heat_w": 0.5953527778835512,
+      "source_power_w": 6.2111882926581865,
+      "energy_balance_error_w": 0.0,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": true,
+      "connector_below_proposed_1p6a": false,
+      "protected_at_least_3v": true,
+      "minimum_source_v_for_3v_loaded": 3.5751741830065358,
+      "thermal": [
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 5,
+          "input_w": 3.115835514774635,
+          "heat_out_w": 3.1158355147784587,
+          "energy_relative_error": 1.2271533842779235e-12,
+          "peak_pcb_rise_c": 96.28856901101716,
+          "min_pcb_rise_c": 80.4253553588472,
+          "source_pcb_rise_c": {
+            "U1": 90.82297788348149,
+            "L1": 89.61911270615975,
+            "U2": 94.13008049096135,
+            "L2": 93.27129927671751,
+            "U3": 96.26679749522214,
+            "U6": 88.0127206386417,
+            "Q1": 91.90818937656012
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 146.28856901101716,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": false
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 10,
+          "input_w": 3.115835514774635,
+          "heat_out_w": 3.115835514773556,
+          "energy_relative_error": 3.463394568868007e-13,
+          "peak_pcb_rise_c": 52.52778856306055,
+          "min_pcb_rise_c": 37.3972598261065,
+          "source_pcb_rise_c": {
+            "U1": 47.32389169656075,
+            "L1": 46.08792139315925,
+            "U2": 50.61214968403723,
+            "L2": 49.69517014111331,
+            "U3": 52.50607544748844,
+            "U6": 44.73318573225941,
+            "Q1": 48.51292477831021
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 102.52778856306054,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": false
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 20,
+          "input_w": 3.115835514774635,
+          "heat_out_w": 3.1158355147770838,
+          "energy_relative_error": 7.858912614295552e-13,
+          "peak_pcb_rise_c": 30.297375112844694,
+          "min_pcb_rise_c": 16.38071430189707,
+          "source_pcb_rise_c": {
+            "U1": 25.537620182765767,
+            "L1": 24.252139414744143,
+            "U2": 28.77809726979276,
+            "L2": 27.765048240879466,
+            "U3": 30.275765763555682,
+            "U6": 23.301123034789626,
+            "Q1": 26.893189868072366
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 80.29737511284469,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": true
+        }
+      ]
+    },
+    {
+      "inputs": {
+        "name": "high_low_battery",
+        "source_v": 3.0,
+        "rail_3v3_a": 0.5,
+        "audio_w": 2.5,
+        "offboard_3v3_w": 0
+      },
+      "assumptions": {
+        "eta_3v3": 0.85,
+        "eta_5v": 0.85,
+        "eta_audio": 0.9,
+        "amp_idle_w": 0.01675,
+        "q1_ohm": 0.13,
+        "external_series_ohm": 0.2,
+        "converter_ic_loss_fraction": 0.7
+      },
+      "rail_3v3_w": 1.65,
+      "rail_5v_w": 2.7945277777777777,
+      "rail_5v_a": 0.5589055555555555,
+      "converter_input_w": 5.228856209150327,
+      "supply": {
+        "current_a": 2.3508843804367268,
+        "protected_v": 2.22420815445588
+      },
+      "physical_release_approved": false,
+      "sources": {
+        "U1": {
+          "watts": 0.20382352941176474
+        },
+        "L1": {
+          "watts": 0.08735294117647062
+        },
+        "U2": {
+          "watts": 0.34520637254901965
+        },
+        "L2": {
+          "watts": 0.14794558823529416
+        },
+        "U3": {
+          "watts": 1.65
+        },
+        "U6": {
+          "watts": 0.2945277777777777
+        },
+        "Q1": {
+          "watts": 0.7184654581235785
+        }
+      },
+      "board_heat_w": 3.4473216672739055,
+      "external_series_heat_w": 1.1053314740362745,
+      "source_power_w": 7.052653141310181,
+      "energy_balance_error_w": 8.881784197001252e-16,
+      "status": "hypothetical steady-state solution",
+      "connector_below_2a": false,
+      "connector_below_proposed_1p6a": false,
+      "protected_at_least_3v": false,
+      "minimum_source_v_for_3v_loaded": 3.5751741830065358,
+      "thermal": [
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 5,
+          "input_w": 3.447321667273905,
+          "heat_out_w": 3.447321667278172,
+          "energy_relative_error": 1.237717143933811e-12,
+          "peak_pcb_rise_c": 108.69127036364254,
+          "min_pcb_rise_c": 88.45684201311425,
+          "source_pcb_rise_c": {
+            "U1": 102.05830299133399,
+            "L1": 100.28025373606127,
+            "U2": 102.9591307594146,
+            "L2": 102.03394711250704,
+            "U3": 104.80617351164288,
+            "U6": 96.15936913073418,
+            "Q1": 108.47590277880434
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 158.69127036364256,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": false
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 10,
+          "input_w": 3.447321667273905,
+          "heat_out_w": 3.447321667272782,
+          "energy_relative_error": 3.2578961875609995e-13,
+          "peak_pcb_rise_c": 60.50224752216513,
+          "min_pcb_rise_c": 40.91389096106518,
+          "source_pcb_rise_c": {
+            "U1": 53.81637391163164,
+            "L1": 52.022788839175234,
+            "U2": 54.84095812920769,
+            "L2": 53.863649553951404,
+            "U3": 56.4701486772847,
+            "U6": 48.352622434661235,
+            "Q1": 60.287065431662555
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 110.50224752216513,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": false
+        },
+        {
+          "pitch_mm": 0.5,
+          "h_w_m2k_each_face": 20,
+          "input_w": 3.447321667273905,
+          "heat_out_w": 3.447321667276659,
+          "energy_relative_error": 7.988222324660244e-13,
+          "peak_pcb_rise_c": 36.29449745015403,
+          "min_pcb_rise_c": 17.75647622542683,
+          "source_pcb_rise_c": {
+            "U1": 29.527901677645346,
+            "L1": 27.71288815175196,
+            "U2": 30.733889585966516,
+            "L2": 29.670280760641354,
+            "U3": 32.00746603608761,
+            "U6": 24.76041422740272,
+            "Q1": 36.07965071777025
+          },
+          "unknowns": 57351,
+          "copper_coverage_fraction": [
+            0.8163452615992565,
+            0.9435382956983365,
+            0.9194451408126186,
+            0.9065418890033435
+          ],
+          "peak_pcb_c": 86.29449745015404,
+          "local_air_c": 50,
+          "below_proposed_pcb_investigation_threshold": false
+        }
+      ]
+    }
+  ],
+  "legacy_q1_sensitivity": [
+    {
+      "q1_w": 0.0,
+      "result": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 10,
+        "input_w": 1.8205882352941178,
+        "heat_out_w": 1.8205882352935685,
+        "energy_relative_error": 3.01736736476154e-13,
+        "peak_pcb_rise_c": 33.394876787196395,
+        "min_pcb_rise_c": 21.613414610452235,
+        "source_pcb_rise_c": {
+          "U1": 28.00209080554086,
+          "L1": 27.06610246910917,
+          "U2": 33.28139868439601,
+          "L2": 31.455508236650687,
+          "U3": 29.278705881019043,
+          "U6": 29.576586582089103,
+          "Q1": 23.927486111010325
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ]
+      }
+    },
+    {
+      "q1_w": 0.4329207369063345,
+      "result": {
+        "pitch_mm": 0.5,
+        "h_w_m2k_each_face": 10,
+        "input_w": 2.253508972200452,
+        "heat_out_w": 2.253508972199845,
+        "energy_relative_error": 2.6938874322397685e-13,
+        "peak_pcb_rise_c": 39.4341899228462,
+        "min_pcb_rise_c": 28.070439836313398,
+        "source_pcb_rise_c": {
+          "U1": 36.48126908707094,
+          "L1": 34.81703616211267,
+          "U2": 38.80422023973371,
+          "L2": 36.899540108204405,
+          "U3": 34.45578338744019,
+          "U6": 34.30356896906249,
+          "Q1": 39.30450747270764
+        },
+        "unknowns": 57351,
+        "copper_coverage_fraction": [
+          0.8163452615992565,
+          0.9435382956983365,
+          0.9194451408126186,
+          0.9065418890033435
+        ]
+      }
+    }
+  ],
+  "mesh_check_moderate_h10": {
+    "fine": {
+      "pitch_mm": 0.25,
+      "h_w_m2k_each_face": 10,
+      "input_w": 1.357712180754838,
+      "heat_out_w": 1.357712180753901,
+      "energy_relative_error": 6.901523357201369e-13,
+      "peak_pcb_rise_c": 24.3214794109104,
+      "min_pcb_rise_c": 16.070716669440365,
+      "source_pcb_rise_c": {
+        "U1": 20.453047822821254,
+        "L1": 19.92345952042255,
+        "U2": 22.29480765523409,
+        "L2": 21.992174777426932,
+        "U3": 24.310708486272958,
+        "U6": 19.550672528154546,
+        "Q1": 18.931297349049483
+      },
+      "unknowns": 229383,
+      "copper_coverage_fraction": [
+        0.8163452615992565,
+        0.9435382956983365,
+        0.9194451408126184,
+        0.9065418890033435
+      ]
+    },
+    "relative_peak_change": 0.023743821523593094,
+    "passed_5pct": true
+  },
+  "unresolved": [
+    "battery_chemistry_and_cells",
+    "battery_voltage_range_and_resistance",
+    "speaker_impedance_and_power",
+    "sustained_and_peak_loads_with_duration",
+    "enclosure_and_ventilation",
+    "maximum_external_ambient_c",
+    "maximum_local_air_c",
+    "fabricator_stackup",
+    "capacitor_mpns_and_bias_curves"
+  ],
+  "scope": "Steady-state scenarios only. Numerical thresholds do not approve product operating ratings.",
+  "supporting_source_hashes": {
+    "scripts/physics/run_screening.py": "f1012f324cd2402d6250285b65e7d767d036b4c8d143145ee392d3ec28b504ef"
+  }
+}
