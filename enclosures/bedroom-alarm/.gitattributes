@@ -1,0 +1,5 @@
+# Preserve manufacturer CAD bytes and keep generated geometry out of text diffs.
+*.blend binary
+*.glb binary
+sources/*.step binary
+*.csv text eol=lf

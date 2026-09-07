@@ -1,0 +1,46 @@
+{
+  "captured_date": "2026-09-06",
+  "native_pcb": "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb",
+  "native_pcb_sha256": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+  "files": {
+    "BH3AAW-drawing.pdf": {
+      "sha256": "5fa451f5b5ad91d199f89eece41e43c742665811b49166f16483cf24ed1693ae",
+      "source": "https://www.batteryholders.com/uploads/parts/BH3AAW/datasheets/BH3AAW-datasheet.pdf"
+    },
+    "BH3AAW.glb": {
+      "sha256": "d719dd05c4ca6ecd67e570628a8fc71b31a800d80e2eaa52205336689fc2ed74",
+      "source": "https://www.memoryprotectiondevices.com/3D/download.php?pn=BH3AAW&id=1295",
+      "conversion": "Manufacturer STEP imported through KiCad 10 GLB export. Blender script trims long straight wire overhang and models the routed wire separately."
+    },
+    "BH3AAW.step": {
+      "sha256": "bf2f70a6f38b5038af4e7ecc9b30fe8a51851b769ef534585bbc0c5795ea8ccc",
+      "source": "https://www.memoryprotectiondevices.com/3D/download.php?pn=BH3AAW&id=1295"
+    },
+    "EG1218-drawing.png": {
+      "sha256": "bd6c82ce11424a366a923111d409814dec3dd85f0e27423ace482e47c7a650ed",
+      "source": "https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf"
+    },
+    "EG1218.pdf": {
+      "sha256": "708a4b4d860ebf095b5c1b25ff4126f4f09dd66bf7d945731fac7458fc4b2c8c",
+      "source": "https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf"
+    },
+    "ER-OLEDM013-1_Datasheet.pdf": {
+      "sha256": "2d690229896554afaa18e901bf1baf49768af64ac60abd19ad61eba3969af2b3",
+      "source": "https://www.buydisplay.com/download/manual/ER-OLEDM013-1_Datasheet.pdf"
+    },
+    "FRS5X-8-datasheet.pdf": {
+      "sha256": "bd8ff419ca194467550330b35fa70aca8b39335c622c2933cae1ea793e6a642d",
+      "source": "https://www.visaton.de/sites/default/files/dd_product/frs5x_8.pdf"
+    },
+    "current-pcb.glb": {
+      "sha256": "fac9cdb1126e8108190af5a6e775ccdf4956f67789e5f93d20a814fc0c1fc616",
+      "source": "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb",
+      "conversion": "KiCad 10 GLB export of the native PCB; Blender unit scale 0.001 m."
+    },
+    "display-drawing.png": {
+      "sha256": "930502879adc0b9ceb9fc93028459ed37c9de9dcf0daa6c8b896e6da31c09354",
+      "source": "https://www.buydisplay.com/download/manual/ER-OLEDM013-1_Datasheet.pdf",
+      "page": 6
+    }
+  }
+}

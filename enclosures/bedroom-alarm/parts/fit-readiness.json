@@ -1,0 +1,228 @@
+{
+  "scope": "Part identification and geometry evidence, not physical qualification",
+  "inventory_errors": [],
+  "unresolved_mechanical_items": [
+    {
+      "id": "speaker",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "display",
+      "status": "v41_drawing_based_I2C_module_mated_hardware_unqualified"
+    },
+    {
+      "id": "battery_holder",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "aa_cells",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "main_pcb",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "front_board",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "service_board",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "front_button",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "setup_buttons",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "service_switch",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "rgb_indicator",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "display_window",
+      "status": "v41_nominal_window_geometry_checked"
+    },
+    {
+      "id": "battery_connection",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "speaker_connection",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "display_connection",
+      "status": "v41_signal_mapping_checked_mating_hardware_unselected"
+    },
+    {
+      "id": "front_connection",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "service_connection",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "usb_service",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "pcb_mounts",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "cover_fasteners",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "speaker_fasteners",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "acoustic_seals",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "speaker_chamber",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "battery_retention",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "feet",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "enclosure",
+      "status": "v41_nominal_geometry_or_interface_allocation_not_final_fit"
+    },
+    {
+      "id": "acoustic_cloth",
+      "status": "v41_material_and_acoustic_impedance_unverified"
+    }
+  ],
+  "populated_references_needing_ordered_part_geometry_check": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C2",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C3",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "D1",
+    "D2",
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "L1",
+    "L2",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "R1",
+    "R10",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R3",
+    "R30",
+    "R31",
+    "R32",
+    "R33",
+    "R34",
+    "R35",
+    "R36",
+    "R37",
+    "R38",
+    "R39",
+    "R4",
+    "R40",
+    "R41",
+    "R42",
+    "R43",
+    "R44",
+    "R45",
+    "R46",
+    "R47",
+    "R48",
+    "R49",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "SW1",
+    "SW2",
+    "SW3",
+    "SW4",
+    "SW5",
+    "SW6",
+    "SW7",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "ready_for_final_enclosure_fit": false
+}
