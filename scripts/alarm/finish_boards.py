@@ -4,7 +4,7 @@ import pcbnew as p,json
 V=lambda x,y:p.VECTOR2I(p.FromMM(x),p.FromMM(y))
 removed=[]
 for kind in ['main','controls','front']:
- d=ROOT/'boards'/('bedroom-alarm-'+kind);path=d/(d.name+'.kicad_pcb');b=p.LoadBoard(str(path))
+ d=ROOT/'boards'/('alec-'+kind);path=d/(d.name+'.kicad_pcb');b=p.LoadBoard(str(path))
  if kind=='main':
   for g in list(b.GetDrawings()):
    if isinstance(g,p.PCB_TEXT) and (g.GetText() in ['VOL-','MODE','VOL+','BATTERY'] or 'DEV' in g.GetText().upper()):b.Remove(g);removed.append(g)

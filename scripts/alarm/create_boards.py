@@ -101,7 +101,7 @@ b.BuildConnectivity();p.SaveBoard(str(MAIN/(MAIN.name+'.kicad_pcb')),b)
 (MAIN/'review/migration.json').write_text(json.dumps({'removed_main_parts':sorted(REMOVE),'renamed_nets':renames,'rerouted_ui_nets':sorted(reroute)},indent=2)+'\n')
 # Daughterboard coordinates are pinned to v4.1 switch and mounting-hole locations.
 for kind in ['controls','front']:
- d=ROOT/'boards'/('bedroom-alarm-'+kind);b,xml,nets,pn=setup(d);b.SetCopperLayerCount(2)
+ d=ROOT/'boards'/('alec-'+kind);b,xml,nets,pn=setup(d);b.SetCopperLayerCount(2)
  dims=(27,34) if kind=='controls' else (24,10)
  for a,c in [((0,0),(dims[0],0)),((dims[0],0),dims),(dims,(0,dims[1])),((0,dims[1]),(0,0))]:
   e=p.PCB_SHAPE(b);e.SetShape(p.SHAPE_T_SEGMENT);e.SetStart(V(*a));e.SetEnd(V(*c));e.SetLayer(p.Edge_Cuts);e.SetWidth(p.FromMM(.05));b.Add(e)

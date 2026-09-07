@@ -1,4 +1,4 @@
 # Preserve generated/vendor CAD assets byte-for-byte and keep review diffs readable.
-boards/bedroom-alarm-*/3dmodels/*.step binary
-boards/bedroom-alarm-*/3dmodels/*.wrl binary
-boards/bedroom-alarm-*/review/*.csv text eol=lf
+boards/alec-*/3dmodels/*.step binary
+boards/alec-*/3dmodels/*.wrl binary
+boards/alec-*/review/*.csv text eol=lf

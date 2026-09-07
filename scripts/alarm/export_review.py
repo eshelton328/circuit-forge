@@ -3,8 +3,8 @@ from design import *
 import subprocess,concurrent.futures,csv,xml.etree.ElementTree as ET,shutil,os
 CLI=os.environ.get('KICAD_CLI',shutil.which('kicad-cli') or '/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli')
 def export(kind):
- d=ROOT/'boards'/('bedroom-alarm-'+kind);sch=d/(d.name+'.kicad_sch');pcb=d/(d.name+'.kicad_pcb');review=d/'review'
- jobs=[['sch','export','netlist','--format','kicadxml','-o',str(review/'netlist.xml'),str(sch)],['sch','export','pdf','-o',str(review/'schematic.pdf'),str(sch)],['pcb','export','glb','--force','--no-dnp','--subst-models','--include-pads','--include-silkscreen','-o',str(ROOT/'enclosures/bedroom-alarm/pcb-revision/sources'/f'{kind}.glb'),str(pcb)]]
+ d=ROOT/'boards'/('alec-'+kind);sch=d/(d.name+'.kicad_sch');pcb=d/(d.name+'.kicad_pcb');review=d/'review'
+ jobs=[['sch','export','netlist','--format','kicadxml','-o',str(review/'netlist.xml'),str(sch)],['sch','export','pdf','-o',str(review/'schematic.pdf'),str(sch)],['pcb','export','glb','--force','--no-dnp','--subst-models','--include-pads','--include-silkscreen','-o',str(ROOT/'enclosures/alec/pcb-revision/sources'/f'{kind}.glb'),str(pcb)]]
  jobs += [['pcb','render','--width','1600','--height','1000','--side',side,'--background','opaque','-o',str(review/f'pcb-{side}.png'),str(pcb)] for side in ['top','bottom']]
  for args in jobs:
   run=subprocess.run([CLI]+args,capture_output=True,text=True);assert run.returncode==0,run.stdout+run.stderr

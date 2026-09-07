@@ -26,11 +26,15 @@ _Auto-generated on merge to main._
 
 ![schematic-page1](docs/schematic-page1.svg)
 
+[Download schematic PDF](docs/schematic.pdf)
+
 ### PCB 3D Views
 
 | Top | Bottom |
 | :---: | :---: |
 | ![Top](docs/pcb-top.png) | ![Bottom](docs/pcb-bottom.png) |
+
+[Download populated 3D model (GLB)](docs/assembly.glb) — open in Blender or a glTF viewer.
 
 <!-- board-images-end -->
 

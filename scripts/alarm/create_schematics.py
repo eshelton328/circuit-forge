@@ -3,17 +3,17 @@ from design import *
 import shutil,xml.etree.ElementTree as E,yaml
 MAIN.mkdir(exist_ok=True)
 for file in ['esp32s3-devkit-5v.kicad_pro','power-monitor.kicad_sch','sym-lib-table','fp-lib-table']:
- text=(BASE/file).read_text().replace('esp32s3-devkit-5v','bedroom-alarm-main')
- (MAIN/file.replace('esp32s3-devkit-5v','bedroom-alarm-main')).write_text(text)
+ text=(BASE/file).read_text().replace('esp32s3-devkit-5v','alec-main')
+ (MAIN/file.replace('esp32s3-devkit-5v','alec-main')).write_text(text)
 for directory in ['footprints','3dmodels','models']:
  if (BASE/directory).exists():shutil.copytree(BASE/directory,MAIN/directory,dirs_exist_ok=True,ignore=shutil.ignore_patterns('model-map.json','README.md') if directory=='3dmodels' else None)
 (MAIN/'review').mkdir(exist_ok=True)
 shutil.copy(BASE/'review/Review.kicad_sym',MAIN/'review/Review.kicad_sym')
-r=parse((BASE/'esp32s3-devkit-5v.kicad_sch').read_text().replace('esp32s3-devkit-5v','bedroom-alarm-main'))
+r=parse((BASE/'esp32s3-devkit-5v.kicad_sch').read_text().replace('esp32s3-devkit-5v','alec-main'))
 child(r,'paper')[1]=q('A2')
 for t in children(r,'text'):
  t[1]=q(val(t[1]).replace('SW1 selects EN_3V3: ON = PFET via R31; OFF = GND.\nBattery current bypasses SW1; this is standby, not battery isolation.', 'Setup-board SW4 via J5: ON = PFET via R31; OFF = GND.\nOnly enable current crosses the cable; OFF is standby, not isolation.').replace('D2: common anode at 3V3; RGB GPIO LOW = ON.', 'Front-board D1 via J6: common anode at 3V3; LOW = ON.'))
-r.append(node('(title_block (title "Bedroom alarm main PCB") (date "2026-09-06") (rev "v4.2 prototype"))'))
+r.append(node('(title_block (title "ALEC main PCB") (date "2026-09-06") (rev "v4.2 prototype"))'))
 netlist=E.parse(BASE/'review/netlist.xml').getroot()
 netmap={(n.attrib['ref'],n.attrib['pin']):net.attrib['name'].lstrip('/') for net in netlist.find('nets') for n in net}
 renames={'Net-(D2-RK)':'LED_R_K','Net-(D2-GK)':'LED_G_K','Net-(D2-BK)':'LED_B_K'}
@@ -50,10 +50,10 @@ check=yaml.safe_load((BASE/'checks.yml').read_text())
 for ref in REMOVE:check['required_components'].pop(ref,None)
 for ref in ['J5','J6','J7','R50','R51','R52','R53']:check['required_components'][ref]={}
 (MAIN/'checks.yml').write_text(yaml.safe_dump(check,sort_keys=False,allow_unicode=True))
-(MAIN/'board.yml').write_text('name: bedroom-alarm-main\ndescription: Enclosure main board with remote controls and UART service pads\nlayers: 4\ncopper_weight: 1oz\nthickness: 1.6mm\nfab_targets:\n  - jlcpcb-4layer-advanced\n')
+(MAIN/'board.yml').write_text('name: alec-main\ndescription: Enclosure main board with remote controls and UART service pads\nlayers: 4\ncopper_weight: 1oz\nthickness: 1.6mm\nfab_targets:\n  - jlcpcb-4layer-advanced\n')
 # Daughterboards contain passive switches/LED only. All pullups, debounce and LED resistors remain on main.
 for kind in ['controls','front']:
- name='bedroom-alarm-'+kind;d=ROOT/'boards'/name;d.mkdir(exist_ok=True);(d/'review').mkdir(exist_ok=True)
+ name='alec-'+kind;d=ROOT/'boards'/name;d.mkdir(exist_ok=True);(d/'review').mkdir(exist_ok=True)
  r=node(f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {uid(name)}) (paper "A4") (lib_symbols))')
  r.append(node(f'(title_block (title {q(name)}) (date "2026-09-06") (rev "v4.2 prototype"))'))
  names=BOTTOM if kind=='controls' else FRONT;n=len(names)
@@ -68,7 +68,7 @@ for kind in ['controls','front']:
  r.append(node(f'(text {q("1:1 GH harness to main J5" if kind=="controls" else "1:1 GH harness to main J6; LED series resistors on main") } (at 40 170 0) (effects (font (size 1.5 1.5)) (justify left bottom)) (uuid {uid(name+"note")}))'))
  (d/(name+'.kicad_sch')).write_text(dump(r)+'\n')
  (d/(name+'.kicad_pro')).write_text('{}\n')
- (d/'board.yml').write_text(f'name: {name}\ndescription: Passive {kind} daughterboard for bedroom alarm\nlayers: 2\ncopper_weight: 1oz\nthickness: 1.6mm\nfab_targets:\n  - jlcpcb-2layer-standard\n')
+ (d/'board.yml').write_text(f'name: {name}\ndescription: Passive {kind} daughterboard for ALEC\nlayers: 2\ncopper_weight: 1oz\nthickness: 1.6mm\nfab_targets:\n  - jlcpcb-2layer-standard\n')
  (d/'checks.yml').write_text(yaml.safe_dump({'required_components':{prop(s,'Reference'):{} for s in children(r,'symbol')},'required_nets':sorted(set(names)),'bom_rules':{'require_footprint':True,'no_duplicate_refs':True}},sort_keys=False))
  (d/'fp-lib-table').write_text('(fp_lib_table (version 7) (lib (name "Alarm") (type "KiCad") (uri "${KIPRJMOD}/../../libs/footprints/Alarm.pretty") (options "") (descr "Alarm interface parts")))\n')
  print(name)

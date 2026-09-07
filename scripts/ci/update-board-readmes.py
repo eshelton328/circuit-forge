@@ -27,6 +27,7 @@ from __future__ import annotations
 import json
 import sys
 from pathlib import Path
+import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 # Search `scripts/` first (`validate_board`, package `sim`), then repo root so
@@ -45,6 +46,8 @@ VAL_START = "<!-- validation-summary-start -->"
 VAL_END = "<!-- validation-summary-end -->"
 SPICE_START = "<!-- spice-regression-start -->"
 SPICE_END = "<!-- spice-regression-end -->"
+CATALOG_START = "<!-- board-catalog-start -->"
+CATALOG_END = "<!-- board-catalog-end -->"
 
 
 def _replace_section(text: str, start: str, end: str, replacement: str) -> str:
@@ -76,6 +79,8 @@ def _build_images_section(board_name: str, docs_dir: Path) -> str:
             lines.append(f"![{page.stem}](docs/{page.name})")
         if extra_pages:
             lines.append("")
+    if (docs_dir / "schematic.pdf").is_file():
+        lines += ["[Download schematic PDF](docs/schematic.pdf)", ""]
 
     pcb_top = docs_dir / "pcb-top.png"
     pcb_bot = docs_dir / "pcb-bottom.png"
@@ -95,6 +100,8 @@ def _build_images_section(board_name: str, docs_dir: Path) -> str:
         lines += [header.rstrip(" | ") + " |",
                   divider.rstrip(" | ") + " |",
                   images.rstrip(" | ") + " |", ""]
+    if (docs_dir / "assembly.glb").is_file():
+        lines += ["[Download populated 3D model (GLB)](docs/assembly.glb) — open in Blender or a glTF viewer.", ""]
 
     if not any((docs_dir / f).exists() for f in [
         "schematic.svg", "pcb-top.png", "pcb-bottom.png",
@@ -475,6 +482,28 @@ def update_readme(board_dir: Path) -> bool:
     return True
 
 
+def update_board_catalog(root: Path) -> bool:
+    """Keep the repository index synchronized with actual native board projects."""
+    readme = root / "README.md"
+    text = readme.read_text()
+    lines = [CATALOG_START, "| Board | Description | Layers |", "|---|---|---:|"]
+    for board in sorted((root / "boards").iterdir()):
+        if not (board / (board.name + ".kicad_pcb")).is_file():
+            continue
+        if not (board / "README.md").is_file():
+            continue
+        metadata = yaml.safe_load((board / "board.yml").read_text())
+        description = escape_md_table_cell(str(metadata.get("description", "")))
+        layers = metadata.get("layers", "—")
+        lines.append(f"| [{board.name}](boards/{board.name}/README.md) | {description} | {layers} |")
+    lines.append(CATALOG_END)
+    updated = _replace_section(text, CATALOG_START, CATALOG_END, "\n".join(lines))
+    if updated == text:
+        return False
+    readme.write_text(updated)
+    return True
+
+
 def main() -> None:
     import argparse
 
@@ -482,6 +511,9 @@ def main() -> None:
     parser.add_argument("board", nargs="?", default=None,
                         help="Single board name to update (default: all boards)")
     args = parser.parse_args()
+
+    if update_board_catalog(REPO_ROOT):
+        print("updated: README.md board catalog")
 
     boards_dir = REPO_ROOT / "boards"
     if args.board:

@@ -1,7 +1,0 @@
-name: bedroom-alarm-front
-description: Passive front daughterboard for bedroom alarm
-layers: 2
-copper_weight: 1oz
-thickness: 1.6mm
-fab_targets:
-  - jlcpcb-2layer-standard

@@ -1,6 +1,6 @@
 # Continuous alarm: speaker and load proposal
 
-6 September 2026, PR #122. The user intends a **bedroom alarm to wake someone
+6 September 2026, PR #122. The user intends a **ALEC to wake someone
 from sleep**, probably with continuous playback, and wants loud output with good
 sound quality. **Speaker, listening distance,
 alarm duration, enclosure and maximum environment are still unselected.**
@@ -158,7 +158,7 @@ for every waveform. [MAX98357A gain equation](https://www.analog.com/media/en/te
    display activity during playback is an option to evaluate against the actual
    firmware workload, not a measured power saving yet.
 6. Record awake listening comparisons and subsequent wake-up trials separately in
-   [the blank bedroom trial sheet](bedroom-alarm-trials.csv). Record failures as
+   [the blank bedroom trial sheet](alec-trials.csv). Record failures as
    well as successes and keep a trusted existing alarm available during prototype
    trials. Select the final sound, pillow-level target and ramp from those trials;
    no universal waking threshold or reliability claim is established here.

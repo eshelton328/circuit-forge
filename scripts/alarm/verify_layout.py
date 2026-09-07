@@ -25,7 +25,7 @@ for ref,cap,pin in [('U1','C3','12'),('U1','C5','7'),('U2','C11','12'),('U2','C1
  a=next(pd for pd in fps[ref].Pads() if pd.GetNumber()==pin);c=next(pd for pd in fps[cap].Pads() if pd.GetNumber()=='1')
  distance=math.dist(xy(a.GetPosition()),xy(c.GetPosition()));check(cap+' short local connection retained',distance<=2,IC_pad_to_cap_pad_mm=distance)
 for kind,holes in [('controls',[(24.5,24),(24.5,12),(2,30),(2,3)]),('front',[(1.7,1.7),(22.3,8.5)])]:
- board=p.LoadBoard(str(ROOT/'boards'/('bedroom-alarm-'+kind)/('bedroom-alarm-'+kind+'.kicad_pcb')))
+ board=p.LoadBoard(str(ROOT/'boards'/('alec-'+kind)/('alec-'+kind+'.kicad_pcb')))
  f={f.GetReference():f for f in board.GetFootprints()}
  for i,pt in enumerate(holes,1):check(kind+' mount H'+str(i),xy(f['H'+str(i)].GetPosition())==pt)
  check(kind+' connector faces inward',f['J1'].GetLayer()==p.B_Cu)

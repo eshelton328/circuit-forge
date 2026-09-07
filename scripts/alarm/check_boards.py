@@ -15,5 +15,5 @@ def run(d,kind):
  return len(violations)
 if __name__=='__main__':
  with concurrent.futures.ThreadPoolExecutor(6) as pool:
-  counts=list(pool.map(lambda a:run(*a),[(ROOT/'boards'/('bedroom-alarm-'+k),c) for k in ['main','controls','front'] for c in ['erc','drc']]))
+  counts=list(pool.map(lambda a:run(*a),[(ROOT/'boards'/('alec-'+k),c) for k in ['main','controls','front'] for c in ['erc','drc']]))
  raise SystemExit(bool(sum(counts)))

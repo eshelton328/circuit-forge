@@ -1,0 +1,7 @@
+name: alec-main
+description: ALEC main board with ESP32-S3, dual TPS63070 rails, audio and remote controls
+layers: 4
+copper_weight: 1oz
+thickness: 1.6mm
+fab_targets:
+  - jlcpcb-4layer-advanced

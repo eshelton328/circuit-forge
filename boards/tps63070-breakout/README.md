@@ -45,11 +45,15 @@ _Auto-generated on merge to main._
 
 ![Schematic](docs/schematic.svg)
 
+[Download schematic PDF](docs/schematic.pdf)
+
 ### PCB 3D Views
 
 | Top | Bottom |
 | :---: | :---: |
 | ![Top](docs/pcb-top.png) | ![Bottom](docs/pcb-bottom.png) |
+
+[Download populated 3D model (GLB)](docs/assembly.glb) — open in Blender or a glTF viewer.
 
 <!-- board-images-end -->
 
@@ -58,12 +62,7 @@ _Auto-generated on merge to main._
 
 _Same layout as the KiCad check summary on pull requests (ERC, DRC, fab rules). Auto-generated on merge to main._
 
-| Check | Result |
-|:------|:-------|
-| ERC | ✅ |
-| DRC | ✅ |
-| Fab: jlcpcb-2layer-advanced | ✅ |
-| Fab: pcbway-2layer-advanced | ✅ |
+_No check reports in docs/ yet (run the update-readmes workflow on main)._
 
 <!-- drc-summary-end -->
 
