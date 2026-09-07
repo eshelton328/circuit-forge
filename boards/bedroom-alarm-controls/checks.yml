@@ -1,0 +1,16 @@
+required_components:
+  J1: {}
+  SW1: {}
+  SW2: {}
+  SW3: {}
+  SW4: {}
+required_nets:
+- BTN_MODE
+- BTN_VOL_MINUS
+- BTN_VOL_PLUS
+- EN_3V3
+- GND
+- SW_ON
+bom_rules:
+  require_footprint: true
+  no_duplicate_refs: true

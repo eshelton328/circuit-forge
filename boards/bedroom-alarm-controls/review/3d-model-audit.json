@@ -1,0 +1,116 @@
+{
+  "components": [
+    {
+      "reference": "SW2",
+      "DNP": false,
+      "footprint": "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x",
+      "models": [
+        {
+          "file": "3dmodels/SW_TH_Tactile_Omron_B3F-106x.step",
+          "sha256": "8ec35b278cb888ea23cfafb7cdf72d814d97730ee38298d2c435bd642caf5571",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "SW3",
+      "DNP": false,
+      "footprint": "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x",
+      "models": [
+        {
+          "file": "3dmodels/SW_TH_Tactile_Omron_B3F-106x.step",
+          "sha256": "8ec35b278cb888ea23cfafb7cdf72d814d97730ee38298d2c435bd642caf5571",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "SW1",
+      "DNP": false,
+      "footprint": "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x",
+      "models": [
+        {
+          "file": "3dmodels/SW_TH_Tactile_Omron_B3F-106x.step",
+          "sha256": "8ec35b278cb888ea23cfafb7cdf72d814d97730ee38298d2c435bd642caf5571",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "SW4",
+      "DNP": false,
+      "footprint": "Alarm:EG1218",
+      "models": [
+        {
+          "file": "3dmodels/EG1218_drawing_envelope.step",
+          "sha256": "88d4354878a0b96ecbd244fa098eaa3cbd78887b5a956d9bca9c4cefd9755fe0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J1",
+      "DNP": false,
+      "footprint": "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical",
+      "models": [
+        {
+          "file": "3dmodels/JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical.step",
+          "sha256": "9e5e79e7a373b6fb4a22f7dfb4cd2310798b9ec7dc278279e834ec04a13dc90e",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    }
+  ],
+  "all_model_files_resolved": true,
+  "scope": "Local package models only. All ordered variants, maximum heights and manufacturing tolerances still need checking."
+}

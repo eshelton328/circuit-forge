@@ -1,0 +1,72 @@
+{
+  "components": [
+    {
+      "reference": "D1",
+      "DNP": false,
+      "footprint": "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100",
+      "models": [
+        {
+          "file": "3dmodels/LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100.step",
+          "sha256": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "SW1",
+      "DNP": false,
+      "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "models": [
+        {
+          "file": "3dmodels/SW_SPST_B3U-1000P.step",
+          "sha256": "4b5ee4da023d76030db22a90f5835f3691d5e4e9fc41b3f37b2c5922c65d307b",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J1",
+      "DNP": false,
+      "footprint": "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical",
+      "models": [
+        {
+          "file": "3dmodels/JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical.step",
+          "sha256": "4b87523f1774db7043fc36653a9b4f34e35ab6821dfeec8b40f7d0056931b6b5",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    }
+  ],
+  "all_model_files_resolved": true,
+  "scope": "Local package models only. All ordered variants, maximum heights and manufacturing tolerances still need checking."
+}

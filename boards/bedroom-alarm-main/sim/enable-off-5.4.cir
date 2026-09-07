@@ -1,0 +1,10 @@
+Hardware enable off, protected battery 5.4 V
+Vbat pfet 0 5.4
+R31 pfet sw_on 10k
+R32 enable 0 100k
+Rthrow enable 0 .1
+.control
+op
+print v(enable) i(Vbat)
+.endc
+.end

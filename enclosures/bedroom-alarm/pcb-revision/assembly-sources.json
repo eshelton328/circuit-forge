@@ -1,0 +1,53 @@
+{
+  "main": {
+    "pcb": "boards/bedroom-alarm-main/bedroom-alarm-main.kicad_pcb",
+    "pcb_sha256": "19b8fdd2cac4d5c8febaecd3081aee7337c51ca7352ef3410bfe56ea65fe24b0",
+    "glb_sha256": "9ab3afd70b23afd74d802e8475c82a5f1648e3f149ce5ed67ae97d0aa9e7062f",
+    "bounds_mm": [
+      [
+        -32.24998474121094,
+        -27.99999237060547,
+        33.865013122558594
+      ],
+      [
+        33.25,
+        34.25000762939453,
+        45.40501403808594
+      ]
+    ]
+  },
+  "controls": {
+    "pcb": "boards/bedroom-alarm-controls/bedroom-alarm-controls.kicad_pcb",
+    "pcb_sha256": "9ade1508e5805943c82da2c41de19d3054e6c024292946905ae67ef882326543",
+    "glb_sha256": "9ff1eb7e8230b4c3e983097d82644625c91ceb57dd7d43aedde211788a208adc",
+    "bounds_mm": [
+      [
+        13.0,
+        -47.0,
+        5.40500020980835
+      ],
+      [
+        40.0,
+        -13.0,
+        18.685001373291016
+      ]
+    ]
+  },
+  "front": {
+    "pcb": "boards/bedroom-alarm-front/bedroom-alarm-front.kicad_pcb",
+    "pcb_sha256": "d246e35a6e7d7e1069d15f5a9ced473ae949fdce4d16df15d8774fcc750f0567",
+    "glb_sha256": "b7b1955e4ea95c812236619b17b4d6d26afd00c9a5aa69147c7d82d2ab444dd4",
+    "bounds_mm": [
+      [
+        -12.0,
+        -51.14500045776367,
+        7.000000953674316
+      ],
+      [
+        11.999998092651367,
+        -43.21500015258789,
+        17.0
+      ]
+    ]
+  }
+}

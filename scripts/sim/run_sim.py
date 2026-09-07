@@ -302,6 +302,7 @@ def run_flow(
 
     use_baseline_compare = baseline_measures is not None
     out = report_path or (config_path.parent / "spice-report.md")
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(report_text)
     print(f"Wrote {out}")
 

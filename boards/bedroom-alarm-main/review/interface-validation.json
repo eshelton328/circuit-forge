@@ -1,0 +1,2044 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Exactly the six relocated main-board user parts were removed",
+      "passed": true
+    },
+    {
+      "name": "R21 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R43 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C34 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R23 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U5 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R9 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R26 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R45 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C4 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R25 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Q1 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C28 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R22 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C22 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C19 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Q3 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R6 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C27 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C2 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C23 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R28 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C18 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R18 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C20 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Q2 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R46 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R12 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R27 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C30 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R30 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U7 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R16 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C6 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U6 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C8 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R4 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C11 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R48 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C21 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C5 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C7 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R40 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R19 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C16 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "D1 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R1 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R3 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R10 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U8 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "L1 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C1 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R11 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "J4 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R39 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R41 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R35 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "SW3 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R32 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R5 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R33 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "J3 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U1 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U2 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R7 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R34 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Q6 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R13 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U4 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C15 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R38 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R36 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C10 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R37 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R49 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C32 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C12 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R44 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C24 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C31 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C29 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Q7 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R14 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R17 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R15 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C33 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R24 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "SW2 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C25 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R20 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C9 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "U3 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Q4 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Q5 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C13 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "J2 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "J1 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C14 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R29 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C26 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "L2 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R47 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R31 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R42 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "R8 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C3 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "C17 value and footprint preserved",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C6.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R18.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R16.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R10.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R44.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R42.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C18.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R11.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R6.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C17.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R24.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C30.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C32.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R17.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R25.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C5.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C29.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R12.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R4.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C8.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q2.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R26.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U8.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C21.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R27.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C7.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R21.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U8.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R13.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C14.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R8.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C15.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C27.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C16.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C33.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U8.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C28.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C26.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C13.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R20.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U8.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U4.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R35.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U4.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R34.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.14",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R32.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.39",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R18.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C34.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.38",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R48.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R49.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C22.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R24.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R25.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C23.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R26.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C24.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q5.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R44.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R17.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.12",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R16.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.17",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R27.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C25.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.18",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.19",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R36.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.20",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R46.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R10.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.21",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.22",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R6.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.11",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.14",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R19.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.23",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R39.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U8.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R28.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.31",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.32",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R29.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.33",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R30.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.34",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R22.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.24",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.16",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.14",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.25",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R38.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C31.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J4.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q2.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R37.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R37.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J4.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R38.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J4.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R3.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C1.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C2.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R31.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R45.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C9.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q1.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C3.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C11.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R7.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.12",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.12",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.13",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.13",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q6.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C10.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q6.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R48.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R33.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R31.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R15.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R34.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.13",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.14",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R35.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R40.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A9",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C20.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B9",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U4.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J1.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q1.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J3.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.9",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J3.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.10",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C10.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q7.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R32.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C12.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C15.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q5.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C9.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R36.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.15",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R23.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.10",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C1.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.40",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R49.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C8.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C23.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C27.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C2.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.11",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B12",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.41",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C20.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C32.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C22.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C28.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.15",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R5.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C5.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C3.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers SW3.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R39.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C11.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R20.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C6.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C14.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C31.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R1.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C18.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J4.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C24.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C30.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers D1.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C29.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R14.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R9.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C34.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R47.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C21.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C7.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers SW2.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U8.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C4.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R15.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.17",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q4.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.10",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J1.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C17.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C16.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R41.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C26.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C19.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C25.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.SH",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C33.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A12",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q3.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U4.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U7.4",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R33.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C13.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R19.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.15",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R11.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers D1.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R30.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R29.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R28.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R14.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U4.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U4.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A7",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q1.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R1.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R21.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q2.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q3.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R22.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R23.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q3.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R40.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q4.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R41.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q4.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R43.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R42.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q5.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R43.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q6.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q7.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R45.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R46.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers Q7.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R47.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R5.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R4.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.11",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers L1.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.9",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers L1.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R3.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C4.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U1.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R9.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R8.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.11",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers L2.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers L2.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.9",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R7.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C12.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U2.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R13.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.3",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers SW2.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers C19.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers SW3.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.27",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers R12.2",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.A8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers J2.B8",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.15",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.9",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.10",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.28",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.29",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.30",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.35",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.26",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.16",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.36",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U3.37",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U5.1",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.5",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.6",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.12",
+      "passed": true
+    },
+    {
+      "name": "Existing circuit peers U6.13",
+      "passed": true
+    },
+    {
+      "name": "J5.1 = GND",
+      "passed": true
+    },
+    {
+      "name": "J5.2 = BTN_VOL_MINUS",
+      "passed": true
+    },
+    {
+      "name": "J5.3 = BTN_MODE",
+      "passed": true
+    },
+    {
+      "name": "J5.4 = BTN_VOL_PLUS",
+      "passed": true
+    },
+    {
+      "name": "J5.5 = GND",
+      "passed": true
+    },
+    {
+      "name": "J5.6 = SW_ON",
+      "passed": true
+    },
+    {
+      "name": "J5.7 = EN_3V3",
+      "passed": true
+    },
+    {
+      "name": "J6.1 = GND",
+      "passed": true
+    },
+    {
+      "name": "J6.2 = 3v3",
+      "passed": true
+    },
+    {
+      "name": "J6.3 = BTN_BAT",
+      "passed": true
+    },
+    {
+      "name": "J6.4 = LED_R_K",
+      "passed": true
+    },
+    {
+      "name": "J6.5 = LED_G_K",
+      "passed": true
+    },
+    {
+      "name": "J6.6 = LED_B_K",
+      "passed": true
+    },
+    {
+      "name": "J7.1 = GND",
+      "passed": true
+    },
+    {
+      "name": "J7.2 = 3v3",
+      "passed": true
+    },
+    {
+      "name": "J7.3 = UART_TX",
+      "passed": true
+    },
+    {
+      "name": "J7.4 = UART_RX",
+      "passed": true
+    },
+    {
+      "name": "J7.5 = EN",
+      "passed": true
+    },
+    {
+      "name": "J7.6 = GPIO0",
+      "passed": true
+    },
+    {
+      "name": "R50 100 ohm cable damping",
+      "passed": true
+    },
+    {
+      "name": "SW1 controls return to connector",
+      "passed": true
+    },
+    {
+      "name": "Main pullup/debounce 4",
+      "passed": true
+    },
+    {
+      "name": "R51 100 ohm cable damping",
+      "passed": true
+    },
+    {
+      "name": "SW2 controls return to connector",
+      "passed": true
+    },
+    {
+      "name": "Main pullup/debounce 5",
+      "passed": true
+    },
+    {
+      "name": "R52 100 ohm cable damping",
+      "passed": true
+    },
+    {
+      "name": "SW3 controls return to connector",
+      "passed": true
+    },
+    {
+      "name": "Main pullup/debounce 6",
+      "passed": true
+    },
+    {
+      "name": "R53 100 ohm cable damping",
+      "passed": true
+    },
+    {
+      "name": "SW1 front return to connector",
+      "passed": true
+    },
+    {
+      "name": "Main pullup/debounce 10",
+      "passed": true
+    },
+    {
+      "name": "Hardware enable common goes to EN, ON throw via R31, OFF to ground",
+      "passed": true
+    },
+    {
+      "name": "Front LED pin 1",
+      "passed": true
+    },
+    {
+      "name": "Front LED pin 3",
+      "passed": true
+    },
+    {
+      "name": "Front LED pin 4",
+      "passed": true
+    },
+    {
+      "name": "Front LED pin 2",
+      "passed": true
+    },
+    {
+      "name": "Main RGB current limit 4",
+      "passed": true
+    },
+    {
+      "name": "Main RGB current limit 5",
+      "passed": true
+    },
+    {
+      "name": "Main RGB current limit 6",
+      "passed": true
+    },
+    {
+      "name": "UART service module pin 37",
+      "passed": true
+    },
+    {
+      "name": "UART service module pin 36",
+      "passed": true
+    },
+    {
+      "name": "UART service module pin 3",
+      "passed": true
+    },
+    {
+      "name": "UART service module pin 27",
+      "passed": true
+    },
+    {
+      "name": "Display pin order and switched power preserved",
+      "passed": true
+    }
+  ],
+  "button_paths": [
+    {
+      "function": "BTN_VOL_MINUS",
+      "main_connector": "J5",
+      "pin": 2,
+      "series_resistor": "R50",
+      "value_ohm": 100,
+      "GPIO": 4,
+      "remote_board": "controls",
+      "remote_switch": "SW1"
+    },
+    {
+      "function": "BTN_MODE",
+      "main_connector": "J5",
+      "pin": 3,
+      "series_resistor": "R51",
+      "value_ohm": 100,
+      "GPIO": 5,
+      "remote_board": "controls",
+      "remote_switch": "SW2"
+    },
+    {
+      "function": "BTN_VOL_PLUS",
+      "main_connector": "J5",
+      "pin": 4,
+      "series_resistor": "R52",
+      "value_ohm": 100,
+      "GPIO": 6,
+      "remote_board": "controls",
+      "remote_switch": "SW3"
+    },
+    {
+      "function": "BTN_BAT",
+      "main_connector": "J6",
+      "pin": 3,
+      "series_resistor": "R53",
+      "value_ohm": 100,
+      "GPIO": 10,
+      "remote_board": "front",
+      "remote_switch": "SW1"
+    }
+  ],
+  "harnesses": {
+    "bottom": {
+      "main": "J5",
+      "remote": "controls.J1",
+      "pin_order": [
+        "GND",
+        "BTN_VOL_MINUS",
+        "BTN_MODE",
+        "BTN_VOL_PLUS",
+        "GND",
+        "SW_ON",
+        "EN_3V3"
+      ],
+      "housings": "GHR-07V-S",
+      "contacts": "SSHL-002T-P0.2"
+    },
+    "front": {
+      "main": "J6",
+      "remote": "front.J1",
+      "pin_order": [
+        "GND",
+        "3v3",
+        "BTN_BAT",
+        "LED_R_K",
+        "LED_G_K",
+        "LED_B_K"
+      ],
+      "housings": "GHR-06V-S",
+      "contacts": "SSHL-002T-P0.2"
+    }
+  },
+  "service": {
+    "connector": "J7",
+    "pin_order": [
+      "GND",
+      "3v3",
+      "UART_TX",
+      "UART_RX",
+      "EN",
+      "GPIO0"
+    ],
+    "power": "Battery-powered target; 3v3 is voltage reference only, never external supply"
+  },
+  "netlist_sha256": {
+    "esp32s3-devkit-5v": "6f48ae1f7cf6a776377498705befbfcba7132d32bb5823951fc0eae2df7bc456",
+    "bedroom-alarm-main": "524caab052324c6098b72d695b2f1a8ef4e7016d4158a88f6ffb83165f2b539b",
+    "bedroom-alarm-controls": "4d18d35a09e0d75567b184a95a84a956b28c3e5f962334d03c96d3abba856852",
+    "bedroom-alarm-front": "4d30e3777122f91b3200fd5b395d4d2b7c895cff8ea259d88a27d6b96d856db0"
+  }
+}

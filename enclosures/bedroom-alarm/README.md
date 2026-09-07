@@ -1,5 +1,7 @@
 # Bedroom alarm enclosure — v4.1
 
+The enclosure-specific routed PCBs and integrated assembly are in the [v4.2 PCB revision](pcb-revision/README.md). The v4.1 files below remain the original packaging reference.
+
 A 105 mm bedside alarm enclosure with four perforated walls, a front-facing Visaton FRS 5 X speaker in its own rear pod, three AA cells, a flat main PCB, one exterior battery-check button and one indicator lens. The screw-fastened bottom cover hides the settings controls, power-enable switch and **EastRising ER-OLEDM013-1W-I2C 1.3-inch OLED**. The shower sensor is a separate unit.
 
 **Packaging prototype.** Saved-scene geometry checks pass; purchased-part fit, manufacturing tolerances, firmware integration, acoustics, RF, battery load/cooling, EMI and parasitics remain unqualified. The control and front UI boards are allocations that still need electrical design. The actual [esp32s3-devkit-5v PCB](../../boards/esp32s3-devkit-5v/) and its buck-boost layouts are unchanged.

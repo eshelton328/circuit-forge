@@ -1,0 +1,2470 @@
+{
+  "components": [
+    {
+      "reference": "Q3",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R30",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R16",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "Q1",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R43",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R23",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C28",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J6",
+      "DNP": false,
+      "footprint": "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical",
+      "models": [
+        {
+          "file": "3dmodels/JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical.step",
+          "sha256": "4b87523f1774db7043fc36653a9b4f34e35ab6821dfeec8b40f7d0056931b6b5",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C27",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R1",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R5",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R29",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R10",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R18",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U5",
+      "DNP": false,
+      "footprint": "Package_SON:MicroCrystal_C7_SON-8_1.5x3.2mm_P0.9mm",
+      "models": [
+        {
+          "file": "3dmodels/RV-3028-C7_simplified.step",
+          "sha256": "d29130cd6a67ca604a2bb3db66e7080c8925c08aefef099c014bc4454b02f931",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C32",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R17",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J2",
+      "DNP": false,
+      "footprint": "Board:USB_C_HRO_Overhang",
+      "models": [
+        {
+          "file": "3dmodels/HRO_TYPE-C-31-M-12.step",
+          "sha256": "272b7208e6c8beb3f21766a3a1c444a005e1706a99f6e2ab6c035c4f558c2d9d",
+          "offset": [
+            -4.47,
+            -3.65,
+            0.0
+          ],
+          "rotation": [
+            -90.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R45",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R35",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "Q5",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C33",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C12",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C6",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U2",
+      "DNP": false,
+      "footprint": "TPS63070:TPS63070",
+      "models": [
+        {
+          "file": "3dmodels/TPS63070RNM.step",
+          "sha256": "c6ff03bef77cf60877b65ca97012b7a9d96b13bde6fb0f57068b77aecb4125c6",
+          "offset": [
+            0.0,
+            1.125,
+            0.0
+          ],
+          "rotation": [
+            -90.0,
+            0.0,
+            -90.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R50",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C4",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R38",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U6",
+      "DNP": false,
+      "footprint": "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm",
+      "models": [
+        {
+          "file": "3dmodels/MAX98357A_TQFN16_simplified.step",
+          "sha256": "e2a24fd8726bd536f577152b9e05e1cc328a4f24023fac27aa20ddad88843574",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R20",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R51",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U1",
+      "DNP": false,
+      "footprint": "TPS63070:TPS63070",
+      "models": [
+        {
+          "file": "3dmodels/TPS63070RNM.step",
+          "sha256": "c6ff03bef77cf60877b65ca97012b7a9d96b13bde6fb0f57068b77aecb4125c6",
+          "offset": [
+            0.0,
+            1.125,
+            0.0
+          ],
+          "rotation": [
+            -90.0,
+            0.0,
+            -90.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R48",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R32",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "Q6",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C19",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R42",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "Q4",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R9",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U7",
+      "DNP": false,
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "models": [
+        {
+          "file": "3dmodels/VSSOP-8_2.3x2mm_P0.5mm.step",
+          "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C11",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0603_1608Metric.step",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R28",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R6",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C8",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R25",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R44",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "SW3",
+      "DNP": false,
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "models": [
+        {
+          "file": "3dmodels/TS-1187A-B-A-B.step",
+          "sha256": "26ea252f47554af12434cb6e19457ce3b670e2cdb2baff6cd4371d388d17a9c8",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R49",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R27",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R21",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J3",
+      "DNP": false,
+      "footprint": "Board:JST_PH_Speaker_Overhang",
+      "models": [
+        {
+          "file": "3dmodels/JST_B2B-PH-SM4-TB_simplified.step",
+          "sha256": "b527ecf5e87e216a7b05c050062cb16dd69f843c448502d31d1eb0a9bcf52748",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U8",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23-6.step",
+          "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R8",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C23",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "Q2",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R11",
+      "DNP": true,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C14",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C16",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C3",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0603_1608Metric.step",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C1",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R52",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R14",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C24",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C10",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R31",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "Q7",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C9",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U3",
+      "DNP": false,
+      "footprint": "Board:ESP32-S3-WROOM-1_Overhang",
+      "models": [
+        {
+          "file": "3dmodels/ESP32-S3-WROOM-1.step",
+          "sha256": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R41",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J1",
+      "DNP": false,
+      "footprint": "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical",
+      "models": [
+        {
+          "file": "3dmodels/JST_B2B-PH-SM4-TB_simplified.step",
+          "sha256": "b527ecf5e87e216a7b05c050062cb16dd69f843c448502d31d1eb0a9bcf52748",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R13",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R33",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R47",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C25",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C31",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0603_1608Metric.step",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R39",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C13",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0603_1608Metric.step",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "U4",
+      "DNP": false,
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "models": [
+        {
+          "file": "3dmodels/SOT-23-6.step",
+          "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C15",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "L1",
+      "DNP": false,
+      "footprint": "TPS63070:IND_XFL4020-152MEC",
+      "models": [
+        {
+          "file": "3dmodels/XFL4020-152MEC.step",
+          "sha256": "8721b34b33bb90a15a21e62e64567b68738ad1dc8dd0955c604389e27c309718",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -90.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R36",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C26",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R53",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R4",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "L2",
+      "DNP": false,
+      "footprint": "TPS63070:IND_XFL4020-152MEC",
+      "models": [
+        {
+          "file": "3dmodels/XFL4020-152MEC.step",
+          "sha256": "8721b34b33bb90a15a21e62e64567b68738ad1dc8dd0955c604389e27c309718",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -90.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R46",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R24",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C2",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J4",
+      "DNP": false,
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "models": [
+        {
+          "file": "3dmodels/PinHeader_1x04_P2.54mm_Vertical.step",
+          "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R37",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R40",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R26",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C17",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "J5",
+      "DNP": false,
+      "footprint": "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical",
+      "models": [
+        {
+          "file": "3dmodels/JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical.step",
+          "sha256": "9e5e79e7a373b6fb4a22f7dfb4cd2310798b9ec7dc278279e834ec04a13dc90e",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R7",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C7",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R15",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C30",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "D1",
+      "DNP": false,
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "models": [
+        {
+          "file": "3dmodels/LED_0603_1608Metric.step",
+          "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C20",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C5",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0603_1608Metric.step",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C29",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "SW2",
+      "DNP": false,
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "models": [
+        {
+          "file": "3dmodels/TS-1187A-B-A-B.step",
+          "sha256": "26ea252f47554af12434cb6e19457ce3b670e2cdb2baff6cd4371d388d17a9c8",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R3",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C22",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C18",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C21",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R19",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R34",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R22",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "C34",
+      "DNP": false,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    },
+    {
+      "reference": "R12",
+      "DNP": false,
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "models": [
+        {
+          "file": "3dmodels/R_0402_1005Metric.step",
+          "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "ordered_part_geometry_qualified": false
+    }
+  ],
+  "all_model_files_resolved": true,
+  "scope": "Local package models only. All ordered variants, maximum heights and manufacturing tolerances still need checking."
+}

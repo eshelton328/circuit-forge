@@ -80,3 +80,7 @@ sim/issue-bodies/
 # Python bytecode
 __pycache__/
 *.py[cod]
+
+# Enclosure PCB review evidence
+!boards/bedroom-alarm-*/review/erc.json
+!boards/bedroom-alarm-*/review/drc.json

@@ -1,0 +1,4 @@
+Reference,Value,MPN,Footprint,Datasheet,Assembly
+D1,150141M173100,150141M173100,LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100,https://www.we-online.com/components/products/datasheet/150141M173100.pdf,Populate; verify ordering code
+J1,BM06B-GHS-TBT,BM06B-GHS-TBT,Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eGH.pdf,Populate; verify ordering code
+SW1,BATTERY,B3U-1000P,Button_Switch_SMD:SW_SPST_B3U-1000P,https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf,Populate; verify ordering code
