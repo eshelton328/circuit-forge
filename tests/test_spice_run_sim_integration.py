@@ -46,7 +46,7 @@ needs_docker = pytest.mark.skipif(
 
 @needs_ngspice
 def test_run_sim_rc_fixture_passes(tmp_path: Path) -> None:
-    report = tmp_path / "report.md"
+    report = tmp_path / "new-board" / "docs" / "report.md"
     proc = subprocess.run(
         [
             sys.executable,
@@ -68,7 +68,7 @@ def test_run_sim_rc_fixture_passes(tmp_path: Path) -> None:
     assert "v_n2" in text
     assert "| KiCad CLI | `—` |" in text
     assert "| KiCad Docker image (CI) | `—` |" in text
-    metrics_sidecar = tmp_path / "report.metrics.json"
+    metrics_sidecar = report.with_suffix(".metrics.json")
     assert metrics_sidecar.is_file(), "metrics sidecar beside --report output"
     mdoc = json.loads(metrics_sidecar.read_text())
     assert mdoc["metrics_schema_version"] >= 1
