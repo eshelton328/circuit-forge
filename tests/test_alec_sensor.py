@@ -39,3 +39,24 @@ def test_bypassing_battery_fuse_is_rejected(tmp_path):
  raw.extend(list(fused));r.find('nets').remove(fused)
  p=tmp_path/'fuse-bypass.xml';r.write(p)
  with pytest.raises(AssertionError,match='Fuse cannot be bypassed'):load('check_design').check(p)
+
+
+def test_rear_service_interface():
+ assert len(load('check_service_interface').check()) == 8
+
+
+def test_forward_facing_service_button_is_rejected(tmp_path):
+ m=load('check_service_interface');tree=m.parse((D/'alec-sensor.kicad_pcb').read_text())
+ button=next(f for f in m.children(tree,'footprint') if m.prop(f,'Reference')=='SW2')
+ m.child(button,'layer')[1]='"F.Cu"'
+ from design import dump
+ p=tmp_path/'wrong-face.kicad_pcb';p.write_text(dump(tree))
+ with pytest.raises(AssertionError,match='SW2 must face the rear'):m.check(board=p)
+
+
+def test_inward_opening_battery_holder_is_rejected(tmp_path):
+ import json
+ source=D.parents[1]/'enclosures/alec-sensor/interface.json'
+ cfg=json.loads(source.read_text());cfg['battery_holder']['opening']='front (+Z)'
+ p=tmp_path/'wrong-holder.json';p.write_text(json.dumps(cfg))
+ with pytest.raises(AssertionError,match='Battery holder must open'):load('check_service_interface').check(interface=p)

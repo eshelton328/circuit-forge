@@ -41,7 +41,7 @@ for n in xml.find('nets'):
 b=p.LoadBoard(str(BASE/(BASE.name+'.kicad_pcb')));oldfps={f.GetReference():f for f in b.GetFootprints()}
 oldpn={(ref,a.GetNumber()):a.GetNetname() for ref,f in oldfps.items() for a in f.Pads()}
 replace={'SW1','J3','SW7'} # SW7 schematic B3U footprint differs from base PCB TS1187
-moved={'D2','R28','R29','R30','SW3','R27','C25'}
+moved={'D2','R28','R29','R30','SW2','SW3','R27','C25'}
 removed=[];discarded=[]
 for ref,f in oldfps.items():
  if ref in replace or (ref not in comps and not ref.startswith(('H','TP'))):b.Remove(f);discarded.append(f);removed.append(ref)
@@ -84,6 +84,8 @@ for f in b.GetFootprints():
   elif f.GetReference()=='TP8':pad.SetNet(nets['/RADAR_EN']);f.SetValue('RADAR_EN')
  f.SetSheetfile(D.name+'.kicad_sch')
 positions={'SW1':(153,89.5,0),'SW3':(152,120,0),'SW7':(114,121,0),'D2':(130,121,0),'R28':(128,117,90),'R29':(130,117,90),'R30':(132,117,90),'R27':(114,117,0),'C25':(116,117,0),'F1':(110,112,0),'U10':(155,96.5,0),'J3':(145,108,0),'C35':(155,111.5,0),'C36':(159.5,108,90),'C37':(161,93.5,90),'R54':(152,92.3,0),'R55':(160.8,96,90),'R56':(160.8,98,90)}
+interface=json.loads((ROOT/'enclosures/alec-sensor/interface.json').read_text())
+for ref,control in interface['service_controls'].items():positions[ref]=(*control['kicad_xy'],0)
 for ref,c in comps.items():
  f=next((a for a in b.GetFootprints() if a.GetReference()==ref),None)
  if f is None:
@@ -104,7 +106,7 @@ for ref,c in comps.items():
   if (ref,pd.GetNumber()) in pn:pd.SetNet(nets[pn[ref,pd.GetNumber()]])
  if ref in positions:
   x,y,rot=positions[ref];f.SetPosition(V(x,y));f.SetOrientationDegrees(rot)
- if ref=='SW1':f.Flip(f.GetPosition(),False)
+ if ref in interface['service_controls']:f.Flip(f.GetPosition(),False)
  for field in f.GetFields():field.SetVisible(False)
 # Retired labels are not allowed to misidentify the sensor interface.
 for g in list(b.GetDrawings()):

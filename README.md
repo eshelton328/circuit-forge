@@ -43,7 +43,7 @@ The separate [ALEC Sensor](boards/alec-sensor/) is the shower presence companion
 | Enclosure | Board | Status |
 |---|---|---|
 | [ALEC v4.2](enclosures/alec/pcb-revision/) | alec-main, alec-controls, alec-front | Integrated PCB prototype: 105 mm cube, four perforated walls, 1.3-inch OLED and three AA cells; physical tests pending |
-| [ALEC Sensor S1](enclosures/alec-sensor/) | alec-sensor | Circular 116 mm × 54 mm fit prototype with actual PCB, LD2410C and three-AA holder; RF, sealing and thermal tests pending |
+| [ALEC Sensor S1.1](enclosures/alec-sensor/) | alec-sensor | Circular 116 mm × 54 mm fit prototype with rear-access cells/controls, actual PCB and LD2410C; RF, sealing and thermal tests pending |
 | [ALEC v4.1 reference](enclosures/alec/) | esp32s3-devkit-5v | Earlier packaging reference with the bench board |
 
 The enclosure project includes editable Blender scenes, inline preview images, dimensional sources, a parts register and a reproducible test report. Open its README to download the models and review the current fit limits.

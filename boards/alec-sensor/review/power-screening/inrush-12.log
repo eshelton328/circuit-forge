@@ -30,15 +30,15 @@ No. of Data Rows : 4024
   Measurements for Transient Analysis
 
 vin_peak            =  5.40000e+00 at=  4.00000e-04
-i_peak              =  1.12479e+01 at=  1.25000e-06
-input_i2t           =   9.58887e-04 from=  0.00000e+00 to=  4.00000e-04
+i_peak              =  1.11895e+01 at=  1.25000e-06
+input_i2t           =   9.53529e-04 from=  0.00000e+00 to=  4.00000e-04
 
 
-Total analysis time (seconds) = 0.005265
+Total analysis time (seconds) = 0.005019
 
 Total elapsed time (seconds) = 0.008
 
 Total DRAM available = 49152.000 MB.
-DRAM currently available = 9016.688 MB.
-Maximum ngspice program size =   10.141 MB.
-Current ngspice program size =   10.141 MB.
+DRAM currently available = 9134.938 MB.
+Maximum ngspice program size =   10.125 MB.
+Current ngspice program size =   10.125 MB.

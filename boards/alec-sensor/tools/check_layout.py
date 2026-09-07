@@ -79,8 +79,16 @@ assert front_xy(fps['SW7'].GetPosition())==interface['button_xy'],'button/plunge
 assert front_xy(fps['D2'].GetPosition())==interface['led_xy'],'LED/light pipe mismatch'
 pin1=next(pd for pd in fps['J3'].Pads() if pd.GetNumber()=='1')
 assert front_xy(pin1.GetPosition())==interface['radar']['pin1_xy'],'radar socket/CAD mismatch'
+# Rear service is a physical assembly contract: controls must face the battery opening.
+for ref,c in interface['service_controls'].items():
+ f=fps[ref]
+ assert f.GetLayer()==p.B_Cu,(ref,'service control must face rear/batteries')
+ assert [round(p.ToMM(f.GetPosition().x),4),round(p.ToMM(f.GetPosition().y),4)]==c['kicad_xy'],(ref,'service bay position mismatch')
+for ref in ['J3','SW7','D2']:
+ assert fps[ref].GetLayer()==p.F_Cu,(ref,'radar/exterior interface must face outward')
+assert interface['battery_holder']['opening'].startswith('rear (-Z)'),'battery holder must open toward rear panel'
 mounts=sorted([round(p.ToMM(fps[f'H{i}'].GetPosition().x),4),round(p.ToMM(fps[f'H{i}'].GetPosition().y),4)] for i in range(1,5))
 assert mounts==sorted(interface['pcb_mounts_kicad']),'PCB mount/CAD mismatch'
 assert abs(p.ToMM(b.GetDesignSettings().GetBoardThickness())-interface['pcb_thickness'])<1e-6,'PCB thickness/CAD mismatch'
-report={'passed':True,'outline_mm':[64,56],'layers':b.GetCopperLayerCount(),'in1_signal_tracks':0,'enclosure_interface_matches':True,'electrical_footprints':len([r for r in fps if not r.startswith(('TP','H'))]),'track_segments':len(tracks),'vias':len(vias),'converter_capacitors':converter_caps,'unchanged_converter_footprints':unchanged,'switch_node_copper_matches_reviewed_source':True,'battery_series_copper':series,'scope':'Saved copper geometry guards. Resistance sums assume 35 um copper and omit vias/contacts/temperature; no parasitic inductance, RF or thermal qualification.'}
+report={'passed':True,'outline_mm':[64,56],'layers':b.GetCopperLayerCount(),'in1_signal_tracks':0,'enclosure_interface_matches':True,'rear_service_controls':[c['name'] for c in interface['service_controls'].values()],'electrical_footprints':len([r for r in fps if not r.startswith(('TP','H'))]),'track_segments':len(tracks),'vias':len(vias),'converter_capacitors':converter_caps,'unchanged_converter_footprints':unchanged,'switch_node_copper_matches_reviewed_source':True,'battery_series_copper':series,'scope':'Saved copper geometry guards. Resistance sums assume 35 um copper and omit vias/contacts/temperature; no parasitic inductance, RF or thermal qualification.'}
 args.report.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

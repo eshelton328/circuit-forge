@@ -29,7 +29,8 @@ for o in holder:
  bmesh.ops.bisect_plane(bm,geom=list(bm.verts)+list(bm.edges)+list(bm.faces),plane_co=(-36.575,0,0),plane_no=(1,0,0),clear_inner=True,clear_outer=False)
  bm.to_mesh(o.data);bm.free();o['cable_note']='Vendor straight 150 mm leads cropped to 8 mm stubs; bent harness is a separate allocation.'
 h=cfg['battery_holder'];hx,hy=h['center_xy']
-hr.rotation_euler.x=math.pi/2;hr.location=(hx,hy+1.595,h['bottom_z'])
+# Flip the vendor holder: its open cell side now faces the removable rear panel.
+hr.rotation_euler.x=-math.pi/2;hr.location=(hx,hy-1.595,h['bottom_z']+h['size'][2])
 # Manufacturer radar GLB uses millimetres in a metre-declared container. Explicit conversion.
 rr,radar=import_mm(D/'sources/HLK-LD2410C.glb',components,'HiLink_LD2410C_vendor')
 rr.scale=(.001,.001,.001)
@@ -40,15 +41,16 @@ for o in radar:o['fit_group']='radar';o['source']='HLK STEP converted without ge
 # AA maximum envelope 14.5 x 50.5 mm; labels are illustrative, no cell brand implied.
 cells=[]
 for i,y in enumerate([hy-15.55,hy,hy+15.55],1):
- o=cyl(f'AA{i} max-size cell',(hx,y,h['bottom_z']+9.4),7.25,50.5,components,silver,'X',status='IEC/Energizer AA maximum envelope; polarity follows holder markings');cells.append(o)
- for x in [-24.8,24.8]:cyl(f'AA{i} sleeve end',(hx+x,y,h['bottom_z']+9.4),7.27,.8,components,black,'X')
+ o=cyl(f'AA{i} max-size cell',(hx,y,h['bottom_z']+h['size'][2]-9.4),7.25,50.5,components,silver,'X',status='IEC/Energizer AA maximum envelope; polarity follows holder markings');cells.append(o)
+ for x in [-24.8,24.8]:cyl(f'AA{i} sleeve end',(hx+x,y,h['bottom_z']+h['size'][2]-9.4),7.27,.8,components,black,'X')
 # Hold the radar with a nonmetallic removable clip; socket alone is not positive retention.
 clip=box('Radar retention bridge',(18,-5,40.7),(27,2,1.2),details,black,bevel=.2,status='nylon retaining-clip allocation; snaps and strain relief unqualified')
 # Narrow contacts are confined to header edge; do not cover radar patch antennas.
 for x in [6.2,30.2]:box('Radar clip leg',(x,-5,45.55),(1.4,2,9.7),details,black,status='retaining clip support allocation')
 # Service harness follows the trimmed holder exit and lands on the native battery header.
 for i,material in enumerate([red,cableblack]):
- tube('Battery harness '+str(i),[(-35.5,5+i*2,10),(-38,5+i*2,21),(-30,-7+i*2,34),(-13+i*2,-10,33)],.6,details,material,status='trimmed 24AWG harness allocation, validate strain relief and actual PH crimp housing')
+ exit_y=-24.12+i*2.9
+ tube('Battery harness '+str(i),[(-36.575,exit_y,17.27),(-39-i,exit_y,19+i),(-38,-14+i*2,29+i),(-13+i*2,-10,33)],.6,details,material,status='trimmed 24AWG harness allocation, validate strain relief and actual PH crimp housing')
 # Surface finish marks the clear unpainted LED area; front wall remains solid PC in CAD.
 lx,ly=cfg['led_xy'];bx,by=cfg['button_xy'];front_z=cfg['shell_depth']
 o=cyl('LED optical finish',(lx,ly,front_z+.02),1.2,.03,details,ledmat,status='visualization of unpainted PC window, not a through-hole')
@@ -70,9 +72,9 @@ def area(name,loc,power,size):
 area('Key',(0,-100,220),350000,140);area('Fill',(-160,40,160),220000,150);area('Rim',(80,110,180),300000,90);area('Service underside',(-80,80,-160),220000,140)
 frontcam=camera('Exterior',(140,-150,200),(0,0,23),162)
 internalcam=camera('Internal',(120,-150,190),(0,0,21),168)
-rearcam=camera('Rear service',(80,110,-170),(0,0,18),164)
+rearcam=camera('Rear service',(60,90,-210),(0,0,25),190)
 S.camera=frontcam;S['status']=cfg['status'];bpy.context.view_layer.update()
-report={'pcb_sha256':hashlib.sha256((R/'boards/alec-sensor/alec-sensor.kicad_pcb').read_bytes()).hexdigest(),'pcb_bounds_mm':bounds(pcbmeshes),'holder_trimmed_bounds_mm':bounds(holder),'radar_bounds_mm':bounds(radar),'dimensions_mm':[cfg['shell_diameter'],cfg['shell_diameter'],cfg['shell_depth']],'scope':'Vendor/PCB nominal geometry and CAD allocations. Refer to cad-checks.json; no waterproof or RF performance claim.'}
+report={'revision':cfg['revision'],'pcb_sha256':hashlib.sha256((R/'boards/alec-sensor/alec-sensor.kicad_pcb').read_bytes()).hexdigest(),'pcb_bounds_mm':bounds(pcbmeshes),'holder_trimmed_bounds_mm':bounds(holder),'radar_bounds_mm':bounds(radar),'battery_opening':h['opening'],'service_controls':cfg['service_controls'],'dimensions_mm':[cfg['shell_diameter'],cfg['shell_diameter'],cfg['shell_depth']],'scope':'Vendor/PCB nominal geometry and CAD allocations. Refer to cad-checks.json; no waterproof or RF performance claim.'}
 (D/'assembly-sources.json').write_text(json.dumps(report,indent=2)+'\n')
 bpy.data.texts.new('READ ME - PROTOTYPE').write(json.dumps(report,indent=2)+'\n'+cfg['status'])
 bpy.ops.wm.save_as_mainfile(filepath=str(D/'alec-sensor-s1.blend'))
@@ -83,7 +85,14 @@ for n in ['front_cup','button_membrane','button_retainer','button_plunger','ligh
 for o in details.objects:
  if o.name.startswith(('LED optical','ALEC wordmark','Pair button')):o.hide_render=True
 S.camera=internalcam;S.render.filepath=str(D/'internals.png');bpy.ops.render.render(write_still=True)
-# Reverse view: battery carrier removed, internal switch and true PCB underside visible.
+# True rear service view: remove only the cover, its screws and external mount.
+# The PCB, carrier, holder, cells, harness and internal service controls stay installed.
+for o in mechanics.objects:o.hide_render=False
+for n in ['rear_cover','mounting_cradle']+[f'rear_screw_{i}' for i in range(1,7)]:parts[n].hide_render=True
+for o in studio.objects:
+ if o.name=='Studio plane':o.hide_render=True
+S.camera=rearcam;S.render.filepath=str(D/'rear-service.png');bpy.ops.render.render(write_still=True)
+# Reverse PCB-only view for reviewing component side and silkscreen placement.
 for o in mechanics.objects:o.hide_render=True
 for o in components.objects:o.hide_render=True
 for o in details.objects:o.hide_render=True

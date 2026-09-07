@@ -7,9 +7,14 @@
   "layers": 4,
   "in1_signal_tracks": 0,
   "enclosure_interface_matches": true,
+  "rear_service_controls": [
+    "POWER",
+    "RESET",
+    "BOOT"
+  ],
   "electrical_footprints": 88,
-  "track_segments": 2664,
-  "vias": 182,
+  "track_segments": 2905,
+  "vias": 187,
   "converter_capacitors": {
     "C3": {
       "ic": "U1",
@@ -74,14 +79,14 @@
       "track_resistance_35um_copper_20C_ohm": 0.006322458735821417
     },
     "/VBAT_FUSED": {
-      "sum_track_length_mm": 52.03,
+      "sum_track_length_mm": 55.089,
       "minimum_width_mm": 0.75,
-      "track_resistance_35um_copper_20C_ohm": 0.034171468965752294
+      "track_resistance_35um_copper_20C_ohm": 0.03618022709405604
     },
     "/VBAT_SW": {
-      "sum_track_length_mm": 53.433,
+      "sum_track_length_mm": 54.266,
       "minimum_width_mm": 0.75,
-      "track_resistance_35um_copper_20C_ohm": 0.035093035004517464
+      "track_resistance_35um_copper_20C_ohm": 0.035639848325174396
     }
   },
   "scope": "Saved copper geometry guards. Resistance sums assume 35 um copper and omit vias/contacts/temperature; no parasitic inductance, RF or thermal qualification."

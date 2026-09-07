@@ -1,5 +1,6 @@
 {
-  "pcb_sha256": "3bfd59429b048799f9905072c4cd5a7bfdae5e3978cc654e667de106bb9d82eb",
+  "revision": "S1.1 rear-service engineering prototype",
+  "pcb_sha256": "a24c60ff24633863f3c583e735a3b21ae90c80aaeed7db93f2349afbbff65b29",
   "pcb_bounds_mm": [
     [
       -33.25,
@@ -15,12 +16,12 @@
   "holder_trimmed_bounds_mm": [
     [
       -36.57500076293945,
-      -38.20499801635742,
-      3.399998903274536
+      -38.20500183105469,
+      3.4000003337860107
     ],
     [
       28.574996948242188,
-      8.404998779296875,
+      8.404996871948242,
       20.790000915527344
     ]
   ],
@@ -36,6 +37,48 @@
       40.01051330566406
     ]
   ],
+  "battery_opening": "rear (-Z); retained in internal carrier, independent of cover",
+  "service_controls": {
+    "SW1": {
+      "name": "POWER",
+      "kicad_xy": [
+        153,
+        86.5
+      ],
+      "pcb_side": "B.Cu",
+      "access_xy_size": [
+        20,
+        12
+      ],
+      "actuator_z": 12.97
+    },
+    "SW2": {
+      "name": "RESET",
+      "kicad_xy": [
+        115,
+        85
+      ],
+      "pcb_side": "B.Cu",
+      "access_xy_size": [
+        10,
+        10
+      ],
+      "actuator_z": 22.8
+    },
+    "SW3": {
+      "name": "BOOT",
+      "kicad_xy": [
+        130,
+        85
+      ],
+      "pcb_side": "B.Cu",
+      "access_xy_size": [
+        10,
+        10
+      ],
+      "actuator_z": 22.8
+    }
+  },
   "dimensions_mm": [
     116,
     116,

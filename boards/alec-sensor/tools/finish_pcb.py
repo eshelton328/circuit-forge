@@ -10,9 +10,12 @@ for t in b.GetTracks():
   seen.add(key)
 for g in b.GetDrawings():
  if isinstance(g,p.PCB_TEXT):
-  s=g.GetText();pos={'BAT / PAIR':(114,125),'BOOT':(152,125),'PRESENCE':(130,114.3),'3 AA ONLY - NO CHARGE':(130,114),'ON':(157.7,94.5),'OFF':(148.3,94.5)}.get(s)
+  s=g.GetText();pos={'BAT / PAIR':(114,125),'BOOT':(130,80.5),'RESET':(115,80.5),'PRESENCE':(130,114.3),'3 AA ONLY - NO CHARGE':(130,114),'ON':(157.7,91),'OFF':(148.3,91)}.get(s)
   if pos:g.SetPosition(p.VECTOR2I(p.FromMM(pos[0]),p.FromMM(pos[1])))
-  if s=='3 AA ONLY - NO CHARGE':g.SetLayer(p.B_SilkS);g.SetMirrored(True)
+  if s=='ALEC SENSOR S1':g.SetText('ALEC SENSOR S1.1')
+  if s in ['3 AA ONLY - NO CHARGE','BOOT','RESET']:g.SetLayer(p.B_SilkS);g.SetMirrored(True)
+if not any(isinstance(g,p.PCB_TEXT) and g.GetText()=='RESET' for g in b.GetDrawings()):
+ t=p.PCB_TEXT(b);t.SetText('RESET');t.SetPosition(p.VECTOR2I(p.FromMM(115),p.FromMM(80.5)));t.SetTextSize(p.VECTOR2I(p.FromMM(1),p.FromMM(1)));t.SetTextThickness(p.FromMM(.15));t.SetLayer(p.B_SilkS);t.SetMirrored(True);b.Add(t)
 source=p.LoadBoard(str(D.parent/'esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb'));old={f.GetReference():f for f in source.GetFootprints()}
 for f in b.GetFootprints():
  if f.GetReference()=='SW7':

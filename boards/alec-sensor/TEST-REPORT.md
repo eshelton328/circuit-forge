@@ -1,6 +1,8 @@
-# ALEC Sensor S1 — design and test report
+# ALEC Sensor S1.1 — design and test report
 
 **Result:** a real, fully routed four-layer sensor PCB and a dimensioned circular enclosure assembly now exist. Local ERC, DRC, schematic parity, saved-copper connectivity and JLCPCB advanced four-layer rule checks pass. These results authorize further engineering review and controlled bench prototyping; they do **not** qualify shower operation or release a manufacturing order.
+
+S1.1 corrects rear service access: POWER/RESET/BOOT are on B.Cu beside a rear-opening battery holder, which is retained independently of the cover. The schematic and BOM remain at electrical S1; only the PCB/mechanical arrangement and its affected routing change.
 
 The previous S0 material was a schematic study with no PCB. S1 promotes the electrical project to `boards/alec-sensor`, adds a populated board model, and integrates its actual geometry with the AA holder and radar. The main alarm boards are unchanged.
 
@@ -10,7 +12,7 @@ The previous S0 material was a schematic study with no PCB. S1 promotes the elec
 - Added the LD2410C five-pin interface, TMUX1511 signal isolation, local bypassing and explicit GPIO/power sequencing.
 - Selected SW1 C&K **1101M2S3CQE2**, rated 6 A at 28 VDC, for a physical battery disconnect. F1 **046701.5NRHF**, 1.5 A fast fuse, is near the battery connector. The unused switch throw is NC; pin 2 is common.
 - Selected Samtec **SSW-105-01-F-S** socket; a custom footprint uses the manufacturer's body dimensions and 2.54 mm pitch. A nonmetallic radar retention clip is allocated; the socket itself is not a positive lock.
-- Placed SW1 on the rear of the board, moved the battery/pair button and RGB indicator to the front-panel linkage positions, and retained internal RESET/BOOT controls.
+- Placed POWER, RESET and BOOT on the rear of the board, clear of the battery holder. The battery/pair button and RGB indicator retain their front-panel linkage positions. The holder now opens toward the rear cover, on an internal carrier; routine cell/control service leaves the board and wiring installed.
 - Assigned explicit ordering candidates to all **88 electrical components**, including previously unspecified passive parts. This is a prototype BOM, with DC-bias and availability checks still open.
 - Built a **116 mm diameter × 54 mm** circular enclosure fit model. Three AA cells sit behind the flat PCB; radar faces the PC front. The earlier 100 × 40 mm concept did not include the full connector/air-gap/service stack.
 
@@ -25,12 +27,13 @@ The previous S0 material was a schematic study with no PCB. S1 promotes the elec
 | Filled-copper check | **277 pad nodes across 60 nets, all connected** | Copper actually touches each multi-node electrical terminal |
 | JLCPCB four-layer advanced profile | **Pass** | Checked profile limits; not a fabricator quote/stackup approval |
 | Independent interface assertions | **47 pass** | USB/RTC/UART GPIOs, correct TX/RX crossing, power isolation, fuse and switch topology |
+| Rear service contract | **8 pass** | Native control faces/positions, exterior interfaces and rear-opening holder; includes negative wrong-face/holder-orientation tests |
 | Layout intent | **Pass** | Short capacitor connections, ground reference, switch-node geometry, battery trace widths |
 | Passive input SPICE | **27 cases executed** | Bounded contact-closure/inrush RLC behavior under stated assumptions |
 | Battery source calculation | **72 cases evaluated** | Supply-voltage margins versus illustrative loads/pack resistance |
 | Lumped thermal calculation | **12 cases evaluated** | Sensitivity to assumed cooling; not PCB or junction temperature |
-| Parametric CAD | **Valid solids; 7 selected intersection checks pass** | Explicit nominal fit checks, not an exhaustive tolerance/collision certification |
-| Python regression suite | **122 passed, 1 skipped**; [log](review/python-tests.txt) | Includes negative UART-swap, isolation-bypass and fuse-bypass controls |
+| Parametric CAD | **Valid solids; 19 selected solid/approach intersection checks pass** | Explicit nominal fit checks, not an exhaustive tolerance/collision certification |
+| Python regression suite | **125 passed, 1 skipped**; [log](review/python-tests.txt) | Includes negative UART-swap, isolation-bypass and fuse-bypass, front-facing service-button and inward-opening holder controls |
 
 The local suite ran under Python 3.9; the single integration skip requires Docker. Deprecation warnings were from the installed plotting dependencies. CI runs the repository suite under Python 3.12.
 
@@ -42,7 +45,7 @@ Reports are in [review](review/). [source-hashes.json](review/source-hashes.json
 
 The MCU-side enable connection changes because GPIO18 is now radar RX. GPIO16 controls the radar regulator; its local converter enable escape is retained, with R19 holding it off during reset. The RTC uses GPIO8/9 and interrupt GPIO1, independent of UART17/18.
 
-The new series battery path uses at least **0.75 mm** tracks. Its three net-length sums are approximately **9.63, 52.03 and 53.43 mm**. Assuming 35 µm copper at 20°C, their summed trace resistance is **75.6 mΩ**, before vias, contacts, heating and tolerance. The rear-facing mechanical switch costs routing length; this is an explicit prototype tradeoff. Measure the drop at the actual operating current.
+The new series battery path uses at least **0.75 mm** tracks. Its three net-length sums are approximately **9.63, 55.09 and 54.27 mm**. Assuming 35 µm copper at 20°C, their summed trace resistance is **78.1 mΩ**, before vias, contacts, heating and tolerance. The rear-facing mechanical switch costs routing length; this is an explicit prototype tradeoff. Measure the drop at the actual operating current.
 
 These geometric checks prevent known layout regressions. They do not establish parasitic inductance, switch-node overshoot, radiated EMI, converter stability or RF performance. New routing, a radar load and a sealed enclosure invalidate any claim that the old board's physical results automatically transfer.
 
@@ -64,7 +67,7 @@ The existing local ultrasonic breadboard sketch waits for an ESP-NOW START messa
 
 The 27 new ngspice cases model connection of a 5.4 V pack to the board's nominal 60 µF input bank, with 25/50/100% effective capacitance, 10/100/1000 nH assumed harness inductance and 0.15/0.6/1.5 Ω pack resistance. They include the new PCB trace resistance and the stated series allowances.
 
-The simulated passive cases peak at **5.416 V** and **11.77 A** across the sweep; maximum input I²t is about **2.52%** of the fuse's nominal 0.0766 A²s melting figure. The short modeled pulse is **not** proof of fuse or switch endurance. Converter startup, load current, contact bounce, initial cell conditions and real parasitics are omitted. The 6 A switch's steady DC rating does not establish its capacitive-inrush lifetime.
+The simulated passive cases peak at **5.414 V** and **11.70 A** across the sweep; maximum input I²t is about **2.50%** of the fuse's nominal 0.0766 A²s melting figure. The short modeled pulse is **not** proof of fuse or switch endurance. Converter startup, load current, contact bounce, initial cell conditions and real parasitics are omitted. The 6 A switch's steady DC rating does not establish its capacitive-inrush lifetime.
 
 F1 is secondary board protection, not a precise current limiter. The 1.5 A marking is not a continuous operating budget at elevated temperature: apply the manufacturer's 25% continuous derating and temperature rerating. A short on the holder wiring **upstream of F1 is not protected by this PCB fuse**. Inspect/secure/insulate those leads and evaluate pack-side protection before releasing the enclosure.
 
@@ -82,11 +85,11 @@ These are neither local PCB temperatures nor semiconductor junction temperatures
 
 The assembly imports actual PCB GLB, MPD holder geometry and Hi-Link radar STEP-derived GLB. The holder body is **57.15 × 46.61 × 17.39 mm**. Radar body is **22 × 16 mm**; its existing header/socket stack puts the front copper plane at Z=38 mm. The PC inner face is Z=50.4 mm.
 
-Nominal clearances are **1.29 mm** at the battery holder's farthest corner through the rear opening, **3.61 mm** to PCB underside and **1.61 mm** to PCB screw heads. The lower-right PCB support uses a short post/rib below the radar. Seven explicit CAD intersection checks cover cup versus retainer/membrane/plunger/radar/holder, and retainer versus plunger/light pipe. This is not an exhaustive all-component/tolerance check.
+Nominal clearances are **1.29 mm** at the battery holder's farthest corner through the rear opening, **3.61 mm** to PCB underside and **1.61 mm** to PCB screw heads. The lower-right PCB support uses a short post/rib below the radar. Nineteen explicit CAD intersection checks cover the prior cup/button/radar/holder pairs, the new carrier against cup/cover/holder, and each service control’s rear approach against cup/holder/carrier. The AA holder opens rearward. The fixed carrier uses three M2 mounts, a 1 mm plate, 1 mm stiffening ribs and four nominal edge hooks; the cover carries no battery wiring. Nominal carrier rib-to-PCB clearance is 1.61 mm, and plate-to-PCB-screw-head clearance is 0.61 mm. Physical finger access, clip retention/release, cell extraction and the tolerance stack must still be checked. This is not an exhaustive all-component/tolerance check.
 
 The 3.6 mm PC wall and 12.4 mm air gap are initial values derived from the Hi-Link radome guide, **not tested tuning**. Use unfilled, nonconductive material and qualify the actual resin, pigment, finish and wet surface. The circular shoulder helps drainage, but shape alone cannot make a product waterproof. Six rear screws sit outside the main O-ring; the button uses a clamped silicone membrane and guided plunger. Gasket dimensions are nominal; material, gland tolerances, inserts and torque require samples. There is no ingress rating yet.
 
-The front optical area remains solid PC. The radar-retention clip, battery-holder retainer, mated battery plug/harness, suction/adhesive adapters and exact insert/hardware variants remain mechanical allocations. Internal undercuts mean a manufacturing review is required before CNC or molding. The complete enclosure is not represented as ready-to-order tooling.
+The front optical area remains solid PC. The radar-retention clip, battery-carrier clip tolerances/creep, mated battery plug/harness, suction/adhesive adapters and exact insert/hardware variants remain mechanical allocations. Internal undercuts mean a manufacturing review is required before CNC or molding. The complete enclosure is not represented as ready-to-order tooling.
 
 ## Required prototype tests / acceptance record
 
@@ -105,6 +108,7 @@ Record actual cells, holder/contact resistance, firmware revision, LD2410C firmw
 | Dry/wet RF | Compare bare radar versus enclosure, dry/condensed/wet/soap film, several gaps/material coupons, tile/glass surroundings and intended mounting height/angle. Log detection gates and false positives, not only a green LED. |
 | Water-only false stop | Run empty-shower spray/steam, moving curtains, fan and nearby people behind glass. The alarm must not stop from water/held OUT alone. Require fresh qualified UART evidence throughout the chosen dwell time; define acceptable false-stop rate before release. |
 | Sealing/condensation | Validate membrane force/travel/fatigue, O-ring compression, torque and repeated battery access; test jets/immersion for the chosen target plus hot/cold condensation and soap exposure. IP66/IP67 are separate proposed tests, not a current rating. |
+| Rear service | With the holder/cells installed, remove only the rear cover and operate POWER/RESET/BOOT; replace all three cells without moving the PCB or pulling the harness. Check finger room, polarity markings, carrier hooks, screw access and re-sealing over repeated cycles. USB cable service remains a separate carrier/PCB-removal operation. |
 | Mount retention | Test rigid screw cradle and selected suction/adhesive adapters on representative wet tile/glass, sustained load and repeated thermal cycles. Check slippage/angle changes, drainage and clean removal. |
 
 **Release gates remain open:** actual battery endurance and load limits; effective capacitor values and assembled load-step response; fuse/switch transient behavior; fabricator stackup/USB impedance/thermal-via process; RF/wet false-positive behavior; temperature measurements; enclosure tolerances and ingress/mount qualification. Passing CI does not close these gates.

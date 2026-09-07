@@ -126,6 +126,42 @@
     "evidence": "clear PC optical allocation; diffusion/brightness pending"
   },
   {
+    "name": "carrier_screw_1",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x6 rear carrier screw envelope; final pilot/insert/torque pending"
+  },
+  {
+    "name": "carrier_screw_2",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x6 rear carrier screw envelope; final pilot/insert/torque pending"
+  },
+  {
+    "name": "carrier_screw_3",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x6 rear carrier screw envelope; final pilot/insert/torque pending"
+  },
+  {
+    "name": "battery_carrier",
+    "color": [
+      0.16,
+      0.2,
+      0.22
+    ],
+    "evidence": "fixed nylon carrier; rear-loading AA holder with four nominal retaining hooks, three M2 mounts; tolerance/creep tests pending"
+  },
+  {
     "name": "mounting_cradle",
     "color": [
       0.12,
@@ -168,7 +204,7 @@
       0.14,
       0.19
     ],
-    "evidence": "BH3AAW exact drawing envelope; vendor STEP rendered in Blender instead"
+    "evidence": "BH3AAW exact drawing envelope, opening toward rear (-Z); vendor STEP rendered in Blender"
   },
   {
     "name": "radar_pcb_envelope",

@@ -5,6 +5,11 @@
   "components": [
     {
       "reference": "C1",
+      "side": "F.Cu",
+      "position_mm": [
+        106.5,
+        95.5
+      ],
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "models": [
         {
@@ -30,6 +35,11 @@
     },
     {
       "reference": "C10",
+      "side": "F.Cu",
+      "position_mm": [
+        129.5,
+        99.5
+      ],
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "models": [
         {
@@ -55,6 +65,11 @@
     },
     {
       "reference": "C11",
+      "side": "F.Cu",
+      "position_mm": [
+        132.8,
+        100.0
+      ],
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "models": [
         {
@@ -80,6 +95,11 @@
     },
     {
       "reference": "C12",
+      "side": "F.Cu",
+      "position_mm": [
+        136.3,
+        104.0
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -105,6 +125,11 @@
     },
     {
       "reference": "C13",
+      "side": "F.Cu",
+      "position_mm": [
+        139.2,
+        100.0
+      ],
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "models": [
         {
@@ -130,6 +155,11 @@
     },
     {
       "reference": "C14",
+      "side": "F.Cu",
+      "position_mm": [
+        142.5,
+        99.0
+      ],
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "models": [
         {
@@ -155,6 +185,11 @@
     },
     {
       "reference": "C15",
+      "side": "F.Cu",
+      "position_mm": [
+        145.7,
+        99.0
+      ],
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "models": [
         {
@@ -180,6 +215,11 @@
     },
     {
       "reference": "C16",
+      "side": "F.Cu",
+      "position_mm": [
+        148.9,
+        99.0
+      ],
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "models": [
         {
@@ -205,6 +245,11 @@
     },
     {
       "reference": "C17",
+      "side": "F.Cu",
+      "position_mm": [
+        119.0,
+        73.0
+      ],
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "models": [
         {
@@ -230,6 +275,11 @@
     },
     {
       "reference": "C18",
+      "side": "F.Cu",
+      "position_mm": [
+        122.0,
+        71.8
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -255,6 +305,11 @@
     },
     {
       "reference": "C19",
+      "side": "F.Cu",
+      "position_mm": [
+        119.0,
+        75.5
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -280,6 +335,11 @@
     },
     {
       "reference": "C2",
+      "side": "F.Cu",
+      "position_mm": [
+        106.5,
+        99.5
+      ],
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "models": [
         {
@@ -305,6 +365,11 @@
     },
     {
       "reference": "C20",
+      "side": "F.Cu",
+      "position_mm": [
+        113.0,
+        83.5
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -330,6 +395,11 @@
     },
     {
       "reference": "C21",
+      "side": "F.Cu",
+      "position_mm": [
+        150.5,
+        73.0
+      ],
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "models": [
         {
@@ -355,6 +425,11 @@
     },
     {
       "reference": "C25",
+      "side": "F.Cu",
+      "position_mm": [
+        116.0,
+        117.0
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -380,6 +455,11 @@
     },
     {
       "reference": "C29",
+      "side": "F.Cu",
+      "position_mm": [
+        158.0,
+        78.6
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -405,6 +485,11 @@
     },
     {
       "reference": "C3",
+      "side": "F.Cu",
+      "position_mm": [
+        109.8,
+        100.0
+      ],
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "models": [
         {
@@ -430,6 +515,11 @@
     },
     {
       "reference": "C34",
+      "side": "F.Cu",
+      "position_mm": [
+        145.0,
+        77.0
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -455,6 +545,11 @@
     },
     {
       "reference": "C35",
+      "side": "F.Cu",
+      "position_mm": [
+        155.0,
+        111.5
+      ],
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "models": [
         {
@@ -480,6 +575,11 @@
     },
     {
       "reference": "C36",
+      "side": "F.Cu",
+      "position_mm": [
+        159.5,
+        108.0
+      ],
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "models": [
         {
@@ -505,6 +605,11 @@
     },
     {
       "reference": "C37",
+      "side": "F.Cu",
+      "position_mm": [
+        161.0,
+        93.5
+      ],
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "models": [
         {
@@ -530,6 +635,11 @@
     },
     {
       "reference": "C4",
+      "side": "F.Cu",
+      "position_mm": [
+        113.3,
+        104.0
+      ],
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "models": [
         {
@@ -555,6 +665,11 @@
     },
     {
       "reference": "C5",
+      "side": "F.Cu",
+      "position_mm": [
+        116.2,
+        100.0
+      ],
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "models": [
         {
@@ -580,6 +695,11 @@
     },
     {
       "reference": "C6",
+      "side": "F.Cu",
+      "position_mm": [
+        119.5,
+        99.0
+      ],
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "models": [
         {
@@ -605,6 +725,11 @@
     },
     {
       "reference": "C7",
+      "side": "F.Cu",
+      "position_mm": [
+        122.7,
+        99.0
+      ],
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "models": [
         {
@@ -630,6 +755,11 @@
     },
     {
       "reference": "C8",
+      "side": "F.Cu",
+      "position_mm": [
+        125.9,
+        99.0
+      ],
       "footprint": "Capacitor_SMD:C_1206_3216Metric",
       "models": [
         {
@@ -655,6 +785,11 @@
     },
     {
       "reference": "C9",
+      "side": "F.Cu",
+      "position_mm": [
+        129.5,
+        95.5
+      ],
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "models": [
         {
@@ -680,6 +815,11 @@
     },
     {
       "reference": "D2",
+      "side": "F.Cu",
+      "position_mm": [
+        130.0,
+        121.0
+      ],
       "footprint": "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100",
       "models": [
         {
@@ -705,6 +845,11 @@
     },
     {
       "reference": "F1",
+      "side": "F.Cu",
+      "position_mm": [
+        110.0,
+        112.0
+      ],
       "footprint": "Fuse:Fuse_0603_1608Metric",
       "models": [
         {
@@ -730,6 +875,11 @@
     },
     {
       "reference": "J1",
+      "side": "F.Cu",
+      "position_mm": [
+        119.0,
+        112.0
+      ],
       "footprint": "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical",
       "models": [
         {
@@ -755,6 +905,11 @@
     },
     {
       "reference": "J2",
+      "side": "F.Cu",
+      "position_mm": [
+        102.4,
+        88.0
+      ],
       "footprint": "Board:USB_C_HRO_Overhang",
       "models": [
         {
@@ -780,6 +935,11 @@
     },
     {
       "reference": "J3",
+      "side": "F.Cu",
+      "position_mm": [
+        145.0,
+        108.0
+      ],
       "footprint": "Sensor:Samtec_SSW-105-01-F-S",
       "models": [
         {
@@ -805,6 +965,11 @@
     },
     {
       "reference": "L1",
+      "side": "F.Cu",
+      "position_mm": [
+        113.0,
+        96.9
+      ],
       "footprint": "TPS63070:IND_XFL4020-152MEC",
       "models": [
         {
@@ -830,6 +995,11 @@
     },
     {
       "reference": "L2",
+      "side": "F.Cu",
+      "position_mm": [
+        136.0,
+        96.9
+      ],
       "footprint": "TPS63070:IND_XFL4020-152MEC",
       "models": [
         {
@@ -855,6 +1025,11 @@
     },
     {
       "reference": "Q1",
+      "side": "F.Cu",
+      "position_mm": [
+        112.0,
+        108.0
+      ],
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "models": [
         {
@@ -880,6 +1055,11 @@
     },
     {
       "reference": "Q4",
+      "side": "F.Cu",
+      "position_mm": [
+        116.0,
+        79.5
+      ],
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "models": [
         {
@@ -905,6 +1085,11 @@
     },
     {
       "reference": "Q5",
+      "side": "F.Cu",
+      "position_mm": [
+        120.0,
+        80.0
+      ],
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "models": [
         {
@@ -930,6 +1115,11 @@
     },
     {
       "reference": "Q6",
+      "side": "F.Cu",
+      "position_mm": [
+        125.5,
+        94.0
+      ],
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "models": [
         {
@@ -955,6 +1145,11 @@
     },
     {
       "reference": "Q7",
+      "side": "F.Cu",
+      "position_mm": [
+        143.0,
+        93.5
+      ],
       "footprint": "Package_TO_SOT_SMD:SOT-23",
       "models": [
         {
@@ -980,6 +1175,11 @@
     },
     {
       "reference": "R1",
+      "side": "F.Cu",
+      "position_mm": [
+        109.0,
+        109.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1005,6 +1205,11 @@
     },
     {
       "reference": "R10",
+      "side": "F.Cu",
+      "position_mm": [
+        135.1,
+        104.8
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1030,6 +1235,11 @@
     },
     {
       "reference": "R12",
+      "side": "F.Cu",
+      "position_mm": [
+        145.0,
+        88.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1055,6 +1265,11 @@
     },
     {
       "reference": "R13",
+      "side": "F.Cu",
+      "position_mm": [
+        122.0,
+        75.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1080,6 +1295,11 @@
     },
     {
       "reference": "R14",
+      "side": "F.Cu",
+      "position_mm": [
+        109.0,
+        84.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1105,6 +1325,11 @@
     },
     {
       "reference": "R15",
+      "side": "F.Cu",
+      "position_mm": [
+        108.0,
+        81.7
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1130,6 +1355,11 @@
     },
     {
       "reference": "R16",
+      "side": "F.Cu",
+      "position_mm": [
+        154.0,
+        83.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1155,6 +1385,11 @@
     },
     {
       "reference": "R17",
+      "side": "F.Cu",
+      "position_mm": [
+        156.0,
+        83.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1180,6 +1415,11 @@
     },
     {
       "reference": "R18",
+      "side": "F.Cu",
+      "position_mm": [
+        150.3,
+        79.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1205,6 +1445,11 @@
     },
     {
       "reference": "R19",
+      "side": "F.Cu",
+      "position_mm": [
+        132.3,
+        105.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1230,6 +1475,11 @@
     },
     {
       "reference": "R27",
+      "side": "F.Cu",
+      "position_mm": [
+        114.0,
+        117.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1255,6 +1505,11 @@
     },
     {
       "reference": "R28",
+      "side": "F.Cu",
+      "position_mm": [
+        128.0,
+        117.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1280,6 +1535,11 @@
     },
     {
       "reference": "R29",
+      "side": "F.Cu",
+      "position_mm": [
+        130.0,
+        117.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1305,6 +1565,11 @@
     },
     {
       "reference": "R3",
+      "side": "F.Cu",
+      "position_mm": [
+        109.2,
+        102.7
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1330,6 +1595,11 @@
     },
     {
       "reference": "R30",
+      "side": "F.Cu",
+      "position_mm": [
+        132.0,
+        117.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1355,6 +1625,11 @@
     },
     {
       "reference": "R31",
+      "side": "F.Cu",
+      "position_mm": [
+        107.0,
+        106.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1380,6 +1655,11 @@
     },
     {
       "reference": "R32",
+      "side": "F.Cu",
+      "position_mm": [
+        109.0,
+        106.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1405,6 +1685,11 @@
     },
     {
       "reference": "R33",
+      "side": "F.Cu",
+      "position_mm": [
+        158.0,
+        81.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1430,6 +1715,11 @@
     },
     {
       "reference": "R34",
+      "side": "F.Cu",
+      "position_mm": [
+        121.0,
+        86.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1455,6 +1745,11 @@
     },
     {
       "reference": "R35",
+      "side": "F.Cu",
+      "position_mm": [
+        121.0,
+        87.75
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1480,6 +1775,11 @@
     },
     {
       "reference": "R4",
+      "side": "F.Cu",
+      "position_mm": [
+        116.3,
+        102.1
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1505,6 +1805,11 @@
     },
     {
       "reference": "R40",
+      "side": "F.Cu",
+      "position_mm": [
+        113.0,
+        79.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1530,6 +1835,11 @@
     },
     {
       "reference": "R41",
+      "side": "F.Cu",
+      "position_mm": [
+        115.0,
+        82.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1555,6 +1865,11 @@
     },
     {
       "reference": "R42",
+      "side": "F.Cu",
+      "position_mm": [
+        117.5,
+        77.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1580,6 +1895,11 @@
     },
     {
       "reference": "R43",
+      "side": "F.Cu",
+      "position_mm": [
+        117.5,
+        82.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1605,6 +1925,11 @@
     },
     {
       "reference": "R44",
+      "side": "F.Cu",
+      "position_mm": [
+        121.0,
+        83.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1630,6 +1955,11 @@
     },
     {
       "reference": "R45",
+      "side": "F.Cu",
+      "position_mm": [
+        123.0,
+        94.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1655,6 +1985,11 @@
     },
     {
       "reference": "R46",
+      "side": "F.Cu",
+      "position_mm": [
+        146.0,
+        93.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1680,6 +2015,11 @@
     },
     {
       "reference": "R47",
+      "side": "F.Cu",
+      "position_mm": [
+        143.0,
+        96.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1705,6 +2045,11 @@
     },
     {
       "reference": "R48",
+      "side": "F.Cu",
+      "position_mm": [
+        145.0,
+        72.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1730,6 +2075,11 @@
     },
     {
       "reference": "R49",
+      "side": "F.Cu",
+      "position_mm": [
+        145.0,
+        75.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1755,6 +2105,11 @@
     },
     {
       "reference": "R5",
+      "side": "F.Cu",
+      "position_mm": [
+        116.3,
+        103.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1780,6 +2135,11 @@
     },
     {
       "reference": "R54",
+      "side": "F.Cu",
+      "position_mm": [
+        152.0,
+        92.3
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1805,6 +2165,11 @@
     },
     {
       "reference": "R55",
+      "side": "F.Cu",
+      "position_mm": [
+        160.8,
+        96.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1830,6 +2195,11 @@
     },
     {
       "reference": "R56",
+      "side": "F.Cu",
+      "position_mm": [
+        160.8,
+        98.0
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1855,6 +2225,11 @@
     },
     {
       "reference": "R6",
+      "side": "F.Cu",
+      "position_mm": [
+        112.1,
+        104.8
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1880,6 +2255,11 @@
     },
     {
       "reference": "R7",
+      "side": "F.Cu",
+      "position_mm": [
+        132.199999,
+        102.7
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1905,6 +2285,11 @@
     },
     {
       "reference": "R8",
+      "side": "F.Cu",
+      "position_mm": [
+        139.3,
+        102.1
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1930,6 +2315,11 @@
     },
     {
       "reference": "R9",
+      "side": "F.Cu",
+      "position_mm": [
+        139.3,
+        103.5
+      ],
       "footprint": "Resistor_SMD:R_0402_1005Metric",
       "models": [
         {
@@ -1955,6 +2345,11 @@
     },
     {
       "reference": "SW1",
+      "side": "B.Cu",
+      "position_mm": [
+        153.0,
+        86.5
+      ],
       "footprint": "Sensor:SW_CK_1101M2S3CQE2",
       "models": [
         {
@@ -1980,6 +2375,11 @@
     },
     {
       "reference": "SW2",
+      "side": "B.Cu",
+      "position_mm": [
+        115.0,
+        85.0
+      ],
       "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
       "models": [
         {
@@ -2005,6 +2405,11 @@
     },
     {
       "reference": "SW3",
+      "side": "B.Cu",
+      "position_mm": [
+        130.0,
+        85.0
+      ],
       "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
       "models": [
         {
@@ -2030,6 +2435,11 @@
     },
     {
       "reference": "SW7",
+      "side": "F.Cu",
+      "position_mm": [
+        114.0,
+        121.0
+      ],
       "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
       "models": [
         {
@@ -2055,6 +2465,11 @@
     },
     {
       "reference": "U1",
+      "side": "F.Cu",
+      "position_mm": [
+        113.0,
+        102.0
+      ],
       "footprint": "TPS63070:TPS63070",
       "models": [
         {
@@ -2080,6 +2495,11 @@
     },
     {
       "reference": "U10",
+      "side": "F.Cu",
+      "position_mm": [
+        155.0,
+        96.5
+      ],
       "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
       "models": [
         {
@@ -2105,6 +2525,11 @@
     },
     {
       "reference": "U2",
+      "side": "F.Cu",
+      "position_mm": [
+        136.0,
+        102.0
+      ],
       "footprint": "TPS63070:TPS63070",
       "models": [
         {
@@ -2130,6 +2555,11 @@
     },
     {
       "reference": "U3",
+      "side": "F.Cu",
+      "position_mm": [
+        133.0,
+        76.5
+      ],
       "footprint": "Board:ESP32-S3-WROOM-1_Overhang",
       "models": [
         {
@@ -2155,6 +2585,11 @@
     },
     {
       "reference": "U4",
+      "side": "F.Cu",
+      "position_mm": [
+        112.3,
+        88.0
+      ],
       "footprint": "Package_TO_SOT_SMD:SOT-23-6",
       "models": [
         {
@@ -2180,6 +2615,11 @@
     },
     {
       "reference": "U5",
+      "side": "F.Cu",
+      "position_mm": [
+        154.0,
+        78.0
+      ],
       "footprint": "Package_SON:MicroCrystal_C7_SON-8_1.5x3.2mm_P0.9mm",
       "models": [
         {

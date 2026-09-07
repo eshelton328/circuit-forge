@@ -12,6 +12,6 @@ for base in [D,R/'enclosures/alec-sensor']:
   if p.suffix in ['.kicad_sch','.kicad_pcb','.kicad_pro','.kicad_mod','.kicad_sym','.py','.json','.md','.csv','.txt','.cir','.log','.pdf','.png','.glb','.blend','.step','.stl','.svg','.yml'] or p.name.endswith('-lib-table'):
    paths.append(p)
 paths.extend(R/p for p in ['scripts/alarm/design.py','scripts/ci/check_copper_connectivity.py','boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb','boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_sch','boards/esp32s3-devkit-5v/power-monitor.kicad_sch','enclosures/alec/geometry_helpers.py','enclosures/alec/sources/BH3AAW.glb','tests/test_alec_sensor.py','.github/workflows/alec-sensor-study.yml'])
-result={'revision':'S1','scope':'SHA-256 of delivered sources, models, documentation and local evidence; not a physical qualification or CI attestation. The manifest excludes itself.','files':{str(p.relative_to(R)):{'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size} for p in sorted(paths)}}
+result={'revision':'S1.1','scope':'SHA-256 of delivered sources, models, documentation and local evidence; not a physical qualification or CI attestation. The manifest excludes itself.','files':{str(p.relative_to(R)):{'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size} for p in sorted(paths)}}
 (D/'review/source-hashes.json').write_text(json.dumps(result,indent=2)+'\n')
 print(f'Hashed {len(paths)} source/evidence files')

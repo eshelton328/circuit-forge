@@ -119,17 +119,18 @@ gnd=b.GetNetcodeFromNetname('GND' if b.GetCopperLayerCount()==4 else '/GND');gro
 for pd in pads:
  ref=pd.GetParentFootprint().GetReference()
  if pd.GetNetCode()!=gnd or pd.GetAttribute()!=p.PAD_ATTRIB_SMD:continue
- if b.GetCopperLayerCount()==4 and ref not in ['U10','C35','C36','C37','R54','R55','R56','SW7','C25','D2']:continue
- if ref in ['U1','U2','U3'] or not pd.IsOnLayer(p.F_Cu):continue
+ if b.GetCopperLayerCount()==4 and ref not in ['U10','C35','C36','C37','R54','R55','R56','SW2','SW3','SW7','C25','D2']:continue
+ if ref in ['U1','U2','U3']:continue
+ first_layer=0 if pd.IsOnLayer(p.F_Cu) else NL-1
  if any(isinstance(t,p.PCB_VIA) and t.GetNetCode()==gnd and math.dist(mm(t.GetPosition()),mm(pd.GetPosition()))<1.0 for t in b.GetTracks()):continue
  a=mm(pd.GetPosition());blocked,vo=obstacles(gnd,.2)
  ax,ay=grid(a);candidates=[]
  for dy in range(-26,27):
   for dx in range(-26,27):
    x,y=ax+dx,ay+dy
-   if 0<=x<nx and 0<=y<ny and .5/step<=math.hypot(dx,dy)<=1.3/step and vo[y,x] and not blocked[0,y,x]:candidates.append((dx*dx+dy*dy,x,y))
+   if 0<=x<nx and 0<=y<ny and .5/step<=math.hypot(dx,dy)<=1.3/step and vo[y,x] and not blocked[first_layer,y,x]:candidates.append((dx*dx+dy*dy,x,y))
  for _,x,y in sorted(candidates)[:24]:
-  dest=real(x,y);path=pathfind(a,dest,blocked,vo)
+  dest=real(x,y);path=pathfind(a,dest,blocked,vo,first_layer,first_layer)
   if path:
    emit(gnd,path,a,dest,.2);addvia(gnd,dest);break
  else:ground_fail.append(ref+'.'+pd.GetNumber())
@@ -137,6 +138,14 @@ print('Local GND vias complete; deferred to plane:',ground_fail,flush=True)
 # Initial copper groups allow manual power/USB routes to stay intact.
 # Restore the reviewed inside-module escape via; route from its B.Cu landing.
 if not any(isinstance(t,p.PCB_VIA) and math.dist(mm(t.GetPosition()),(141.2,82.7))<.01 for t in b.GetTracks()):addvia(b.GetNetcodeFromNetname('/GPIO38'),(141.2,82.7),.55,.25)
+# Short SCL fanouts preserve fine-pitch escapes before routing the new rear-service bay.
+# Work from the via landings; the grid's rectangular pad obstacles are conservative at the IC pins.
+if 'service_controls' in json.loads((D.parents[1]/'enclosures/alec-sensor/interface.json').read_text()):
+ scl=b.GetNetcodeFromNetname('/GPIO9')
+ for points in [[(128.555,89),(128.6,88.955),(128.6,88.45),(129.1,87.95),(129.2,87.95),(130.95,86.2),(131.35,86.2)],[(153.35,78.45),(153.05,78.75),(152.6,78.75),(152.6,79.95),(153.2,80.55),(153.2,81.55)]]:
+  for a,c in zip(points,points[1:]):
+   if not any(not isinstance(t,p.PCB_VIA) and t.GetNetCode()==scl and t.GetLayer()==p.F_Cu and {tuple(mm(t.GetStart())),tuple(mm(t.GetEnd()))}=={a,c} for t in b.GetTracks()):addtrace(scl,[a,c],.15)
+ for xy in [(131.35,86.2),(153.2,81.55)]:addvia(scl,xy,.55,.25)
 b.BuildConnectivity();cn=b.GetConnectivity()
 by_net={}
 for pd in pads:
@@ -188,6 +197,10 @@ for net in sorted(ng,key=order):
      if name=='/GPIO38':
       if aa.GetParentFootprint().GetReference()=='U3':a=(141.2,82.7);la=NL-1
       if cc.GetParentFootprint().GetReference()=='U3':c=(141.2,82.7);lc=NL-1
+     if name=='/GPIO9':
+      landings={'U3':(131.35,86.2),'U5':(153.2,81.55)}
+      if aa.GetParentFootprint().GetReference() in landings:a=landings[aa.GetParentFootprint().GetReference()];la=NL-1
+      if cc.GetParentFootprint().GetReference() in landings:c=landings[cc.GetParentFootprint().GetReference()];lc=NL-1
      dist=(a[0]-c[0])**2+(a[1]-c[1])**2
      choices.append((dist,gi,a,c,la,lc))
   found=False

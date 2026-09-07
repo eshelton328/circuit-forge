@@ -1,0 +1,71 @@
+{
+  "revision": "S1.1",
+  "baseline_commit": "cca46478361d6894ba7d723eccd52ed7043bb751",
+  "baseline_pcb_sha256": "3bfd59429b048799f9905072c4cd5a7bfdae5e3978cc654e667de106bb9d82eb",
+  "result_pcb_sha256": "a24c60ff24633863f3c583e735a3b21ae90c80aaeed7db93f2349afbbff65b29",
+  "changed_footprints": [
+    {
+      "reference": "SW3",
+      "before": {
+        "xy": [
+          152.0,
+          120.0
+        ],
+        "side": "F.Cu"
+      },
+      "after": {
+        "xy": [
+          130.0,
+          85.0
+        ],
+        "side": "B.Cu"
+      }
+    },
+    {
+      "reference": "SW2",
+      "before": {
+        "xy": [
+          112.0,
+          74.0
+        ],
+        "side": "F.Cu"
+      },
+      "after": {
+        "xy": [
+          115.0,
+          85.0
+        ],
+        "side": "B.Cu"
+      }
+    },
+    {
+      "reference": "SW1",
+      "before": {
+        "xy": [
+          153.0,
+          89.5
+        ],
+        "side": "B.Cu"
+      },
+      "after": {
+        "xy": [
+          153.0,
+          86.5
+        ],
+        "side": "B.Cu"
+      }
+    }
+  ],
+  "usb_signal_copper_unchanged": [
+    "/D+",
+    "/D-",
+    "/USB_CC1",
+    "/USB_MCU_N",
+    "/USB_MCU_P",
+    "Net-(J2-CC2)",
+    "Net-(J2-D+-PadA6)",
+    "Net-(J2-D--PadA7)"
+  ],
+  "schematic_and_bom_change": false,
+  "scope": "Native geometry comparison to S1. Converter cells separately checked in layout-validation.json; no physical qualification."
+}

@@ -19,6 +19,7 @@ kicad-cli sch erc --exit-code-violations --format json -o boards/alec-sensor/rev
 kicad-cli pcb drc --exit-code-violations --refill-zones --save-board --schematic-parity --format json -o boards/alec-sensor/review/drc.json boards/alec-sensor/alec-sensor.kicad_pcb
 "$KICAD_PYTHON" scripts/ci/check_copper_connectivity.py boards/alec-sensor
 python3 boards/alec-sensor/tools/check_design.py
+python3 boards/alec-sensor/tools/check_service_interface.py
 "$KICAD_PYTHON" boards/alec-sensor/tools/check_layout.py
 "$KICAD_PYTHON" boards/alec-sensor/tools/audit_models.py
 bash scripts/run-drc-all-fabs.sh boards/alec-sensor
@@ -44,9 +45,10 @@ c++ -O3 -shared -fPIC boards/esp32s3-devkit-5v/tools/grid_search.cpp -o /tmp/ale
 export ALARM_GRID_LIBRARY=/tmp/alec-grid-search.so
 "$KICAD_PYTHON" boards/alec-sensor/tools/route_pcb.py
 "$KICAD_PYTHON" boards/alec-sensor/tools/finish_pcb.py
+"$KICAD_PYTHON" boards/alec-sensor/tools/clean_retired_copper.py
 ```
 
-Then repeat every verification above. Routing is a geometric construction step, not an electrical signoff. `clean_retired_copper.py --initial` only belongs to the initial migration before routing; it refuses to cut a collision inside the reviewed switching-cell region. Do not use it to conceal a final routing error. `sync_fields.py` updates BOM metadata on an existing board without rerouting.
+Then repeat every verification above. Routing is a geometric construction step, not an electrical signoff. `clean_retired_copper.py --initial` only belongs to the initial migration before routing; it refuses to cut a collision inside the reviewed switching-cell region. Do not use it to conceal a final routing error. `apply_rear_service.py` migrates an existing S1 layout to the rear-control positions from `interface.json`; follow it with the initial cleanup, routing, final cleanup and all verification above. `sync_fields.py` updates BOM metadata on an existing board without rerouting.
 
 ## Mechanical models and evidence
 
@@ -58,6 +60,6 @@ python enclosures/alec-sensor/tools/build_cad.py
 blender -b --python enclosures/alec-sensor/tools/build_blender.py
 ```
 
-Regenerate the board GLB before Blender. The enclosure imports actual populated PCB geometry and the vendor-derived holder/radar meshes. `interface.json` controls the nominal stack; `check_layout.py` also verifies its PCB mount, radar, LED and button coordinates. `build_cad.py` tests seven explicit solid intersections, not all package/tolerance combinations. The STEP is the geometry authority; rendered colors and harness/retention allocations are illustrative.
+Regenerate the board GLB before Blender. The enclosure imports actual populated PCB geometry and the vendor-derived holder/radar meshes. `interface.json` controls the nominal stack; `check_layout.py` also verifies its PCB mount, radar, LED, external button and rear service-control coordinates. `build_cad.py` tests 19 explicit solid/approach intersections, not all package/tolerance combinations. The STEP is the geometry authority; rendered colors and harness/retention allocations are illustrative.
 
 After validating and rendering a release candidate, run `python3 boards/alec-sensor/tools/hash_evidence.py` to bind the native sources and reports. The manifest excludes itself to avoid a hash cycle. Re-running tools may change export timestamps and identifiers; compare electrical/geometry results, not just byte identity.
