@@ -1,0 +1,243 @@
+(kicad_symbol_lib (version 20241209) (generator "kicad_symbol_editor")
+(symbol
+	"TMUX1511PWR"
+	(pin_names
+		(offset 0.508))
+	(in_bom yes)
+	(on_board yes)
+	(property
+		"Reference"
+		"U"
+		(at 0 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property
+		"Value"
+		"TMUX1511PWR"
+		(at 0 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(symbol
+		"TMUX1511PWR_0_1"
+		(rectangle
+			(start -12.7 17.78)
+			(end 12.7 -22.86)
+			(stroke
+				(width 0.254)
+				(type default))
+			(fill
+				(type background))))
+	(symbol
+		"TMUX1511PWR_1_1"
+		(pin
+			input
+			line
+			(at -15.24 -10.16 0)
+			(length 2.54)
+			(name
+				"SEL1"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"1"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at -15.24 10.16 0)
+			(length 2.54)
+			(name
+				"S1"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"2"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at 15.24 10.16 180)
+			(length 2.54)
+			(name
+				"D1"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"3"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			input
+			line
+			(at -15.24 -15.24 0)
+			(length 2.54)
+			(name
+				"SEL2"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"4"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at -15.24 5.08 0)
+			(length 2.54)
+			(name
+				"S2"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"5"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at 15.24 5.08 180)
+			(length 2.54)
+			(name
+				"D2"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"6"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			power_in
+			line
+			(at 0 -25.4 90)
+			(length 2.54)
+			(name
+				"GND"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"7"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at 15.24 0 180)
+			(length 2.54)
+			(name
+				"D3"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"8"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at -15.24 0 0)
+			(length 2.54)
+			(name
+				"S3"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"9"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			input
+			line
+			(at -15.24 -20.32 0)
+			(length 2.54)
+			(name
+				"SEL3"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"10"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at 15.24 -5.08 180)
+			(length 2.54)
+			(name
+				"D4"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"11"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			passive
+			line
+			(at -15.24 -5.08 0)
+			(length 2.54)
+			(name
+				"S4"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"12"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			input
+			line
+			(at 15.24 -15.24 180)
+			(length 2.54)
+			(name
+				"SEL4"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"13"
+				(effects
+					(font
+						(size 1.016 1.016)))))
+		(pin
+			power_in
+			line
+			(at 0 20.32 270)
+			(length 2.54)
+			(name
+				"VDD"
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(number
+				"14"
+				(effects
+					(font
+						(size 1.016 1.016))))))))

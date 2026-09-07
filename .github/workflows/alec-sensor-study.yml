@@ -1,0 +1,45 @@
+name: ALEC Sensor schematic study
+on:
+  pull_request:
+    paths:
+      - 'designs/alec-sensor/**'
+      - 'tests/test_alec_sensor_study.py'
+      - '.github/workflows/alec-sensor-study.yml'
+      - 'libs/**'
+  push:
+    branches: [main]
+    paths:
+      - 'designs/alec-sensor/**'
+      - '.github/workflows/alec-sensor-study.yml'
+      - 'libs/**'
+permissions:
+  contents: read
+jobs:
+  schematic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - name: Export and check the schematic study (no PCB exists yet)
+        run: |
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -e HOME=/workspace/.kicad-ci-home \
+            -v "$GITHUB_WORKSPACE:/workspace" -w /workspace \
+            kicad/kicad:10.0@sha256:feb600e931ca7ad8ae684566131edbea32218cb90ab54bb2ea0944cee257eea6 \
+            bash -euc '
+              source scripts/ci/setup-kicad-env.sh
+              d=designs/alec-sensor
+              kicad-cli sch erc --exit-code-violations --format json -o "$d/review/erc.json" "$d/alec-sensor.kicad_sch"
+              kicad-cli sch export netlist --format kicadxml -o "$d/review/netlist.xml" "$d/alec-sensor.kicad_sch"
+              python3 "$d/tools/check_design.py"
+              python3 "$d/tools/power_budget.py"
+              kicad-cli sch export pdf -o "$d/docs/schematic.pdf" "$d/alec-sensor.kicad_sch"
+            '
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: alec-sensor-schematic-study
+          path: |
+            designs/alec-sensor/review/*.json
+            designs/alec-sensor/review/netlist.xml
+            designs/alec-sensor/docs/schematic.pdf

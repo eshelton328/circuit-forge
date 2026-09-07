@@ -1,0 +1,23 @@
+{
+  "ld2410c.pdf": {
+    "sha256": "07b16520cb9dca21fb7ff67673c075fc0c2d00e75b6d2da267a478f50675f397",
+    "bytes": 2084562
+  },
+  "radome.pdf": {
+    "sha256": "bebd401fb051f0d396ca5d1206990296960e0e17e6c985d096e34efea65d3c04",
+    "bytes": 729198
+  },
+  "ld2410c-3d.zip": {
+    "sha256": "87c50427f06a368fa2d99e99d39ea9b12e5156f6ad100cecf09ccbdd4535b9f3",
+    "bytes": 1206674
+  },
+  "HLK-LD2410C.step": {
+    "sha256": "85d3de2ffd20497516ea0f311e6e0a46e288177a1c23cb30b74fc953e84e799c",
+    "bytes": 7078696,
+    "bbox_mm": [
+      22.000002061744,
+      16.000002064947,
+      11.500000043711
+    ]
+  }
+}

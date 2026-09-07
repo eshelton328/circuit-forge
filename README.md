@@ -8,6 +8,7 @@ Hardware design monorepo for KiCad PCB projects with automated CI/CD.
 the-forge/
 ├── Makefile          # make check / erc / drc / fab-drc
 ├── boards/           # Individual board projects
+├── designs/          # Schematic studies before PCB layout
 ├── enclosures/       # Product packaging, Blender models and fit evidence
 ├── fab-rules/        # DRC rule templates per fab house
 ├── kibot/            # KiBot output generation configs
@@ -33,6 +34,12 @@ the-forge/
 Each board README includes schematic previews, a downloadable schematic PDF, top/bottom 3D renders and a populated GLB model. The board catalog and these assets are updated automatically after merges to `main`.
 
 The **ALEC** alarm uses `alec-main`, `alec-controls` and `alec-front` together. The main board carries the ESP32-S3, dual power converters and audio circuit; the two smaller boards carry the protected settings controls and exterior battery-check button/RGB LED. These are engineering prototypes with physical qualification pending. See the [full PCB and enclosure test report](boards/alec-main/review/TEST-REPORT.md).
+
+## Designs in development
+
+| Design | Stage |
+|---|---|
+| [alec-sensor](designs/alec-sensor/) | Shower presence companion: initial three-sheet schematic, power/sleep contract and sealed-enclosure concept; PCB and physical qualification pending |
 
 ## Enclosures
 
