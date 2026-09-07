@@ -14,7 +14,7 @@ def export(kind):
   if ref=='J7' and kind=='main':continue
   rows.append({'Reference':ref,'Value':c.findtext('value'),'MPN':fields.get('MPN',''),'Footprint':c.findtext('footprint'),'Datasheet':c.findtext('datasheet'),'Assembly': 'NO PART: fabricated probe pads' if ref=='J7' and kind=='main' else 'DNP' if ref=='R11' and kind=='main' else 'Populate; verify ordering code'})
  with (review/'bom.csv').open('w',newline='') as f:
-  writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(sorted(rows,key=lambda r:r['Reference']))
+  writer=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader();writer.writerows(sorted(rows,key=lambda r:r['Reference']))
  print(kind,'exports complete',flush=True)
 if __name__=='__main__':
  with concurrent.futures.ThreadPoolExecutor(3) as pool:list(pool.map(export,['main','controls','front']))

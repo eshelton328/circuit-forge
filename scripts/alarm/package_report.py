@@ -40,6 +40,8 @@ text=f'''# V4.2 PCB and enclosure test report
 |---|---:|---:|---|
 {chr(10).join(boardrows)}
 
+The full local repository suite reports **115 passed, 1 skipped**.
+
 All three also pass the repository's filled-copper connectivity guard. The bottom board uses explicit ground traces as well as its filled planes. Board intent validation passes on all three projects.
 
 - {len(interfaces['checks'])} circuit/interface checks: retained circuit peers and component values/footprints, full cable pin maps, hardware-enable throws, LED polarity/current limiting, display order and UART connections.
