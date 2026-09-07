@@ -35,8 +35,9 @@ Do not bridge the three signal-isolation channels with zero-ohm links for conven
 
 ## Presence contract
 
-The required behavior is evidence of a person in the selected zone for X seconds. The radar does not prove identity, attention, getting washed or even that a target is inside the shower rather than beyond a glass door. Water-only motion, a curtain and adjacent-room presence are deliberate rejection tests.
+The required behavior is evidence of a person in the selected zone for X seconds. The radar does not prove identity, attention, getting washed or even that a target is inside the shower rather than beyond a glass door. Water-only motion, a curtain and adjacent-room presence are deliberate rejection tests. The roughly 0.75 m range-gate resolution is coarse compared with a shower door: do not assume a gate threshold can distinguish someone just inside from someone just outside.
 
+- Disable the LD2410C’s own Bluetooth configuration radio during normal operation through its UART command, then verify the setting after startup. This removes an unnecessary nearby 2.4 GHz transmitter; measure coexistence during service mode. The manufacturer describes rapid repeated power cycling as a way to re-enable Bluetooth, so brownout/restart loops must not be assumed to preserve that setting.
 - Consume fresh `MyLD2410` data frames continuously. Match the actual module firmware and pin a tested library version. Hardware UART defaults are 256000 baud, 8N1. [MyLD2410 upstream](https://github.com/iavorvel/MyLD2410).
 - Use a monotonic dwell clock, not wall-clock subtraction. Reset the dwell accumulator on invalid/stale data, reset, out-of-zone targets or confirmed absence. Require a current alarm-session identifier before any completion message.
 - The module's configured no-person delay holds the presence result after a departure. Characterize that delay and the firmware's reporting behavior; OUT high alone cannot prove continuous dwell. Set the shortest useful hold time, use engineering/per-gate evidence where available, and account for residual hold in the acceptance test. Fresh UART packets can still contain a held detection result.
