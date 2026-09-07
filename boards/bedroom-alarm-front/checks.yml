@@ -1,0 +1,14 @@
+required_components:
+  J1: {}
+  SW1: {}
+  D1: {}
+required_nets:
+- 3v3
+- BTN_BAT
+- GND
+- LED_B_K
+- LED_G_K
+- LED_R_K
+bom_rules:
+  require_footprint: true
+  no_duplicate_refs: true

@@ -1,0 +1,455 @@
+# Behavioral power topology and bounded remote-button RLC sensitivity; not physical qualification.
+spec_version: 1
+spice_engine: ngspice
+assembly:
+  main: sim/kicad_export.cir
+  includes:
+  - ../../libs/spice/tps63070/TPS63070_TRANS.LIB
+scenarios:
+- id: vbat_bias_op
+  measures:
+  - id: v_vbat_sw
+    title: Protected battery rail DC bias (4.8 V pack at t=0)
+    op_node: PFET
+    min: 4.5
+    max: 4.85
+- id: tran_fresh_4v8
+  measures:
+  - id: v3v3_steady_fresh
+    title: "Vout steady, fresh pack (95 \xB5s)"
+    min: 3.28
+    max: 3.33
+  - id: v3v3_ripple_fresh
+    title: Vout ripple peak-peak, fresh pack idle
+    max: 0.15
+  - id: v3v3_burst_fresh_min
+    title: Vout minimum during 0.5 A burst at 4.8 V
+    min: 3.1
+- id: tran_mid_3v6
+  measures:
+  - id: v3v3_steady_mid
+    title: Vout steady at 3.6 V (buck-boost transition)
+    min: 3.28
+    max: 3.33
+  - id: v3v3_burst_mid_min
+    title: Vout minimum during 0.5 A burst at 3.6 V
+    min: 3.1
+- id: tran_low_3v0
+  measures:
+  - id: v3v3_steady_low
+    title: Vout steady on end-of-life pack (3.0 V)
+    min: 3.28
+    max: 3.33
+  - id: v3v3_burst_low_min
+    title: Vout minimum during 0.5 A burst at 3.0 V (boost mode)
+    min: 3.0
+  - id: vbat_sw_burst_low_min
+    title: Protected battery rail present during worst burst (wiring check)
+    group: tran_low_extra
+    min: 2.5
+  - id: i_bat_passive_late
+    title: Battery-side passive drain at idle, post-settling (pull-ups + FB dividers;
+      repository model is quasi-ideal and does not draw converter input current)
+    group: tran_low_extra
+    abs_value: true
+    max: 0.002
+- id: tran_recovery
+  measures:
+  - id: v3v3_recovery
+    title: "Vout recovered at idle on dead pack (800 \xB5s)"
+    min: 3.28
+    max: 3.33
+secondary_passes:
+- netlist_rel: sim/tran_dual_rail.cir
+  scenarios:
+  - id: schematic_dual_rail
+    measures:
+    - id: rail5_disabled
+      title: Schematic U2 remains disabled before GPIO18 assertion
+      max: 0.05
+    - id: rail5_enabled
+      title: Schematic U2 regulates with 0.6 A modeled audio load
+      min: 4.95
+      max: 5.02
+    - id: rail3_dual
+      title: Schematic U1 regulates while both modeled rails are loaded
+      min: 3.28
+      max: 3.33
+- netlist_rel: sim/tran_startup_3v0.cir
+  scenarios:
+  - id: tran_startup_3v0
+    measures:
+    - id: startup3v0_vout_final
+      title: "Cold start at 3.0 V \u2014 Vout at 380 \xB5s"
+      group: tran_startup
+      min: 3.28
+      max: 3.33
+    - id: startup3v0_post_min
+      title: "Cold start at 3.0 V \u2014 Vout floor after settling"
+      group: tran_startup
+      min: 3.2
+- netlist_rel: sim/tran_espnow_fresh.cir
+  scenarios:
+  - id: espnow_fresh
+    measures:
+    - id: espnow_fresh_vin_min
+      title: "ESP-NOW bursts, fresh pack \u2014 VIN minimum (behavioral converter)"
+      group: espnow_brownout
+      min: 4.1
+    - id: espnow_fresh_v3v3_min
+      title: "ESP-NOW bursts, fresh pack \u2014 3V3 minimum"
+      group: espnow_brownout
+      min: 3.25
+- netlist_rel: sim/tran_espnow_tired.cir
+  scenarios:
+  - id: espnow_tired
+    measures:
+    - id: espnow_tired_vin_min
+      title: "ESP-NOW bursts, tired pack (3.6V/1.2R) \u2014 VIN sag stays above 2.0V\
+        \ UVLO"
+      group: espnow_brownout
+      min: 2.3
+      max: 3.0
+    - id: espnow_tired_v3v3_min
+      title: "ESP-NOW bursts, tired pack \u2014 3V3 holds"
+      group: espnow_brownout
+      min: 3.25
+- netlist_rel: sim/tran_espnow_dead.cir
+  scenarios:
+  - id: espnow_dead
+    measures:
+    - id: espnow_dead_v3v3_min
+      title: "ESP-NOW burst, dead pack (3.0V/3R) \u2014 brownout MUST occur (failure-boundary\
+        \ regression)"
+      group: espnow_brownout
+      max: 2.5
+    - id: espnow_dead_v3v3_recovered
+      title: "Dead-pack brownout \u2014 rail recovers after burst"
+      group: espnow_brownout
+      min: 3.25
+      max: 3.35
+- netlist_rel: sim/tran_rev2_amp_preview.cir
+  scenarios:
+  - id: rev2_amp_preview
+    measures:
+    - id: rev2_vin_min
+      title: "Rev-2 preview: WiFi + 3W amp on fresh pack \u2014 VIN minimum"
+      group: rev2_amp
+      min: 3.5
+    - id: rev2_v3v3_min
+      title: "Rev-2 preview \u2014 3V3 holds under combined load"
+      group: rev2_amp
+      min: 3.25
+    - id: rev2_v5v_min
+      title: "Rev-2 preview \u2014 5V amp rail holds"
+      group: rev2_amp
+      min: 4.9
+- netlist_rel: sim/button-r95-l1e-07-c8e-08-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_01
+    measures:
+    - id: gpio_min_c09
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c09
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c09
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c09
+      title: Held LOW level
+      max: 0.825
+    - id: released_c09
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r95-l1e-07-c8e-08-w1.cir
+  scenarios:
+  - id: remote_button_rlc_02
+    measures:
+    - id: gpio_min_c10
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c10
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c10
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c10
+      title: Held LOW level
+      max: 0.825
+    - id: released_c10
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r95-l1e-07-c1.2e-07-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_03
+    measures:
+    - id: gpio_min_c11
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c11
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c11
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c11
+      title: Held LOW level
+      max: 0.825
+    - id: released_c11
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r95-l1e-07-c1.2e-07-w1.cir
+  scenarios:
+  - id: remote_button_rlc_04
+    measures:
+    - id: gpio_min_c12
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c12
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c12
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c12
+      title: Held LOW level
+      max: 0.825
+    - id: released_c12
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r95-l1e-06-c8e-08-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_05
+    measures:
+    - id: gpio_min_c13
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c13
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c13
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c13
+      title: Held LOW level
+      max: 0.825
+    - id: released_c13
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r95-l1e-06-c8e-08-w1.cir
+  scenarios:
+  - id: remote_button_rlc_06
+    measures:
+    - id: gpio_min_c14
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c14
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c14
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c14
+      title: Held LOW level
+      max: 0.825
+    - id: released_c14
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r95-l1e-06-c1.2e-07-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_07
+    measures:
+    - id: gpio_min_c15
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c15
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c15
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c15
+      title: Held LOW level
+      max: 0.825
+    - id: released_c15
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r95-l1e-06-c1.2e-07-w1.cir
+  scenarios:
+  - id: remote_button_rlc_08
+    measures:
+    - id: gpio_min_c16
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c16
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c16
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c16
+      title: Held LOW level
+      max: 0.825
+    - id: released_c16
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-07-c8e-08-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_09
+    measures:
+    - id: gpio_min_c17
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c17
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c17
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c17
+      title: Held LOW level
+      max: 0.825
+    - id: released_c17
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-07-c8e-08-w1.cir
+  scenarios:
+  - id: remote_button_rlc_10
+    measures:
+    - id: gpio_min_c18
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c18
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c18
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c18
+      title: Held LOW level
+      max: 0.825
+    - id: released_c18
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-07-c1.2e-07-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_11
+    measures:
+    - id: gpio_min_c19
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c19
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c19
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c19
+      title: Held LOW level
+      max: 0.825
+    - id: released_c19
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-07-c1.2e-07-w1.cir
+  scenarios:
+  - id: remote_button_rlc_12
+    measures:
+    - id: gpio_min_c20
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c20
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c20
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c20
+      title: Held LOW level
+      max: 0.825
+    - id: released_c20
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-06-c8e-08-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_13
+    measures:
+    - id: gpio_min_c21
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c21
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c21
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c21
+      title: Held LOW level
+      max: 0.825
+    - id: released_c21
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-06-c8e-08-w1.cir
+  scenarios:
+  - id: remote_button_rlc_14
+    measures:
+    - id: gpio_min_c22
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c22
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c22
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c22
+      title: Held LOW level
+      max: 0.825
+    - id: released_c22
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-06-c1.2e-07-w0.1.cir
+  scenarios:
+  - id: remote_button_rlc_15
+    measures:
+    - id: gpio_min_c23
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c23
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c23
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c23
+      title: Held LOW level
+      max: 0.825
+    - id: released_c23
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+- netlist_rel: sim/button-r105-l1e-06-c1.2e-07-w1.cir
+  scenarios:
+  - id: remote_button_rlc_16
+    measures:
+    - id: gpio_min_c24
+      title: Unclamped GPIO minimum, assumed harness corner
+      min: -0.1
+    - id: gpio_max_c24
+      title: Unclamped GPIO maximum
+      max: 3.4
+    - id: press_current_c24
+      title: Peak current through remote switch
+      max: 0.05
+    - id: held_c24
+      title: Held LOW level
+      max: 0.825
+    - id: released_c24
+      title: Released HIGH after 1.9 ms
+      min: 2.475
+plots:
+- file: tran-vout-battery.png
+  signal: v(3v3)
+- file: tran-vbat-sw.png
+  signal: v(pfet)

@@ -1,0 +1,17 @@
+Remote button sensitivity: series=0 ohm, L=1e-06, C=1.2e-07, Rwire=0.1
+VDD supply 0 3.3
+Rpull supply gpio 10000
+Cdeb gpio 0 1.2e-07
+Rseries gpio cable 0.001
+Lwire cable remote 1e-06
+Rwire remote contact 0.1
+Vcontact control 0 PULSE(0 3.3 1m 1n 1n 1m 5m)
+Sbutton contact 0 control 0 BUTTON
+.model BUTTON SW(Ron=0.05 Roff=1e12 Vt=1.65 Vh=0)
+.tran 50n 4m
+.meas tran gpio_min_c07 MIN v(gpio) FROM=0.99m TO=2m
+.meas tran gpio_max_c07 MAX v(gpio) FROM=0.99m TO=4m
+.meas tran press_current_c07 MAX i(Lwire) FROM=1m TO=1.1m
+.meas tran held_c07 FIND v(gpio) AT=1.9m
+.meas tran released_c07 FIND v(gpio) AT=3.9m
+.end

@@ -1,0 +1,474 @@
+{
+  "scope": "Lumped RLC sensitivity and DC enable topology only; not extracted parasitics, switch life, GPIO ESD-clamp current, EMC, thermal or physical qualification.",
+  "assumptions": {
+    "cable_length_limit_mm": 200,
+    "loop_inductance_H": [
+      1e-07,
+      1e-06
+    ],
+    "wire_and_contacts_ohm": [
+      0.1,
+      1.0
+    ],
+    "button_on_resistance_ohm": 0.05,
+    "capacitor_F": [
+      8e-08,
+      1.2e-07
+    ],
+    "GPIO_threshold_assumptions_V": {
+      "low_max": 0.825,
+      "high_min": 2.475
+    },
+    "switching_edges": "Ideal switch with 1 ns drive edges; no contact bounce or GPIO clamps"
+  },
+  "tool": "******\n** ngspice-46 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2025, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n******\n",
+  "button_cases": [
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": -2.59497,
+        "gpio_max": 3.3,
+        "press_current": 2.57633,
+        "held": 4.98292e-05,
+        "released": 2.99306
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-07-c8e-08-w0.1.cir",
+      "sha256": "1ac22450147628c04f2fdfafb73bbf32afdbde75cfa66ce07fddb8ea6bad4c2e"
+    },
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": -0.66078,
+        "gpio_max": 3.3,
+        "press_current": 1.68654,
+        "held": 0.000346794,
+        "released": 2.99308
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-07-c8e-08-w1.cir",
+      "sha256": "ed12d7293a90d731e821098c371a18b3d8069c11a2181632e665c9600d9877c7"
+    },
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": -2.54683,
+        "gpio_max": 3.3,
+        "press_current": 3.20288,
+        "held": 4.98292e-05,
+        "released": 2.62255
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-07-c1.2e-07-w0.1.cir",
+      "sha256": "04272f218c8c1002434884782fd6078bcf398585964df73d2e7488c452362b0d"
+    },
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": -0.384513,
+        "gpio_max": 3.3,
+        "press_current": 1.84379,
+        "held": 0.000346794,
+        "released": 2.62261
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-07-c1.2e-07-w1.cir",
+      "sha256": "7d8bde61ec64ef464ba20f72cc85380989a4f9239aa0cd3fdccdfab76a997d58"
+    },
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": -3.07623,
+        "gpio_max": 3.3,
+        "press_current": 0.900237,
+        "held": 4.98292e-05,
+        "released": 2.99306
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-06-c8e-08-w0.1.cir",
+      "sha256": "6423904cbbaef83ddcfeb3eeca678668e6ff3c1ecbf97389651e2606102ce243"
+    },
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": -2.05933,
+        "gpio_max": 3.3,
+        "press_current": 0.754484,
+        "held": 0.000346794,
+        "released": 2.99308
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-06-c8e-08-w1.cir",
+      "sha256": "a83e0261bbeed5ec0cf132cd32a476b78f32e636e5c575848e4ad56812f6bc37"
+    },
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": -3.03289,
+        "gpio_max": 3.3,
+        "press_current": 1.09551,
+        "held": 4.98292e-05,
+        "released": 2.62255
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-06-c1.2e-07-w0.1.cir",
+      "sha256": "ef742ed173100907ad5f73eb481fbe82a79f5c015465197a164f19cd24181d21"
+    },
+    {
+      "series_ohm": 0,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": -1.84677,
+        "gpio_max": 3.3,
+        "press_current": 0.883038,
+        "held": 0.000346794,
+        "released": 2.62261
+      },
+      "screening_limits_met": false,
+      "deck": "button-r0-l1e-06-c1.2e-07-w1.cir",
+      "sha256": "40f93bd0aa7ba8c2bf0c1341f43c8a46234877faa9f85b42e403e775a4484aa9"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0311035,
+        "gpio_max": 3.3,
+        "press_current": 0.0346602,
+        "held": 0.0311035,
+        "released": 2.99594
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-07-c8e-08-w0.1.cir",
+      "sha256": "7563b1df4e8c9821b2667c736b489e481889978240bd4e797e5178e0f1084209"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.031395,
+        "gpio_max": 3.3,
+        "press_current": 0.0343355,
+        "held": 0.031395,
+        "released": 2.99597
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-07-c8e-08-w1.cir",
+      "sha256": "8ef9a2b88cdeca867632e1d0d19d15cdec4e9cee8c6c54f59472064cf8078a34"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0311035,
+        "gpio_max": 3.3,
+        "press_current": 0.0346691,
+        "held": 0.0311035,
+        "released": 2.62893
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-07-c1.2e-07-w0.1.cir",
+      "sha256": "41d93476348f83307cce23b5ded9525234d9577a5b4deb75b6ed5e7532277044"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.031395,
+        "gpio_max": 3.3,
+        "press_current": 0.0343443,
+        "held": 0.031395,
+        "released": 2.62899
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-07-c1.2e-07-w1.cir",
+      "sha256": "56ffe07376cafced7ce949da1e4b9e7e035b203bc26b6a3565a6b7a6cf89f3b6"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0311035,
+        "gpio_max": 3.3,
+        "press_current": 0.0344729,
+        "held": 0.0311035,
+        "released": 2.99594
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-06-c8e-08-w0.1.cir",
+      "sha256": "a0f686ebfe687613a264b33eae630b717a701cbe28633827ad0046b8889f5d97"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.031395,
+        "gpio_max": 3.3,
+        "press_current": 0.0341535,
+        "held": 0.031395,
+        "released": 2.99597
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-06-c8e-08-w1.cir",
+      "sha256": "95bb6e3fd3a67d5dea61a54b2321c33eddcb4b7a50db7f567efd42dab1fcc67a"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0311035,
+        "gpio_max": 3.3,
+        "press_current": 0.0345302,
+        "held": 0.0311035,
+        "released": 2.62893
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-06-c1.2e-07-w0.1.cir",
+      "sha256": "0f45ea61a2179a3e7e72661dd072b4d810c661fa67dfb7d5450dc284fc028f80"
+    },
+    {
+      "series_ohm": 95,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.031395,
+        "gpio_max": 3.3,
+        "press_current": 0.0342097,
+        "held": 0.031395,
+        "released": 2.62899
+      },
+      "screening_limits_met": true,
+      "deck": "button-r95-l1e-06-c1.2e-07-w1.cir",
+      "sha256": "98ab227469dc1964a28b8466cd33452b0bebebf0ecd5b7960a84b374665982c4"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0343384,
+        "gpio_max": 3.3,
+        "press_current": 0.0313647,
+        "held": 0.0343384,
+        "released": 2.99625
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-07-c8e-08-w0.1.cir",
+      "sha256": "a66999668df6ee8a6d1453d24efd55aa755a54fe674df7a217d8033b31907d5a"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.0346293,
+        "gpio_max": 3.3,
+        "press_current": 0.0310985,
+        "held": 0.0346293,
+        "released": 2.99627
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-07-c8e-08-w1.cir",
+      "sha256": "7b19ce57393a37d23ecc80047d87d38363dfa51b936b838e7268f88da39b8c04"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0343384,
+        "gpio_max": 3.3,
+        "press_current": 0.0313719,
+        "held": 0.0343384,
+        "released": 2.62959
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-07-c1.2e-07-w0.1.cir",
+      "sha256": "c0b7032bb7e4bbe967cf92a3761f9ab58e0a1ec90c72714d70398b65f6e85c78"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-07,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.0346293,
+        "gpio_max": 3.3,
+        "press_current": 0.0311057,
+        "held": 0.0346293,
+        "released": 2.62965
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-07-c1.2e-07-w1.cir",
+      "sha256": "baf852fd74b7cfb81cbffaabfdf10f7e4674dbf5501ecaf04420bf089ba3fe1e"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0343384,
+        "gpio_max": 3.3,
+        "press_current": 0.0312264,
+        "held": 0.0343384,
+        "released": 2.99625
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-06-c8e-08-w0.1.cir",
+      "sha256": "63a93f125d591ee240c785c02bf03f5c6a62639e050d09a6124bb5b7ef572664"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 8e-08,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.0346293,
+        "gpio_max": 3.3,
+        "press_current": 0.0309638,
+        "held": 0.0346293,
+        "released": 2.99627
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-06-c8e-08-w1.cir",
+      "sha256": "d359472d547c6c9ae0b9520f3e86fb3c58eeb0161d0a2362451ebc1650287505"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 0.1,
+      "measures": {
+        "gpio_min": 0.0343384,
+        "gpio_max": 3.3,
+        "press_current": 0.0312724,
+        "held": 0.0343384,
+        "released": 2.62959
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-06-c1.2e-07-w0.1.cir",
+      "sha256": "f111f21c71d5c57ac2b5c8d73efa808f3346a1dd8e62e08fbc0a6506a5343267"
+    },
+    {
+      "series_ohm": 105,
+      "loop_inductance_H": 1e-06,
+      "debounce_F": 1.2e-07,
+      "wire_resistance_ohm": 1.0,
+      "measures": {
+        "gpio_min": 0.0346293,
+        "gpio_max": 3.3,
+        "press_current": 0.0310089,
+        "held": 0.0346293,
+        "released": 2.62965
+      },
+      "screening_limits_met": true,
+      "deck": "button-r105-l1e-06-c1.2e-07-w1.cir",
+      "sha256": "1aa4c3281d6520e3258db1e92efb09d1659ffc22487670b37480050870a91fed"
+    }
+  ],
+  "enable_cases": [
+    {
+      "protected_battery_V": 2.7,
+      "state": "on",
+      "enable_V": 2.454543
+    },
+    {
+      "protected_battery_V": 2.7,
+      "state": "off",
+      "enable_V": 0.0
+    },
+    {
+      "protected_battery_V": 2.7,
+      "state": "unplugged",
+      "enable_V": 0.0
+    },
+    {
+      "protected_battery_V": 3.0,
+      "state": "on",
+      "enable_V": 2.72727
+    },
+    {
+      "protected_battery_V": 3.0,
+      "state": "off",
+      "enable_V": 0.0
+    },
+    {
+      "protected_battery_V": 3.0,
+      "state": "unplugged",
+      "enable_V": 0.0
+    },
+    {
+      "protected_battery_V": 4.5,
+      "state": "on",
+      "enable_V": 4.090905
+    },
+    {
+      "protected_battery_V": 4.5,
+      "state": "off",
+      "enable_V": 0.0
+    },
+    {
+      "protected_battery_V": 4.5,
+      "state": "unplugged",
+      "enable_V": 0.0
+    },
+    {
+      "protected_battery_V": 5.4,
+      "state": "on",
+      "enable_V": 4.909086
+    },
+    {
+      "protected_battery_V": 5.4,
+      "state": "off",
+      "enable_V": 0.0
+    },
+    {
+      "protected_battery_V": 5.4,
+      "state": "unplugged",
+      "enable_V": 0.0
+    }
+  ],
+  "passed": true
+}

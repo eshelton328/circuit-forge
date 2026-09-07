@@ -1,0 +1,6 @@
+Reference,Value,MPN,Footprint,Datasheet,Assembly
+J1,BM07B-GHS-TBT,BM07B-GHS-TBT,Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eGH.pdf,Populate; verify ordering code
+SW1,VOL-,B3F-1060,Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x,https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf,Populate; verify ordering code
+SW2,MODE,B3F-1060,Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x,https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf,Populate; verify ordering code
+SW3,VOL+,B3F-1060,Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x,https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf,Populate; verify ordering code
+SW4,EG1218,EG1218,Alarm:EG1218,https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf,Populate; verify ordering code

@@ -1,0 +1,28 @@
+{
+  "removed_main_parts": [
+    "D2",
+    "SW1",
+    "SW4",
+    "SW5",
+    "SW6",
+    "SW7"
+  ],
+  "renamed_nets": {
+    "Net-(D2-BK)": "/LED_B_K",
+    "Net-(D2-GK)": "/LED_G_K",
+    "Net-(U3-EN)": "/EN",
+    "Net-(D2-RK)": "/LED_R_K",
+    "Net-(U3-IO0)": "/GPIO0",
+    "unconnected-(U3-RXD0-Pad36)": "/UART_RX",
+    "unconnected-(U3-TXD0-Pad37)": "/UART_TX"
+  },
+  "rerouted_ui_nets": [
+    "/GPIO10",
+    "/GPIO4",
+    "/GPIO5",
+    "/GPIO6",
+    "/LED_B_K",
+    "/LED_G_K",
+    "/LED_R_K"
+  ]
+}

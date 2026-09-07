@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/erik/Workspaces/the-forge-enclosure-pcbs/boards/bedroom-alarm-front/bedroom-alarm-front.kicad_sch</source>
+    <date>2026-09-06T23:22:44</date>
+    <tool>Eeschema 10.0.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>bedroom-alarm-front</title>
+        <company/>
+        <rev>v4.2 prototype</rev>
+        <date>2026-09-06</date>
+        <source>bedroom-alarm-front.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>150141M173100</value>
+      <footprint>LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/150141M173100.pdf</datasheet>
+      <fields>
+        <field name="MPN">150141M173100</field>
+        <field name="Footprint">LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/150141M173100.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="WE_150141M173100" description="RGB LED, red/green/blue/anode"/>
+      <property name="MPN" value="150141M173100"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bedroom-alarm-front.kicad_sch"/>
+      <property name="ki_keywords" value="LED RGB diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f48cd1a-644c-5d02-bea1-f1f9f0f660cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>BM06B-GHS-TBT</value>
+      <footprint>Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
+      <fields>
+        <field name="MPN">BM06B-GHS-TBT</field>
+        <field name="Footprint">Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="BM06B-GHS-TBT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bedroom-alarm-front.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15c2ef90-b7ad-5047-a293-4d97ae7553fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>BATTERY</value>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-1000P</footprint>
+      <datasheet>https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf</datasheet>
+      <fields>
+        <field name="MPN">B3U-1000P</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_B3U-1000P</field>
+        <field name="Datasheet">https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="B3U-1000P"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bedroom-alarm-front.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6c323ec-6f12-5207-958e-d607399080b7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="WE_150141M173100">
+      <description>RGB LED, red/green/blue/anode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WE_150141M173100</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">RGB LED, red/green/blue/anode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="BK" type="passive"/>
+        <pin num="3" name="RK" type="passive"/>
+        <pin num="4" name="GK" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Review">
+      <uri>${KIPRJMOD}/review/Review.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>${KICAD10_SYMBOL_DIR}/Switch.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3v3" class="Default">
+      <node ref="D1" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="2" name="/BTN_BAT" class="Default">
+      <node ref="J1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="3" name="/GND" class="Default">
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/LED_B_K" class="Default">
+      <node ref="D1" pin="2" pinfunction="BK_2" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+    </net>
+    <net code="5" name="/LED_G_K" class="Default">
+      <node ref="D1" pin="4" pinfunction="GK_4" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+    </net>
+    <net code="6" name="/LED_R_K" class="Default">
+      <node ref="D1" pin="3" pinfunction="RK_3" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+  </nets>
+</export>

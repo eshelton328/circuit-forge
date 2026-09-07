@@ -1,0 +1,592 @@
+{
+  "passed": true,
+  "pcb_sha256": "19b8fdd2cac4d5c8febaecd3081aee7337c51ca7352ef3410bfe56ea65fe24b0",
+  "checks": [
+    {
+      "name": "C13 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C20 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R19 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R32 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C23 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C25 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R25 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "SW2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R34 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C16 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C18 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R27 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R15 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C30 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R13 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C12 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "D1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R21 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C10 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "SW3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C22 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R12 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R9 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R42 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C11 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R28 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R47 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R41 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R17 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R39 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R10 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R24 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C24 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R38 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R11 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R31 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R33 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R30 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R40 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R44 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R26 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C26 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R49 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C17 retained placement",
+      "passed": true
+    },
+    {
+      "name": "TP4 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R43 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R18 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R20 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H3 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R35 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C15 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C31 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R8 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C28 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R46 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R23 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R29 retained placement",
+      "passed": true
+    },
+    {
+      "name": "J2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q6 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C19 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C34 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R36 retained placement",
+      "passed": true
+    },
+    {
+      "name": "H1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C33 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R37 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C27 retained placement",
+      "passed": true
+    },
+    {
+      "name": "L2 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C32 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R48 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R14 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C9 retained placement",
+      "passed": true
+    },
+    {
+      "name": "U1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R16 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R45 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q5 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Q7 retained placement",
+      "passed": true
+    },
+    {
+      "name": "L1 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C29 retained placement",
+      "passed": true
+    },
+    {
+      "name": "R22 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C21 retained placement",
+      "passed": true
+    },
+    {
+      "name": "C14 retained placement",
+      "passed": true
+    },
+    {
+      "name": "Reviewed power, local return, USB and BTL copper retained",
+      "passed": true,
+      "checked_tracks_and_vias": 1094
+    },
+    {
+      "name": "In1 remains an unrouted filled ground plane",
+      "passed": true
+    },
+    {
+      "name": "C3 short local connection retained",
+      "passed": true,
+      "IC_pad_to_cap_pad_mm": 1.808486936640681
+    },
+    {
+      "name": "C5 short local connection retained",
+      "passed": true,
+      "IC_pad_to_cap_pad_mm": 1.808486936640681
+    },
+    {
+      "name": "C11 short local connection retained",
+      "passed": true,
+      "IC_pad_to_cap_pad_mm": 1.8084869366406666
+    },
+    {
+      "name": "C13 short local connection retained",
+      "passed": true,
+      "IC_pad_to_cap_pad_mm": 1.8084869366406666
+    },
+    {
+      "name": "controls mount H1",
+      "passed": true
+    },
+    {
+      "name": "controls mount H2",
+      "passed": true
+    },
+    {
+      "name": "controls mount H3",
+      "passed": true
+    },
+    {
+      "name": "controls mount H4",
+      "passed": true
+    },
+    {
+      "name": "controls connector faces inward",
+      "passed": true
+    },
+    {
+      "name": "controls connector pin 1 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "controls connector pin 2 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "controls connector pin 3 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "controls connector pin 4 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "controls connector pin 5 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "controls connector pin 6 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "controls connector pin 7 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "front mount H1",
+      "passed": true
+    },
+    {
+      "name": "front mount H2",
+      "passed": true
+    },
+    {
+      "name": "front connector faces inward",
+      "passed": true
+    },
+    {
+      "name": "front connector pin 1 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "front connector pin 2 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "front connector pin 3 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "front connector pin 4 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "front connector pin 5 on B.Cu",
+      "passed": true
+    },
+    {
+      "name": "front connector pin 6 on B.Cu",
+      "passed": true
+    }
+  ],
+  "scope": "Preserved reviewed layout geometry; changed filled copper and remote wiring still require physical screening and prototype qualification."
+}
