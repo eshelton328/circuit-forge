@@ -121,7 +121,7 @@ Goals for automated **design evidence** beyond today’s transient limits (not n
 
 _Auto-generated when `docs/spice-report.metrics.json` is present (see `sim.yml` and [`sim/README.md`](../../sim/README.md))._
 
-**Last metrics refresh:** 2026-09-06T16:10:41Z · **Overall:** PASS (schema v2)
+**Last metrics refresh:** 2026-09-07T04:39:06Z · **Overall:** PASS (schema v2)
 
 [Full report (`docs/spice-report.md`)](docs/spice-report.md)
 

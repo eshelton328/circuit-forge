@@ -15,3 +15,22 @@ J5 is the 7-pin bottom-controls interface; J6 is the 6-pin front-button/RGB inte
 The converter and audio placement is inherited deliberately. Layout verification checks 1,094 retained power/return/USB/BTL track or via geometries and the four 1.81 mm local capacitor connections. A fresh reduced physical screening uses the revised filled copper; it does not establish junction temperature, emissions compliance or real switching stress.
 
 Reproduce the design and checks with the [PCB tooling guide](../../scripts/alarm/README.md). The unchanged [bench-board project](../esp32s3-devkit-5v/README.md) remains available for comparison.
+
+<!-- board-images-start -->
+## Board Images
+
+_Auto-generated on merge to main._
+
+### Schematic
+
+![Schematic](docs/schematic.svg)
+
+![schematic-page1](docs/schematic-page1.svg)
+
+### PCB 3D Views
+
+| Top | Bottom |
+| :---: | :---: |
+| ![Top](docs/pcb-top.png) | ![Bottom](docs/pcb-bottom.png) |
+
+<!-- board-images-end -->

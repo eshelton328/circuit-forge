@@ -7,3 +7,20 @@
 [Connector side](review/pcb-bottom.png) · [Schematic PDF](review/schematic.pdf) · [Native schematic](bedroom-alarm-front.kicad_sch) · [Native PCB](bedroom-alarm-front.kicad_pcb) · [BOM](review/bom.csv)
 
 See the [harness contract](../bedroom-alarm-main/HARNESS.md) and [test report](../bedroom-alarm-main/review/TEST-REPORT.md). Pullups, debounce capacitors, 100 Ω button series resistors and RGB resistors live on the main board. Do not connect this board directly to an unprotected ESP32 input in place of the defined main-board interface.
+
+<!-- board-images-start -->
+## Board Images
+
+_Auto-generated on merge to main._
+
+### Schematic
+
+![Schematic](docs/schematic.svg)
+
+### PCB 3D Views
+
+| Top | Bottom |
+| :---: | :---: |
+| ![Top](docs/pcb-top.png) | ![Bottom](docs/pcb-bottom.png) |
+
+<!-- board-images-end -->
