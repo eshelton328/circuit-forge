@@ -1,7 +1,7 @@
 {
   "baseline": null,
   "exit_code_hint": 0,
-  "generated_at": "2026-09-07T14:54:09Z",
+  "generated_at": "2026-09-07T15:31:26Z",
   "measures": [
     {
       "bounds_max": 4.85,
@@ -299,8 +299,8 @@
       "measure_id": "gpio_min_c09",
       "passed": true,
       "scenario_id": "remote_button_rlc_01",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": 3.4,
@@ -332,8 +332,8 @@
       "measure_id": "held_c09",
       "passed": true,
       "scenario_id": "remote_button_rlc_01",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": null,
@@ -354,8 +354,8 @@
       "measure_id": "gpio_min_c10",
       "passed": true,
       "scenario_id": "remote_button_rlc_02",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": 3.4,
@@ -387,8 +387,8 @@
       "measure_id": "held_c10",
       "passed": true,
       "scenario_id": "remote_button_rlc_02",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": null,
@@ -409,8 +409,8 @@
       "measure_id": "gpio_min_c11",
       "passed": true,
       "scenario_id": "remote_button_rlc_03",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": 3.4,
@@ -442,8 +442,8 @@
       "measure_id": "held_c11",
       "passed": true,
       "scenario_id": "remote_button_rlc_03",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": null,
@@ -464,8 +464,8 @@
       "measure_id": "gpio_min_c12",
       "passed": true,
       "scenario_id": "remote_button_rlc_04",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": 3.4,
@@ -497,8 +497,8 @@
       "measure_id": "held_c12",
       "passed": true,
       "scenario_id": "remote_button_rlc_04",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": null,
@@ -519,8 +519,8 @@
       "measure_id": "gpio_min_c13",
       "passed": true,
       "scenario_id": "remote_button_rlc_05",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": 3.4,
@@ -552,8 +552,8 @@
       "measure_id": "held_c13",
       "passed": true,
       "scenario_id": "remote_button_rlc_05",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": null,
@@ -574,8 +574,8 @@
       "measure_id": "gpio_min_c14",
       "passed": true,
       "scenario_id": "remote_button_rlc_06",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": 3.4,
@@ -607,8 +607,8 @@
       "measure_id": "held_c14",
       "passed": true,
       "scenario_id": "remote_button_rlc_06",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": null,
@@ -629,8 +629,8 @@
       "measure_id": "gpio_min_c15",
       "passed": true,
       "scenario_id": "remote_button_rlc_07",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": 3.4,
@@ -662,8 +662,8 @@
       "measure_id": "held_c15",
       "passed": true,
       "scenario_id": "remote_button_rlc_07",
-      "value_numeric": 0.0311035,
-      "value_str": "0.0311035"
+      "value_numeric": 0.0311036,
+      "value_str": "0.0311036"
     },
     {
       "bounds_max": null,
@@ -684,8 +684,8 @@
       "measure_id": "gpio_min_c16",
       "passed": true,
       "scenario_id": "remote_button_rlc_08",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": 3.4,
@@ -717,8 +717,8 @@
       "measure_id": "held_c16",
       "passed": true,
       "scenario_id": "remote_button_rlc_08",
-      "value_numeric": 0.031395,
-      "value_str": "0.031395"
+      "value_numeric": 0.0313949,
+      "value_str": "0.0313949"
     },
     {
       "bounds_max": null,
@@ -1175,13 +1175,13 @@
   "metrics_schema_version": 2,
   "pass": true,
   "paths": {
-    "config": "/Users/erik/Workspaces/the-forge-alec/boards/alec-main/sim.yml",
-    "netlist": "/Users/erik/Workspaces/the-forge-alec/boards/alec-main/sim/assembled.cir"
+    "config": "/workspace/boards/alec-main/sim.yml",
+    "netlist": "/workspace/boards/alec-main/sim/assembled.cir"
   },
   "toolchain": {
     "baseline_compare_enabled": false,
     "kicad_cli_version_line": "10.0.1",
-    "kicad_docker_image": null,
+    "kicad_docker_image": "the-forge-sim:ci",
     "ngspice_version_line": "******",
     "simulator_exit_code": 0
   },

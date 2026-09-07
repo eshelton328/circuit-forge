@@ -6,10 +6,10 @@ Each **scenario** matches a block in `sim.yml`. **Bounds** repeat those limits; 
 
 | Field | Value |
 | --- | --- |
-| Config | `/Users/erik/Workspaces/the-forge-alec/boards/alec-main/sim.yml` |
-| Netlist | `/Users/erik/Workspaces/the-forge-alec/boards/alec-main/sim/assembled.cir` |
+| Config | `/workspace/boards/alec-main/sim.yml` |
+| Netlist | `/workspace/boards/alec-main/sim/assembled.cir` |
 | KiCad CLI | `10.0.1` |
-| KiCad Docker image (CI) | `—` |
+| KiCad Docker image (CI) | `the-forge-sim:ci` |
 | ngspice | `******` |
 | Simulator exit | 0 |
 
@@ -107,80 +107,80 @@ Each **scenario** matches a block in `sim.yml`. **Bounds** repeat those limits; 
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.0311035 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0311036 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0346602 | max 0.05 | **PASS** |
-| Held LOW level | 0.0311035 | max 0.825 | **PASS** |
+| Held LOW level | 0.0311036 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.99594 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_02`
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.031395 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0313949 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0343355 | max 0.05 | **PASS** |
-| Held LOW level | 0.031395 | max 0.825 | **PASS** |
+| Held LOW level | 0.0313949 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.99597 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_03`
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.0311035 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0311036 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0346691 | max 0.05 | **PASS** |
-| Held LOW level | 0.0311035 | max 0.825 | **PASS** |
+| Held LOW level | 0.0311036 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.62893 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_04`
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.031395 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0313949 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0343443 | max 0.05 | **PASS** |
-| Held LOW level | 0.031395 | max 0.825 | **PASS** |
+| Held LOW level | 0.0313949 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.62899 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_05`
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.0311035 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0311036 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0344729 | max 0.05 | **PASS** |
-| Held LOW level | 0.0311035 | max 0.825 | **PASS** |
+| Held LOW level | 0.0311036 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.99594 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_06`
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.031395 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0313949 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0341535 | max 0.05 | **PASS** |
-| Held LOW level | 0.031395 | max 0.825 | **PASS** |
+| Held LOW level | 0.0313949 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.99597 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_07`
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.0311035 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0311036 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0345302 | max 0.05 | **PASS** |
-| Held LOW level | 0.0311035 | max 0.825 | **PASS** |
+| Held LOW level | 0.0311036 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.62893 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_08`
 
 | Measure | Value | Bounds | Result |
 | --- | --- | --- | --- |
-| Unclamped GPIO minimum, assumed harness corner | 0.031395 | min -0.1 | **PASS** |
+| Unclamped GPIO minimum, assumed harness corner | 0.0313949 | min -0.1 | **PASS** |
 | Unclamped GPIO maximum | 3.3 | max 3.4 | **PASS** |
 | Peak current through remote switch | 0.0342097 | max 0.05 | **PASS** |
-| Held LOW level | 0.031395 | max 0.825 | **PASS** |
+| Held LOW level | 0.0313949 | max 0.825 | **PASS** |
 | Released HIGH after 1.9 ms | 2.62899 | min 2.475 | **PASS** |
 
 ### `remote_button_rlc_09`

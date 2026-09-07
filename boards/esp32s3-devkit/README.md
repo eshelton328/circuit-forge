@@ -59,7 +59,44 @@ _Auto-generated on merge to main._
 
 _Same layout as the KiCad check summary on pull requests (ERC, DRC, fab rules). Auto-generated on merge to main._
 
-_No check reports in docs/ yet (run the update-readmes workflow on main)._
+| Check | Result |
+|:------|:-------|
+| ERC | ✅ |
+| DRC | 🔴 12 errors |
+| Fab: jlcpcb-4layer-advanced | ✅ |
+
+<details>
+<summary><strong>DRC</strong> — 🔴 12 errors</summary>
+
+> **Violations** (12)
+>
+> <details>
+> <summary>🔴 <b><code>clearance</code></b> — 8 errors</summary>
+>
+> Clearance violation (zone clearance 0.2000 mm; actual 0.1217 mm)
+> - `Track [Net-(Q1-G)] on F.Cu, length 0.4725 mm` / `Zone [/PFET] on F.Cu, priority 2`
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on B.Cu, priority 0`
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on In1.Cu, priority 0`
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on B.Cu, priority 0`
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on In1.Cu, priority 0`
+> - `Track [Net-(Q1-G)] on B.Cu, length 1.1500 mm` / `Zone [GND] on B.Cu, priority 0`
+> - `Track [Net-(Q1-G)] on B.Cu, length 2.5000 mm` / `Zone [GND] on B.Cu, priority 0`
+> - `Pad 1 [Net-(Q1-G)] of Q1 on F.Cu` / `Zone [/PFET] on F.Cu, priority 2`
+>
+> </details>
+>
+> <details>
+> <summary>🔴 <b><code>hole_clearance</code></b> — 4 errors</summary>
+>
+> Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on B.Cu, priority 0`
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on In1.Cu, priority 0`
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on B.Cu, priority 0`
+> - `Via [Net-(Q1-G)] on F.Cu - B.Cu` / `Zone [GND] on In1.Cu, priority 0`
+>
+> </details>
+>
+</details>
 
 <!-- drc-summary-end -->
 

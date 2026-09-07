@@ -62,7 +62,12 @@ _Auto-generated on merge to main._
 
 _Same layout as the KiCad check summary on pull requests (ERC, DRC, fab rules). Auto-generated on merge to main._
 
-_No check reports in docs/ yet (run the update-readmes workflow on main)._
+| Check | Result |
+|:------|:-------|
+| ERC | ✅ |
+| DRC | ✅ |
+| Fab: jlcpcb-2layer-advanced | ✅ |
+| Fab: pcbway-2layer-advanced | ✅ |
 
 <!-- drc-summary-end -->
 
@@ -120,7 +125,7 @@ Goals for automated **design evidence** beyond today’s transient limits (not n
 
 _Auto-generated when `docs/spice-report.metrics.json` is present (see `sim.yml` and [`sim/README.md`](../../sim/README.md))._
 
-**Last metrics refresh:** 2026-09-07T04:39:06Z · **Overall:** PASS (schema v2)
+**Last metrics refresh:** 2026-09-07T15:31:35Z · **Overall:** PASS (schema v2)
 
 [Full report (`docs/spice-report.md`)](docs/spice-report.md)
 
