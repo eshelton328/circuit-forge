@@ -1,0 +1,21 @@
+{
+  "revision": "S1 circular engineering prototype",
+  "units": "mm",
+  "shell_diameter": 116,
+  "shell_depth": 54,
+  "side_wall": 2.4,
+  "radome_wall": 3.6,
+  "rear_cover": 2.4,
+  "pcb_center_kicad": [132, 102],
+  "pcb_front_z": 26,
+  "pcb_thickness": 1.6,
+  "pcb_mounts_kicad": [[104,74],[160,74],[104,113],[160,115]],
+  "battery_holder": {"mpn":"BH3AAW", "center_xy":[0,-14.9], "size":[57.15,46.61,17.39], "bottom_z":3.4},
+  "radar": {"mpn":"HLK-LD2410C", "pin1_xy":[13,-6], "face_z":38, "body_xy_relative_pin1":[-5.971,-14.535,16.029,1.465], "pcb_thickness":0.989482, "socket_height":8.51, "male_header_spacer":2.5},
+  "button_xy": [-18,-19],
+  "button_top_z": 27.6,
+  "button_nominal_free_gap": 0.15,
+  "led_xy": [-2,-19],
+  "rear_seal": {"oring_id":100,"oring_section":2,"groove_width":2.8,"groove_depth":1.5,"opening_radius":49,"screw_radius":55,"screw_count":6},
+  "status": "Nominal CAD fit only. Radome tuning, sealing tolerances, membrane force/travel, RF and wet testing remain release gates."
+}

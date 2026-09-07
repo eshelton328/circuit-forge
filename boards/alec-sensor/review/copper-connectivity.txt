@@ -1,0 +1,2 @@
+copper connectivity: checked 277 pad-nodes across 60 nets
+OK: every pad on a multi-pad net has same-net copper.

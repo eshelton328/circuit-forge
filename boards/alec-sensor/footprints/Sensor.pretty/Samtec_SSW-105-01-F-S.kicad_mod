@@ -1,0 +1,223 @@
+(footprint "Samtec_SSW-105-01-F-S"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "657dff49-e14d-48bb-9a67-5264d8171cdf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "Samtec_SSW-105-01-F-S"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "f7b9ec43-6979-4177-bf3e-ac3b0ec38902")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "12e63f96-b2e2-4ec3-ad4c-622ab0c56c24")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bcd532bf-dafe-4930-96ea-773df522bf04")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.625 -1.405)
+		(end 11.785 -1.405)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "88fd07fd-cf8e-446a-ad47-3a1fdaeefa3d")
+	)
+	(fp_line
+		(start -1.625 1.405)
+		(end -1.625 -1.405)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0b52eb01-08ae-4633-bb75-b186de1cfa5f")
+	)
+	(fp_line
+		(start 11.785 -1.405)
+		(end 11.785 1.405)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7094c36d-024b-49f6-b2ca-580193cd7e4b")
+	)
+	(fp_line
+		(start 11.785 1.405)
+		(end -1.625 1.405)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "63ac897a-91e9-438e-8bbb-f655b2f2bbf5")
+	)
+	(fp_line
+		(start -2.025 -1.705)
+		(end 12.185 -1.705)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "b5434c75-20b4-42ae-8d61-48e8633e5395")
+	)
+	(fp_line
+		(start -2.025 1.705)
+		(end -2.025 -1.705)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c1f96ac0-2997-429c-b263-04e529513b54")
+	)
+	(fp_line
+		(start 12.185 -1.705)
+		(end 12.185 1.705)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "67bdc210-58a8-4f92-a298-daf9430da2c7")
+	)
+	(fp_line
+		(start 12.185 1.705)
+		(end -2.025 1.705)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6780da8a-3204-4ba5-b4c5-e59feb6863f6")
+	)
+	(fp_line
+		(start -1.525 -1.205)
+		(end 11.685 -1.205)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7f249907-ed16-45ba-be6a-1a79f7b08d19")
+	)
+	(fp_line
+		(start -1.525 1.205)
+		(end -1.525 -1.205)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "2b5cfa36-b122-4723-9179-c8dd655f1a25")
+	)
+	(fp_line
+		(start 11.685 -1.205)
+		(end 11.685 1.205)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "30e56910-77b4-457f-928f-3592ccfb6bf0")
+	)
+	(fp_line
+		(start 11.685 1.205)
+		(end -1.525 1.205)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "31b39519-4fa3-46db-a3c3-be6bb0260191")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "73f19905-65d5-441a-8226-645a5d5c9d4c")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b2584487-718b-4d6a-b302-a38f2d1103f7")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b5907fe3-fb5f-4d22-9eac-14ca1a54ff78")
+	)
+	(pad "4" thru_hole circle
+		(at 7.62 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3376633c-fb2e-41b6-b937-5a5aac813a75")
+	)
+	(pad "5" thru_hole circle
+		(at 10.16 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "98e414b5-c978-47ad-a9fe-3318d6254909")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Samtec_SSW-105-01-F-S.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

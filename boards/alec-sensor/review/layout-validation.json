@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "outline_mm": [
+    64,
+    56
+  ],
+  "layers": 4,
+  "in1_signal_tracks": 0,
+  "enclosure_interface_matches": true,
+  "electrical_footprints": 88,
+  "track_segments": 2664,
+  "vias": 182,
+  "converter_capacitors": {
+    "C3": {
+      "ic": "U1",
+      "power_pad_separation_mm": 1.8085,
+      "direct_supply_track_min_width_mm": 0.4,
+      "ground_pad_to_via_mm": 0.6973
+    },
+    "C5": {
+      "ic": "U1",
+      "power_pad_separation_mm": 1.8085,
+      "direct_supply_track_min_width_mm": 0.4,
+      "ground_pad_to_via_mm": 0.6973
+    },
+    "C11": {
+      "ic": "U2",
+      "power_pad_separation_mm": 1.8085,
+      "direct_supply_track_min_width_mm": 0.4,
+      "ground_pad_to_via_mm": 0.6973
+    },
+    "C13": {
+      "ic": "U2",
+      "power_pad_separation_mm": 1.8085,
+      "direct_supply_track_min_width_mm": 0.4,
+      "ground_pad_to_via_mm": 0.6973
+    }
+  },
+  "unchanged_converter_footprints": [
+    "U1",
+    "U2",
+    "L1",
+    "L2",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10"
+  ],
+  "switch_node_copper_matches_reviewed_source": true,
+  "battery_series_copper": {
+    "/VBAT": {
+      "sum_track_length_mm": 9.627,
+      "minimum_width_mm": 0.75,
+      "track_resistance_35um_copper_20C_ohm": 0.006322458735821417
+    },
+    "/VBAT_FUSED": {
+      "sum_track_length_mm": 52.03,
+      "minimum_width_mm": 0.75,
+      "track_resistance_35um_copper_20C_ohm": 0.034171468965752294
+    },
+    "/VBAT_SW": {
+      "sum_track_length_mm": 53.433,
+      "minimum_width_mm": 0.75,
+      "track_resistance_35um_copper_20C_ohm": 0.035093035004517464
+    }
+  },
+  "scope": "Saved copper geometry guards. Resistance sums assume 35 um copper and omit vias/contacts/temperature; no parasitic inductance, RF or thermal qualification."
+}

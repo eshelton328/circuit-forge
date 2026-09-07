@@ -1,0 +1,21 @@
+{
+  "checked_intersections_mm3": {
+    "front_cup / button_retainer": 0.0,
+    "front_cup / button_membrane": 0.0,
+    "front_cup / button_plunger": 0.0,
+    "front_cup / radar_pcb_envelope": 0.0,
+    "front_cup / battery_holder_envelope": 0.0,
+    "button_retainer / button_plunger": 0.0,
+    "button_retainer / light_pipe": 0.0
+  },
+  "holder_radial_clearance_at_rear_opening_mm": 1.2909584040928408,
+  "holder_to_pcb_underside_mm": 3.6099999999999994,
+  "holder_to_pcb_screw_head_mm": 1.6099999999999994,
+  "radar_face_to_front_inner_mm": 12.399999999999999,
+  "rear_seal_nominal_squeeze_percent": 25,
+  "body_volume_valid": true,
+  "body_depth_mm": 54,
+  "body_diameter_mm": 116.0,
+  "radar_face_stack_mm": 37.999482,
+  "scope": "Nominal envelopes, not all-component interference or sealing/thermal/RF qualification."
+}

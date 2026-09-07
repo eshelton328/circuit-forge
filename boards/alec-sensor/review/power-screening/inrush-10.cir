@@ -1,0 +1,13 @@
+S1 passive battery closure; no converter switching model
+Vpack source 0 PWL(0 0 0.5u 5.4)
+Vsense source a 0
+Rseries a b 0.894086963
+Lharness b vin 1e-08
+Resr vin cap 0.01
+Cin cap 0 3e-05
+Rleak vin 0 100Meg
+.tran 5n 400u 0 100n
+.meas tran vin_peak MAX v(vin)
+.meas tran i_peak MAX i(Vsense)
+.meas tran input_i2t INTEG par('i(Vsense)*i(Vsense)') FROM=0 TO=400u
+.end
