@@ -1,0 +1,14 @@
+{
+  "radar": {
+    "url": "https://r0.hlktech.com/download/HLK-LD2410C-24G/1/HLK-LD2410C-3D\u56fe.zip",
+    "step_filename": "HLK-LD2410C.step",
+    "step_sha256": "85d3de2ffd20497516ea0f311e6e0a46e288177a1c23cb30b74fc953e84e799c",
+    "glb_sha256": "de7f421d24d152cf64e84f4a2e3dffbe5a177e970d8b5046974e70905bb97c55",
+    "materials": "Illustrative replacement colors; geometry from vendor STEP"
+  },
+  "holder": {
+    "source": "../../alec/sources/BH3AAW.glb",
+    "drawing": "https://www.batteryholders.com/uploads/parts/BH3AAW/datasheets/BH3AAW-datasheet.pdf",
+    "model": "https://www.memoryprotectiondevices.com/3D/download.php?pn=BH3AAW&id=1295"
+  }
+}

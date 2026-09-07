@@ -1,0 +1,96 @@
+{
+  "status": "illustrative_unmeasured",
+  "assumptions": {
+    "usable_pack_wh": [
+      6,
+      9,
+      12
+    ],
+    "conversion_efficiency": 0.85,
+    "radar_5v_ma": 79,
+    "mcu_3v3_active_ma": 80,
+    "whole_board_sleep_pack_ma": 0.2,
+    "sleep_pack_voltage": 4.5,
+    "schedule_sync_time": "must be included in active time; not modeled separately",
+    "temperature_and_cell_impedance": "not modeled"
+  },
+  "radar_alone_continuous_hours": {
+    "6": 12.91139240506329,
+    "9": 19.367088607594937,
+    "12": 25.82278481012658
+  },
+  "scenarios": [
+    {
+      "pack_wh": 6,
+      "active_hours_per_day": 0.25,
+      "day_wh": 0.21519852941176473,
+      "days": 27.881231421054427
+    },
+    {
+      "pack_wh": 6,
+      "active_hours_per_day": 0.5,
+      "day_wh": 0.40879705882352946,
+      "days": 14.677209315711087
+    },
+    {
+      "pack_wh": 6,
+      "active_hours_per_day": 1,
+      "day_wh": 0.795994117647059,
+      "days": 7.537744145315882
+    },
+    {
+      "pack_wh": 6,
+      "active_hours_per_day": 24,
+      "day_wh": 18.607058823529414,
+      "days": 0.3224582701062215
+    },
+    {
+      "pack_wh": 9,
+      "active_hours_per_day": 0.25,
+      "day_wh": 0.21519852941176473,
+      "days": 41.82184713158164
+    },
+    {
+      "pack_wh": 9,
+      "active_hours_per_day": 0.5,
+      "day_wh": 0.40879705882352946,
+      "days": 22.01581397356663
+    },
+    {
+      "pack_wh": 9,
+      "active_hours_per_day": 1,
+      "day_wh": 0.795994117647059,
+      "days": 11.306616217973822
+    },
+    {
+      "pack_wh": 9,
+      "active_hours_per_day": 24,
+      "day_wh": 18.607058823529414,
+      "days": 0.4836874051593323
+    },
+    {
+      "pack_wh": 12,
+      "active_hours_per_day": 0.25,
+      "day_wh": 0.21519852941176473,
+      "days": 55.76246284210885
+    },
+    {
+      "pack_wh": 12,
+      "active_hours_per_day": 0.5,
+      "day_wh": 0.40879705882352946,
+      "days": 29.354418631422174
+    },
+    {
+      "pack_wh": 12,
+      "active_hours_per_day": 1,
+      "day_wh": 0.795994117647059,
+      "days": 15.075488290631764
+    },
+    {
+      "pack_wh": 12,
+      "active_hours_per_day": 24,
+      "day_wh": 18.607058823529414,
+      "days": 0.644916540212443
+    }
+  ]
+}

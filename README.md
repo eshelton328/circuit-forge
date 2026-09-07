@@ -8,6 +8,7 @@ Hardware design monorepo for KiCad PCB projects with automated CI/CD.
 the-forge/
 ├── Makefile          # make check / erc / drc / fab-drc
 ├── boards/           # Individual board projects
+├── designs/          # Schematic studies before PCB layout
 ├── enclosures/       # Product packaging, Blender models and fit evidence
 ├── fab-rules/        # DRC rule templates per fab house
 ├── kibot/            # KiBot output generation configs
@@ -25,6 +26,7 @@ the-forge/
 | [alec-controls](boards/alec-controls/README.md) | ALEC bottom controls with three settings buttons and hardware enable switch | 2 |
 | [alec-front](boards/alec-front/README.md) | ALEC exterior battery-check button and RGB LED | 2 |
 | [alec-main](boards/alec-main/README.md) | ALEC main board with ESP32-S3, dual TPS63070 rails, audio and remote controls | 4 |
+| [alec-sensor](boards/alec-sensor/README.md) | ALEC shower presence sensor prototype with ESP32-S3, RV-3028, isolated LD2410C and dual TPS63070 rails | 4 |
 | [esp32s3-devkit](boards/esp32s3-devkit/README.md) | ESP32-S3-WROOM-1 development board with TPS63070 buck-boost and USB-C | 4 |
 | [esp32s3-devkit-5v](boards/esp32s3-devkit-5v/README.md) | ESP32-S3-WROOM-1 dev board with dual TPS63070 rails (3.3V + 5V), USB-C | 4 |
 | [tps63070-breakout](boards/tps63070-breakout/README.md) | TPS63070 3.3V buck-boost breakout board | 2 |
@@ -34,11 +36,14 @@ Each board README includes schematic previews, a downloadable schematic PDF, top
 
 The **ALEC** alarm uses `alec-main`, `alec-controls` and `alec-front` together. The main board carries the ESP32-S3, dual power converters and audio circuit; the two smaller boards carry the protected settings controls and exterior battery-check button/RGB LED. These are engineering prototypes with physical qualification pending. See the [full PCB and enclosure test report](boards/alec-main/review/TEST-REPORT.md).
 
+The separate [ALEC Sensor](boards/alec-sensor/) is the shower presence companion: a routed four-layer PCB with LD2410C radar, RTC wake and isolated sensor signals. Its [S1 report](boards/alec-sensor/TEST-REPORT.md) covers electrical checks, free-tool power screening and nominal enclosure fit. Scheduled sensing is the proposed battery-saving default; waterproofing and wet detection still require prototypes.
+
 ## Enclosures
 
 | Enclosure | Board | Status |
 |---|---|---|
 | [ALEC v4.2](enclosures/alec/pcb-revision/) | alec-main, alec-controls, alec-front | Integrated PCB prototype: 105 mm cube, four perforated walls, 1.3-inch OLED and three AA cells; physical tests pending |
+| [ALEC Sensor S1.1](enclosures/alec-sensor/) | alec-sensor | Circular 116 mm × 54 mm fit prototype with rear-access cells/controls, actual PCB and LD2410C; RF, sealing and thermal tests pending |
 | [ALEC v4.1 reference](enclosures/alec/) | esp32s3-devkit-5v | Earlier packaging reference with the bench board |
 
 The enclosure project includes editable Blender scenes, inline preview images, dimensional sources, a parts register and a reproducible test report. Open its README to download the models and review the current fit limits.

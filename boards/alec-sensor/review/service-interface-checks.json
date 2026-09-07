@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "assertions": 8,
+  "checks": [
+    "SW1 rear-facing and located in service bay",
+    "SW2 rear-facing and located in service bay",
+    "SW3 rear-facing and located in service bay",
+    "J3 faces outward",
+    "SW7 faces outward",
+    "D2 faces outward",
+    "Battery holder opens toward rear cover",
+    "Routine cell/control service leaves PCB installed"
+  ],
+  "scope": "Native PCB face/position and service intent. CAD separately checks approach volumes; physical hand access and tolerances need samples."
+}

@@ -1,0 +1,175 @@
+{
+  "source_board": "boards/esp32s3-devkit-5v",
+  "source_revision": "0bce752",
+  "removed_components": [
+    "C22",
+    "C23",
+    "C24",
+    "C26",
+    "C27",
+    "C28",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "D1",
+    "J3",
+    "J4",
+    "Q2",
+    "Q3",
+    "R11",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R36",
+    "R37",
+    "R38",
+    "R39",
+    "SW1",
+    "SW4",
+    "SW5",
+    "SW6",
+    "SW7",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "moved_low_speed_parts": {
+    "SW1": [
+      153,
+      89.5,
+      0
+    ],
+    "SW3": [
+      152,
+      120,
+      0
+    ],
+    "SW7": [
+      114,
+      121,
+      0
+    ],
+    "D2": [
+      130,
+      121,
+      0
+    ],
+    "R28": [
+      128,
+      117,
+      90
+    ],
+    "R29": [
+      130,
+      117,
+      90
+    ],
+    "R30": [
+      132,
+      117,
+      90
+    ],
+    "R27": [
+      114,
+      117,
+      0
+    ],
+    "C25": [
+      116,
+      117,
+      0
+    ],
+    "F1": [
+      110,
+      112,
+      0
+    ],
+    "U10": [
+      155,
+      96.5,
+      0
+    ],
+    "J3": [
+      145,
+      108,
+      0
+    ],
+    "C35": [
+      155,
+      111.5,
+      0
+    ],
+    "C36": [
+      159.5,
+      108,
+      90
+    ],
+    "C37": [
+      161,
+      93.5,
+      90
+    ],
+    "R54": [
+      152,
+      92.3,
+      0
+    ],
+    "R55": [
+      160.8,
+      96,
+      90
+    ],
+    "R56": [
+      160.8,
+      98,
+      90
+    ]
+  },
+  "removed_track_items": 1583,
+  "rerouted_original_nets": [
+    "",
+    "/EN_3V3",
+    "/GPIO0",
+    "/GPIO10",
+    "/GPIO11",
+    "/GPIO17",
+    "/GPIO18",
+    "/GPIO38",
+    "/GPIO39",
+    "/GPIO4",
+    "/GPIO40",
+    "/GPIO8",
+    "/GPIO9",
+    "/LED_B_K",
+    "/LED_G_K",
+    "/LED_R_K",
+    "/SW_ON",
+    "/VBAT",
+    "/speaker +",
+    "/speaker -",
+    "Net-(D2-BK)",
+    "Net-(D2-GK)",
+    "Net-(D2-RK)",
+    "Net-(U3-IO0)"
+  ],
+  "net_renames": {
+    "/SW_ON": "/EN_3V3",
+    "/GPIO4": "/PRESENCE_WAKE",
+    "unconnected-(U3-IO16-Pad9)": "/RADAR_EN",
+    "/GPIO11": "/RADAR_IO_EN",
+    "unconnected-(U3-IO17-Pad10)": "/RADAR_TX",
+    "/GPIO5": "unconnected-(U3-IO5-Pad5)",
+    "/GPIO6": "unconnected-(U3-IO6-Pad6)",
+    "/GPIO14": "unconnected-(U3-IO14-Pad22)",
+    "/GPIO21": "unconnected-(U3-IO21-Pad23)",
+    "/GPIO41": "unconnected-(U3-IO41-Pad34)",
+    "/GPIO47": "unconnected-(U3-IO47-Pad24)",
+    "/GPIO48": "unconnected-(U3-IO48-Pad25)"
+  },
+  "power_cells": "U1/U2/L1/L2/C1-C16/R3-R10 preserved at original locations. Run check_layout.py after final routing."
+}

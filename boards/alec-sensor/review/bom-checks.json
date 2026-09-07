@@ -1,0 +1,6 @@
+{
+  "status": "pass",
+  "component_metadata_matches": 88,
+  "capacitor_packages_checked": 27,
+  "scope": "Check purchasing metadata against native sources and selected capacitor packages.\n\nThis checks known part-family size codes, not stock, land-pattern dimensions,\nelectrical derating, pin orientation or assembler approval."
+}

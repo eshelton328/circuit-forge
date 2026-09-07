@@ -2,3 +2,9 @@
 boards/alec-*/3dmodels/*.step binary
 boards/alec-*/3dmodels/*.wrl binary
 boards/alec-*/review/*.csv text eol=lf
+# Generated sensor previews/exports; native KiCad remains reviewable.
+boards/alec-sensor/docs/*.svg linguist-generated=true
+boards/alec-sensor/review/netlist.xml linguist-generated=true
+enclosures/alec-sensor/cad/*.step binary
+enclosures/alec-sensor/cad/*.stl binary
+enclosures/alec-sensor/*.step binary

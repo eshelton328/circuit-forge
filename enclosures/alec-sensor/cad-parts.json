@@ -1,0 +1,218 @@
+[
+  {
+    "name": "rear_screw_1",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x4 counterbored hardware envelope; final insert/torque pending"
+  },
+  {
+    "name": "rear_screw_2",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x4 counterbored hardware envelope; final insert/torque pending"
+  },
+  {
+    "name": "rear_screw_3",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x4 counterbored hardware envelope; final insert/torque pending"
+  },
+  {
+    "name": "rear_screw_4",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x4 counterbored hardware envelope; final insert/torque pending"
+  },
+  {
+    "name": "rear_screw_5",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x4 counterbored hardware envelope; final insert/torque pending"
+  },
+  {
+    "name": "rear_screw_6",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x4 counterbored hardware envelope; final insert/torque pending"
+  },
+  {
+    "name": "pcb_screw_1",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M3x6 hardware envelope; boss engagement/tolerance pending"
+  },
+  {
+    "name": "pcb_screw_2",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M3x6 hardware envelope; boss engagement/tolerance pending"
+  },
+  {
+    "name": "pcb_screw_3",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M3x6 hardware envelope; boss engagement/tolerance pending"
+  },
+  {
+    "name": "pcb_screw_4",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M3x6 hardware envelope; boss engagement/tolerance pending"
+  },
+  {
+    "name": "button_membrane",
+    "color": [
+      0.09,
+      0.11,
+      0.12
+    ],
+    "evidence": "custom silicone: 1.2 mm free flange / 0.9 mm installed (25% nominal squeeze); tolerances, force and fatigue unqualified"
+  },
+  {
+    "name": "button_plunger",
+    "color": [
+      0.17,
+      0.21,
+      0.24
+    ],
+    "evidence": "nylon plunger: force, alignment and travel require tolerance test"
+  },
+  {
+    "name": "button_retainer",
+    "color": [
+      0.19,
+      0.22,
+      0.24
+    ],
+    "evidence": "custom nominal geometry"
+  },
+  {
+    "name": "light_pipe",
+    "color": [
+      0.6,
+      0.95,
+      0.7
+    ],
+    "evidence": "clear PC optical allocation; diffusion/brightness pending"
+  },
+  {
+    "name": "carrier_screw_1",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x6 rear carrier screw envelope; final pilot/insert/torque pending"
+  },
+  {
+    "name": "carrier_screw_2",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x6 rear carrier screw envelope; final pilot/insert/torque pending"
+  },
+  {
+    "name": "carrier_screw_3",
+    "color": [
+      0.62,
+      0.64,
+      0.67
+    ],
+    "evidence": "M2x6 rear carrier screw envelope; final pilot/insert/torque pending"
+  },
+  {
+    "name": "battery_carrier",
+    "color": [
+      0.16,
+      0.2,
+      0.22
+    ],
+    "evidence": "fixed nylon carrier; rear-loading AA holder with four nominal retaining hooks, three M2 mounts; tolerance/creep tests pending"
+  },
+  {
+    "name": "mounting_cradle",
+    "color": [
+      0.12,
+      0.15,
+      0.16
+    ],
+    "evidence": "screw slots / adhesive plate / suction adaptor interface; retention and tilt testing pending"
+  },
+  {
+    "name": "front_cup",
+    "color": [
+      0.24,
+      0.29,
+      0.29
+    ],
+    "evidence": "custom nominal geometry"
+  },
+  {
+    "name": "rear_cover",
+    "color": [
+      0.2,
+      0.25,
+      0.25
+    ],
+    "evidence": "custom nominal geometry"
+  },
+  {
+    "name": "rear_oring_installed_envelope",
+    "color": [
+      0.025,
+      0.03,
+      0.035
+    ],
+    "evidence": "100x2 mm EPDM candidate, 25% nominal squeeze; cross section drawn as bounding envelope"
+  },
+  {
+    "name": "battery_holder_envelope",
+    "color": [
+      0.1,
+      0.14,
+      0.19
+    ],
+    "evidence": "BH3AAW exact drawing envelope, opening toward rear (-Z); vendor STEP rendered in Blender"
+  },
+  {
+    "name": "radar_pcb_envelope",
+    "color": [
+      0.02,
+      0.23,
+      0.34
+    ],
+    "evidence": "HLK drawing/CAD exact outline, component/header envelope added in Blender"
+  }
+]

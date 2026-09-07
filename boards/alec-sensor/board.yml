@@ -1,0 +1,7 @@
+name: alec-sensor
+description: ALEC shower presence sensor prototype with ESP32-S3, RV-3028, isolated LD2410C and dual TPS63070 rails
+layers: 4
+copper_weight: 1oz
+thickness: 1.6mm
+fab_targets:
+  - jlcpcb-4layer-advanced

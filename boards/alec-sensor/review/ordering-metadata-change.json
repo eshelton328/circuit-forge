@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "2578d07ba550c15801f93a8c8c932d3b0759701e",
+  "change": "C29: GRM188R71C104KA01D (0603) to GRM155R71C104KA88D (0402), 100 nF / 16 V / X7R unchanged. Datasheet link updated.",
+  "files": {
+    "boards/alec-sensor/alec-sensor.kicad_pcb": {
+      "before_sha256": "a24c60ff24633863f3c583e735a3b21ae90c80aaeed7db93f2349afbbff65b29",
+      "after_sha256": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "identical_except_mpn_datasheet_properties": true
+    },
+    "boards/alec-sensor/alec-sensor.kicad_sch": {
+      "before_sha256": "4328e1f66979b9f3e2a323953a7095c2282110b45d6cea3ac2252020743435df",
+      "after_sha256": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "identical_except_mpn_datasheet_properties": true
+    }
+  },
+  "evidence_reuse": "Native schematic and board trees match exactly after removing only MPN/Datasheet properties. Existing render, placement, copper, power and mechanical evidence retains its original source provenance. No geometry or circuit-value changes. Fresh netlist/BOM and metadata checks cover the updated ordering candidate."
+}

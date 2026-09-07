@@ -1,0 +1,862 @@
+{
+  "revision": "S1.1",
+  "scope": "SHA-256 of delivered sources, models, documentation and local evidence; not a physical qualification or CI attestation. The manifest excludes itself.",
+  "files": {
+    ".github/workflows/alec-sensor-study.yml": {
+      "sha256": "2c1071e0814c881fb933fcf77ae7d45d0ef7c653121c90172839b69016ace83f",
+      "bytes": 3379
+    },
+    "boards/alec-sensor/3dmodels/C_0402_1005Metric.step": {
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "bytes": 43502
+    },
+    "boards/alec-sensor/3dmodels/C_0603_1608Metric.step": {
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    "boards/alec-sensor/3dmodels/C_0805_2012Metric.step": {
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618
+    },
+    "boards/alec-sensor/3dmodels/C_1206_3216Metric.step": {
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "bytes": 43450
+    },
+    "boards/alec-sensor/3dmodels/ESP32-S3-WROOM-1.step": {
+      "sha256": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "bytes": 1906878
+    },
+    "boards/alec-sensor/3dmodels/Fuse_0603_1608Metric.step": {
+      "sha256": "2178c56deff687266eecad5e197b7ab2d230afae45def1320cff0ea839f46b49",
+      "bytes": 40633
+    },
+    "boards/alec-sensor/3dmodels/HRO_TYPE-C-31-M-12.step": {
+      "sha256": "272b7208e6c8beb3f21766a3a1c444a005e1706a99f6e2ab6c035c4f558c2d9d",
+      "bytes": 171674
+    },
+    "boards/alec-sensor/3dmodels/JST_B2B-PH-SM4-TB_simplified.step": {
+      "sha256": "b527ecf5e87e216a7b05c050062cb16dd69f843c448502d31d1eb0a9bcf52748",
+      "bytes": 180101
+    },
+    "boards/alec-sensor/3dmodels/LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100.step": {
+      "sha256": "8ad96d3b2b78fcb1fc017203142a7488845563b55c6b4b5c699499319a792a3d",
+      "bytes": 126255
+    },
+    "boards/alec-sensor/3dmodels/LICENSE-KiCad.txt": {
+      "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "bytes": 2101
+    },
+    "boards/alec-sensor/3dmodels/LICENSE-Malouf-MIT.txt": {
+      "sha256": "63559595af5ccef1779d7a5e76d9e6d3d2dcf5241633bd60622890abfe47d9db",
+      "bytes": 1063
+    },
+    "boards/alec-sensor/3dmodels/README.md": {
+      "sha256": "53faaf0b9dfa1f179a5e955c0ab9c8976138c43cc42e26d6fe40f12ecd89edf2",
+      "bytes": 3066
+    },
+    "boards/alec-sensor/3dmodels/RV-3028-C7_simplified.step": {
+      "sha256": "d29130cd6a67ca604a2bb3db66e7080c8925c08aefef099c014bc4454b02f931",
+      "bytes": 173401
+    },
+    "boards/alec-sensor/3dmodels/R_0402_1005Metric.step": {
+      "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "bytes": 40756
+    },
+    "boards/alec-sensor/3dmodels/SOT-23-6.step": {
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "bytes": 99639
+    },
+    "boards/alec-sensor/3dmodels/SOT-23.step": {
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296
+    },
+    "boards/alec-sensor/3dmodels/SW_CK_1101M2S3CQE2.step": {
+      "sha256": "4a30d15dbf53d9e6917145ba548a60a3d9dd4c0d3e9cd4a082d45e3adbd353dd",
+      "bytes": 83444
+    },
+    "boards/alec-sensor/3dmodels/Samtec_SSW-105-01-F-S.step": {
+      "sha256": "9301242e14a07af124b89de06f63d53b34a1b19bc6efe84e6f21d4bbd0192427",
+      "bytes": 173013
+    },
+    "boards/alec-sensor/3dmodels/TPS63070RNM.step": {
+      "sha256": "c6ff03bef77cf60877b65ca97012b7a9d96b13bde6fb0f57068b77aecb4125c6",
+      "bytes": 474086
+    },
+    "boards/alec-sensor/3dmodels/TS-1187A-B-A-B.step": {
+      "sha256": "26ea252f47554af12434cb6e19457ce3b670e2cdb2baff6cd4371d388d17a9c8",
+      "bytes": 224581
+    },
+    "boards/alec-sensor/3dmodels/TSSOP-14_4.4x5mm_P0.65mm.step": {
+      "sha256": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
+      "bytes": 198789
+    },
+    "boards/alec-sensor/3dmodels/XFL4020-152MEC.step": {
+      "sha256": "8721b34b33bb90a15a21e62e64567b68738ad1dc8dd0955c604389e27c309718",
+      "bytes": 69045
+    },
+    "boards/alec-sensor/ENCLOSURE.md": {
+      "sha256": "5eaafd4c75039651173d5e9120aaa230fbcbdc4f509603a402f0f2318076ee4d",
+      "bytes": 3151
+    },
+    "boards/alec-sensor/OPERATION.md": {
+      "sha256": "182023e9b968bf0d7a15df7d369f7ae8201569a538d599a5ff81a66411169e5b",
+      "bytes": 7196
+    },
+    "boards/alec-sensor/PROTOTYPE-ORDER.md": {
+      "sha256": "e43cb0cdef8964a76f32695eb1ab2aede3551c77ed1d1be2c86d9152303ade29",
+      "bytes": 3963
+    },
+    "boards/alec-sensor/README.md": {
+      "sha256": "d194a0beb1bcd5fc95b855fd344d9b031cbbf7e36ff34c1af8c809e2da4f7d15",
+      "bytes": 3414
+    },
+    "boards/alec-sensor/SOURCES.md": {
+      "sha256": "da2e9ed9de5945f925172a1a7f6b3769ed9cfb5188a1ea3fd0a611e71359bbdd",
+      "bytes": 5339
+    },
+    "boards/alec-sensor/TEST-REPORT.md": {
+      "sha256": "7bdb8b6f7b2ef42bd0917998f58f893e145197a5e0dbb944d7f9bc44f68dbbc1",
+      "bytes": 19054
+    },
+    "boards/alec-sensor/alec-sensor.kicad_pcb": {
+      "sha256": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "bytes": 1674547
+    },
+    "boards/alec-sensor/alec-sensor.kicad_pro": {
+      "sha256": "3c90f5e8ce3cc55f8ee40221d632e37d85033dc90a4c6c45c1387ab706590906",
+      "bytes": 10761
+    },
+    "boards/alec-sensor/alec-sensor.kicad_sch": {
+      "sha256": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "bytes": 304367
+    },
+    "boards/alec-sensor/board.yml": {
+      "sha256": "3ec412c76d71e68824be2f19a6619b6ec6fe1b087db21bd58a0e147c3f424dc0",
+      "bytes": 220
+    },
+    "boards/alec-sensor/docs/assembly.glb": {
+      "sha256": "6b0948581505616bd579b035dec0b9e8153c23ceb48ac9668c7024f02ace20e9",
+      "bytes": 5439800
+    },
+    "boards/alec-sensor/docs/pcb-bottom.png": {
+      "sha256": "140f45ced87ce493c949740d63a77f97d45f72d8b954a61c85eea63f39f447ed",
+      "bytes": 193408
+    },
+    "boards/alec-sensor/docs/pcb-top.png": {
+      "sha256": "3682f394094d19b903f0e6dfcb692778e6e251eac8ab585b4173eb98f47f077e",
+      "bytes": 359728
+    },
+    "boards/alec-sensor/docs/schematic-page1.svg": {
+      "sha256": "7b120f5aa1f27dbb752a0d24c7168f0dc518da92ad1995fc3e25750a90a8d959",
+      "bytes": 367605
+    },
+    "boards/alec-sensor/docs/schematic-page2.svg": {
+      "sha256": "b8c3d16b0d565fc31960751ec169756605c0c03e885cb2d8b74b5f8c55bcc57c",
+      "bytes": 442724
+    },
+    "boards/alec-sensor/docs/schematic.pdf": {
+      "sha256": "ddd193848cd9b93487bf7ad64123a5ecbee85f9ad0d99e8ef0ed48c3d179c079",
+      "bytes": 266862
+    },
+    "boards/alec-sensor/docs/schematic.svg": {
+      "sha256": "6caea2e4e6a7b43da393301fdf4a493a2f7bf23eb500c5590df92a6e68057e5e",
+      "bytes": 2259970
+    },
+    "boards/alec-sensor/footprints/Board.pretty/ESP32-S3-WROOM-1_Overhang.kicad_mod": {
+      "sha256": "915670aa915506dae324bda64b742d533c7f71106297f3982aa93bc93e2ad765",
+      "bytes": 16149
+    },
+    "boards/alec-sensor/footprints/Board.pretty/JST_PH_Speaker_Overhang.kicad_mod": {
+      "sha256": "8dfc9238b7478903261ba1bec4163e5e82a3a0fd895c940f5a6f28859f0faccc",
+      "bytes": 7794
+    },
+    "boards/alec-sensor/footprints/Board.pretty/USB_C_HRO_Overhang.kicad_mod": {
+      "sha256": "e848a88f492da1bc77db5091fed9b9bcc3b942b4cb185a74258add06b45ba4a9",
+      "bytes": 7805
+    },
+    "boards/alec-sensor/footprints/Sensor.pretty/SW_CK_1101M2S3CQE2.kicad_mod": {
+      "sha256": "e0f20ba188a8fc46b6b59116b1d8efc25aa1b4472531664bdd3585f9dd29b7da",
+      "bytes": 3620
+    },
+    "boards/alec-sensor/footprints/Sensor.pretty/Samtec_SSW-105-01-F-S.kicad_mod": {
+      "sha256": "dd41690f09bcba7de6e553853b1f56fb4ac0cee3471407e26ee59ce4551d86b9",
+      "bytes": 4020
+    },
+    "boards/alec-sensor/fp-lib-table": {
+      "sha256": "1c134df17d7c0cd9ca0332adc6019e502fb18ac0d4f124c95236a7d9a23c7115",
+      "bytes": 672
+    },
+    "boards/alec-sensor/power-monitor.kicad_sch": {
+      "sha256": "f8bc8d741149ff7a2b36cf57380ddd0584281a49671968a69116c7904e10a11e",
+      "bytes": 48649
+    },
+    "boards/alec-sensor/radar.kicad_sch": {
+      "sha256": "9822c4fd2581b4551b14582df515feb72998999da43eacb27df8640339c461f8",
+      "bytes": 36099
+    },
+    "boards/alec-sensor/review/3d-model-audit.json": {
+      "sha256": "dd2dcda4ca32602c0ccf89dc358e5b5f233b80032e907abc4e2f693b977f72c1",
+      "bytes": 55127
+    },
+    "boards/alec-sensor/review/Review.kicad_sym": {
+      "sha256": "608c287e6a4ef2b724f24580f041c535f4cb4404b4edf5e50c04b683e3d96d96",
+      "bytes": 11007
+    },
+    "boards/alec-sensor/review/Sensor.kicad_sym": {
+      "sha256": "fc0c14617715abf3dd6c9bbf9982688227c43830953d596720b5ba47b7fef9ff",
+      "bytes": 3457
+    },
+    "boards/alec-sensor/review/bom-checks.json": {
+      "sha256": "b3ca16f7cf37cf81df684729e34f4bce3b39eb43a27fb92b8ccc601810144fad",
+      "bytes": 333
+    },
+    "boards/alec-sensor/review/bom.csv": {
+      "sha256": "fd14c1633cb48c0a50a4aba21ec917bb4fdd25cb111b657129c3c2135ba7fef0",
+      "bytes": 16874
+    },
+    "boards/alec-sensor/review/copper-cleanup.json": {
+      "sha256": "91ca73e80265db3480991c25d2d9c2fd8da65dfd9b622b4034390b077d3073d3",
+      "bytes": 74
+    },
+    "boards/alec-sensor/review/copper-connectivity.txt": {
+      "sha256": "71c48d877e9639796f9b2ca55fffac0bb0767868973aa4e0b79319c015ed73c8",
+      "bytes": 112
+    },
+    "boards/alec-sensor/review/drc.json": {
+      "sha256": "f2016345e99d5d3883926da9e2985eda5ed0ab9ac1e76dbc0fa72cf02196ae10",
+      "bytes": 1068
+    },
+    "boards/alec-sensor/review/erc.json": {
+      "sha256": "a0af862fba9727896cb961a36cb17402471360b2de8d877fc7f8f6df59b05b6d",
+      "bytes": 1373
+    },
+    "boards/alec-sensor/review/fab-jlcpcb-4layer-advanced.json": {
+      "sha256": "67c2f8bb8aedb989f135c741f0268d9e7d44215aad966aca2cbd503027e12915",
+      "bytes": 1089
+    },
+    "boards/alec-sensor/review/interface-checks.json": {
+      "sha256": "0d3c5a44b0109626fe46607f176db837ef4ed7c3be7aba3d7ee67bc8235d8e13",
+      "bytes": 2061
+    },
+    "boards/alec-sensor/review/layout-validation.json": {
+      "sha256": "bf5823d821f68cee6c873adb465ede19e5ff9c87e7fe78a84faf797999c817c3",
+      "bytes": 2032
+    },
+    "boards/alec-sensor/review/migration.json": {
+      "sha256": "8415046ae41bc6c18115afec2377ad226cecfd784d28343abb5123bbfdb43956",
+      "bytes": 2514
+    },
+    "boards/alec-sensor/review/ordering-metadata-change.json": {
+      "sha256": "d8a28b30b592973087c300357b0f7548665fbde936c07c261577495d53742055",
+      "bytes": 1140
+    },
+    "boards/alec-sensor/review/power-budget.json": {
+      "sha256": "0db9b7ba93c76d520275d5dd8bee3cb85709a30f05081fc466b4d45c685f5f4b",
+      "bytes": 2204
+    },
+    "boards/alec-sensor/review/power-screening/inrush-00.cir": {
+      "sha256": "fcb8f827a698b2ece14c1ad13fff01bd0f1ed3dee61b05c567f2d614e3fe2cd1",
+      "bytes": 366
+    },
+    "boards/alec-sensor/review/power-screening/inrush-00.log": {
+      "sha256": "74f14e3a351ad8dec2247eea3293133d81cc7b9300652c3accfe6d1ed33d7bfa",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-01.cir": {
+      "sha256": "8ca8738d602852abb76b525523dbb13119dfb2a06e743e3b606d6e2132d85695",
+      "bytes": 366
+    },
+    "boards/alec-sensor/review/power-screening/inrush-01.log": {
+      "sha256": "83106d08d9a929225dc9f9601341bb2cba3b6a1974914a7f2c0ac2066f434c34",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-02.cir": {
+      "sha256": "7ab9429a26a9dd6d35f623b8594644b921689061a0c5486f28eb4e141a9bd998",
+      "bytes": 365
+    },
+    "boards/alec-sensor/review/power-screening/inrush-02.log": {
+      "sha256": "f00767f3da1fe2be3baff0c1cb7e4b8f586076bc27b581c344e038de9c6dc5d6",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-03.cir": {
+      "sha256": "08d645808c41ca29b3d4d662990506881a23fd402215da5a23965f73ecbec74a",
+      "bytes": 366
+    },
+    "boards/alec-sensor/review/power-screening/inrush-03.log": {
+      "sha256": "db20e585d32577b18ced7ab9a2f3a46beded0a19b5331b70898f882b74bfd56a",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-04.cir": {
+      "sha256": "2a1544b2f140f8f291346a64a44edab439d8843ea5d6ea58afb61dd4148ef02c",
+      "bytes": 366
+    },
+    "boards/alec-sensor/review/power-screening/inrush-04.log": {
+      "sha256": "f7c2aa05c51c074d991a7d22014ed342f9078996822a4345161cbf4196f0c981",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-05.cir": {
+      "sha256": "4418b728ed5a9268504037dc4aa79781f52b885326a190ec116e0d5efd16979c",
+      "bytes": 365
+    },
+    "boards/alec-sensor/review/power-screening/inrush-05.log": {
+      "sha256": "3640a3067978eb1232c052ef9ca25c74218a3b2706ff9b289a974f9267212815",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-06.cir": {
+      "sha256": "257623bbcfd4000773c54f4cb81788b05e92485b2460b2bcc47ea9ed88d85857",
+      "bytes": 366
+    },
+    "boards/alec-sensor/review/power-screening/inrush-06.log": {
+      "sha256": "2100d97d6af7929854b1043717384d7cec747c30634acc42de6c7687cba35519",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-07.cir": {
+      "sha256": "6046af0e491161cf6ed3f3fff98f3dce1a71a04311814d8140154cd13000d3ae",
+      "bytes": 366
+    },
+    "boards/alec-sensor/review/power-screening/inrush-07.log": {
+      "sha256": "4e91e2f7606d3e0ff501e2180f625378ca2aaa90fe9f3cabf7ec414de5d8fea4",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-08.cir": {
+      "sha256": "1f6d9b1ea6569edd8b8e6ef5202e164c80aa324a6cbf86d13f1bc274f487f64b",
+      "bytes": 365
+    },
+    "boards/alec-sensor/review/power-screening/inrush-08.log": {
+      "sha256": "dc2c7ab8100b81a058902cbefe41ad6e6aa12008ace246da4db8f1ba4e7b56bc",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-09.cir": {
+      "sha256": "6f823b929548e7e9aee335973d108e66ee627b6bb632767be4966823e1bf9496",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-09.log": {
+      "sha256": "d3eb3d9f11951d5e4b8a9fff150e9bbea97f4573b920835449ca21b6143f7a6d",
+      "bytes": 1314
+    },
+    "boards/alec-sensor/review/power-screening/inrush-10.cir": {
+      "sha256": "0c35ff36df642f9d94c9e32f2c1cfa57e3da9e6691c402a6faea8ea603957dd4",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-10.log": {
+      "sha256": "161836adc658bbd4b75c9cebb64e9ce1238097ad6f6c08eeff8a4be22af10986",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-11.cir": {
+      "sha256": "65769a1e64decee7f23890ca6fe1b1e4d2af09708003244d57b634425a19bc2a",
+      "bytes": 363
+    },
+    "boards/alec-sensor/review/power-screening/inrush-11.log": {
+      "sha256": "54e0c0e759bd134fc1a3438a014f1b5f52ad38fbb33a7af5e650f1c16f7370e4",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-12.cir": {
+      "sha256": "e6daa86193e833d9901dffb5320edcbe485b90f2d47ac0e20c866f5c80d123db",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-12.log": {
+      "sha256": "69dd00086079f04e9c7358f7dd7a63958e3d4691a2de63711cbb22f7c640b129",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-13.cir": {
+      "sha256": "1180fc0fd4bebec920cd0acc19fb79efb96fbe872ccfb15a1687530f12223d6b",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-13.log": {
+      "sha256": "655c7638b890c2f2416409c41116ad85bc7d8d3876733caa79a357a97b9fe147",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-14.cir": {
+      "sha256": "432c24132a00e26b66eb8e753b72db891610248909c0752664d33b041847e052",
+      "bytes": 363
+    },
+    "boards/alec-sensor/review/power-screening/inrush-14.log": {
+      "sha256": "52b3ba2633dc5affa668316c77ff7dd82c7f5615fd3082d03f209db565d54b85",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-15.cir": {
+      "sha256": "9f25a55f2cbc63041732cab71043efbaba9471f06257b1ca7d98d52943bbea52",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-15.log": {
+      "sha256": "bec906a2e4d6c222c2c5db668f2b4e2d9a0d9cb819bdc7782fc87b41a855ebb9",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-16.cir": {
+      "sha256": "65956601f0809008cb5ce721c1860ed7767c190ecce3125d9573125ac4b85d7a",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-16.log": {
+      "sha256": "74ddc89c333e81e1109193e567521bf53cec11bce6ad01091f75ea86a0dba900",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-17.cir": {
+      "sha256": "b63977a39f37fd121d9dae73bb1df0008b85da298a280ff751276b64977068a0",
+      "bytes": 363
+    },
+    "boards/alec-sensor/review/power-screening/inrush-17.log": {
+      "sha256": "1c0a352ad6023d8de7e502cd0dcc52a7945ca6ea20b1e75a033520a08620f9a1",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-18.cir": {
+      "sha256": "af9eff6b1899710f0f53892449e8cb248bd1f2270227403e6fecd42b342b84b3",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-18.log": {
+      "sha256": "d73eb6c0b59eae559517ec6c300cc385633b30ef395b1e5350c6efcb8b71c4ce",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-19.cir": {
+      "sha256": "0175d8ebce6427ff3fdcb720fa2423f1f8d95aba7f546eaee56e544be8d35cae",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-19.log": {
+      "sha256": "a408bb4b39926f55af94acf356164ed19aef7afdef736a8d340299c54c6949cd",
+      "bytes": 1314
+    },
+    "boards/alec-sensor/review/power-screening/inrush-20.cir": {
+      "sha256": "c62d674bf5b8fd8b3b9c81fe0daea9f27a8051c69762adca140f0dcdf493d6cd",
+      "bytes": 363
+    },
+    "boards/alec-sensor/review/power-screening/inrush-20.log": {
+      "sha256": "82d07a663881436b31e6d8d1770104fc6eeb766dff0980d437c6ef4e78c233cb",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-21.cir": {
+      "sha256": "81100be84646af9be398ca7a9ac1ba289643faadbab15faf35baeae4926ce5ae",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-21.log": {
+      "sha256": "111c5197a2c4a043e0824a960bef92d763a6ca5c762608d50d2ace863e177ef6",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-22.cir": {
+      "sha256": "5e15b651480ccb8c7ab96a762cf6525e12929a8e9fa388fd102473c430ee4baf",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-22.log": {
+      "sha256": "3fe2a1ef04288b959ecc1f7b46957dcbf945b3211ae1200e4a1baf2b2ea0ab98",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-23.cir": {
+      "sha256": "ee61679eb73b119c510dc26a07cd0c1fd182da48c2fa4cef66ceb9b56e0b8400",
+      "bytes": 363
+    },
+    "boards/alec-sensor/review/power-screening/inrush-23.log": {
+      "sha256": "bd37030d41d5338eb29200f2de5fc12dcf618abd53b37478e2afd73bdf9ba101",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-24.cir": {
+      "sha256": "fe9f5ff3e2eea024e77e71beef09fc2b7d4967fd76795839b3780d0df52181e3",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-24.log": {
+      "sha256": "1e63555a3d2ee228e1f7ff5f443e74b257ad3be9e58ea48d0344a6561515936f",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-25.cir": {
+      "sha256": "439ffd5435faeaa1c729328f5a8ab4330ac68c13f573b6df01acc71efa8ca705",
+      "bytes": 364
+    },
+    "boards/alec-sensor/review/power-screening/inrush-25.log": {
+      "sha256": "a909377f9cc8c10b235e50f43bdf670aedcaedbfcaa35086b6dd442496a3acd9",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/inrush-26.cir": {
+      "sha256": "2a974f81d2f1840669abe3a3129809d03d40b8dd20fbedd325ddb63e483a0df0",
+      "bytes": 363
+    },
+    "boards/alec-sensor/review/power-screening/inrush-26.log": {
+      "sha256": "ff88eca98c74de8757b0549e375ce6588ee0c95ff27c7d5f4be96e0cac0e7af7",
+      "bytes": 1315
+    },
+    "boards/alec-sensor/review/power-screening/summary.json": {
+      "sha256": "156ec5442e161c74302b3829ae4c2ca440294365f6d1da3e382110ace9818e65",
+      "bytes": 39028
+    },
+    "boards/alec-sensor/review/python-tests.txt": {
+      "sha256": "22756356b523bf1d57f5a55f69b645c4eb0d7ff7e2dc5ea7bcb773345461edcd",
+      "bytes": 3961
+    },
+    "boards/alec-sensor/review/rear-service-migration.json": {
+      "sha256": "1d370786814cfaa8caa4f31d4ae9cfd8c5444408ee13ad19ffb309c13f8ed430",
+      "bytes": 1427
+    },
+    "boards/alec-sensor/review/reference-retrieval-hashes.json": {
+      "sha256": "57502a1e61f3498320e7a6865b05ad0d4a548642d626454af0135240821b41ce",
+      "bytes": 609
+    },
+    "boards/alec-sensor/review/routing-report.json": {
+      "sha256": "7d939d8b013ce157aff9134ec58e1a17bc0316f244848e42970f4812564e834e",
+      "bytes": 107
+    },
+    "boards/alec-sensor/review/service-interface-checks.json": {
+      "sha256": "7f9d3ba63ba7a81fa8f45fa6b71d8bb9ebed8e3b6974bcab045e53a1b3c921ff",
+      "bytes": 535
+    },
+    "boards/alec-sensor/sym-lib-table": {
+      "sha256": "3d7302379e5ee592e67c2e964e95d230545f1d2e8bd0c1f7d57e768b1e964601",
+      "bytes": 495
+    },
+    "boards/alec-sensor/tools/README.md": {
+      "sha256": "9d9a3395738e26ee4af47034feb319181951f27cce5f84ec13146287c1bcc44e",
+      "bytes": 5204
+    },
+    "boards/alec-sensor/tools/apply_rear_service.py": {
+      "sha256": "2980358f84a6096351f4e0a8c7121b6cf753c3f609ed043a204210b89bbc95e5",
+      "bytes": 1568
+    },
+    "boards/alec-sensor/tools/audit_models.py": {
+      "sha256": "7472788cfe73cd9b1c96ad6662259803ad91697f4e602ab3bce38a6543e676f3",
+      "bytes": 1558
+    },
+    "boards/alec-sensor/tools/build_part_models.py": {
+      "sha256": "d2bcea210126a226e9f6cb01bd16c4723795a245c4233475888d0a30fbdabd16",
+      "bytes": 1067
+    },
+    "boards/alec-sensor/tools/check_bom.py": {
+      "sha256": "df5f38adbb0ce18858ba54354b23a39f2987d996a91f4b51ba1fa9ad970218d3",
+      "bytes": 2029
+    },
+    "boards/alec-sensor/tools/check_design.py": {
+      "sha256": "11ce6b7c87fa4647873939ff8ec4f230df39fba3dab44a1befb1e2b4bfeefe15",
+      "bytes": 4046
+    },
+    "boards/alec-sensor/tools/check_layout.py": {
+      "sha256": "62f017f9c0f6cbefbf750e1f783f0ac66d7b0c67baf192d4ea5cd26e005c5853",
+      "bytes": 7251
+    },
+    "boards/alec-sensor/tools/check_service_interface.py": {
+      "sha256": "5fb8013fc4bcffbe0113bde6c47da49162b155b4e0ff79df8e84138f02e324da",
+      "bytes": 1803
+    },
+    "boards/alec-sensor/tools/clean_retired_copper.py": {
+      "sha256": "f39fa40c389e6970f7620ed22889fe7c6956cbc7a71573eec8a3fde4ec88982b",
+      "bytes": 1827
+    },
+    "boards/alec-sensor/tools/create_pcb.py": {
+      "sha256": "f41e164177a82e4897c3fbcddd6187a01857b33c00807bdd188b7b630c8349cc",
+      "bytes": 8563
+    },
+    "boards/alec-sensor/tools/create_schematic.py": {
+      "sha256": "a8799ae0b9a94999c7ab0d6ca40107d8cc776fe0bece4808cb4129781c4f9f1c",
+      "bytes": 14185
+    },
+    "boards/alec-sensor/tools/finish_pcb.py": {
+      "sha256": "419ef5ad5a211047d5d8c28dc4bc7a430a62f6d8b27fc4f0af125afa61962a8b",
+      "bytes": 1520
+    },
+    "boards/alec-sensor/tools/hash_evidence.py": {
+      "sha256": "8601fdf65ce25e491377cbbec35a8478e5d657b720633c453f5093dfaa54c513",
+      "bytes": 1615
+    },
+    "boards/alec-sensor/tools/parts.py": {
+      "sha256": "8a12e99a91b1aa3837570f41d65f94aaa066b0612abc953cc2fcdf0d644a0130",
+      "bytes": 2809
+    },
+    "boards/alec-sensor/tools/power_budget.py": {
+      "sha256": "376061ff96950c0e7b75dd0f620f5f83311f071df9d2cf706a717930a1ce6bcd",
+      "bytes": 1353
+    },
+    "boards/alec-sensor/tools/power_screening.py": {
+      "sha256": "18348707c7619ed476c921218102b80c249da069b26836234b7c4b9fd6a3b301",
+      "bytes": 4917
+    },
+    "boards/alec-sensor/tools/route_pcb.py": {
+      "sha256": "68e613b4df280f348fdae70a7752f70956a006bbdea31a48226d989bf483fc52",
+      "bytes": 12563
+    },
+    "boards/alec-sensor/tools/sync_fields.py": {
+      "sha256": "584ae6e9c06e8739be75af39bb9eac9b75c3ee84e63c800ab02661e916ddfc7f",
+      "bytes": 598
+    },
+    "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_pcb": {
+      "sha256": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+      "bytes": 1890452
+    },
+    "boards/esp32s3-devkit-5v/esp32s3-devkit-5v.kicad_sch": {
+      "sha256": "d50864b4f6dba38fa32e1b3fb41f6ad601570cfa2162f0548b070d9ce860e925",
+      "bytes": 419531
+    },
+    "boards/esp32s3-devkit-5v/power-monitor.kicad_sch": {
+      "sha256": "e9abb107bcb8a53473a6082b1e567d3ebe6c7659cd54707bdab2fc84790ab215",
+      "bytes": 38134
+    },
+    "enclosures/alec/geometry_helpers.py": {
+      "sha256": "8f29a560c5ef64be66055f9d6ea14aa7b454be6543001fbeae1c377c17fdf398",
+      "bytes": 4463
+    },
+    "enclosures/alec/sources/BH3AAW.glb": {
+      "sha256": "d719dd05c4ca6ecd67e570628a8fc71b31a800d80e2eaa52205336689fc2ed74",
+      "bytes": 850888
+    },
+    "enclosures/alec-sensor/README.md": {
+      "sha256": "c7120d912e010cb8b29ef68a23baa77e573cadfd9b32ae66e7ae43a867dac21f",
+      "bytes": 4740
+    },
+    "enclosures/alec-sensor/alec-sensor-s1-mechanical.step": {
+      "sha256": "d1cdd961269926b038acbd86d856f3b52f234bc3b1721e6c717483b1fcaf55d1",
+      "bytes": 997863
+    },
+    "enclosures/alec-sensor/alec-sensor-s1.blend": {
+      "sha256": "099fe29048d623f0e420c95c8f9531e54a33b6d73e536865fc93020c694732b1",
+      "bytes": 5525267
+    },
+    "enclosures/alec-sensor/assembly-sources.json": {
+      "sha256": "f393458de88bb0c73e66ba8556bf848ebc782e4f14705c1032c284efc972621e",
+      "bytes": 1652
+    },
+    "enclosures/alec-sensor/cad/battery_carrier.step": {
+      "sha256": "b0640f0b9cda8bc77d572ac237b12fdd38fe43103d57f9a81149828cc0fbf87d",
+      "bytes": 220455
+    },
+    "enclosures/alec-sensor/cad/battery_carrier.stl": {
+      "sha256": "eddb6482bd8a3319c7faf62fa4673a59f24865bac7e8a5ad1955243ec74d0231",
+      "bytes": 96084
+    },
+    "enclosures/alec-sensor/cad/battery_holder_envelope.step": {
+      "sha256": "91af5ba1d3cfd6fd2feda1ac3644f6d6cd379e07dd65167a7232e17c45e7992b",
+      "bytes": 15678
+    },
+    "enclosures/alec-sensor/cad/battery_holder_envelope.stl": {
+      "sha256": "9658b918ed1bb87326146ec9a28da57e561aea431d61a6204116a6dabb4ef564",
+      "bytes": 684
+    },
+    "enclosures/alec-sensor/cad/button_membrane.step": {
+      "sha256": "e42c71f7084c530314037bb1568ceef142eb7ec77bd5625e1dac87fced153e0b",
+      "bytes": 9517
+    },
+    "enclosures/alec-sensor/cad/button_membrane.stl": {
+      "sha256": "91f9fa6463d5434f337ceedde28102e2817aae9572a9a2ff86e665e5173d2064",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/button_plunger.step": {
+      "sha256": "6351729b965b0a58edd76474e13f2ab0e26ffd5da903b0c8ecf4f50b12b428fd",
+      "bytes": 10109
+    },
+    "enclosures/alec-sensor/cad/button_plunger.stl": {
+      "sha256": "71ac2f4ed85f26d0f4d2a713cb017083f38c4e2b9b384b271d404962873de394",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/button_retainer.step": {
+      "sha256": "9452d1a13687e5e562c086ecdc8e2f14fca6fe80b878b35de1663e526fa00ab7",
+      "bytes": 110816
+    },
+    "enclosures/alec-sensor/cad/button_retainer.stl": {
+      "sha256": "d88c98ce4fdd4ceda764dc58f30de0a99314a31016f50f0334834fba65dcf823",
+      "bytes": 137884
+    },
+    "enclosures/alec-sensor/cad/carrier_screw_1.step": {
+      "sha256": "0f84d57219550b329c9a11a73209974056c2ea00b74759efa574a8f5ef679539",
+      "bytes": 9529
+    },
+    "enclosures/alec-sensor/cad/carrier_screw_1.stl": {
+      "sha256": "c89bf8f9d99509e31cedc17a72d93669ef3a7b36eb3d5cfcfe9a32c48bd28b7f",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/carrier_screw_2.step": {
+      "sha256": "d56a0bbb3076fcfc0304d625a48825edda3de1df864de5cedac601ebae03cac5",
+      "bytes": 9514
+    },
+    "enclosures/alec-sensor/cad/carrier_screw_2.stl": {
+      "sha256": "af95d595f6860736b37968d4ddd80c45b53ce50d16ddb142eff5552cf2599bf9",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/carrier_screw_3.step": {
+      "sha256": "b228672b932da0aacb0080d5fc9d778b483b86d865c4165764e4ab3637598db7",
+      "bytes": 9629
+    },
+    "enclosures/alec-sensor/cad/carrier_screw_3.stl": {
+      "sha256": "a9ed99250abe5944c0365ff71dc5a0c2c6177b5d0441d94100a8e735314c4c08",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/front_cup.step": {
+      "sha256": "1eea3882d00bf826413931e77b53f8beab61c2f32266afd48d672600f72a8bb4",
+      "bytes": 202724
+    },
+    "enclosures/alec-sensor/cad/front_cup.stl": {
+      "sha256": "1eb4343d8370b1460eb8185c44818e2660d29821269942bce1e90ff80ba853a6",
+      "bytes": 752084
+    },
+    "enclosures/alec-sensor/cad/light_pipe.step": {
+      "sha256": "d451d98e894964c31fa84c437d5ccb1678ea5f41a8276228ef0af558bb6a9f77",
+      "bytes": 5662
+    },
+    "enclosures/alec-sensor/cad/light_pipe.stl": {
+      "sha256": "cec9ec95c6818914b4353b2b25a0812ed0382cd8c0027fd649ef777a2934be60",
+      "bytes": 16684
+    },
+    "enclosures/alec-sensor/cad/mounting_cradle.step": {
+      "sha256": "fe1ccad6ac4af5aeb0e350af8a4c082be00ad6ea724094aab83e19aca222f9f9",
+      "bytes": 127177
+    },
+    "enclosures/alec-sensor/cad/mounting_cradle.stl": {
+      "sha256": "dc46cf4678a95095aa81694ad310a3f4bf12550529c2d37b8c586369b0e2030f",
+      "bytes": 39684
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_1.step": {
+      "sha256": "148566360907d1686e90aa84bbf8bfff2c08942ee91c6c34214280a82bb1437b",
+      "bytes": 9528
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_1.stl": {
+      "sha256": "45ff5a03cd5b396307836b189c0bf33c921d97989566d7f7642a509041c12004",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_2.step": {
+      "sha256": "c873dc79955bbaba3e8073ee8e925feac49b1ce9255fddd77592540120cb75fb",
+      "bytes": 9513
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_2.stl": {
+      "sha256": "1bc33348d356b83fdbfc6576ebb49f2cceaab36b2e22d92af40801288f3c89a0",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_3.step": {
+      "sha256": "a370368b14fdde7be3ffb3a318353582b8ddf29f04a79632c18b939c7c135318",
+      "bytes": 9543
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_3.stl": {
+      "sha256": "8dce7366a3cf1843f65e05e55724ff932a00bcfe4b2f126b2a97c7f70071fde8",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_4.step": {
+      "sha256": "19ddf9cbdd2f0c9adedc27965d062e9b7ccb617025b6299e2f6837b2ab3e9625",
+      "bytes": 9530
+    },
+    "enclosures/alec-sensor/cad/pcb_screw_4.stl": {
+      "sha256": "ca7c35c6e026d719bba4c27adb968df69e36b276f090abf326aabe9b676fa21d",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/radar_pcb_envelope.step": {
+      "sha256": "02631740193039062970d2a6392cf59e176cd374d6af1158578383dd0ee4d837",
+      "bytes": 15733
+    },
+    "enclosures/alec-sensor/cad/radar_pcb_envelope.stl": {
+      "sha256": "f6ecc1edd47b369b98fff7cb844567a691035a0ab9d84f88576d051e4bdffcc8",
+      "bytes": 684
+    },
+    "enclosures/alec-sensor/cad/rear_cover.step": {
+      "sha256": "9632cb4eb1633255f80fa21b74d836ffb2be23a5a9fd193f1d1c09dcce5f0953",
+      "bytes": 91691
+    },
+    "enclosures/alec-sensor/cad/rear_cover.stl": {
+      "sha256": "75b6535b20ddc7da82499ddc882842e1b8cafa697b519d274530d8be3f5619e4",
+      "bytes": 221084
+    },
+    "enclosures/alec-sensor/cad/rear_oring_installed_envelope.step": {
+      "sha256": "588ab3aa15c660f4e03fde17be4a4d3e8a46c4ad939d22b51523a442e07f868a",
+      "bytes": 10657
+    },
+    "enclosures/alec-sensor/cad/rear_oring_installed_envelope.stl": {
+      "sha256": "b8eaf0887cac5dbe2597be2eeefb42c7a3c48ef6f5b970c7495739bb2a817af8",
+      "bytes": 33684
+    },
+    "enclosures/alec-sensor/cad/rear_screw_1.step": {
+      "sha256": "ca5d69f48997d92bb2250e61df085fbcf7b6a482e48a334366f6010913755669",
+      "bytes": 9574
+    },
+    "enclosures/alec-sensor/cad/rear_screw_1.stl": {
+      "sha256": "047505fccac3907096da72a70d6f649e34fd4c5d0fbe952f256e54a1541f4145",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/rear_screw_2.step": {
+      "sha256": "3c32d482c13dc6b35517a5c4f3ffc8122a8577674d838f66f931104d82611063",
+      "bytes": 9665
+    },
+    "enclosures/alec-sensor/cad/rear_screw_2.stl": {
+      "sha256": "bede1b8436cbe23dfd8341811a9b1416a4f590d188d2b410d802fa4497b68400",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/rear_screw_3.step": {
+      "sha256": "32b22c4c2f67a2559c54ec3046be402c875d2af83dbde479a10458bebfa230af",
+      "bytes": 9680
+    },
+    "enclosures/alec-sensor/cad/rear_screw_3.stl": {
+      "sha256": "f25afbbd00abadb9c594fd3c91fa0287ae04415c15ab8e6b7019df4518ca70ff",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/rear_screw_4.step": {
+      "sha256": "bdae2a5bdeaf7f3e5a43e1767ccdd67ca225c2a69b3b3f50d8523d10103cc462",
+      "bytes": 9769
+    },
+    "enclosures/alec-sensor/cad/rear_screw_4.stl": {
+      "sha256": "6a2fe7ad09b0cd15bb5d4cf380b3b29f096eaf65450737433981d022eedd3f79",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/rear_screw_5.step": {
+      "sha256": "474486aafabb02d574268254af38ce469dfdd7c75e7a969112805b548b8ce8b4",
+      "bytes": 9680
+    },
+    "enclosures/alec-sensor/cad/rear_screw_5.stl": {
+      "sha256": "1e8713b8a82543452ad9f6d90297b3f4ff644438aeef2408be979c34041a9f1d",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad/rear_screw_6.step": {
+      "sha256": "be84182756679b0120f19a7cc3692b8ce5be2f207642bd2d1b3d82dc0d4b5036",
+      "bytes": 9665
+    },
+    "enclosures/alec-sensor/cad/rear_screw_6.stl": {
+      "sha256": "eb1f7df0293ec15d5d709caa495c25b5434685866c4acff85011073fb22e2911",
+      "bytes": 33484
+    },
+    "enclosures/alec-sensor/cad-checks.json": {
+      "sha256": "df0fa7e9a571d93b6b82f7e359cb0bdc9b44124b87508cf43cd24d75b7bfbc2b",
+      "bytes": 2010
+    },
+    "enclosures/alec-sensor/cad-parts.json": {
+      "sha256": "8a92539fb41ff88dec39b65bcd9366c7813040bc259ceb165ee30db238bb88cb",
+      "bytes": 4345
+    },
+    "enclosures/alec-sensor/exterior.png": {
+      "sha256": "4b2a2450c97deb12c6fc18a22de38aea259abf0fbd663fce3064cbe034891137",
+      "bytes": 1709578
+    },
+    "enclosures/alec-sensor/interface.json": {
+      "sha256": "501a70da9d140188661a3d764b6535d545e4f6600c0cf182707a4f956b464d73",
+      "bytes": 2754
+    },
+    "enclosures/alec-sensor/internals.png": {
+      "sha256": "1df0a548dbda50d72b13f50920ee03c0273624e1a40bb7c4c97924d9c8d16f8d",
+      "bytes": 1972880
+    },
+    "enclosures/alec-sensor/pcb-service.png": {
+      "sha256": "008ac8b292dec8ac8af2f860191f30684a552f37e87a7ef9ab10eb26f8cebeae",
+      "bytes": 1500705
+    },
+    "enclosures/alec-sensor/rear-service.png": {
+      "sha256": "83fd5ca3e09195ebd73686c8ab76a1fec7f69f11dddd526d877f5e7c0c559418",
+      "bytes": 1749679
+    },
+    "enclosures/alec-sensor/sources/HLK-LD2410C.glb": {
+      "sha256": "de7f421d24d152cf64e84f4a2e3dffbe5a177e970d8b5046974e70905bb97c55",
+      "bytes": 9040212
+    },
+    "enclosures/alec-sensor/sources/provenance.json": {
+      "sha256": "5103ec0a138e539936021a87918574837812f96cca30f7b726a998ed8ba2b55f",
+      "bytes": 659
+    },
+    "enclosures/alec-sensor/tools/build_blender.py": {
+      "sha256": "95565916538404972c55cdc48397ec550fc408a99edcc3db4607f6318482f956",
+      "bytes": 8328
+    },
+    "enclosures/alec-sensor/tools/build_cad.py": {
+      "sha256": "a740e679c006dfd8786e75f51d5660fc0be4288ad423e56a1d82eaa073bb4497",
+      "bytes": 11117
+    },
+    "enclosures/alec-sensor/tools/prepare_sources.py": {
+      "sha256": "03d511c08f103a6c70fc3852960738c3e50e8dfaad06521a5a8560fe6d20becc",
+      "bytes": 1252
+    },
+    "scripts/alarm/design.py": {
+      "sha256": "0882b68c83a985a1fc08d5288f59f62b3d2942f6abf788feca5ef5227fd2ef8b",
+      "bytes": 4370
+    },
+    "scripts/ci/check_copper_connectivity.py": {
+      "sha256": "abd3c1616a42098a1286bb8607f303d430c7e6b8496b117ef637c0164c0329ac",
+      "bytes": 4862
+    },
+    "tests/test_alec_sensor.py": {
+      "sha256": "258cf2881121d9617b7970bf33e723fb783fc9d95b148c53f2328df508dd6bd2",
+      "bytes": 3707
+    }
+  }
+}
