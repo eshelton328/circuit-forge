@@ -1,28 +1,41 @@
 """Package completed evidence. Refuses failed/stale native-board and assembly results."""
 from design import *
 import json,hashlib,zipfile,shutil,argparse
-E=ROOT/'enclosures/bedroom-alarm/pcb-revision'
-parser=argparse.ArgumentParser();parser.add_argument('--physics-results',type=Path,required=True);args=parser.parse_args()
+E=ROOT/'enclosures/alec/pcb-revision'
+parser=argparse.ArgumentParser()
+physical_source=parser.add_mutually_exclusive_group(required=True)
+physical_source.add_argument('--physics-results',type=Path)
+physical_source.add_argument('--reuse-physics',action='store_true',help='Retain archived solver results already bound to this PCB, including documented name-only migrations')
+args=parser.parse_args()
 def read(p):return json.loads(p.read_text())
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-physical=read(args.physics_results/'results/summary.json');assert physical['manifest']['pcb_sha256']==sha(MAIN/(MAIN.name+'.kicad_pcb'))
+physical=read(MAIN/'review/physical-screening/summary.json' if args.reuse_physics else args.physics_results/'results/summary.json')
+assert physical['manifest']['pcb_sha256']==sha(MAIN/(MAIN.name+'.kicad_pcb'))
 physical['comparison_note']='The original key means the merged esp32s3-devkit-5v bench board in this run, not the older pre-compaction reference.'
 d=MAIN/'review/physical-screening';d.mkdir(exist_ok=True)
 (d/'summary.json').write_text(json.dumps(physical,indent=2)+'\n')
 shutil.copy(BASE/'analysis/assumptions.json',d/'assumptions.json')
-with zipfile.ZipFile(d/'raw-data.zip','w',zipfile.ZIP_DEFLATED) as z:
- for p in sorted(args.physics_results.rglob('*')):
-  if p.is_file():z.write(p,p.relative_to(args.physics_results))
+if not args.reuse_physics:
+ with zipfile.ZipFile(d/'raw-data.zip','w',zipfile.ZIP_DEFLATED) as z:
+  for p in sorted(args.physics_results.rglob('*')):
+   if p.is_file():z.write(p,p.relative_to(args.physics_results))
+if physical['manifest'].get('name_migration'):
+ migration=read(d/physical['manifest']['name_migration'])
+ assert migration['pcb_sha256']==physical['manifest']['pcb_sha256']
+ assert migration['previous_pcb_sha256']==physical['manifest']['solver_pcb_sha256']
+ with zipfile.ZipFile(d/'raw-data.zip') as z:archived=json.loads(z.read('current.json'))
+ assert archived.pop('pcb_sha256')==migration['previous_pcb_sha256']
+ assert hashlib.sha256(json.dumps(archived,sort_keys=True,separators=(',',':')).encode()).hexdigest()==migration['geometry_sha256']
 boardrows=[]
 for kind in ['main','controls','front']:
- d=ROOT/'boards'/('bedroom-alarm-'+kind);fab='jlcpcb-4layer-advanced' if kind=='main' else 'jlcpcb-2layer-standard'
+ d=ROOT/'boards'/('alec-'+kind);fab='jlcpcb-4layer-advanced' if kind=='main' else 'jlcpcb-2layer-standard'
  shutil.copy(d/f'drc-fab-{fab}.json',d/'review/fab-drc.json')
  erc=read(d/'review/erc.json');drc=read(d/'review/drc.json');f=read(d/'review/fab-drc.json')
  assert not any(s['violations'] for s in erc['sheets'])
  assert not(drc['violations']+drc['unconnected_items']+drc['schematic_parity'])
  assert not(f['violations']+f['unconnected_items'])
  boardrows.append(f'| {kind} | 0 | 0 | {fab}: pass |')
-geometry=read(E/'verification.json');assert geometry['status']=='NOMINAL_GEOMETRY_PASS' and geometry['tested_blend_sha256']==sha(E/'bedroom-cube-v4-2.blend')
+geometry=read(E/'verification.json');assert geometry['status']=='NOMINAL_GEOMETRY_PASS' and geometry['tested_blend_sha256']==sha(E/'alec-cube-v4-2.blend')
 interfaces=read(MAIN/'review/interface-validation.json');layout=read(MAIN/'review/layout-validation.json');spice=read(MAIN/'review/spice-report.metrics.json');harness=read(MAIN/'review/harness-simulation.json')
 assert interfaces['passed'] and layout['passed'] and spice['pass'] and harness['passed']
 assert layout['pcb_sha256']==sha(MAIN/(MAIN.name+'.kicad_pcb'))
@@ -40,7 +53,7 @@ text=f'''# V4.2 PCB and enclosure test report
 |---|---:|---:|---|
 {chr(10).join(boardrows)}
 
-The full local repository suite reports **115 passed, 1 skipped**.
+The full local repository suite reports **117 passed, 1 skipped**.
 
 All three also pass the repository's filled-copper connectivity guard. The bottom board uses explicit ground traces as well as its filled planes. Board intent validation passes on all three projects.
 
@@ -61,6 +74,8 @@ These results justify damping and a prototype oscilloscope test. They do not rep
 
 FastHenry and ngspice were rerun on freshly exported product-board copper. The comparison is the **merged 64 × 56 mm bench board**. Both use the same coarse local-window extraction. The original key in the raw solver JSON refers to that bench board in this report.
 
+{('The ALEC naming update preserves that solver run. A fresh KiCad geometry export exactly matches the archived input after excluding only the PCB file hash. No copper or electrical change was made; numerical solvers were not rerun for this rename. The original solver PCB hash and the renamed PCB hash are recorded in [name-migration.json](physical-screening/name-migration.json).') if physical['manifest'].get('name_migration') else ''}
+
 | Local bypass loop | Product R at 1 MHz, mΩ | Product L at 1 MHz, nH | Bench L at 1 MHz, nH |
 |---|---:|---:|---:|
 {chr(10).join(loops)}
@@ -77,25 +92,26 @@ The main PCB remains 64 × 56 mm. The bottom board is 27 × 34 mm and the front 
 
 The front switch linkage has only about 0.055 mm nominal free clearance. Verify the B3U pretravel range, printed-part tolerances, cap return force and positive overtravel stop on a physical sample; CAD does not guarantee operation. Verify actual M2 heads/threads, light-pipe diffusion and the GH plugs/cable bends. The custom spring-probe fixture still needs registration/retention details. No claim of a completely qualified production mechanism is made.
 
-Before ordering a production batch: assemble a fit sample with the actual holder/display/speaker/headers; measure button and slide-switch operation through the panel; test cable continuity and all RGB channels; verify UART boot and 100 switched-display cycles; measure continuous alarm battery sag, 3.3/5 V rails, switch-node ringing, sleep/standby current, closed-enclosure temperatures and ESP-NOW range; measure bedroom SPL/distortion and run real wake-up trials. Continue the existing [physical test log](../../../enclosures/bedroom-alarm/physical-test-log.csv). Its unrun rows remain unrun.
+Before ordering a production batch: assemble a fit sample with the actual holder/display/speaker/headers; measure button and slide-switch operation through the panel; test cable continuity and all RGB channels; verify UART boot and 100 switched-display cycles; measure continuous alarm battery sag, 3.3/5 V rails, switch-node ringing, sleep/standby current, closed-enclosure temperatures and ESP-NOW range; measure bedroom SPL/distortion and run real wake-up trials. Continue the existing [physical test log](../../../enclosures/alec/physical-test-log.csv). Its unrun rows remain unrun.
 
 ## Sources and reproduction
 
-[Reproduction guide](../../../scripts/alarm/README.md), [integrated assembly](../../../enclosures/bedroom-alarm/pcb-revision/README.md). Component/interface choices follow [JST GH](https://www.jst-mfg.com/product/pdf/eng/eGH.pdf), [Omron B3U](https://components.omron.com/eu-en/products/switches/B3U), [E-Switch EG1218](https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf), [TI TPS63070 layout guidance](https://www.ti.com/lit/ds/symlink/tps63070.pdf) and [Espressif antenna guidance](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html). The existing display/holder/speaker drawings remain in the v4.1 enclosure source package.
+[Reproduction guide](../../../scripts/alarm/README.md), [integrated assembly](../../../enclosures/alec/pcb-revision/README.md). Component/interface choices follow [JST GH](https://www.jst-mfg.com/product/pdf/eng/eGH.pdf), [Omron B3U](https://components.omron.com/eu-en/products/switches/B3U), [E-Switch EG1218](https://configured-product-images.s3.amazonaws.com/2D/specs/EG1218.pdf), [TI TPS63070 layout guidance](https://www.ti.com/lit/ds/symlink/tps63070.pdf) and [Espressif antenna guidance](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html). The existing display/holder/speaker drawings remain in the v4.1 enclosure source package.
 '''
 # This file is three directories below repository root; all repository links above match that depth.
 (MAIN/'review/TEST-REPORT.md').write_text(text)
-(E/'TEST-REPORT.md').write_text('# Integrated PCB test results\n\nSee the [full board and enclosure test report](../../../boards/bedroom-alarm-main/review/TEST-REPORT.md). The saved v4.2 assembly passes 52 nominal geometry checks; physical qualification and manufacturing release remain pending.\n\n[Geometry results](verification.json) · [Native-source hashes](assembly-sources.json) · [Complete assembly](bedroom-cube-v4-2.blend)\n')
+(E/'TEST-REPORT.md').write_text('# Integrated PCB test results\n\nSee the [full board and enclosure test report](../../../boards/alec-main/review/TEST-REPORT.md). The saved v4.2 assembly passes 52 nominal geometry checks; physical qualification and manufacturing release remain pending.\n\n[Geometry results](verification.json) · [Native-source hashes](assembly-sources.json) · [Complete assembly](alec-cube-v4-2.blend)\n')
 print('Packaged report')
 # Bind reviewed evidence to committed inputs; generated working decks are deliberately omitted.
 files=[];evidence=[]
-for d in sorted((ROOT/'boards').glob('bedroom-alarm-*')):
+for d in sorted((ROOT/'boards').glob('alec-*')):
  files+=[p for p in d.glob('*.kicad_*') if p.suffix in ['.kicad_pcb','.kicad_sch','.kicad_pro','.kicad_dru']]+[d/'checks.yml',d/'board.yml']+list((d/'3dmodels').glob('*.step'))
  evidence += [d/'review'/n for n in ['netlist.xml','erc.json','drc.json','fab-drc.json','3d-model-audit.json','bom.csv']]
 files += [p for p in (MAIN/'sim').glob('*.cir') if p.name not in ['assembled.cir','kicad_export.cir']]+[MAIN/'sim.yml']
 files += list((ROOT/'scripts/alarm').glob('*.py'))+list((ROOT/'libs/footprints/Alarm.pretty').glob('*.kicad_mod'))
 files += [E/n for n in ['build_assembly.py','verify_assembly.py','render_views.py']]
 evidence += [MAIN/'review'/n for n in ['interface-validation.json','layout-validation.json','harness-simulation.json','spice-report.metrics.json','physical-screening/summary.json']]
-evidence += [E/n for n in ['assembly-sources.json','verification.json','bedroom-cube-v4-2.blend']]
+if physical['manifest'].get('name_migration'):evidence.append(MAIN/'review/physical-screening'/physical['manifest']['name_migration'])
+evidence += [E/n for n in ['assembly-sources.json','verification.json','alec-cube-v4-2.blend']]
 def hashed(paths):return {str(p.relative_to(ROOT)):sha(p) for p in sorted(set(paths))}
 (MAIN/'review/qa-manifest.json').write_text(json.dumps({'manufacturing_release':False,'files':hashed(files),'evidence':hashed(evidence)},indent=2)+'\n')

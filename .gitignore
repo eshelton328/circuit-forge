@@ -82,5 +82,5 @@ __pycache__/
 *.py[cod]
 
 # Enclosure PCB review evidence
-!boards/bedroom-alarm-*/review/erc.json
-!boards/bedroom-alarm-*/review/drc.json
+!boards/alec-*/review/erc.json
+!boards/alec-*/review/drc.json

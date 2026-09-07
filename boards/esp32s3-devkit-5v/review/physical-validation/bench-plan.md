@@ -11,7 +11,7 @@ Record the answers in [operating-requirements.json](../../analysis/operating-req
 The user has specified **three AA cells, alkaline or lithium**. The series
 connection is the working interpretation; the precise lithium chemistry is
 awaiting clarification. L91 analysis below is conditional on primary 1.5 V cells.
-The user also intends a **bedroom alarm to wake someone from sleep**, with probably
+The user also intends a **ALEC to wake someone from sleep**, with probably
 continuous playback; use 100% duty during the alarm for screening. See the
 [speaker and continuous-load proposal](continuous-alarm.md) and its pillow-position
 acoustic and wake-up trials. Listening distance and maximum duration are pending.
@@ -118,7 +118,7 @@ waveform claims remain open until suitable measurements exist.
    both rails, PG signals, reset/brownout events and audio clipping. Record
    short-window peak/RMS current and long-window average current separately.
    Test fresh, nominal and minimum battery states, including startup and restart.
-   For the bedroom alarm, also test scheduled playback after overnight idle;
+   For the ALEC, also test scheduled playback after overnight idle;
    record missed starts, interruptions and response to stop/snooze if implemented.
 4. Measure Q1 voltage drop directly across its power terminals under a stable
    load; P_Q1 = mean(Vdrop*I). For converter efficiency, measure simultaneous

@@ -1,0 +1,800 @@
+{
+  "tested_blend_sha256": "63d3d680f476ae7821f6571d71c453f3bf792233da026adc61df2e3129f4d8f3",
+  "status": "NOMINAL_GEOMETRY_CHECKS_PASS",
+  "physical_qualification_performed": false,
+  "manufacturing_release": false,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "Actual 64 x 56 mm PCB scale",
+      "passed": true,
+      "bounds_mm": [
+        [
+          -32.0,
+          -27.99999237060547,
+          42.49000930786133
+        ],
+        [
+          32.00000762939453,
+          28.00000762939453,
+          44.00001525878906
+        ]
+      ]
+    },
+    {
+      "name": "Main PCB hash unchanged",
+      "passed": true,
+      "sha256": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8"
+    },
+    {
+      "name": "Actual main PCB flat and component-side down",
+      "passed": true
+    },
+    {
+      "name": "H1 real mounting-hole alignment",
+      "passed": true,
+      "xy_mm": [
+        28.0,
+        24.0
+      ]
+    },
+    {
+      "name": "H2 real mounting-hole alignment",
+      "passed": true,
+      "xy_mm": [
+        -28.0,
+        24.0
+      ]
+    },
+    {
+      "name": "H3 real mounting-hole alignment",
+      "passed": true,
+      "xy_mm": [
+        28.0,
+        -15.0
+      ]
+    },
+    {
+      "name": "H4 real mounting-hole alignment",
+      "passed": true,
+      "xy_mm": [
+        -28.0,
+        -17.0
+      ]
+    },
+    {
+      "name": "Front perforations and closed webs",
+      "passed": true,
+      "wall": "Front",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    },
+    {
+      "name": "Right perforations and closed webs",
+      "passed": true,
+      "wall": "Right",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    },
+    {
+      "name": "Rear perforations and closed webs",
+      "passed": true,
+      "wall": "Rear",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    },
+    {
+      "name": "Left perforations and closed webs",
+      "passed": true,
+      "wall": "Left",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    },
+    {
+      "name": "actual_pcb separated from holder",
+      "passed": true,
+      "gap_mm": 10.865
+    },
+    {
+      "name": "actual_pcb separated from battery_carrier",
+      "passed": true,
+      "gap_mm": 8.865
+    },
+    {
+      "name": "actual_pcb separated from display",
+      "passed": true,
+      "gap_mm": 15.565
+    },
+    {
+      "name": "actual_pcb separated from rear_chamber",
+      "passed": true,
+      "gap_mm": 1.395
+    },
+    {
+      "name": "holder separated from display",
+      "passed": true,
+      "gap_mm": 2.445
+    },
+    {
+      "name": "holder separated from new_control_pcb",
+      "passed": true,
+      "gap_mm": 2.695
+    },
+    {
+      "name": "loaded_cells separated from bottom_cover",
+      "passed": true,
+      "gap_mm": 3.15
+    },
+    {
+      "name": "battery_harness clear of battery_carrier",
+      "passed": true,
+      "method": "triangle/box against solid carrier",
+      "obstacles": []
+    },
+    {
+      "name": "display_harness clear of battery_carrier",
+      "passed": true,
+      "method": "triangle/box against solid carrier",
+      "obstacles": []
+    },
+    {
+      "name": "new_control_pcb separated from display",
+      "passed": true,
+      "gap_mm": 13.3
+    },
+    {
+      "name": "15 mm RF envelope free of foreign modeled geometry",
+      "passed": true,
+      "obstacles": [],
+      "box_mm": [
+        [
+          -25,
+          12.75,
+          26.405
+        ],
+        [
+          23,
+          49.25,
+          57.405
+        ]
+      ],
+      "note": "Triangle/box test resolves hollow-shell false positives. RF performance still requires measurements."
+    },
+    {
+      "name": "Bottom cell withdrawal has no foreign rigid obstruction",
+      "passed": true,
+      "obstacles": [],
+      "note": "Cover and retention bridge released. Does not test spring force, grip or own holder contacts."
+    },
+    {
+      "name": "Speaker axis points directly toward front grille",
+      "passed": true,
+      "axis": [
+        0.0,
+        -1.0,
+        -4.371138828673793e-08
+      ]
+    },
+    {
+      "name": "Maximum forward diaphragm envelope clears grille",
+      "passed": true,
+      "gap_mm": 2.8,
+      "remaining_after_1mm_rigid_budget_mm": 1.8
+    },
+    {
+      "name": "Driver rear envelope clears rear chamber wall",
+      "passed": true,
+      "gap_mm": 17.8
+    },
+    {
+      "name": "Maximum diaphragm envelope clears allocated acoustic cloth",
+      "passed": true,
+      "gap_mm": 2.45,
+      "note": "Cloth deflection and material not qualified"
+    },
+    {
+      "name": "Direct sound path has no rigid reflector or duct obstruction; cloth loss untested",
+      "passed": true,
+      "open_rays": 80,
+      "obstacles": []
+    },
+    {
+      "name": "Rear pod five walls are closed at test rays",
+      "passed": true,
+      "wall_hits": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "scope": "Nominal wall continuity, not a seal-pressure or leakage test"
+    },
+    {
+      "name": "Driver baffle has open 46 mm central aperture",
+      "passed": true
+    },
+    {
+      "name": "Long control extensions removed",
+      "passed": true,
+      "switch_board_to_actuator_mm": 7.0,
+      "external_actuator_extension_mm": 0
+    },
+    {
+      "name": "Three direct controls accessible through panel",
+      "passed": true,
+      "aperture_diameter_mm": 10
+    },
+    {
+      "name": "Unqualified display mating hardware and UI interfaces remain explicit",
+      "passed": true
+    },
+    {
+      "name": "PCB and external connector/harness allocations clear sealed pod",
+      "passed": true,
+      "aabb_candidates": []
+    },
+    {
+      "name": "I2C-only module outline and PCB thickness match drawing p6",
+      "passed": true,
+      "measured_mm": [
+        35.400001525878906,
+        33.5,
+        1.2000007629394531
+      ]
+    },
+    {
+      "name": "OLED mounting hole at -33.20, -43.75",
+      "passed": true,
+      "hole_diameter_mm": 3.0
+    },
+    {
+      "name": "OLED mounting hole at -33.20, -15.25",
+      "passed": true,
+      "hole_diameter_mm": 3.0
+    },
+    {
+      "name": "OLED mounting hole at -2.80, -43.75",
+      "passed": true,
+      "hole_diameter_mm": 3.0
+    },
+    {
+      "name": "OLED mounting hole at -2.80, -15.25",
+      "passed": true,
+      "hole_diameter_mm": 3.0
+    },
+    {
+      "name": "Glass front and PCB back implement drawing 2.8 mm stack",
+      "passed": true,
+      "glass_front_z_mm": 7.0,
+      "pcb_back_z_mm": 9.800000190734863
+    },
+    {
+      "name": "Active area is 29.42 x 14.7 with 2.05 mm offset toward header",
+      "passed": true,
+      "active_bounds_mm": [
+        [
+          -32.709999084472656,
+          -38.89999771118164,
+          6.96999979019165
+        ],
+        [
+          -3.2899999618530273,
+          -24.19999885559082,
+          6.990000247955322
+        ]
+      ]
+    },
+    {
+      "name": "Enlarged window exposes active area including 0.3 mm offset allowance",
+      "passed": true,
+      "blocked_corner_rays": [],
+      "window_mm": [
+        31.8,
+        17.1
+      ],
+      "nominal_edge_margin_mm": [
+        1.19,
+        1.2
+      ],
+      "note": "Normal viewing tested; recessed glass limits extreme viewing angles. No lens selected."
+    },
+    {
+      "name": "display PCB to front UI PCB retains 1 mm screening reserve",
+      "passed": true,
+      "gap_mm": 1.25,
+      "remaining_after_1mm_reserve_mm": 0.25
+    },
+    {
+      "name": "display PCB to holder retains 1 mm screening reserve",
+      "passed": true,
+      "gap_mm": 2.445,
+      "remaining_after_1mm_reserve_mm": 1.445
+    },
+    {
+      "name": "display PCB to battery withdrawal corridor retains 1 mm screening reserve",
+      "passed": true,
+      "gap_mm": 1.25,
+      "remaining_after_1mm_reserve_mm": 0.25
+    },
+    {
+      "name": "rear component allowance to front UI PCB retains 1 mm screening reserve",
+      "passed": true,
+      "gap_mm": 1.25,
+      "remaining_after_1mm_reserve_mm": 0.25
+    },
+    {
+      "name": "rear component allowance to holder retains 1 mm screening reserve",
+      "passed": true,
+      "gap_mm": 2.445,
+      "remaining_after_1mm_reserve_mm": 1.445
+    },
+    {
+      "name": "display socket to front UI PCB retains 1 mm screening reserve",
+      "passed": true,
+      "gap_mm": 1.5,
+      "remaining_after_1mm_reserve_mm": 0.5
+    },
+    {
+      "name": "display module to main PCB retains 1 mm screening reserve",
+      "passed": true,
+      "gap_mm": 15.565,
+      "remaining_after_1mm_reserve_mm": 14.565
+    },
+    {
+      "name": "Display glass is recessed clear of protected panel",
+      "passed": true,
+      "gap_mm": 1.0,
+      "note": "Separate from lateral 1 mm reserve; actual glass/PCB tolerances and mount height still require fit check"
+    },
+    {
+      "name": "OLED mounts have at least 0.5 mm nominal neighbor clearance",
+      "passed": true,
+      "obstacles": [],
+      "note": "Final screw head and pilot details unselected; this is not a full tolerance approval"
+    },
+    {
+      "name": "Four header pins use drawing p8 signal order and 2.54 mm pitch",
+      "passed": true,
+      "pins_1_to_4": [
+        "GND",
+        "VCC",
+        "SCL",
+        "SDA"
+      ],
+      "note": "Modeled signal mapping; no continuity or power test has been performed"
+    },
+    {
+      "name": "Rerouted OLED cable avoids module, mounts, holder, carrier and front UI",
+      "passed": true,
+      "obstacles": [],
+      "note": "Allocated 2 mm cable diameter; exact connector, bend radius and strain relief remain to select"
+    },
+    {
+      "name": "Blender assembly is self-contained",
+      "passed": true,
+      "linked_libraries": []
+    },
+    {
+      "name": "V4 exterior, main PCB, speaker pod, batteries and control PCB geometry preserved",
+      "passed": true,
+      "compared_objects": 223,
+      "changed_objects": [],
+      "method": "SHA-256 of evaluated world-space vertices rounded to 0.0001 mm and face indices from both saved scenes"
+    }
+  ],
+  "wall_results": [
+    {
+      "wall": "Front",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    },
+    {
+      "wall": "Right",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    },
+    {
+      "wall": "Rear",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    },
+    {
+      "wall": "Left",
+      "holes": 418,
+      "blocked_holes": 0,
+      "missing_webs": 0,
+      "nonmanifold_edges": 0,
+      "euler": -834
+    }
+  ],
+  "overall_physical_bounds_mm": [
+    [
+      -52.5,
+      -53.13750076293945,
+      -3.0
+    ],
+    [
+      52.500003814697266,
+      52.500003814697266,
+      105.0
+    ]
+  ],
+  "overall_physical_size_mm": [
+    105.0,
+    105.638,
+    108.0
+  ],
+  "measured_group_bounds_mm": {
+    "shell": [
+      [
+        -52.5,
+        -52.5,
+        2.700000047683716
+      ],
+      [
+        52.500003814697266,
+        52.500003814697266,
+        105.0
+      ]
+    ],
+    "actual_pcb": [
+      [
+        -32.24998474121094,
+        -27.99999237060547,
+        33.865013122558594
+      ],
+      [
+        33.25,
+        34.25000762939453,
+        45.40501403808594
+      ]
+    ],
+    "battery_carrier": [
+      [
+        -32.0,
+        -13.0,
+        23.0
+      ],
+      [
+        32.0,
+        39.0,
+        25.0
+      ]
+    ],
+    "carrier_mount": [
+      [
+        -45.0,
+        -18.0,
+        23.0
+      ],
+      [
+        45.0,
+        44.0,
+        25.0
+      ]
+    ],
+    "pcb_supports": [
+      [
+        -30.0,
+        -19.0,
+        25.0
+      ],
+      [
+        30.0,
+        26.0,
+        42.400001525878906
+      ]
+    ],
+    "pcb_support_rail": [
+      [
+        -32.0,
+        -19.0,
+        23.0
+      ],
+      [
+        32.0,
+        -13.0,
+        25.0
+      ]
+    ],
+    "display_mounts": [
+      [
+        -35.45000076293945,
+        -46.0,
+        5.600000381469727
+      ],
+      [
+        -0.5499999523162842,
+        -13.0,
+        11.40000057220459
+      ]
+    ],
+    "pod_mount": [
+      [
+        -48.0,
+        -51.0,
+        44.5
+      ],
+      [
+        48.0,
+        11.0,
+        48.0
+      ]
+    ],
+    "chassis_post": [
+      [
+        -47.599998474121094,
+        -45.599998474121094,
+        6.0
+      ],
+      [
+        47.599998474121094,
+        45.599998474121094,
+        46.0
+      ]
+    ],
+    "holder": [
+      [
+        -31.0,
+        -10.305000305175781,
+        5.609999656677246
+      ],
+      [
+        28.574996948242188,
+        36.304996490478516,
+        23.0
+      ]
+    ],
+    "loaded_cells": [
+      [
+        -25.25,
+        -9.375,
+        5.549999237060547
+      ],
+      [
+        25.25,
+        35.375,
+        20.05000114440918
+      ]
+    ],
+    "display": [
+      [
+        -35.70000076293945,
+        -46.25,
+        6.799999713897705
+      ],
+      [
+        -0.2999992370605469,
+        -12.75,
+        18.299999237060547
+      ]
+    ],
+    "display_connector": [
+      [
+        -23.5,
+        -46.0,
+        12.300000190734863
+      ],
+      [
+        -12.5,
+        -42.5,
+        19.299999237060547
+      ]
+    ],
+    "new_control_pcb": [
+      [
+        13.0,
+        -47.0,
+        12.800000190734863
+      ],
+      [
+        40.0,
+        -13.0,
+        14.40000057220459
+      ]
+    ],
+    "direct_controls": [
+      [
+        15.0,
+        -48.0,
+        5.400000095367432
+      ],
+      [
+        38.0,
+        -14.0,
+        12.800000190734863
+      ]
+    ],
+    "front_ui": [
+      [
+        -12.0,
+        -53.10000228881836,
+        7.0
+      ],
+      [
+        12.0,
+        -47.5,
+        17.0
+      ]
+    ],
+    "speaker": [
+      [
+        -34.0,
+        -46.5,
+        48.75
+      ],
+      [
+        34.0,
+        -11.499999046325684,
+        101.25
+      ]
+    ],
+    "speaker_terminal": [
+      [
+        21.0,
+        -39.5,
+        59.0
+      ],
+      [
+        27.0,
+        -34.5,
+        67.0
+      ]
+    ],
+    "rear_chamber": [
+      [
+        -43.0,
+        -44.5,
+        46.79999923706055
+      ],
+      [
+        43.0,
+        8.699999809265137,
+        102.0
+      ]
+    ],
+    "battery_harness": [
+      [
+        -35.01883316040039,
+        -18.803390502929688,
+        14.649894714355469
+      ],
+      [
+        17.0,
+        0.9566422700881958,
+        38.5
+      ]
+    ],
+    "speaker_harness": [
+      [
+        -38.96094512939453,
+        -49.09763717651367,
+        26.59872817993164
+      ],
+      [
+        51.349365234375,
+        -4.5,
+        65.57022094726562
+      ]
+    ],
+    "display_harness": [
+      [
+        -43.411399841308594,
+        -46.205204010009766,
+        19.299999237060547
+      ],
+      [
+        -16.59537696838379,
+        13.5,
+        37.0
+      ]
+    ],
+    "sealed_feedthrough_wire": [
+      [
+        40.0,
+        -25.399999618530273,
+        59.524471282958984
+      ],
+      [
+        44.0,
+        -23.19999885559082,
+        60.475528717041016
+      ]
+    ],
+    "new_harness": [
+      [
+        7.473241806030273,
+        -49.098026275634766,
+        11.64181137084961
+      ],
+      [
+        40.997528076171875,
+        -10.411134719848633,
+        29.872529983520508
+      ]
+    ],
+    "bottom_cover": [
+      [
+        -52.25,
+        -52.25,
+        0.0
+      ],
+      [
+        52.25,
+        52.25,
+        2.4000000953674316
+      ]
+    ],
+    "service_panel": [
+      [
+        -49.0,
+        -49.0,
+        4.0
+      ],
+      [
+        49.0,
+        49.0,
+        6.0
+      ]
+    ],
+    "cell_retention": [
+      [
+        -4.0,
+        -14.0,
+        4.0
+      ],
+      [
+        4.0,
+        40.0,
+        5.0
+      ]
+    ],
+    "acoustic_scrim": [
+      [
+        -51.150001525878906,
+        -51.14999771118164,
+        22.0
+      ],
+      [
+        51.150001525878906,
+        51.150001525878906,
+        98.0
+      ]
+    ]
+  },
+  "acoustic_gross_chamber_litres": 0.19807603199999996,
+  "net_acoustic_volume_verified": false,
+  "unresolved": [
+    "EastRising shipped I2C-only revision, back-side component maxima, exact mating socket and cable bend; SH1106 firmware and switched-power bench tests",
+    "Switch, holder and PCB dimensional tolerances; loaded AA contact compression",
+    "Control/front UI board schematics, connectors and routed PCB revision",
+    "USB access by chassis removal; detailed detachable chassis fasteners and harness service loop",
+    "Captive screw hardware, retention bridge, gasket and sealed feedthrough production details",
+    "Speaker basket displacement and terminals; measured net acoustic volume",
+    "Grille strength, vibration, acoustic loss and four-direction response",
+    "Actual battery-load, radio, thermal, EMI and parasitic measurements"
+  ],
+  "preserved_v4_objects": 223
+}

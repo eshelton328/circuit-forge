@@ -1,0 +1,53 @@
+{
+  "main": {
+    "pcb": "boards/alec-main/alec-main.kicad_pcb",
+    "pcb_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+    "glb_sha256": "c6aaceb8a1ebd6bb03111129ad057f2082bc4f945d6b567e89e74a6115761c1f",
+    "bounds_mm": [
+      [
+        -32.24998474121094,
+        -27.99999237060547,
+        33.865013122558594
+      ],
+      [
+        33.25,
+        34.25000762939453,
+        45.40501403808594
+      ]
+    ]
+  },
+  "controls": {
+    "pcb": "boards/alec-controls/alec-controls.kicad_pcb",
+    "pcb_sha256": "4eedb3d661633f3e81afa066d26d370700523cb74d502f1263842cf252d8c9e4",
+    "glb_sha256": "0b7f0fa58ea5b462f24b3a1385db8084bbef0f0700dadb5d1de825ca8bddf887",
+    "bounds_mm": [
+      [
+        13.0,
+        -47.0,
+        5.40500020980835
+      ],
+      [
+        40.0,
+        -13.0,
+        18.685001373291016
+      ]
+    ]
+  },
+  "front": {
+    "pcb": "boards/alec-front/alec-front.kicad_pcb",
+    "pcb_sha256": "80ec25362820e72eeca5566e934676b8cd97def7ebe254c05fef9ab7f62354e0",
+    "glb_sha256": "ec25bdaed3cc7a8aa96d1c7ee8479fb8bb5b03b12fc3ca58ff0e9569ef7c5a04",
+    "bounds_mm": [
+      [
+        -12.0,
+        -51.14500045776367,
+        7.000000953674316
+      ],
+      [
+        11.999998092651367,
+        -43.21500015258789,
+        17.0
+      ]
+    ]
+  }
+}

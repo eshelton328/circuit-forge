@@ -3,6 +3,8 @@
 #
 # Outputs (written to boards/<name>/docs/):
 #   schematic.svg          — full schematic (multi-page → one SVG per page)
+#   schematic.pdf          — downloadable multi-page schematic
+#   assembly.glb           — downloadable populated 3D board model
 #   pcb-top.png            — PCB top side with silkscreen (high-quality 3D render)
 #   pcb-bottom.png         — PCB bottom side with silkscreen (high-quality 3D render)
 #
@@ -52,6 +54,7 @@ if [ -f "$SCH_FILE" ]; then
   done
   rm -rf "$SCH_TMP"
   echo "  → schematic.svg ($page page(s))"
+  kicad-cli sch export pdf --output "$DOCS_DIR/schematic.pdf" "$SCH_FILE"
 else
   echo "No schematic found at $SCH_FILE — skipping."
 fi
@@ -59,6 +62,11 @@ fi
 # ── PCB top/bottom renders ───────────────────────────────────────────
 # Leave room for components that overhang the board outline (e.g. an antenna).
 if [ -f "$PCB_FILE" ]; then
+  echo "Exporting populated 3D model..."
+  kicad-cli pcb export glb \
+    --force --no-dnp --subst-models --include-pads --include-silkscreen \
+    --output "$DOCS_DIR/assembly.glb" "$PCB_FILE"
+
   echo "Rendering PCB top..."
   kicad-cli pcb render \
     --output "$DOCS_DIR/pcb-top.png" \

@@ -20,13 +20,14 @@ def test_missing_gallery_is_added_without_losing_handwritten_content(tmp_path):
     readme.write_text(original)
     docs = tmp_path / "docs"
     docs.mkdir()
-    for name in ("schematic.svg", "schematic-page1.svg", "pcb-top.png", "pcb-bottom.png"):
+    assets = ("schematic.svg", "schematic-page1.svg", "schematic.pdf", "assembly.glb", "pcb-top.png", "pcb-bottom.png")
+    for name in assets:
         (docs / name).touch()
 
     assert readmes.update_readme(tmp_path)
     text = readme.read_text()
     assert text.startswith(original)
-    for name in ("schematic.svg", "schematic-page1.svg", "pcb-top.png", "pcb-bottom.png"):
+    for name in assets:
         assert f"(docs/{name})" in text
     assert "### PCB 3D Views" in text
     assert not readmes.update_readme(tmp_path)
@@ -77,6 +78,10 @@ def _export_with_fake_cli(tmp_path, *, omit_root=False):
     cli = bindir / "kicad-cli"
     cli.write_text('''#!/usr/bin/env bash
 set -eu
+if [ "$1 $2 $3" = "sch export pdf" ]; then
+  printf 'schematic PDF' > "$5"
+  exit 0
+fi
 test "$1 $2 $3" = "sch export svg"
 out="$5"
 test "$4" = "--output"
@@ -101,6 +106,7 @@ def test_schematic_export_puts_root_first_and_removes_retired_sheets(tmp_path):
     assert (docs / "schematic.svg").read_text() == "root sheet"
     assert (docs / "schematic-page1.svg").read_text() == "child sheet"
     assert not (docs / "schematic-page9.svg").exists()
+    assert (docs / "schematic.pdf").read_text() == "schematic PDF"
 
 
 def test_missing_root_export_fails_and_preserves_previous_images(tmp_path):
@@ -109,3 +115,33 @@ def test_missing_root_export_fails_and_preserves_previous_images(tmp_path):
     assert "Expected root schematic export missing" in result.stderr
     assert (docs / "schematic.svg").read_text() == "previous root"
     assert (docs / "schematic-page9.svg").read_text() == "retired child"
+
+
+def test_root_catalog_discovers_boards_and_removes_retired_projects(tmp_path):
+    readme = tmp_path / "README.md"
+    readme.write_text(f"# Forge\n\n{readmes.CATALOG_START}\nstale project\n{readmes.CATALOG_END}\n\nKeep notes.\n")
+    board = tmp_path / "boards/new-project"
+    board.mkdir(parents=True)
+    (board / "new-project.kicad_pcb").touch()
+    (board / "README.md").touch()
+    (board / "board.yml").write_text('description: "New | hardware"\nlayers: 4\n')
+    (tmp_path / "boards/retired-project").mkdir()
+    assert readmes.update_board_catalog(tmp_path)
+    result = readme.read_text()
+    assert "[new-project](boards/new-project/README.md)" in result
+    assert r"New \| hardware" in result
+    assert "stale project" not in result and "retired-project" not in result
+    assert result.startswith("# Forge\n") and result.endswith("Keep notes.\n")
+    assert not readmes.update_board_catalog(tmp_path)
+
+
+def test_every_committed_board_has_gallery_downloads_and_catalog_entry():
+    catalog = (ROOT / "README.md").read_text()
+    for board in (ROOT / "boards").iterdir():
+        if not (board / (board.name + ".kicad_pcb")).is_file():
+            continue
+        assert f"(boards/{board.name}/README.md)" in catalog
+        readme = (board / "README.md").read_text()
+        for name in ("schematic.svg", "schematic.pdf", "assembly.glb", "pcb-top.png", "pcb-bottom.png"):
+            assert f"(docs/{name})" in readme, (board.name, name)
+            assert (board / "docs" / name).stat().st_size > 0

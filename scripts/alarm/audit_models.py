@@ -2,7 +2,7 @@
 from design import *
 import pcbnew as p,hashlib,json
 for kind in ['main','controls','front']:
- d=ROOT/'boards'/('bedroom-alarm-'+kind);b=p.LoadBoard(str(d/(d.name+'.kicad_pcb')));rows=[]
+ d=ROOT/'boards'/('alec-'+kind);b=p.LoadBoard(str(d/(d.name+'.kicad_pcb')));rows=[]
  for f in b.GetFootprints():
   if f.GetReference().startswith(('H','TP')) or f.GetReference()=='J7' and kind=='main':continue
   models=[]

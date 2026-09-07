@@ -1,0 +1,7 @@
+name: alec-controls
+description: ALEC bottom controls with three settings buttons and hardware enable switch
+layers: 2
+copper_weight: 1oz
+thickness: 1.6mm
+fab_targets:
+  - jlcpcb-2layer-standard

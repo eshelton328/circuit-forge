@@ -6,8 +6,8 @@ import sys
 import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
-MAIN=ROOT/'boards/bedroom-alarm-main'
-ASSEMBLY=ROOT/'enclosures/bedroom-alarm/pcb-revision'
+MAIN=ROOT/'boards/alec-main'
+ASSEMBLY=ROOT/'enclosures/alec/pcb-revision'
 sys.path.insert(0,str(ROOT/'scripts/alarm'))
 from design import parse,children,child,prop,val
 
@@ -23,7 +23,7 @@ def test_review_evidence_matches_source_files():
 
 def test_all_native_boards_have_clean_recorded_erc_drc_and_fab_results():
     for kind in ['main','controls','front']:
-        d=ROOT/'boards'/('bedroom-alarm-'+kind)/'review'
+        d=ROOT/'boards'/('alec-'+kind)/'review'
         assert not any(s['violations'] for s in read(d/'erc.json')['sheets'])
         for file in ['drc.json','fab-drc.json']:
             r=read(d/file)
@@ -31,7 +31,7 @@ def test_all_native_boards_have_clean_recorded_erc_drc_and_fab_results():
         assert read(d/'3d-model-audit.json')['all_model_files_resolved']
 
 def test_panel_plus_minus_follow_real_switch_references_and_positions():
-    d=ROOT/'boards/bedroom-alarm-controls'
+    d=ROOT/'boards/alec-controls'
     board=parse((d/(d.name+'.kicad_pcb')).read_text())
     fps={prop(f,'Reference'):f for f in children(board,'footprint')}
     sch=ET.parse(d/'review/netlist.xml').getroot()
@@ -62,7 +62,7 @@ def test_harness_negative_controls_fail_and_all_damped_corners_pass():
 
 def test_geometry_and_physics_are_bound_to_current_sources_without_release_claim():
     g=read(ASSEMBLY/'verification.json')
-    assert g['tested_blend_sha256']==sha(ASSEMBLY/'bedroom-cube-v4-2.blend')
+    assert g['tested_blend_sha256']==sha(ASSEMBLY/'alec-cube-v4-2.blend')
     assert g['status']=='NOMINAL_GEOMETRY_PASS' and all(c['passed'] for c in g['checks'])
     assert not g['physical_qualification_performed'] and not g['manufacturing_release']
     for kind,row in read(ASSEMBLY/'assembly-sources.json').items():

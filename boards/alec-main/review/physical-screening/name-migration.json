@@ -1,0 +1,9 @@
+{
+  "source_revision": "ede9af5",
+  "previous_pcb_sha256": "19b8fdd2cac4d5c8febaecd3081aee7337c51ca7352ef3410bfe56ea65fe24b0",
+  "pcb_sha256": "8c3049e587165451eb7751bc502ba46c62908ac727276117db689cb6c644c056",
+  "geometry_sha256": "658ac09f0ecb04725edaa4856adcc06d3e8448d70f90bc4d56b25897d314594e",
+  "comparison": "Fresh KiCad filled-copper export equals archived current.json after excluding only pcb_sha256. All footprints, pads, tracks, vias, filled polygons, dimensions, nets and solver inputs are unchanged.",
+  "solver_rerun": false,
+  "physical_release_approved": false
+}

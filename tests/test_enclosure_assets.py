@@ -14,7 +14,7 @@ import sys
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-ENCLOSURE = ROOT / "enclosures/bedroom-alarm"
+ENCLOSURE = ROOT / "enclosures/alec"
 
 
 def read_json(path):
@@ -40,7 +40,7 @@ def test_sources_and_native_pcb_match_committed_evidence():
 
 def test_geometry_report_is_bound_to_saved_assembly():
     report = read_json(ENCLOSURE / "verification.json")
-    assert report["tested_blend_sha256"] == sha(ENCLOSURE / "bedroom-cube-v4-1.blend")
+    assert report["tested_blend_sha256"] == sha(ENCLOSURE / "alec-cube-v4-1.blend")
     assert report["status"] == "NOMINAL_GEOMETRY_CHECKS_PASS"
     assert report["checks"] and all(check["passed"] for check in report["checks"])
     assert report["failed_checks"] == []
@@ -62,7 +62,7 @@ def test_documentation_and_gallery_have_no_missing_local_files():
             assert local.is_relative_to(ROOT), (document.name, target)
             assert local.exists(), (document.name, target)
         assert "/Users/" not in text
-        assert "output/bedroom-cube" not in text
+        assert "output/alec-cube" not in text
 
 
 def test_readiness_guard_matches_current_register():
@@ -89,7 +89,7 @@ def test_report_regeneration_preserves_measurements_and_rejects_stale_scene(tmp_
     result = subprocess.run(command, cwd=tmp_path, capture_output=True, text=True)
     assert result.returncode == 0, result.stdout + result.stderr
     assert log.read_bytes() == recorded
-    model = copied / "bedroom-cube-v4-1.blend"
+    model = copied / "alec-cube-v4-1.blend"
     model.write_bytes(model.read_bytes() + b"changed scene")
     previous_report = (copied / "TEST-REPORT.md").read_bytes()
     result = subprocess.run(command, cwd=tmp_path, capture_output=True, text=True)

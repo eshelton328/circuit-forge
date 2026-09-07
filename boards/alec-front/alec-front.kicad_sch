@@ -1,0 +1,1208 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(uuid 1eb82ce5-259c-53ff-9d44-154e7eab28f6)
+	(paper "A4")
+	(lib_symbols
+		(symbol
+			"Connector_Generic:Conn_01x06"
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property
+				"Reference"
+				"J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Value"
+				"Conn_01x06"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Footprint"
+				""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Datasheet"
+				""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Description"
+				"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"ki_keywords"
+				"connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"ki_fp_filters"
+				"Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol
+				"Conn_01x06_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background)))
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(pin
+					passive
+					line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name
+						"Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name
+						"Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name
+						"Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name
+						"Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name
+						"Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name
+						"Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"6"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol
+			"Switch:SW_Push"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property
+				"Reference"
+				"SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property
+				"Value"
+				"SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Footprint"
+				""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Datasheet"
+				""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Description"
+				"Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"ki_keywords"
+				"switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol
+				"SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 0 1.27)
+						(xy 0 3.048))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 2.54 1.27)
+						(xy -2.54 1.27))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(pin
+					passive
+					line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol
+			"Review:WE_150141M173100"
+			(pin_names
+				(offset 0)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property
+				"Reference"
+				"D"
+				(at -0 9.398 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Value"
+				"WE_150141M173100"
+				(at -0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Footprint"
+				""
+				(at -0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Datasheet"
+				""
+				(at -0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"Description"
+				"RGB LED, red/green/blue/anode"
+				(at -0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"ki_keywords"
+				"LED RGB diode"
+				(at -0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property
+				"ki_fp_filters"
+				"LED* LED_SMD:* LED_THT:*"
+				(at -0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol
+				"WE_150141M173100_0_0"
+				(text
+					"R"
+					(at 1.905 3.81 0)
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(text
+					"G"
+					(at 1.905 -1.27 0)
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(text
+					"B"
+					(at 1.905 -6.35 0)
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(symbol
+				"WE_150141M173100_0_1"
+				(polyline
+					(pts
+						(xy 1.27 6.35)
+						(xy 1.27 3.81))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 6.35)
+						(xy 1.27 3.81)
+						(xy 1.27 3.81))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 5.08)
+						(xy 2.54 5.08))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 5.08)
+						(xy -1.27 5.08))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 1.27)
+						(xy 1.27 -1.27))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 1.27)
+						(xy 1.27 -1.27)
+						(xy 1.27 -1.27))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 0)
+						(xy 2.54 0))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 -3.81)
+						(xy 1.27 -6.35))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 -5.08)
+						(xy 2.54 -5.08))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 -5.08)
+						(xy -1.27 -5.08))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.016 6.35)
+						(xy -0.508 7.874)
+						(xy 0.254 7.874)
+						(xy -0.508 7.874)
+						(xy -0.508 7.112))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.016 1.27)
+						(xy -0.508 2.794)
+						(xy 0.254 2.794)
+						(xy -0.508 2.794)
+						(xy -0.508 2.032))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.016 -3.81)
+						(xy -0.508 -2.286)
+						(xy 0.254 -2.286)
+						(xy -0.508 -2.286)
+						(xy -0.508 -3.048))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -0 6.35)
+						(xy -1.524 7.874)
+						(xy -0.762 7.874)
+						(xy -1.524 7.874)
+						(xy -1.524 7.112))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -0 1.27)
+						(xy -1.524 2.794)
+						(xy -0.762 2.794)
+						(xy -1.524 2.794)
+						(xy -1.524 2.032))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -0 -3.81)
+						(xy -1.524 -2.286)
+						(xy -0.762 -2.286)
+						(xy -1.524 -2.286)
+						(xy -1.524 -3.048))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 6.35)
+						(xy -1.27 3.81)
+						(xy 1.27 5.08)
+						(xy -1.27 6.35))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 6.35)
+					(end -1.27 6.35)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 3.81)
+					(end -1.27 6.35)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 1.27)
+						(xy -1.27 -1.27)
+						(xy 1.27 0)
+						(xy -1.27 1.27))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 1.27)
+					(end -1.27 1.27)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 0)
+						(xy 1.27 0))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 0)
+						(xy -2.54 0))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.27 -1.27)
+					(end -1.27 1.27)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 -3.81)
+						(xy -1.27 -6.35)
+						(xy 1.27 -5.08)
+						(xy -1.27 -3.81))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 -5.08)
+						(xy -2.032 -5.08)
+						(xy -2.032 5.08)
+						(xy -1.27 5.08))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(circle
+					(center -2.032 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type outline)))
+				(rectangle
+					(start -2.794 8.382)
+					(end 2.794 -7.62)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(symbol
+				"WE_150141M173100_1_1"
+				(pin
+					passive
+					line
+					(at 5.08 5.08 180)
+					(length 2.54)
+					(name
+						"RK"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name
+						"GK"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name
+						"BK"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin
+					passive
+					line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name
+						"A"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number
+						"1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(title_block
+		(title "alec-front")
+		(date "2026-09-06")
+		(rev "v4.2 prototype"))
+	(wire
+		(pts
+			(xy 44.45 59.69)
+			(xy 19.050000000000004 59.69))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid c8086976-3bd8-5276-afbc-7c2e247e0aff))
+	(label
+		"GND"
+		(at 19.0500 59.6900 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid 1395d24c-9b24-5787-ad0f-8cbdbf96e03b))
+	(wire
+		(pts
+			(xy 44.45 62.23)
+			(xy 19.050000000000004 62.23))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid fee92755-3521-5763-aead-1a1d15e39457))
+	(label
+		"3v3"
+		(at 19.0500 62.2300 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid 71b5cee9-b5f8-51e8-8e1a-46768cde5052))
+	(wire
+		(pts
+			(xy 44.45 64.77)
+			(xy 19.050000000000004 64.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid c0b717a4-cd04-5995-9b03-35f8cb300320))
+	(label
+		"BTN_BAT"
+		(at 19.0500 64.7700 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid e7746e13-c9d6-54d9-80d5-5c9b91e8977e))
+	(wire
+		(pts
+			(xy 44.45 67.31)
+			(xy 19.050000000000004 67.31))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid ab912de1-8d1a-5023-9a50-18c631ba7bbc))
+	(label
+		"LED_R_K"
+		(at 19.0500 67.3100 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid 68b0c914-838a-526f-8eed-eeda8ea4e49d))
+	(wire
+		(pts
+			(xy 44.45 69.85)
+			(xy 19.050000000000004 69.85))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid 461f72ff-1161-53e6-adf3-aed524768ca2))
+	(label
+		"LED_G_K"
+		(at 19.0500 69.8500 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid a5e967d6-6eca-5236-9b93-fcfc6a7b1427))
+	(wire
+		(pts
+			(xy 44.45 72.39)
+			(xy 19.050000000000004 72.39))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid 6641cd92-c311-5369-8769-44669c73601b))
+	(label
+		"LED_B_K"
+		(at 19.0500 72.3900 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid f3a615a9-5c7c-52fc-b9aa-a4f82da4be8b))
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 49.53 64.77 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 15c2ef90-b7ad-5047-a293-4d97ae7553fb)
+		(property
+			"Reference"
+			"J1"
+			(at 49.53 53.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+			"Value"
+			"BM06B-GHS-TBT"
+			(at 49.53 56.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+			"Footprint"
+			"Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
+			(at 49.53 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+			"Datasheet"
+			"https://www.jst-mfg.com/product/pdf/eng/eGH.pdf"
+			(at 49.53 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+			"MPN"
+			"BM06B-GHS-TBT"
+			(at 49.53 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(instances
+			(project
+				"alec-front"
+				(path
+					"/1eb82ce5-259c-53ff-9d44-154e7eab28f6"
+					(reference "J1")
+					(unit 1))))
+		(exclude_from_sim yes)
+		(pin
+			"1"
+			(uuid fa15dbed-4c76-503e-8969-23cc8cc67f26))
+		(pin
+			"2"
+			(uuid 7d0f34c5-21c7-5c05-9e73-a0f6207a9bfe))
+		(pin
+			"3"
+			(uuid 3a1e9cff-6fc2-52cf-a0cc-723954ef4681))
+		(pin
+			"4"
+			(uuid 5620d0eb-75eb-588f-9479-0d314c058921))
+		(pin
+			"5"
+			(uuid 293d8bcc-63ab-599c-bcc2-1e5a0ecb4541))
+		(pin
+			"6"
+			(uuid 43f87de5-0aca-5915-b11d-b00934400481)))
+	(wire
+		(pts
+			(xy 119.38 49.53)
+			(xy 114.3 49.53))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid 7b147455-6c7e-5f03-82ae-ce85419d0926))
+	(label
+		"GND"
+		(at 114.3000 49.5300 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid d7eccbc8-49bb-5d10-9b10-b3236d18a343))
+	(wire
+		(pts
+			(xy 129.54 49.53)
+			(xy 134.62 49.53))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid 1ed43b84-2474-50c2-b3ac-a8ab3c026ac8))
+	(label
+		"BTN_BAT"
+		(at 134.6200 49.5300 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid a6dd0417-1f05-512c-9d92-41952b2de7d6))
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 124.46 49.53 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid b6c323ec-6f12-5207-958e-d607399080b7)
+		(property
+			"Reference"
+			"SW1"
+			(at 124.46 43.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+			"Value"
+			"BATTERY"
+			(at 124.46 46.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+			"Footprint"
+			"Button_Switch_SMD:SW_SPST_B3U-1000P"
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+			"Datasheet"
+			"https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf"
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+			"MPN"
+			"B3U-1000P"
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(instances
+			(project
+				"alec-front"
+				(path
+					"/1eb82ce5-259c-53ff-9d44-154e7eab28f6"
+					(reference "SW1")
+					(unit 1))))
+		(pin
+			"1"
+			(uuid 1e7eee01-8136-5ef8-a3c9-b5779f1d0485))
+		(pin
+			"2"
+			(uuid 08905192-db71-5159-96e8-abbd303cef6d)))
+	(wire
+		(pts
+			(xy 129.54 90.17)
+			(xy 134.62 90.17))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid a880600f-fcc1-56ee-956b-92e8b1aff46c))
+	(label
+		"LED_R_K"
+		(at 134.6200 90.1700 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid 73ceaf30-9fe8-52ca-a2a7-27182b130a06))
+	(wire
+		(pts
+			(xy 129.54 95.25)
+			(xy 134.62 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid b2e40f19-b77f-5b6a-bb64-83c53d1544a7))
+	(label
+		"LED_G_K"
+		(at 134.6200 95.2500 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid bd05b61a-7029-5797-a4ef-529fed4325f4))
+	(wire
+		(pts
+			(xy 129.54 100.33)
+			(xy 134.62 100.33))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid 609484ec-390b-54d0-abbf-a748892d7433))
+	(label
+		"LED_B_K"
+		(at 134.6200 100.3300 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid c55c20a5-c88d-5390-a14b-b77dabff1c41))
+	(wire
+		(pts
+			(xy 119.38 95.25)
+			(xy 114.3 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid 18d54365-c18c-5157-9075-a419387b1130))
+	(label
+		"3v3"
+		(at 114.3000 95.2500 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid 48bec953-0c86-5f6a-9aab-ccaf8eba0ef0))
+	(symbol
+		(lib_id "Review:WE_150141M173100")
+		(at 124.46 95.25 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 8f48cd1a-644c-5d02-bea1-f1f9f0f660cd)
+		(property
+			"Reference"
+			"D1"
+			(at 124.46 89.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+			"Value"
+			"150141M173100"
+			(at 124.46 91.75 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+			"Footprint"
+			"LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100"
+			(at 124.46 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+			"Datasheet"
+			"https://www.we-online.com/components/products/datasheet/150141M173100.pdf"
+			(at 124.46 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+			"MPN"
+			"150141M173100"
+			(at 124.46 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(instances
+			(project
+				"alec-front"
+				(path
+					"/1eb82ce5-259c-53ff-9d44-154e7eab28f6"
+					(reference "D1")
+					(unit 1))))
+		(pin
+			"3"
+			(uuid 915194cb-7350-565b-8690-00a27f09cf9d))
+		(pin
+			"4"
+			(uuid 25112b51-68e8-54fe-8424-50f237ec29d5))
+		(pin
+			"2"
+			(uuid 14d37b2b-c4e4-52b8-8ce9-e1d09a1d6898))
+		(pin
+			"1"
+			(uuid 777d0a1c-b228-5079-8633-b4a53aad6612)))
+	(text
+		"1:1 GH harness to main J6; LED series resistors on main"
+		(at 40 170 0)
+		(effects
+			(font
+				(size 1.5 1.5))
+			(justify left bottom))
+		(uuid 828d4fb8-596b-53dd-b1bc-e6e8848b0504)))

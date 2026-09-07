@@ -2,7 +2,7 @@
 from pathlib import Path
 import cadquery as cq
 root=Path(__file__).resolve().parents[2]
-d=root/'boards/bedroom-alarm-controls/3dmodels';d.mkdir(exist_ok=True)
+d=root/'boards/alec-controls/3dmodels';d.mkdir(exist_ok=True)
 a=cq.Assembly(name='EG1218_drawing_envelope')
 a.add(cq.Workplane('XY').box(11.6,4,5.4,centered=(True,True,False)),name='body',color=cq.Color(.7,.7,.72))
 a.add(cq.Workplane('XY').box(2,2,2,centered=(True,True,False)).translate((-1,0,5.4)),name='actuator_ON',color=cq.Color(.08,.08,.08))
