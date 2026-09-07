@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-06",
+  "source_pcb_sha256": "0e17f9ad0cf0508d8a53ed51c0b1e6af4423311598bbb03fe811c556e8b1e7d8",
+  "files": {
+    "sources/source-manifest.json": "f126d57440269728e6d3971d06d2999be3e05ddcf9b6e58973265eac93f82dbb",
+    "sources/BH3AAW.glb": "d719dd05c4ca6ecd67e570628a8fc71b31a800d80e2eaa52205336689fc2ed74",
+    "sources/ER-OLEDM013-1_Datasheet.pdf": "2d690229896554afaa18e901bf1baf49768af64ac60abd19ad61eba3969af2b3",
+    "sources/EG1218-drawing.png": "bd6c82ce11424a366a923111d409814dec3dd85f0e27423ace482e47c7a650ed",
+    "sources/EG1218.pdf": "708a4b4d860ebf095b5c1b25ff4126f4f09dd66bf7d945731fac7458fc4b2c8c",
+    "sources/FRS5X-8-datasheet.pdf": "bd8ff419ca194467550330b35fa70aca8b39335c622c2933cae1ea793e6a642d",
+    "sources/current-pcb.glb": "fac9cdb1126e8108190af5a6e775ccdf4956f67789e5f93d20a814fc0c1fc616",
+    "sources/README.md": "2eb3619e6e23d26f097b162125eb022d14e9a30e0f319d1013e727e59e95a8f6",
+    "sources/display-drawing.png": "930502879adc0b9ceb9fc93028459ed37c9de9dcf0daa6c8b896e6da31c09354",
+    "sources/BH3AAW-drawing.pdf": "5fa451f5b5ad91d199f89eece41e43c742665811b49166f16483cf24ed1693ae",
+    "sources/BH3AAW.step": "bf2f70a6f38b5038af4e7ecc9b30fe8a51851b769ef534585bbc0c5795ea8ccc",
+    "reference/bedroom-cube-v4.blend": "c4684fa5417a7dae69454e9900c47de34e1283362184ea62db93c69405cc9f45"
+  },
+  "upstream_manifest": "sources/source-manifest.json"
+}

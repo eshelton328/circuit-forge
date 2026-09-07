@@ -11,6 +11,7 @@ the-forge/
 │   ├── esp32s3-devkit/        # ESP32-S3 development board
 │   ├── esp32s3-devkit-5v/     # ESP32-S3 board, dual 3.3V + 5V rails (WIP)
 │   └── tps63070-breakout/   # TPS63070 buck-boost breakout
+├── enclosures/       # Product packaging, Blender models and fit evidence
 ├── fab-rules/        # DRC rule templates per fab house
 ├── kibot/            # KiBot output generation configs
 ├── libs/             # Shared libraries (symbols, footprints, 3D models)
@@ -26,6 +27,14 @@ the-forge/
 | [esp32s3-devkit](boards/esp32s3-devkit/) | ESP32-S3-WROOM-1 dev board with TPS63070 buck-boost, USB-C | 4 | In Development |
 | [esp32s3-devkit-5v](boards/esp32s3-devkit-5v/) | ESP32-S3 board with dual TPS63070 rails (3.3V + 5V), RV-3028 RTC, USB-C | 4 | WIP — schematic in progress |
 | [tps63070-breakout](boards/tps63070-breakout/) | TPS63070 3.3V buck-boost breakout board | 2 | Migrated |
+
+## Enclosures
+
+| Enclosure | Board | Status |
+|---|---|---|
+| [Bedroom alarm v4.1](enclosures/bedroom-alarm/) | esp32s3-devkit-5v | 105 mm cube, 1.3-inch OLED, three AA cells; packaging prototype with geometry checks and physical tests pending |
+
+The enclosure project includes editable Blender scenes, inline preview images, dimensional sources, a parts register and a reproducible test report. Open its README to download the models and review the current fit limits.
 
 ## CI/CD Pipeline
 

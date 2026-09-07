@@ -1,0 +1,4 @@
+# Local Blender recovery files and command logs; release scenes/previews are tracked.
+*.blend1
+*.blend2
+*.log
