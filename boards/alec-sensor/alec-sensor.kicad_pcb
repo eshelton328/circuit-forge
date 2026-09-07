@@ -17783,7 +17783,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17817,7 +17817,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R71C104KA01D"
+		(property "MPN" "GRM155R71C104KA88D"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)

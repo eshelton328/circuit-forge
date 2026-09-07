@@ -45,6 +45,21 @@ def test_rear_service_interface():
  assert len(load('check_service_interface').check()) == 8
 
 
+def test_ordering_metadata_and_capacitor_packages():
+ assert load('check_bom').check()['component_metadata_matches']==88
+
+
+def test_stale_component_substitution_is_rejected(tmp_path):
+ import csv
+ m=load('check_bom')
+ with (D/'review/bom.csv').open(newline='') as f:reader=csv.DictReader(f);fields=reader.fieldnames;rows=list(reader)
+ next(r for r in rows if r['Reference']=='C29')['MPN']='GRM188R71C104KA01D'
+ p=tmp_path/'wrong-part.csv'
+ with p.open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows)
+ # A substitution must not silently disagree with the native board/schematic.
+ with pytest.raises(AssertionError,match='C29 MPN differs'):m.check(bom=p)
+
+
 def test_forward_facing_service_button_is_rejected(tmp_path):
  m=load('check_service_interface');tree=m.parse((D/'alec-sensor.kicad_pcb').read_text())
  button=next(f for f in m.children(tree,'footprint') if m.prop(f,'Reference')=='SW2')

@@ -1,8 +1,8 @@
 # ALEC Sensor S1.1 — design and test report
 
-**Result:** a real, fully routed four-layer sensor PCB and a dimensioned circular enclosure assembly now exist. Local ERC, DRC, schematic parity, saved-copper connectivity and JLCPCB advanced four-layer rule checks pass. These results authorize further engineering review and controlled bench prototyping; they do **not** qualify shower operation or release a manufacturing order.
+**Result:** a real, fully routed four-layer sensor PCB and a dimensioned circular enclosure assembly now exist. Local ERC, DRC, schematic parity, saved-copper connectivity and JLCPCB advanced four-layer rule checks pass. These results support preparing a small engineering PCB order alongside the clock. Supplier fabrication/assembly preflight remains required; customer shower qualification is a later stage. See the [prototype order plan](PROTOTYPE-ORDER.md).
 
-S1.1 corrects rear service access: POWER/RESET/BOOT are on B.Cu beside a rear-opening battery holder, which is retained independently of the cover. The schematic and BOM remain at electrical S1; only the PCB/mechanical arrangement and its affected routing change.
+S1.1 corrects rear service access: POWER/RESET/BOOT are on B.Cu beside a rear-opening battery holder, which is retained independently of the cover. The electrical topology and values remain at S1. A subsequent ordering audit corrected C29 from a 0603 manufacturer part number to GRM155R71C104KA88D for its existing 0402 footprint. No placement, routing or electrical value changed in that correction; [metadata-only evidence](review/ordering-metadata-change.json) binds the unchanged geometry to the retained render/simulation evidence.
 
 The previous S0 material was a schematic study with no PCB. S1 promotes the electrical project to `boards/alec-sensor`, adds a populated board model, and integrates its actual geometry with the AA holder and radar. The main alarm boards are unchanged.
 
@@ -27,13 +27,14 @@ The previous S0 material was a schematic study with no PCB. S1 promotes the elec
 | Filled-copper check | **277 pad nodes across 60 nets, all connected** | Copper actually touches each multi-node electrical terminal |
 | JLCPCB four-layer advanced profile | **Pass** | Checked profile limits; not a fabricator quote/stackup approval |
 | Independent interface assertions | **47 pass** | USB/RTC/UART GPIOs, correct TX/RX crossing, power isolation, fuse and switch topology |
+| Ordering metadata and capacitor sizes | **88 components agree; 27 capacitor packages match** | BOM/schematic/PCB MPN consistency and selected package-family size codes; supplier stock, pin mapping and assembly review remain open |
 | Rear service contract | **8 pass** | Native control faces/positions, exterior interfaces and rear-opening holder; includes negative wrong-face/holder-orientation tests |
 | Layout intent | **Pass** | Short capacitor connections, ground reference, switch-node geometry, battery trace widths |
 | Passive input SPICE | **27 cases executed** | Bounded contact-closure/inrush RLC behavior under stated assumptions |
 | Battery source calculation | **72 cases evaluated** | Supply-voltage margins versus illustrative loads/pack resistance |
 | Lumped thermal calculation | **12 cases evaluated** | Sensitivity to assumed cooling; not PCB or junction temperature |
 | Parametric CAD | **Valid solids; 19 selected solid/approach intersection checks pass** | Explicit nominal fit checks, not an exhaustive tolerance/collision certification |
-| Python regression suite | **125 passed, 1 skipped**; [log](review/python-tests.txt) | Includes negative UART-swap, isolation-bypass and fuse-bypass, front-facing service-button and inward-opening holder controls |
+| Python regression suite | **127 passed, 1 skipped**; [log](review/python-tests.txt) | Includes negative UART-swap, isolation-bypass and fuse-bypass, front-facing service-button, inward-opening holder and stale BOM substitution controls |
 
 The local suite ran under Python 3.9; the single integration skip requires Docker. Deprecation warnings were from the installed plotting dependencies. CI runs the repository suite under Python 3.12.
 

@@ -15312,7 +15312,7 @@
 					(size 1.27 1.27))))
 		(property
 			"Datasheet"
-			"https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D"
+			"https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf"
 			(at 251.4600 125.7300 0)
 			(hide yes)
 			(show_name no)
@@ -15345,7 +15345,7 @@
 					(unit 1))))
 		(property
 			"MPN"
-			"GRM188R71C104KA01D"
+			"GRM155R71C104KA88D"
 			(at 0 0 0)
 			(effects
 				(font

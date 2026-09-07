@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/erik/Workspaces/the-forge-alec-sensor/boards/alec-sensor/alec-sensor.kicad_sch</source>
-    <date>2026-09-07T12:44:09</date>
+    <date>2026-09-07T13:50:15</date>
     <tool>Eeschema 10.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -767,17 +767,17 @@
     <comp ref="C29">
       <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <datasheet>https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D</datasheet>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">GRM155R71C104KA88D</field>
         <field name="Voltage">16V</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet">https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
       <property name="Voltage" value="16V"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="alec-sensor.kicad_sch"/>

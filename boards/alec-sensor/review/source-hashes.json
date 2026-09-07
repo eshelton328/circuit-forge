@@ -3,8 +3,8 @@
   "scope": "SHA-256 of delivered sources, models, documentation and local evidence; not a physical qualification or CI attestation. The manifest excludes itself.",
   "files": {
     ".github/workflows/alec-sensor-study.yml": {
-      "sha256": "098008ac87daa4eb279f2382849b11287e760f2ffce967f73211d4f8151a7894",
-      "bytes": 3333
+      "sha256": "2c1071e0814c881fb933fcf77ae7d45d0ef7c653121c90172839b69016ace83f",
+      "bytes": 3379
     },
     "boards/alec-sensor/3dmodels/C_0402_1005Metric.step": {
       "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
@@ -102,29 +102,33 @@
       "sha256": "182023e9b968bf0d7a15df7d369f7ae8201569a538d599a5ff81a66411169e5b",
       "bytes": 7196
     },
+    "boards/alec-sensor/PROTOTYPE-ORDER.md": {
+      "sha256": "e43cb0cdef8964a76f32695eb1ab2aede3551c77ed1d1be2c86d9152303ade29",
+      "bytes": 3963
+    },
     "boards/alec-sensor/README.md": {
-      "sha256": "ec44b9380cb684ff408387b596c92df955b2d631ca8d4acd93bec730416ec5dd",
-      "bytes": 3349
+      "sha256": "d194a0beb1bcd5fc95b855fd344d9b031cbbf7e36ff34c1af8c809e2da4f7d15",
+      "bytes": 3414
     },
     "boards/alec-sensor/SOURCES.md": {
       "sha256": "da2e9ed9de5945f925172a1a7f6b3769ed9cfb5188a1ea3fd0a611e71359bbdd",
       "bytes": 5339
     },
     "boards/alec-sensor/TEST-REPORT.md": {
-      "sha256": "4eb514194f376ca9360849729108b3b767b89ddda1efed5eadb047a72ac5958c",
-      "bytes": 18443
+      "sha256": "7bdb8b6f7b2ef42bd0917998f58f893e145197a5e0dbb944d7f9bc44f68dbbc1",
+      "bytes": 19054
     },
     "boards/alec-sensor/alec-sensor.kicad_pcb": {
-      "sha256": "a24c60ff24633863f3c583e735a3b21ae90c80aaeed7db93f2349afbbff65b29",
-      "bytes": 1674540
+      "sha256": "958de9a6d41d21344fbb1be49961ae9f17598167579d1e31cc6daedc440cdedb",
+      "bytes": 1674547
     },
     "boards/alec-sensor/alec-sensor.kicad_pro": {
       "sha256": "3c90f5e8ce3cc55f8ee40221d632e37d85033dc90a4c6c45c1387ab706590906",
       "bytes": 10761
     },
     "boards/alec-sensor/alec-sensor.kicad_sch": {
-      "sha256": "4328e1f66979b9f3e2a323953a7095c2282110b45d6cea3ac2252020743435df",
-      "bytes": 304360
+      "sha256": "efdb3b54ad678ba4758f71483cc8df90b0ef8b9153708f61210bea45c4a2a056",
+      "bytes": 304367
     },
     "boards/alec-sensor/board.yml": {
       "sha256": "3ec412c76d71e68824be2f19a6619b6ec6fe1b087db21bd58a0e147c3f424dc0",
@@ -202,9 +206,13 @@
       "sha256": "fc0c14617715abf3dd6c9bbf9982688227c43830953d596720b5ba47b7fef9ff",
       "bytes": 3457
     },
+    "boards/alec-sensor/review/bom-checks.json": {
+      "sha256": "b3ca16f7cf37cf81df684729e34f4bce3b39eb43a27fb92b8ccc601810144fad",
+      "bytes": 333
+    },
     "boards/alec-sensor/review/bom.csv": {
-      "sha256": "76a70282d69b5dd35b93105f2a05a6020380ff9fd4a2adce6cd4ca454b29c237",
-      "bytes": 16867
+      "sha256": "fd14c1633cb48c0a50a4aba21ec917bb4fdd25cb111b657129c3c2135ba7fef0",
+      "bytes": 16874
     },
     "boards/alec-sensor/review/copper-cleanup.json": {
       "sha256": "91ca73e80265db3480991c25d2d9c2fd8da65dfd9b622b4034390b077d3073d3",
@@ -215,11 +223,11 @@
       "bytes": 112
     },
     "boards/alec-sensor/review/drc.json": {
-      "sha256": "4a1122c2cc8419ed8b68d99575a1caa5f81095c4959e9fa3da220f2e0ed680b7",
+      "sha256": "f2016345e99d5d3883926da9e2985eda5ed0ab9ac1e76dbc0fa72cf02196ae10",
       "bytes": 1068
     },
     "boards/alec-sensor/review/erc.json": {
-      "sha256": "2e35fccc4b110982ce5d8c50cf9ece269d41767e557b5afdbbe63c0d5ab44972",
+      "sha256": "a0af862fba9727896cb961a36cb17402471360b2de8d877fc7f8f6df59b05b6d",
       "bytes": 1373
     },
     "boards/alec-sensor/review/fab-jlcpcb-4layer-advanced.json": {
@@ -237,6 +245,10 @@
     "boards/alec-sensor/review/migration.json": {
       "sha256": "8415046ae41bc6c18115afec2377ad226cecfd784d28343abb5123bbfdb43956",
       "bytes": 2514
+    },
+    "boards/alec-sensor/review/ordering-metadata-change.json": {
+      "sha256": "d8a28b30b592973087c300357b0f7548665fbde936c07c261577495d53742055",
+      "bytes": 1140
     },
     "boards/alec-sensor/review/power-budget.json": {
       "sha256": "0db9b7ba93c76d520275d5dd8bee3cb85709a30f05081fc466b4d45c685f5f4b",
@@ -463,8 +475,8 @@
       "bytes": 39028
     },
     "boards/alec-sensor/review/python-tests.txt": {
-      "sha256": "6c2df03cfaf7fe3f2e1b5dc845288919d86102a372967320493c56178f9d1db7",
-      "bytes": 14037
+      "sha256": "22756356b523bf1d57f5a55f69b645c4eb0d7ff7e2dc5ea7bcb773345461edcd",
+      "bytes": 3961
     },
     "boards/alec-sensor/review/rear-service-migration.json": {
       "sha256": "1d370786814cfaa8caa4f31d4ae9cfd8c5444408ee13ad19ffb309c13f8ed430",
@@ -487,8 +499,8 @@
       "bytes": 495
     },
     "boards/alec-sensor/tools/README.md": {
-      "sha256": "ba89e69277422769be677a8ee4dd0381d94f0c93e6c85a52399fc8aec0a8a256",
-      "bytes": 5158
+      "sha256": "9d9a3395738e26ee4af47034feb319181951f27cce5f84ec13146287c1bcc44e",
+      "bytes": 5204
     },
     "boards/alec-sensor/tools/apply_rear_service.py": {
       "sha256": "2980358f84a6096351f4e0a8c7121b6cf753c3f609ed043a204210b89bbc95e5",
@@ -501,6 +513,10 @@
     "boards/alec-sensor/tools/build_part_models.py": {
       "sha256": "d2bcea210126a226e9f6cb01bd16c4723795a245c4233475888d0a30fbdabd16",
       "bytes": 1067
+    },
+    "boards/alec-sensor/tools/check_bom.py": {
+      "sha256": "df5f38adbb0ce18858ba54354b23a39f2987d996a91f4b51ba1fa9ad970218d3",
+      "bytes": 2029
     },
     "boards/alec-sensor/tools/check_design.py": {
       "sha256": "11ce6b7c87fa4647873939ff8ec4f230df39fba3dab44a1befb1e2b4bfeefe15",
@@ -535,7 +551,7 @@
       "bytes": 1615
     },
     "boards/alec-sensor/tools/parts.py": {
-      "sha256": "875963377387f6cb29677e9977f1036a69d3de3c3b4e7920301f81463df0822d",
+      "sha256": "8a12e99a91b1aa3837570f41d65f94aaa066b0612abc953cc2fcdf0d644a0130",
       "bytes": 2809
     },
     "boards/alec-sensor/tools/power_budget.py": {
@@ -839,8 +855,8 @@
       "bytes": 4862
     },
     "tests/test_alec_sensor.py": {
-      "sha256": "3a641a66737b0fdc72e30d04765a0de91991fd49ba0e4327a470cd80b64cb2cc",
-      "bytes": 3007
+      "sha256": "258cf2881121d9617b7970bf33e723fb783fc9d95b148c53f2328df508dd6bd2",
+      "bytes": 3707
     }
   }
 }

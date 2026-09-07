@@ -10,8 +10,8 @@ CAPS={
  'C19':('GRM155R61A105KE15D','10V','https://www.murata.com/en-us/products/productdetail?partno=GRM155R61A105KE15D'),
  'C21':('CL31A107MQHNNNE','6.3V','https://product.samsungsem.com/mlcc/CL31A107MQHNNN.do')}
 for r in ['C3','C5','C11','C13','C35']:CAPS[r]=('GRM188R61A106KAALD','10V','https://datasheet.octopart.com/GRM188R61A106KAALD-Murata-datasheet-138742814.pdf')
-for r in ['C4','C12','C18','C20','C25','C34']:CAPS[r]=('GRM155R71C104KA88D','16V','https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf')
-for r in ['C29','C36','C37']:CAPS[r]=('GRM188R71C104KA01D','16V','https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D')
+for r in ['C4','C12','C18','C20','C25','C29','C34']:CAPS[r]=('GRM155R71C104KA88D','16V','https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01A.pdf')
+for r in ['C36','C37']:CAPS[r]=('GRM188R71C104KA01D','16V','https://www.murata.com/en-us/products/productdetail?partno=GRM188R71C104KA01D')
 for r in ['C6','C7','C8','C14','C15','C16']:CAPS[r]=('GRM31CR61C226KE15L','16V','https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61C226KE15-01A.pdf')
 def apply(root,helpers):
  children,child,val,prop,q,node=helpers

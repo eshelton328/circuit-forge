@@ -19,6 +19,7 @@ kicad-cli sch erc --exit-code-violations --format json -o boards/alec-sensor/rev
 kicad-cli pcb drc --exit-code-violations --refill-zones --save-board --schematic-parity --format json -o boards/alec-sensor/review/drc.json boards/alec-sensor/alec-sensor.kicad_pcb
 "$KICAD_PYTHON" scripts/ci/check_copper_connectivity.py boards/alec-sensor
 python3 boards/alec-sensor/tools/check_design.py
+python3 boards/alec-sensor/tools/check_bom.py
 python3 boards/alec-sensor/tools/check_service_interface.py
 "$KICAD_PYTHON" boards/alec-sensor/tools/check_layout.py
 "$KICAD_PYTHON" boards/alec-sensor/tools/audit_models.py

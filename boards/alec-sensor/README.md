@@ -5,6 +5,7 @@
 The PCB is paired with a [116 mm diameter × 54 mm circular enclosure](../../enclosures/alec-sensor/). Its flat PCB, actual AA holder and vendor radar geometry are integrated in an editable Blender assembly. The enclosure is a nominal mechanical prototype, not a waterproof certification or tooling release.
 
 - [Full S1.1 test report and remaining release gates](TEST-REPORT.md)
+- [Paired clock/sensor prototype order plan](PROTOTYPE-ORDER.md)
 - [BOM with explicit ordering candidates](review/bom.csv), [GPIO/power/sleep contract](OPERATION.md)
 - [Sources and part-selection notes](SOURCES.md), [enclosure interface](ENCLOSURE.md)
 - [KiCad schematic](alec-sensor.kicad_sch), [PCB](alec-sensor.kicad_pcb), [project](alec-sensor.kicad_pro)

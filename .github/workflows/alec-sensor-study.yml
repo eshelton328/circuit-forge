@@ -37,6 +37,7 @@ jobs:
               kicad-cli sch export netlist --format kicadxml -o "$d/review/netlist.xml" "$d/alec-sensor.kicad_sch"
               kicad-cli pcb drc --exit-code-violations --refill-zones --save-board --schematic-parity --format json -o "$d/review/drc.json" "$d/alec-sensor.kicad_pcb"
               python3 "$d/tools/check_design.py"
+              python3 "$d/tools/check_bom.py"
               python3 "$d/tools/check_service_interface.py"
               python3 "$d/tools/check_layout.py"
               python3 "$d/tools/audit_models.py"
