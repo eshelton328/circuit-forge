@@ -90,7 +90,7 @@ print('Packaged report')
 # Bind reviewed evidence to committed inputs; generated working decks are deliberately omitted.
 files=[];evidence=[]
 for d in sorted((ROOT/'boards').glob('bedroom-alarm-*')):
- files+=list(d.glob('*.kicad_*'))+[d/'checks.yml',d/'board.yml']+list((d/'3dmodels').glob('*.step'))
+ files+=[p for p in d.glob('*.kicad_*') if p.suffix in ['.kicad_pcb','.kicad_sch','.kicad_pro','.kicad_dru']]+[d/'checks.yml',d/'board.yml']+list((d/'3dmodels').glob('*.step'))
  evidence += [d/'review'/n for n in ['netlist.xml','erc.json','drc.json','fab-drc.json','3d-model-audit.json','bom.csv']]
 files += [p for p in (MAIN/'sim').glob('*.cir') if p.name not in ['assembled.cir','kicad_export.cir']]+[MAIN/'sim.yml']
 files += list((ROOT/'scripts/alarm').glob('*.py'))+list((ROOT/'libs/footprints/Alarm.pretty').glob('*.kicad_mod'))

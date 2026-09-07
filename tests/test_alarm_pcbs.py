@@ -17,6 +17,7 @@ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def test_review_evidence_matches_source_files():
     manifest=read(MAIN/'review/qa-manifest.json')
     assert manifest['manufacturing_release'] is False
+    assert not any(name.endswith(('.kicad_prl','.lck')) for name in manifest['files'])
     for name,digest in manifest['files'].items():assert sha(ROOT/name)==digest,name
     for name,digest in manifest['evidence'].items():assert sha(ROOT/name)==digest,name
 
