@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="850" viewBox="0 0 1440 850">
+<defs>
+<style>text{font-family:Arial,sans-serif;fill:#263740}.title{font-size:29px;font-weight:700}.heading{font-size:25px;font-weight:700}.body{font-size:20px}.small{font-size:17px;fill:#526874}.dim{font-size:18px;fill:#4f7789}.line{stroke:#7693a1;stroke-width:1.8;fill:none}</style>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8" fill="none" stroke="#7693a1"/></marker>
+<g id="button"><rect x="-29" y="-18" width="58" height="36" rx="18" fill="#e7eded" stroke="#bdcbce"/><rect x="-10" y="-5" width="19" height="10" rx="2" fill="none" stroke="#7b949b" stroke-width="1.5"/><path d="M11 -2v4 M-6 -2v4 M-1 -2v4 M4 -2v4" stroke="#7b949b" stroke-width="1.5"/></g>
+</defs>
+<rect width="1440" height="850" fill="#f5f7f7"/>
+<text x="55" y="53" class="title">ALEC Sensor / circular or rounded square</text>
+<text x="55" y="85" class="body">Same-scale front studies · one RGB light · one sealed battery / pair button</text>
+<line x1="55" y1="106" x2="1385" y2="106" stroke="#c8d5d9"/>
+<text x="160" y="148" class="heading">Rounded square</text>
+<rect x="376" y="126" width="155" height="29" rx="14" fill="#deeee7"/>
+<text x="453" y="147" text-anchor="middle" font-size="16" fill="#356b59">Recommended</text>
+<text x="917" y="148" class="heading">Circular puck</text>
+<!-- Front faces use 4 pixels per millimetre; depth is only a target. -->
+<rect x="184" y="204" width="360" height="360" rx="64" fill="#d5dde0"/>
+<rect x="172" y="190" width="360" height="360" rx="64" fill="#fdfdfb" stroke="#bac9cf" stroke-width="2"/>
+<circle cx="1052" cy="384" r="200" fill="#d5dde0"/>
+<circle cx="1040" cy="370" r="200" fill="#fdfdfb" stroke="#bac9cf" stroke-width="2"/>
+<circle cx="352" cy="445" r="5" fill="#53a588"/>
+<use href="#button" transform="translate(352 490)"/>
+<circle cx="1040" cy="445" r="5" fill="#53a588"/>
+<use href="#button" transform="translate(1040 490)"/>
+<path d="M172 596H532" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="352" y="626" text-anchor="middle" class="dim">90 × 90 mm target · R16 corners</text>
+<path d="M840 596H1240" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1040" y="626" text-anchor="middle" class="dim">100 mm diameter target</text>
+<text x="155" y="678" class="body">Echoes the main ALEC alarm’s shape</text>
+<text x="155" y="707" class="small">Corner space helps with PCB, bosses and wiring</text>
+<text x="155" y="735" class="small">Smooth front; rear cover and mounting cradle</text>
+<text x="835" y="678" class="body">Closer to the original shower-puck inspiration</text>
+<text x="835" y="707" class="small">Curved boundary constrains rectangular parts</text>
+<text x="835" y="735" class="small">Keyed rear cradle keeps the installed orientation</text>
+<rect x="55" y="777" width="1330" height="48" rx="8" fill="#e6ecee"/>
+<text x="75" y="807" class="small">Both: initial 40 mm depth target · dimensions and 3D fit unverified · radar window and seals still require physical testing</text>
+</svg>

@@ -4,7 +4,7 @@ The battery-powered shower companion for the ALEC bedside alarm. It observes a c
 
 - [Three-sheet schematic PDF](docs/schematic.pdf)
 - [Editable KiCad schematic](alec-sensor.kicad_sch) and [project](alec-sensor.kicad_pro)
-- [Enclosure direction](ENCLOSURE.md) and [concept drawing](docs/enclosure-concept.svg)
+- [Enclosure direction](ENCLOSURE.md) and [circular / rounded-square comparison](docs/enclosure-shape-options.svg)
 - [Power and firmware behavior](OPERATION.md)
 - [Verification report and physical test plan](TEST-REPORT.md)
 - [Source register](SOURCES.md)

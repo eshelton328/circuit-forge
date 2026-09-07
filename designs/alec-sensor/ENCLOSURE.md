@@ -1,10 +1,23 @@
 # Shower enclosure direction
 
-![Concept drawing, not validated CAD](docs/enclosure-concept.svg)
+![Circular and rounded-square concepts, not validated CAD](docs/enclosure-shape-options.svg)
 
 ## Product direction
 
-Use a softly rounded vertical housing with a smooth front, a small RGB light pipe and one sealed mechanical button below the sensing area. A nominal **78 × 102 × 40 mm** body is a starting packaging allocation, not a dimensioned manufacturing design or demonstrated fit. The face has no exposed screws. A round puck remains possible, but the rectangular three-AA holder makes an elongated shape worth evaluating first.
+The user prefers evaluating a **circular housing or a rounded square**, with the square echoing the main ALEC alarm. Both are feasible enclosure concepts; the electronics do not require the earlier elongated outline. The recommended direction is the rounded square, pending the user's selection and the detailed packaging study. Keep a smooth front, one RGB light pipe and one sealed battery/pair button. The face has no exposed screws.
+
+| Option | Initial exterior allocation | Design implications |
+|---|---|---|
+| Rounded square — recommended | 90 × 90 × 40 mm, nominal 16 mm corner radius | Resembles the main alarm; corner regions are useful for PCB, wiring, cover bosses and service access. |
+| Circular puck | 100 mm diameter × 40 mm deep | Resembles the original shower-sensor inspiration; the curved boundary constrains rectangular parts. Use a keyed cradle to preserve the chosen sensing orientation. A circular exterior does not require a circular PCB. |
+
+These dimensions are **comparison targets, not demonstrated fit or released CAD**. The two faces have nearly equal projected area: about 7,880 mm² for the 90 mm square with R16 corners and 7,854 mm² for the 100 mm circle. The drawing uses the same scale for both options. The 40 mm depth target still depends on the radar/window gap, header/socket, battery holder, PCB component heights and rear mount projection.
+
+The holder's 57.15 × 46.61 mm rectangle has a diagonal of approximately **73.75 mm**. That is the minimum diameter that encloses the centered bare rectangular envelope in a plane, before walls, seals, tolerance or any other parts. It supports exploring a circle but does not establish that the complete assembly fits inside 100 mm. Offsetting the holder to make room for the radar changes its available clearance. Both shapes require a real 3D placement and service-clearance study.
+
+For either outline, keep the sensing region of the face flat and of uniform thickness, with its inner surface parallel to the radar antenna. Round the perimeter and housing edges outside that region; a circular outline need not have a domed face. Neither outline establishes waterproofing by itself: the rear gasket, button/light-pipe seals, compression control and complete-device tests still apply.
+
+The [earlier 78 × 102 mm elongated study](docs/enclosure-concept.svg) remains as a reference. Its internal sketch and rear-cover drawing are not a verified layout for either new outline.
 
 Use the existing **MPD BH3AAW** as the initial holder candidate to keep the parts family consistent. Existing manufacturer CAD gives a 57.15 × 46.61 mm body and a 17.39 mm full height including the underside projection; its long leads need a real routing channel. Actual loaded cells, spring travel, wire bends, connector access and removal clearance remain unverified. See the [existing source drawing](../../enclosures/alec/sources/BH3AAW-drawing.pdf) and [parts register](../../enclosures/alec/parts/parts-register.json).
 

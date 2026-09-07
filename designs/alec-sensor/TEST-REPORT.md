@@ -16,6 +16,7 @@ Date: 2026-09-07. Scope: the new native schematic, interface contract, initial p
 | Schematic PDF/SVG export | Three pages generated and visually inspected | Readable native artifacts; no physical-layout evidence |
 | Manufacturer radar CAD | STEP opened; bounding box 22.000 × 16.000 × 11.500 mm | Correct C variant/header envelope, not mounted assembly fit |
 | Runtime sensitivity calculation | Generated for 6/9/12 Wh and four duty cycles | Illustrative energy arithmetic; no measured lifetime |
+| Enclosure outline comparison | Circular and rounded-square views generated at the same scale and visually inspected | Concept comparison only; the holder diagonal and face areas are calculated, with no complete assembly fit or new physical qualification |
 
 Machine outputs: [ERC](review/erc.json), [interface checks](review/interface-checks.json), [netlist](review/netlist.xml), [power budget](review/power-budget.json), [source hashes](review/source-hashes.json). The separate schematic-study CI workflow exports fresh inputs before checking; a committed XML file is not treated as proof that later schematic edits passed.
 
